@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Cite the repository version and the exact protocol/runtime when reporting SECCA results."
+title: "SECCA: Solid-model Evaluation of CAD Construction Agents"
+type: software
+authors:
+  - name: "SECCA contributors"
+repository-code: "https://github.com/Sunwood-ai-labs/SECCA"
+url: "https://sunwood-ai-labs.github.io/SECCA/"
+version: "0.1.0"
+date-released: "2026-10-17"
+license: MIT
+keywords:
+  - CAD
+  - benchmark
+  - FreeCAD
+  - model-context-protocol
+  - Podman

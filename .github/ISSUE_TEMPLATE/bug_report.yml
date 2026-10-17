@@ -1,0 +1,24 @@
+name: Bug report
+description: Report a reproducible harness or documentation defect.
+labels: [bug]
+body:
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and observed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction
+      description: Include commands and sanitized errors. Never include API keys or unrelated host data.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Runtime and protocol
+      description: Commit, OS, Podman connection type, immutable image ID, protocol ID, and affected files.
+    validations:
+      required: true

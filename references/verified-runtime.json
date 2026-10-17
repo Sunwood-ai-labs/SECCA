@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "protocol": "racing-kart-image-v2-podman",
+  "verified_at": "2026-10-17",
+  "image_id": "sha256:7b6b24b1c1bf6a3404db634d26168afcf4e0e2bc4b020e74fac3800448a58a16",
+  "ready_tag": "localhost/kart-sbx-runtime:v2",
+  "versions": {
+    "OpenCode": "1.19.3",
+    "FreeCAD": "1.0.0",
+    "MCP": "0.1.23"
+  },
+  "candidate_boundary": {
+    "network": "none",
+    "uid": 10000,
+    "read_only_root": true,
+    "capabilities_effective_permitted_bounding": 0,
+    "no_new_privileges": 1,
+    "host_bind_mounts": [],
+    "host_FreeCAD_used": false
+  },
+  "new_model_inference_calls": 0,
+  "security_checks": {
+    "passed": 19,
+    "total": 19,
+    "uses_embedded_final_image": true
+  },
+  "unit_tests": {
+    "ran": 59,
+    "host_UDS_skipped": 1,
+    "Linux_UDS_fixture": "5 tests passed without skips",
+    "passed": 58
+  },
+  "offline_saved_CAD_replay": {
+    "inspection_success": true,
+    "native_solids": 77,
+    "step_solids": 77,
+    "render_success": true,
+    "source_unchanged": true,
+    "fixture_only": true
+  },
+  "harness_failure_probe": {
+    "invalid_provider": true,
+    "candidate_stopped": true,
+    "cleanup_errors": [],
+    "gateway_requests": 0,
+    "missing_outputs_recorded": [
+      "racing-kart.FCStd",
+      "racing-kart.step"
+    ]
+  },
+  "historical_43": "Original Windows host result, not an isolated Podman generation. Kept as historical only.",
+  "limitations": [
+    "No real provider/model inference was invoked during sandbox verification.",
+    "Candidate stdout/queue/log and named-volume disk quotas are not a complete availability boundary; not destructively tested.",
+    "ZIP contains build recipe and vendored MCP source, not the OCI runtime image."
+  ],
+  "evidence_files": [
+    "runtime-smoke/smoke-result.json",
+    "security-review-final/summary.json",
+    "baseline-replay-final/evidence/validation.json",
+    "baseline-replay-final/evidence/render.json",
+    "harness-no-api-final/evidence/run.json",
+    "linux-uds-final.txt"
+  ],
+  "evidence_directory": "verification",
+  "public_export": {
+    "record_type": "historical_public_transformed_export",
+    "raw_record": false,
+    "provenance_manifest": "references/public-export-manifest.json",
+    "new_model_generation": false
+  }
+}

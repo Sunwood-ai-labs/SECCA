@@ -1,0 +1,63 @@
+{
+  "image_id": "7b6b24b1c1bf6a3404db634d26168afcf4e0e2bc4b020e74fac3800448a58a16",
+  "connection": "<PODMAN_CONNECTION>",
+  "embedded": {
+    "runtime_boot.py": "c3e304d347d6074d5dcbe53f2b41218b27ac0d3ef401855165c084283d8a198a",
+    "start_freecad.FCMacro": "d0a993d87430965598293dd43bb7ece9bbac2ee08b27683b31eab980320cb844",
+    "mcp_client.py": "dc1b2d498a5790ba255581f801b33a63ed014e127858dc286e0164d2f57cc094",
+    "smoke_test.py": "2ee0b74a0ecc723827469c0af5994ab3d43d5e87c9464fdd37354ec6c04d1904",
+    "candidate_entry.py": "c2e0ec781388d42615007945e2502756883faabede3878f0a3029d50550a16f1",
+    "gateway.py": "0f2750e941ab4dae8bb1cfcd13a2f13522bf7cdd24b63df9c61aa1b832e4ab6c",
+    "loopback_adapter.py": "3f003a0bae4bc04643c911a9600bb891fb2016082225a8c3f2409601caebfeea"
+  },
+  "source": {
+    "runtime_boot.py": "c3e304d347d6074d5dcbe53f2b41218b27ac0d3ef401855165c084283d8a198a",
+    "start_freecad.FCMacro": "d0a993d87430965598293dd43bb7ece9bbac2ee08b27683b31eab980320cb844",
+    "mcp_client.py": "dc1b2d498a5790ba255581f801b33a63ed014e127858dc286e0164d2f57cc094",
+    "smoke_test.py": "2ee0b74a0ecc723827469c0af5994ab3d43d5e87c9464fdd37354ec6c04d1904",
+    "candidate_entry.py": "c2e0ec781388d42615007945e2502756883faabede3878f0a3029d50550a16f1",
+    "gateway.py": "0f2750e941ab4dae8bb1cfcd13a2f13522bf7cdd24b63df9c61aa1b832e4ab6c",
+    "loopback_adapter.py": "3f003a0bae4bc04643c911a9600bb891fb2016082225a8c3f2409601caebfeea"
+  },
+  "mcp_manifest_sha256": "34a81a6b5914906a79e86d2e0c8d589e21beec3b5e1112b258292b4c667f9091",
+  "mcp_source": {
+    "pyproject.toml": "e998c0a4e1b9b592ec2a8c0007ee0a62ee51cdad470abcb61ff440fb01491e59",
+    "uv.lock": "04d7930a529a5cad50974620686fa2de65906e9215a569ea67238dd9612c7eff",
+    "README.md": "2c27e5365ceca4bdc53cb813aeae3df23645e528ae298f514d4e2a5b1240f33e",
+    "LICENSE": "72e973db8fedf3a443d44a9e629ec1f8de1c498c9f5eca8807d5650d4a382ec0",
+    "src/freecad_mcp/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/freecad_mcp/freecad_client.py": "17fce71180029825c2d550a096a3bdbd530a90cd5ba80ec8f5502e8700534668",
+    "src/freecad_mcp/headless.py": "deada842fc923ba7390a160916c0b2ceed622adb6dce6613bc069f07b1f8e353",
+    "src/freecad_mcp/operations/__init__.py": "76e1c44996569bbf7490151c1447ec8f4d560f0ff83c870fc9959c194846df3e",
+    "src/freecad_mcp/operations/core.py": "2634449a4f20acafaeb33de4cd1b0bb0b5d3a667a9e38c4988ecd48eadc25c70",
+    "src/freecad_mcp/prompt_text.py": "0e4c6aed052d9a0179efd5ea73346140a6956f85d20ecb7dc7776c9e036bbb1a",
+    "src/freecad_mcp/responses.py": "f7e9c0d6c10c08971ab99a0f3e38362378abb88afd1a48887eeb692f1d3ee551",
+    "src/freecad_mcp/server.py": "3431b0c663898782b232192bbf399705ea735c23006ccf1f155241806853a31b",
+    "src/freecad_mcp/server_state.py": "c454d1d5067ae632e93ee34d2869593256a667701c727ed2b248593443f740b9",
+    "addon/FreeCADMCP/Init.py": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "addon/FreeCADMCP/InitGui.py": "4024127601429bd693e04367d89babf834edda3448c568113ba94579a7fea954",
+    "addon/FreeCADMCP/rpc_server/__init__.py": "0cec603c3ef9f7433f6aff8ab4d64276446df9b0e54869218681c082d6239882",
+    "addon/FreeCADMCP/rpc_server/commands.py": "0cf158c73f28db6104a8ce220fe6fd109e82b65b2410028ca7b4ad11299ed12a",
+    "addon/FreeCADMCP/rpc_server/dispatch_health.py": "dc420220c975806fa22ef1d11644f61faa5819b75409325385e437b3401f8ab8",
+    "addon/FreeCADMCP/rpc_server/fem_executor.py": "240bb76f7bf86d07f1bd1a40a163dda2a554ed9179220ec1dfd984f33914f66d",
+    "addon/FreeCADMCP/rpc_server/gui_dispatch.py": "1dc0ce2ba06abed7397c16c03c8b07b3a0597d3107e80a704449f5d37ffb080e",
+    "addon/FreeCADMCP/rpc_server/ip_filter.py": "f7927edee6be12943ad6b68200e0b605fa8f673ec3835cabd87c476aa281f115",
+    "addon/FreeCADMCP/rpc_server/object_factory.py": "c180127eaf9e9edd8df79b7a3308e04e35f4d1e247bbcd612ae1fee4d113261a",
+    "addon/FreeCADMCP/rpc_server/object_validation.py": "da954cfb69b2bf787b32c118ec5026768d6aaca364488e040bf1a4745ddf19f2",
+    "addon/FreeCADMCP/rpc_server/parts_library.py": "a937556d21b387d5a0fa766d4406368b1a97b9ab16f59a31ff0364829c057c36",
+    "addon/FreeCADMCP/rpc_server/property_mapper.py": "f3a7e1364b979ca6c924cea3109b48c2b76f7462bda20812be55478a0a772df1",
+    "addon/FreeCADMCP/rpc_server/rpc_server.py": "929a2ba8352ee4b726746c07b9ad661e197f4067dd545ce764e8126f868f9ad9",
+    "addon/FreeCADMCP/rpc_server/serialize.py": "56d2541248f9b82e60918660f54d2e0c1d9671ce386709807907fe227a2c50ce",
+    "addon/FreeCADMCP/rpc_server/settings.py": "b275a46918160219b298a81989b8c16488eae068b185bb56aa975a428f77d8b2",
+    "addon/FreeCADMCP/rpc_server/view_manager.py": "1d6da6d469db3c1499134881d320481b6c792c817f009c44b4ba792f87e0338d"
+  },
+  "mcp_all_source_files_match_manifest": true,
+  "all_equal": true,
+  "no_model_calls": true,
+  "public_export": {
+    "record_type": "historical_public_transformed_export",
+    "raw_record": false,
+    "provenance_manifest": "references/public-export-manifest.json",
+    "new_model_generation": false
+  }
+}

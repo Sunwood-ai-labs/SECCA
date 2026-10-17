@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "record_type": "historical_public_transformed_export",
+  "raw_record": false,
+  "provenance_manifest": "references/public-export-manifest.json",
+  "new_model_generation": false,
+  "fixed_assets_modified": false,
+  "source_originals_included": false,
+  "files": [
+    {
+      "path": "references/verification/baseline-replay-final/evidence/render.json",
+      "source_path": "references/verification/baseline-replay-final/evidence/render.json",
+      "source_sha256": "269f5638df3c52be55924e86f681c7bc55f630a9ae922902db0aa3cec41e477a",
+      "export_sha256": "5ef6150c26d071d3eb5ab4019e18321c02c19c4c30985faae3f30df31e2dedee",
+      "source_bytes": 6272,
+      "export_bytes": 6234,
+      "dependent_hash_exports": [],
+      "transforms": [
+        "replace host homes with <HOST_HOME>",
+        "replace Podman connection labels with <PODMAN_CONNECTION>",
+        "mark as historical public transformed export, not raw",
+        "serialize UTF-8 with LF line endings"
+      ]
+    },
+    {
+      "path": "references/verification/baseline-replay-final/evidence/run.json",
+      "source_path": "references/verification/baseline-replay-final/evidence/run.json",
+      "source_sha256": "83ffb6fab5c5c61241c7053914250411557ca2a14f3b07c5614f757eb7d83a11",
+      "export_sha256": "1391557ff3430a0782d54dcdb031b70cf216bd309b90ed71333396ed6f74a9a5",
+      "source_bytes": 249,
+      "export_bytes": 455,
+      "dependent_hash_exports": [],
+      "transforms": [
+        "replace host homes with <HOST_HOME>",
+        "replace Podman connection labels with <PODMAN_CONNECTION>",
+        "mark as historical public transformed export, not raw",
+        "serialize UTF-8 with LF line endings"
+      ]
+    },
+    {
+      "path": "references/verification/baseline-replay-final/evidence/validation.json",
+      "source_path": "references/verification/baseline-replay-final/evidence/validation.json",
+      "source_sha256": "1c1640060d0f87f4bd5b09484e42f11050de8dc872ec90d8efe68d6851aa60b9",
+      "export_sha256": "684ed4f273e7e9d480a10c455c30ac1b33c6285b0be6378d6f0d66c11d84547b",
+      "source_bytes": 155742,
+      "export_bytes": 149517,
+      "dependent_hash_exports": [],
+      "transforms": [
+        "replace host homes with <HOST_HOME>",
+        "replace Podman connection labels with <PODMAN_CONNECTION>",
+        "mark as historical public transformed export, not raw",
+        "serialize UTF-8 with LF line endings"
+      ]
+    },
+    {
+      "path": "references/verification/bundled-vendor-build-test.json",
+      "source_path": "references/verification/bundled-vendor-build-test.json",
+      "source_sha256": "6b55b34cfe177382a484292e677cfa12d4accedb9202e628094da28a4ba7768c",
+      "export_sha256": "8708c84fbb8a5831c8879974bb4a4012ef76690a83a4e3e1a8f54e05461221aa",
+      "source_bytes": 354,
+      "export_bytes": 556,
+      "dependent_hash_exports": [],
+      "transforms": [
+        "replace host homes with <HOST_HOME>",
+        "replace Podman connection labels with <PODMAN_CONNECTION>",
+        "mark as historical public transformed export, not raw",
+        "serialize UTF-8 with LF line endings"
+      ]
+    },
+    {
+      "path": "references/verification/harness-no-api-final/evidence/gateway.log",
+      "source_path": "references/verification/harness-no-api-final/evidence/gateway.log",
+      "source_sha256": "ee3c42e4eb0d8256e5c871b46a3384b24612cb547e4e711cdc32af3fc0372bff",
+      "export_sha256": "0dd922368261a70f95b1e0a39ad2a45a79180a1b22e6f62b4299ac9ac3601a79",
+      "source_bytes": 26,
+      "export_bytes": 155,
+      "dependent_hash_exports": [],
+      "transforms": [
+        "replace host homes with <HOST_HOME>",
+        "replace Podman connection labels with <PODMAN_CONNECTION>",
+        "mark as historical public transformed export, not raw",
+        "serialize UTF-8 with LF line endings"
+      ]
+    },
+    {
+      "path": "references/verification/harness-no-api-final/evidence/run.events.jsonl",
+      "source_path": "references/verification/harness-no-api-final/evidence/run.events.jsonl",
+      "source_sha256": "b9fc321decddaecac6f9e92c4ba71b4190629af3a447fa9016df148aa1bcb9fc",
+      "export_sha256": "3b06d6020f1f84cb959e9a2159c18ba40a7738914d0cc4a12cfbfa6687ef2f2e",
+      "source_bytes": 1279,
+      "export_bytes": 2067,
+      "dependent_hash_exports": [],
+      "transforms": [
+        "replace host homes with <HOST_HOME>",
+        "replace Podman connection labels with <PODMAN_CONNECTION>",
+        "mark as historical public transformed export, not raw",
+        "serialize UTF-8 with LF line endings"
+      ]
+    },
+    {
+      "path": "references/verification/harness-no-api-final/evidence/run.json",
+      "source_path": "references/verification/harness-no-api-final/evidence/run.json",
+      "source_sha256": "10179e6d8a81093b457944fc775f9b2d3f67c579e7dedb8691113e306a02fd28",
+      "export_sha256": "2c92b8c48ba31e9bf736bc81ede9d4d7a03a8c3ef22ae74eb62679711b811c8e",
+      "source_bytes": 1907,
+      "export_bytes": 2120,
+      "dependent_hash_exports": [],
+      "transforms": [
+        "replace host homes with <HOST_HOME>",
+        "replace Podman connection labels with <PODMAN_CONNECTION>",
+        "mark as historical public transformed export, not raw",
+        "serialize UTF-8 with LF line endings"
+      ]
+    },
+    {
+      "path": "references/verification/linux-uds-final.txt",
+      "source_path": "references/verification/linux-uds-final.txt",
+      "source_sha256": "1df45ba8cf895c59c0b785a8240ef686f85d6fc0790333736296a5ff29893d0a",
+      "export_sha256": "09b1eb3d36048ff0514431e92bccd0190f479026f51de6cf599b4255a8166455",
+      "source_bytes": 1329,
+      "export_bytes": 1433,
+      "dependent_hash_exports": [],
+      "transforms": [
+        "replace host homes with <HOST_HOME>",
+        "replace Podman connection labels with <PODMAN_CONNECTION>",
+        "mark as historical public transformed export, not raw",
+        "serialize UTF-8 with LF line endings"
+      ]
+    },
+    {
+      "path": "references/verification/runtime-smoke/smoke-result.json",
+      "source_path": "references/verification/runtime-smoke/smoke-result.json",
+      "source_sha256": "b5c037292c390126dc64a5e4bd0d9751c7b4281d79ec2b8c62bc58682d044eab",
+      "export_sha256": "8810a427a4806b651830df946f35a81af5a448e39545413e2bb5c5a35ce2eab1",
+      "source_bytes": 1493,
+      "export_bytes": 1707,
+      "dependent_hash_exports": [],
+      "transforms": [
+        "replace host homes with <HOST_HOME>",
+        "replace Podman connection labels with <PODMAN_CONNECTION>",
+        "mark as historical public transformed export, not raw",
+        "serialize UTF-8 with LF line endings"
+      ]
+    },
+    {
+      "path": "references/verification/security-review-final/embedded-source-verification.json",
+      "source_path": "references/verification/security-review-final/embedded-source-verification.json",
+      "source_sha256": "c6ed693a1760794a09e181eb308945c62fc5dbb18932e4613d3b8cdfc9338e07",
+      "export_sha256": "9f4fcac4183ea1d94d44ab59419f81c022eb89de6accafdc4d88f4ca19bd3b05",
+      "source_bytes": 4869,
+      "export_bytes": 5027,
+      "dependent_hash_exports": [],
+      "transforms": [
+        "replace host homes with <HOST_HOME>",
+        "replace Podman connection labels with <PODMAN_CONNECTION>",
+        "mark as historical public transformed export, not raw",
+        "serialize UTF-8 with LF line endings"
+      ]
+    },
+    {
+      "path": "references/verification/security-review-final/summary.json",
+      "source_path": "references/verification/security-review-final/summary.json",
+      "source_sha256": "8af4b31bfaf26713dbcd7d476202bd2359b2d923f17836c6c6861589431e497a",
+      "export_sha256": "23f71f0cb59762e393b4a77d0b20170e40f68ebeb180bc9ab846602bd2f74e55",
+      "source_bytes": 4732,
+      "export_bytes": 4846,
+      "dependent_hash_exports": [],
+      "transforms": [
+        "replace host homes with <HOST_HOME>",
+        "replace Podman connection labels with <PODMAN_CONNECTION>",
+        "mark as historical public transformed export, not raw",
+        "serialize UTF-8 with LF line endings"
+      ]
+    },
+    {
+      "path": "references/verification/unit-tests-final.txt",
+      "source_path": "references/verification/unit-tests-final.txt",
+      "source_sha256": "3812e7ad035e013298afb721ea85755bcc9cdd651d7b648227c85a8ba1221cf4",
+      "export_sha256": "61adaafaf043ebb07f21709b159e69f034063578a295fcf5d440e3991634a133",
+      "source_bytes": 9582,
+      "export_bytes": 9609,
+      "dependent_hash_exports": [],
+      "transforms": [
+        "replace host homes with <HOST_HOME>",
+        "replace Podman connection labels with <PODMAN_CONNECTION>",
+        "mark as historical public transformed export, not raw",
+        "serialize UTF-8 with LF line endings"
+      ]
+    },
+    {
+      "path": "references/verified-runtime.json",
+      "source_path": "references/verified-runtime.json",
+      "source_sha256": "14d46839c75797d1af6992bf79476db777a5b87f47468c999a4fc9be30805dd9",
+      "export_sha256": "f62fb8f8d6be93bf64bf1de03251a8ee5f8c7973b1f84ae8bd3e186de8453a6a",
+      "source_bytes": 2105,
+      "export_bytes": 2252,
+      "dependent_hash_exports": [],
+      "transforms": [
+        "replace host homes with <HOST_HOME>",
+        "replace Podman connection labels with <PODMAN_CONNECTION>",
+        "mark as historical public transformed export, not raw",
+        "serialize UTF-8 with LF line endings"
+      ]
+    }
+  ]
+}

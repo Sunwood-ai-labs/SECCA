@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 330" role="img" aria-labelledby="title desc">
+  <title id="title">SECCA · 雪華</title>
+  <desc id="desc">Solid-model Evaluation of CAD Construction Agents. Fixed inputs. Saved CAD. Reviewable evidence.</desc>
+  <defs><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0v32" fill="none" stroke="#dce8eb" stroke-width="1"/></pattern></defs>
+  <path fill="#f5fafb" d="M0 0h1200v330H0z"/>
+  <path fill="url(#grid)" d="M0 0h1200v330H0z"/>
+  <path fill="#087f8c" d="M0 0h12v330H0z"/>
+  <g transform="translate(64 69) scale(1.5)" stroke-linecap="square" stroke-linejoin="miter">
+    <g fill="none" stroke="#087f8c" stroke-width="5"><path d="M64 7v22M53 15l11 11 11-11M64 99v22M53 113l11-11 11 11m-60-78 19 11M16 48l15-4-4-15m67 53 19 11m-12 6-4-15 15-4M15 93 34 82M16 80l15 4-4 15m67-53 19-11m-12-6-4 15 15 4"/></g>
+    <path d="m64 34 26 15-26 15-26-15Z" fill="#caedf0" stroke="#123b4a" stroke-width="3"/>
+    <path d="M38 49v30l26 15V64Z" fill="#087f8c" stroke="#123b4a" stroke-width="3"/>
+    <path d="M90 49v30L64 94V64Z" fill="#fff" stroke="#123b4a" stroke-width="3"/>
+  </g>
+  <g fill="#123b4a" font-family="'Segoe UI',sans-serif">
+    <text x="302" y="132" font-size="74" font-weight="750" letter-spacing="7">SECCA</text>
+    <text x="660" y="128" font-size="26" fill="#087f8c">雪華 / せっか</text>
+    <text x="305" y="186" font-size="26">Solid-model Evaluation of</text>
+    <text x="305" y="221" font-size="26">CAD Construction Agents</text>
+    <text x="305" y="275" font-size="18" fill="#4b6570" letter-spacing="1">FIXED INPUTS · SAVED CAD · REVIEWABLE EVIDENCE</text>
+  </g>
+</svg>

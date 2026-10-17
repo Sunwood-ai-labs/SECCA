@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "connection": "<PODMAN_CONNECTION>",
+  "image_id": "7b6b24b1c1bf6a3404db634d26168afcf4e0e2bc4b020e74fac3800448a58a16",
+  "resource_prefix": "kart-sbx-audit-a-26797a994c56",
+  "no_model_calls": true,
+  "findings": [],
+  "checks": {
+    "embedded_gateway_executed": true,
+    "candidate_uid": true,
+    "private_paths_absent": true,
+    "external_connections_blocked": true,
+    "zero_caps_no_new_privs": true,
+    "channel_read_only": true,
+    "no_baseline_rubric_CAD": true,
+    "gateway_legal_sse": true,
+    "loopback_adapter_legal_sse": true,
+    "candidate_credential_not_in_env": true,
+    "gateway_credential_overrides_candidate_header": true,
+    "gateway_known_bad_denied": true,
+    "gateway_fallback_models_denied": true,
+    "gateway_remote_web_plugin_denied": true,
+    "gateway_remote_video_denied": true,
+    "mcp_arbitrary_code_isolated": true,
+    "final_image_all_runtime_sources_match": true,
+    "postprocess_output_capture_budget": true,
+    "all_owned_resources_removed": true
+  },
+  "sources": {
+    "scripts/candidate.py": "7b9ebd72a4b2265ea0c4261626aa00d11b604270ca57c3fd347d9985eda88acb",
+    "scripts/sandbox_runner.py": "be532333ebe3e3352b87052c72aa124675b73f6c95984fc8d96a233fb4eb0e03",
+    "scripts/sandbox_postprocess.py": "2c9140df5d02fc7cf04c397ddd93c36eec4e92a98e0c595fc0fedefc09e8b29c",
+    "container/gateway.py": "0f2750e941ab4dae8bb1cfcd13a2f13522bf7cdd24b63df9c61aa1b832e4ab6c",
+    "container/loopback_adapter.py": "3f003a0bae4bc04643c911a9600bb891fb2016082225a8c3f2409601caebfeea",
+    "container/build_context.py": "c180782b266f833a1369211f3565f1eb441a0dcc2d38c37901e1e7da93ac788f",
+    "container/Containerfile": "456b681ce4e336e672f99172af9d569f15fbc9ef3dcb77ecfc8e42046f697978"
+  },
+  "limitations": [
+    "No new model inference/API calls were made.",
+    "Runtime attack probes were repeated on the final immutable v2 image using its embedded gateway and loopback adapter. All seven runtime files and 29 MCP source files were independently verified against current host source hashes and the source manifest.",
+    "OpenCode generation was not invoked; direct Python and real stdio MCP execute_code were invoked.",
+    "Candidate stdout/queue/log and named-volume storage exhaustion were identified by source review, not destructively exercised. Postprocess now uses bounded_capture with a 32 MiB combined stdout/stderr budget."
+  ],
+  "nonblocking_hardening": [
+    {
+      "category": "availability",
+      "detail": "Candidate stdout/stderr stream_reader has no byte/line or queue budget and candidate evidence logs have no byte budget. Candidate named work/home volumes have no storage quota. Postprocess bounded_capture now limits combined stdout/stderr to 32 MiB; it is excluded from this residual finding. These are not demonstrated host-file or cross-trial read escapes."
+    }
+  ],
+  "status": "passed",
+  "cleanup": [
+    {
+      "resource": "kart-sbx-audit-a-26797a994c56-candidate",
+      "returncode": 0
+    },
+    {
+      "resource": "kart-sbx-audit-a-26797a994c56-gateway",
+      "returncode": 0
+    },
+    {
+      "resource": "kart-sbx-audit-a-26797a994c56-init",
+      "returncode": 0
+    },
+    {
+      "resource": "kart-sbx-audit-a-26797a994c56-key",
+      "returncode": 0
+    },
+    {
+      "resource": "kart-sbx-audit-a-26797a994c56-foreign",
+      "returncode": 0
+    },
+    {
+      "resource": "kart-sbx-audit-a-26797a994c56-channel",
+      "returncode": 0
+    },
+    {
+      "resource": "kart-sbx-audit-a-26797a994c56-home",
+      "returncode": 0
+    },
+    {
+      "resource": "kart-sbx-audit-a-26797a994c56-work",
+      "returncode": 0
+    }
+  ],
+  "final_image_id": "7b6b24b1c1bf6a3404db634d26168afcf4e0e2bc4b020e74fac3800448a58a16",
+  "final_image_verification": "embedded-source-verification.json",
+  "previous_image_rejected": {
+    "image_id": "322cc133ad1a5ccbb54a8424329b981b8520f645bf04792069ac4b5b7eda5fe9",
+    "embedded_gateway_sha256": "bd667861d2bd9768dc22c8ed44d2ba4876b8976fb105db6e5e2306470df98962",
+    "reason": "Embedded gateway predates final inference-policy hardening. Use final_image_id only."
+  },
+  "capture_budget_verification": "capture-budget-verification.json",
+  "execution_scope": {
+    "candidate": "Final v2 immutable image, direct Python and real stdio MCP execute_code.",
+    "gateway": "Final image /opt/runtime/gateway.py imported directly; test shim replaces only HTTPS upstream transport and copies no production code.",
+    "adapter": "Final image /opt/runtime/loopback_adapter.py executed directly.",
+    "api_calls": 0,
+    "external_web_requests_by_candidates": 0
+  },
+  "test_count": 19,
+  "public_export": {
+    "record_type": "historical_public_transformed_export",
+    "raw_record": false,
+    "provenance_manifest": "references/public-export-manifest.json",
+    "new_model_generation": false
+  }
+}

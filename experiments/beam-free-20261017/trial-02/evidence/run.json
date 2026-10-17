@@ -1,0 +1,75 @@
+{
+  "schema_version": 2,
+  "status": "completed",
+  "started_utc": "2026-10-17T07:31:30.557394+00:00",
+  "model_id": "opencode/beam-free",
+  "sandbox": {
+    "backend": "podman-network-none-uds",
+    "connection": "local-connection",
+    "image_id": "sha256:eaa68cdc9d07728f61aef2bdd5a223573eca5c9db647248bb2a440bf31bc9178",
+    "api_base_url": "https://opencode.ai/inference/openai/v1",
+    "api_model_id": "beam-free",
+    "limits": {
+      "timeout_seconds": 1800,
+      "memory": "4g",
+      "cpus": 2,
+      "pids": 512
+    }
+  },
+  "trial_sha256": "33d137b98e219a7cf04b3b26ac3d9b68da3f6e12a1aba71119e1ab611b23d990",
+  "returncode": 0,
+  "credential_env_names": [
+    "BEAM_BENCH_PUBLIC_TOKEN"
+  ],
+  "cleanup_errors": [],
+  "outputs": [
+    "racing-kart.FCStd",
+    "racing-kart.step"
+  ],
+  "measurement_scope": "generation event to OpenCode exit, including model waits, retries and MCP work; startup recorded separately",
+  "startup_seconds": 7.281,
+  "candidate_stopped": true,
+  "candidate_container_id": "c25aa6a131f81e97f732148278ffd474cbfcd4389e4b763005ac71def4e23cb0",
+  "duration_seconds": 152.219,
+  "finished_utc": "2026-10-17T07:34:31.068280+00:00",
+  "wall_seconds": 180.516,
+  "metrics": {
+    "event_types": {
+      "sandbox_runtime_identity": 1,
+      "sandbox_generation_start": 1,
+      "step_start": 53,
+      "tool_use": 53,
+      "step_finish": 53,
+      "text": 1
+    },
+    "tool_calls": {
+      "freecad_list_documents": 2,
+      "bash": 35,
+      "write": 9,
+      "edit": 4,
+      "freecad_execute_code": 2,
+      "freecad_get_objects": 1
+    },
+    "tokens": {
+      "total": 1653444,
+      "input": 175776,
+      "output": 9418,
+      "reasoning": 9178,
+      "cache.write": 0,
+      "cache.read": 1459072
+    },
+    "recorded_cost_usd": 0.0,
+    "errors": [
+      {
+        "type": "tool_error",
+        "tool": "edit",
+        "message": "Could not find oldString in the file. It must match exactly, including whitespace, indentation, and line endings."
+      }
+    ],
+    "session_ids": [
+      "ses_eb739d6f7ffew9He6ye5lkE1R9"
+    ],
+    "non_json_stdout_lines": 0
+  },
+  "tool_failure_count": 1
+}

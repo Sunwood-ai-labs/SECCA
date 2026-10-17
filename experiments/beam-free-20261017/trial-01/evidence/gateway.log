@@ -1,0 +1,3 @@
+{"type": "gateway_ready"}
+{"type": "gateway_request", "status": 403}
+{"type": "gateway_request", "status": 403}

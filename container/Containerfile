@@ -1,0 +1,35 @@
+FROM docker.io/library/node:24.15.0-bookworm@sha256:da81deb96d49fc84c9813bc4f16dfdb1d4d7e3671b74cd54fd944428f1444afe AS node
+FROM docker.io/library/python:3.12-slim@sha256:2b4f19dae3a777dfc3b76730bda1e82e1f66ab2a2686fa93ca78edbfb4f04ffe
+COPY --from=node /usr/local/bin/node /usr/local/bin/node
+COPY --from=node /usr/local/lib/node_modules/npm /usr/local/lib/node_modules/npm
+RUN ln -s ../lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm \
+ && apt-get update \
+ && apt-get install -y --no-install-recommends freecad=1.0.0+dfsg-8+deb13u3 xvfb xauth libgl1-mesa-dri mesa-utils ca-certificates \
+ && dpkg-query -W > /opt/debian-packages.lock \
+ && rm -rf /var/lib/apt/lists/* \
+ && npm install --global --no-audit --no-fund opencode-ai@1.19.3 \
+ && npm cache clean --force \
+ && pip install --no-cache-dir uv==0.9.4
+COPY vendor/freecad-mcp /opt/freecad-mcp
+COPY vendor/source-manifest.json /opt/mcp-source-manifest.json
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends git \
+ && dpkg-query -W > /opt/debian-packages.lock \
+ && rm -rf /var/lib/apt/lists/*
+RUN cd /opt/freecad-mcp \
+ && uv sync --frozen --no-dev --no-editable --python /usr/local/bin/python3 \
+ && rm -rf /root/.cache \
+ && /usr/local/bin/opencode --version > /opt/opencode-version.txt \
+ && test "$(cat /opt/opencode-version.txt)" = 1.19.3 \
+ && groupadd --gid 10000 candidate \
+ && useradd --uid 10000 --gid 10000 --home-dir /home/candidate --create-home candidate \
+ && mkdir -p /workspace /opt/runtime \
+ && chown 10000:10000 /workspace /home/candidate
+COPY runtime/ /opt/runtime/
+ENV HOME=/home/candidate DISPLAY=:99 LIBGL_ALWAYS_SOFTWARE=1 QT_X11_NO_MITSHM=1 QTWEBENGINE_DISABLE_SANDBOX=1 PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
+ENV PATH=/opt/freecad-mcp/.venv/bin:/usr/local/bin:/usr/bin:/bin
+USER 10000:10000
+WORKDIR /workspace
+ENTRYPOINT ["/usr/local/bin/python3", "/opt/runtime/runtime_boot.py"]
+CMD ["/usr/local/bin/python3", "/opt/runtime/candidate_entry.py"]
+

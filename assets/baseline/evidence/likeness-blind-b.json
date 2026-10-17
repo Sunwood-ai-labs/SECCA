@@ -1,0 +1,91 @@
+{
+  "reviewer": "blind-b",
+  "rubric_version": "1.0",
+  "rubric_path": "evidence/likeness-rubric.json",
+  "model_identity_known": false,
+  "review_scope": "Independent image-only assessment of this saved output against the supplied reference.",
+  "images_reviewed": [
+    "workspace/reference.jpg",
+    "evidence/kart-front-isometric-white.png",
+    "evidence/score-top-white.png",
+    "evidence/score-right-white.png"
+  ],
+  "total_points": 42,
+  "max_points": 100,
+  "criteria": [
+    {
+      "id": "silhouette_proportions",
+      "points": 12,
+      "max": 25,
+      "evidence": [
+        "The output retains a low open four-wheel kart outline and rear tires larger than the front tires, visible in the isometric and right views.",
+        "The output top view has a long narrow central rectangular chassis. The reference has a wider-looking cockpit and sweeping outer frame and front bumper outline. The visual balance differs substantially even allowing for the reference perspective.",
+        "The output right view shows a tall flat seat back rising abruptly above the chassis. The reference seat has a lower-looking, reclining curved bucket profile with a deep seat pan."
+      ],
+      "judgment": "Recognizable kart proportions, with substantial differences in cockpit stance and outer contour. No metric accuracy is inferred."
+    },
+    {
+      "id": "component_layout",
+      "points": 13,
+      "max": 20,
+      "evidence": [
+        "Four wheels, a blue chassis, a central seat, a steering wheel ahead of the seat, silver side pods and a rear power unit are visible in the output isometric and top views.",
+        "In the reference, the engine is distinctly beside the seat on the rear-right portion of the chassis. In the output top view, the block-shaped power unit is largely behind the seat and inside the rear chassis rectangle.",
+        "The reference front bumper spans the front width and wraps toward both front wheels. The output has only a short central rectangular plate ahead of the nose. The black rear bumper remains in the expected rear region."
+      ],
+      "judgment": "Most major components are present in broadly appropriate regions. The engine and front bumper arrangement differ clearly."
+    },
+    {
+      "id": "characteristic_geometry",
+      "points": 8,
+      "max": 30,
+      "evidence": [
+        "The reference seat is a continuously curved bucket with raised side edges and a shaped lower pan. The output seat consists of a flat rectangular back and flat pan with straight side strips, as shown in the isometric and right views.",
+        "The reference nose is a long narrow sculpted fairing with a raised upper panel and a rounded pointed front. The output nose is a broad simple tapered curved sheet with a flat oval-like front termination and no corresponding raised panel.",
+        "The output steering wheel is a ring with a simple straight column. The right view shows a shallow wheel-plane angle relative to the ground, whereas the reference wheel has a visibly more upright tilted face and a shaped multi-spoke center.",
+        "The reference tires have rounded shoulders and recessed silver rim assemblies. The output wheels are plain black cylinders with tiny central hubs and no visible silver rims.",
+        "The output blue chassis uses a mostly straight rectangular layout. The reference has several bent tubes and curved runs around the front linkage and cockpit."
+      ],
+      "judgment": "Reference-specific forms are mostly represented by coarse geometric substitutes. Generic kart recognizability is not counted as precise geometry matching."
+    },
+    {
+      "id": "mechanical_detail",
+      "points": 4,
+      "max": 20,
+      "evidence": [
+        "A rear axle, rear support blocks, several parallel fin-like lines on the power unit and a small silver cylindrical exhaust-like part are visible in the output top and right views.",
+        "The reference front assembly exposes tie rods, joints, steering pivots and multiple supports. The corresponding output region shows a simple straight cross-member and sparse tubes without comparable visible joints or linkage detail.",
+        "The reference engine has a rounded ribbed cylinder, detailed casing, circular side housings and a long raised exhaust assembly. The output has stacked rectangular blocks with a few horizontal lines and a short cylinder.",
+        "The reference rear engine/axle area contains visible drive-side circular hardware and complex brackets. Comparable rear drive or brake detail cannot be identified in the supplied output views."
+      ],
+      "judgment": "A few mechanical cues are visible, but most of the reference's visible mechanical detail is not represented in these images."
+    },
+    {
+      "id": "color_material_regions",
+      "points": 5,
+      "max": 5,
+      "evidence": [
+        "The output uses blue for the frame, gray/silver for nose and side bodywork, dark gray for the seat and black for the tires, matching the corresponding broad reference regions."
+      ],
+      "judgment": "The specified broad color regions match. Missing rim geometry is counted under characteristic geometry rather than deducted again here."
+    }
+  ],
+  "largest_differences": [
+    "Flat rectangular seat instead of the reference's curved bucket shell.",
+    "Simple wide nose and short front plate instead of the sculpted pointed fairing and full wraparound front bumper.",
+    "Plain cylindrical wheels without the reference's recessed silver rims and rounded tire profiles.",
+    "Simplified engine, steering and frame detail; engine positioned farther behind the seat."
+  ],
+  "limitations": [
+    "The reference is one oblique screenshot. Matching orthographic reference views are unavailable, so absolute dimensions and exact wheelbase-to-track ratios cannot be verified.",
+    "Occluded or insufficiently resolved features are treated as not visible in the supplied evidence, not as proof of their absence from an underlying CAD file.",
+    "This is a judgment-based score for one output. It is not an automatic similarity metric or a claim about a model's general ability.",
+    "Background, lighting, camera polish, object counts, export success, BRep validity, timing and manufacturing suitability did not contribute points."
+  ],
+  "verification": {
+    "all_four_images_inspected_with_view_image": true,
+    "other_reviews_or_result_files_read": false,
+    "cad_application_operated": false,
+    "score_sum_checked": true
+  }
+}

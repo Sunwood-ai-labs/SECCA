@@ -1,0 +1,12 @@
+{
+  "rule": "For each criterion, take the median of the parent's initial score and two fresh-context blinded scores; sum the five medians.",
+  "rubric_weights_fixed_before_numeric_scoring": true,
+  "aggregation_rule_fixed_before_reading_independent_scores": true,
+  "parent_initial_review": "likeness-parent-initial.json",
+  "independent_reviews": ["likeness-blind-a.json", "likeness-blind-b.json"],
+  "blinding": "Independent reviewers were spawned with fork_turns=none and given only the rubric and image paths. They were instructed not to read model identity, runtime logs, parent scores or other reviews.",
+  "discarded_pilot_contexts": ["score_a", "score_b"],
+  "discard_reason": "These initial helper contexts inherited conversation history; they were interrupted before their scores were used. Their outputs are excluded from aggregation.",
+  "scope": "Judgment-based reference fidelity of this one artifact. Review spread is not a statistical confidence interval or a model-wide benchmark estimate.",
+  "criteria_timing": "The rubric was authored after generation, before numeric scoring. It was not preregistered before model generation."
+}

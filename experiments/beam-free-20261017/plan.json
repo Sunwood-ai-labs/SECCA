@@ -1,0 +1,78 @@
+{
+  "objective": "One image-conditioned racing-kart CAD generation trial using opencode/beam-free; benchmark output fidelity only if outputs and input delivery support it.",
+  "planned_trials": 1,
+  "candidate_prompt_sha256": "bf99b58efc0de728de1ff6ca1af05df05bf7845f93a0b1dcbedcbb8a16149cbe",
+  "reference_sha256": "d3fcfa0a7a1b1fc0504fe7dfadfaa2a1beb0a8712bd088a0b6c8ccb0dd120cd3",
+  "rubric_sha256": "7028b7740c4012c2894ea8cfa567e696df0365546b579cc53653e36b2900a190",
+  "render_spec_sha256": "29b4663d2a72b343c2f0a833795ae3eedd12c1334419d6f321089d9fa2c43fa7",
+  "api_base_url": "https://opencode.ai/inference/openai/v1",
+  "model_id": "opencode/beam-free",
+  "wire_model": "beam-free",
+  "source_metadata": {
+    "provider_id": "opencode",
+    "provider_api": "https://opencode.ai/inference/openai/v1",
+    "provider_npm": "@ai-sdk/openai-compatible",
+    "model": {
+      "id": "beam-free",
+      "name": "Beam Free",
+      "description": "Sparse mixture-of-experts reasoning model with 23B active parameters for coding and agentic workflows",
+      "family": "beam",
+      "attachment": false,
+      "reasoning": true,
+      "reasoning_options": [
+        {
+          "type": "effort",
+          "values": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ],
+      "tool_call": true,
+      "interleaved": {
+        "field": "reasoning_content"
+      },
+      "structured_output": true,
+      "temperature": true,
+      "knowledge": "2026-06-30",
+      "release_date": "2026-10-05",
+      "last_updated": "2026-10-16",
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "open_weights": true,
+      "limit": {
+        "context": 1048576,
+        "output": 131072
+      },
+      "provider": {
+        "api": "https://opencode.ai/inference/openai/v1"
+      },
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0
+      },
+      "canonical_model_id": "reflection/beam-1.0-501b-a23b"
+    },
+    "source_url": "https://models.dev/api.json",
+    "source_sha256": "3b49565999aca0a0bf27213c00b32df333cc1cedb47a45abbed7a5ffaaaef60b"
+  },
+  "capability_caveat": "Primary metadata declares text-only. Never synthesize a replacement image description or falsely enable image support. Record rejection or loss of image input; do not claim same-condition visual performance if unsupported.",
+  "preflight_issue": "Pinned OpenCode1.19.3 bundled catalog predates beam-free. Add hash-frozen official metadata, preserve SDK and model capabilities. Record runtime revision.",
+  "generation_modifications_forbidden": [
+    "parent CAD edits",
+    "quality feedback",
+    "different model fallback",
+    "rubric or other CAD injected to candidate"
+  ],
+  "timing_scope": "runtime startup excluded, generation includes provider waits/retries and MCP work; verification excluded"
+}

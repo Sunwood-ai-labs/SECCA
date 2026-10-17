@@ -1,0 +1,12 @@
+{
+  "record_type": "infrastructure_repair_before_generation",
+  "first_trial": "trial-01",
+  "first_trial_result": "Provider returned HTTP 403 FreeTierError; no model tokens, tools, or CAD outputs were observed.",
+  "first_trial_http_requests": 2,
+  "hypothesis": "The adapter and gateway strip authentic OpenCode client identity headers. The published request builder emits these headers, but the current private free-tier gate is not documented, so forwarding them does not guarantee acceptance.",
+  "repair_scope": "Forward only the received bounded User-Agent, x-opencode-session, x-opencode-request and x-opencode-client values. Keep fixed destination/model, credential isolation, sandbox and generation prompt unchanged.",
+  "next_trial": "trial-02",
+  "retry_policy": "One fresh trial after this infrastructure repair. Preserve both trials. No request identity fabrication, model substitution, paid fallback, image caption replacement or quality feedback.",
+  "image_support": "attachment=false and text-only modalities remain unchanged.",
+  "score_policy": "No CAD yields a null score, not an invented zero. Score any successfully rendered CAD against the fixed reference under the existing rubric. Native vision is unsupported; disclose that distinction and the candidate's own file/pixel analysis. The original image file is present in the candidate workspace. Never claim native image understanding or a strict same-runtime comparison with the historical GLM host run."
+}

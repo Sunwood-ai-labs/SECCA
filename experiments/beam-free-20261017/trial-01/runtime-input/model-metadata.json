@@ -1,0 +1,58 @@
+{
+  "provider_id": "opencode",
+  "provider_api": "https://opencode.ai/inference/openai/v1",
+  "provider_npm": "@ai-sdk/openai-compatible",
+  "model": {
+    "id": "beam-free",
+    "name": "Beam Free",
+    "description": "Sparse mixture-of-experts reasoning model with 23B active parameters for coding and agentic workflows",
+    "family": "beam",
+    "attachment": false,
+    "reasoning": true,
+    "reasoning_options": [
+      {
+        "type": "effort",
+        "values": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ]
+      }
+    ],
+    "tool_call": true,
+    "interleaved": {
+      "field": "reasoning_content"
+    },
+    "structured_output": true,
+    "temperature": true,
+    "knowledge": "2026-06-30",
+    "release_date": "2026-10-05",
+    "last_updated": "2026-10-16",
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "open_weights": true,
+    "limit": {
+      "context": 1048576,
+      "output": 131072
+    },
+    "provider": {
+      "api": "https://opencode.ai/inference/openai/v1"
+    },
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0
+    },
+    "canonical_model_id": "reflection/beam-1.0-501b-a23b"
+  },
+  "source_url": "https://models.dev/api.json",
+  "source_sha256": "3b49565999aca0a0bf27213c00b32df333cc1cedb47a45abbed7a5ffaaaef60b"
+}

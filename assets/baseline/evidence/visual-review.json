@@ -1,0 +1,49 @@
+{
+  "review_type": "independent_visual_review_of_saved_images",
+  "model_identity_used_for_judgment": false,
+  "inspected_images": [
+    "workspace/reference.jpg",
+    "evidence/kart-isometric.png",
+    "evidence/kart-top.png",
+    "evidence/kart-right.png"
+  ],
+  "method": "All four images were opened and visually inspected with view_image. No FreeCAD or MCP calls were made during this review.",
+  "verdict": "recognizable_simplified_racing_kart_with_material_visual_differences",
+  "recognizability": "The four exposed wheels, low blue tubular frame, central seat and steering wheel, rear engine block, and side pods make the object recognizable as a racing kart. The reference has substantially more realistic bodywork, seat contours, wheel detail, and mechanical detail.",
+  "major_elements": {
+    "four_wheels": "Visible across the isometric and top images. The wheels have a simple solid-cylinder appearance with little visible rim or tire detail.",
+    "low_frame": "Blue longitudinal tubes and crossmembers form a low chassis between the wheels.",
+    "seat": "A dark central seat base and a tall flat backrest are visible. The seat is substantially flatter and more angular than the sculpted bucket seat in the reference.",
+    "steering": "A circular steering wheel and pale shaft are visible ahead of the seat. The wheel plane is nearly horizontal and the shaft protrudes above its hub, unlike the inclined steering wheel and column in the reference.",
+    "engine": "A block-like engine with fin-like horizontal layers and a short pale cylindrical exhaust is visible behind and to one side of the seat. It is much simpler than the engine in the reference."
+  },
+  "visual_findings": [
+    {
+      "severity": "material",
+      "finding": "The nearly horizontal steering wheel and protruding shaft are a conspicuous orientation and proportion difference from the reference.",
+      "evidence": ["evidence/kart-isometric.png", "evidence/kart-right.png"]
+    },
+    {
+      "severity": "material",
+      "finding": "The front body is a broad curved plate. The reference's projecting front bumper, tapered nose fairing, and detailed front steering arrangement are not reproduced at comparable visual fidelity.",
+      "evidence": ["workspace/reference.jpg", "evidence/kart-isometric.png", "evidence/kart-top.png"]
+    },
+    {
+      "severity": "limitation",
+      "finding": "Steering linkage, wheel joints, seat supports, and engine mounts are not clear enough in these images to establish a complete connected mechanism. No large detached main component is apparent, but this is not a geometric connection or interference check.",
+      "evidence": ["evidence/kart-isometric.png", "evidence/kart-top.png", "evidence/kart-right.png"]
+    },
+    {
+      "severity": "limitation",
+      "finding": "The image named kart-right.png still shows an oblique view with both sides partly visible. It does not provide a strict orthographic side view for judging alignment or clearances.",
+      "evidence": ["evidence/kart-right.png"]
+    }
+  ],
+  "not_established": [
+    "Manufacturability or structural strength",
+    "Dimension accuracy or reference scale matching",
+    "Solid validity, interference-free geometry, or mechanical operation",
+    "CAD editability, assembly constraints, or STEP round-trip integrity"
+  ],
+  "principle_applied": "Prove It Works. Judgment was based on directly viewed saved images, not file existence or model self-report."
+}

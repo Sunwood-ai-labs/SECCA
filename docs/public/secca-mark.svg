@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">SECCA</title>
+  <desc id="desc">A six-armed snow crystal surrounding an isometric CAD cube.</desc>
+  <g stroke="#087f8c" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M64 7v22M53 15l11 11 11-11M64 99v22M53 113l11-11 11 11"/>
+    <path d="m15 35 19 11M16 48l15-4-4-15m67 53 19 11m-12 6-4-15 15-4"/>
+    <path d="M15 93 34 82M16 80l15 4-4 15m67-53 19-11m-12-6-4 15 15 4"/>
+  </g>
+  <path d="m64 34 26 15-26 15-26-15Z" fill="#caedf0" stroke="#123b4a" stroke-width="3"/>
+  <path d="M38 49v30l26 15V64Z" fill="#087f8c" stroke="#123b4a" stroke-width="3"/>
+  <path d="M90 49v30L64 94V64Z" fill="#fff" stroke="#123b4a" stroke-width="3"/>
+</svg>

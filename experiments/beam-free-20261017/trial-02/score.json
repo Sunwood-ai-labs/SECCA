@@ -1,0 +1,109 @@
+{
+  "method": "sum of per-criterion medians",
+  "score": 25,
+  "max_score": 100,
+  "criteria": [
+    {
+      "id": "silhouette_proportions",
+      "median": 9,
+      "max": 25
+    },
+    {
+      "id": "component_layout",
+      "median": 9,
+      "max": 20
+    },
+    {
+      "id": "characteristic_geometry",
+      "median": 4,
+      "max": 30
+    },
+    {
+      "id": "mechanical_detail",
+      "median": 2,
+      "max": 20
+    },
+    {
+      "id": "color_material_regions",
+      "median": 1,
+      "max": 5
+    }
+  ],
+  "review_ids": [
+    "coordinator-initial",
+    "sample-20261017-f3a7-blind-a-01",
+    "sample-20261017-f3a7-blind-b-c93cd805-20f9-47d6-a3ca-d4a3b18ace48"
+  ],
+  "review_provenance": [
+    {
+      "review_id": "coordinator-initial",
+      "role": "coordinator",
+      "fresh_context": false,
+      "model_blinded": false,
+      "reviewer_model": "unknown; runtime model identifier not exposed",
+      "context_provenance": {
+        "statement": "Coordinator knows generation model and run history. Personally viewed the reference and all three fixed rendered views. Saved this initial score before requesting or reading independent reviews.",
+        "other_reviews_read": false,
+        "recorded_at": "2026-10-17T07:36:11.302329+00:00",
+        "signed_by": "root-coordinator"
+      }
+    },
+    {
+      "review_id": "sample-20261017-f3a7-blind-a-01",
+      "role": "blind-a",
+      "fresh_context": true,
+      "model_blinded": true,
+      "reviewer_model": "unknown",
+      "context_provenance": {
+        "statement": "Fresh independent reviewer agent /root/blind_review_a spawned for this packet. Read only the packet README, rubric and template, and personally viewed the reference and all three specified renders. No model identity or other reviewer scores or reviews were provided or read.",
+        "other_reviews_read": false,
+        "recorded_at": "2026-10-17T16:36:52.5571470+09:00",
+        "signed_by": "/root/blind_review_a"
+      }
+    },
+    {
+      "review_id": "sample-20261017-f3a7-blind-b-c93cd805-20f9-47d6-a3ca-d4a3b18ace48",
+      "role": "blind-b",
+      "fresh_context": true,
+      "model_blinded": true,
+      "reviewer_model": "unknown",
+      "context_provenance": {
+        "statement": "Freshly spawned independent reviewer /root/blind_review_b received only the neutral review task and packet, with no prior evaluation conversation, output model identity, scores, or other reviews. Examined the supplied reference and all three renders directly. No other reviews were read.",
+        "other_reviews_read": false,
+        "recorded_at": "2026-10-17T16:37:08.6689804+09:00",
+        "signed_by": "/root/blind_review_b"
+      }
+    }
+  ],
+  "evidence_hashes": {
+    "reference": "d3fcfa0a7a1b1fc0504fe7dfadfaa2a1beb0a8712bd088a0b6c8ccb0dd120cd3",
+    "rubric": "7028b7740c4012c2894ea8cfa567e696df0365546b579cc53653e36b2900a190",
+    "isometric": "aad5b3ec97ba175d638c8f8a78c1bb683a05e2a6457d61f4d3d74eb59c619c15",
+    "top": "c4eefb976f5e56d979bc5abe6ce68086a5d9d7a89f95ebd9245a6d07197a47ae",
+    "right": "f63b6a39d8008b1d004ea2187ccf01a9b890b2d47e85198ad5b5a24e387a1950"
+  },
+  "scope": "Visual likeness of this one output only. No CAD-validity bonus or model-population ranking.",
+  "limitations": [
+    "JSON declarations and timestamps cannot prove actual fresh contexts, independence or model blinding.",
+    "One oblique reference cannot establish exact dimensions or mechanical function."
+  ],
+  "review_files": [
+    {
+      "path": "trial-02/evidence/review/coordinator.json",
+      "sha256": "f756bae565f2dc47f31ae2ce9f885fc274721cf37a8db6ccdfad7bece91d3960"
+    },
+    {
+      "path": "trial-02/evidence/review/blind-a.json",
+      "sha256": "8397c4c7fb3f19414347a75b9f7f461afd23fcef6f0cb1af7a7c371e398cd06e"
+    },
+    {
+      "path": "trial-02/evidence/review/blind-b.json",
+      "sha256": "969a48fde28994f945d404d089842f3af35bae44afaf35d36ca9b233f94fa20f"
+    }
+  ],
+  "cad_validation": {
+    "path": "evidence/validation.json",
+    "sha256": "0a290cb1a4c6a9c23f689009f33b4b97d36a4be3ede2fbcb53d9fec2b7b297ea",
+    "separate_from_visual_score": true
+  }
+}

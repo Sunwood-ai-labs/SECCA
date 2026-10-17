@@ -1,0 +1,66 @@
+{
+  "schema_version": 2,
+  "status": "failed",
+  "started_utc": "2026-10-17T07:11:48.209099+00:00",
+  "model_id": "nonexistent-cad-provider/do-not-infer",
+  "sandbox": {
+    "backend": "podman-network-none-uds",
+    "connection": "<PODMAN_CONNECTION>",
+    "image_id": "sha256:7b6b24b1c1bf6a3404db634d26168afcf4e0e2bc4b020e74fac3800448a58a16",
+    "api_base_url": "https://opencode.ai/zen/v1",
+    "api_model_id": "do-not-infer",
+    "limits": {
+      "timeout_seconds": 30,
+      "memory": "4g",
+      "cpus": 2,
+      "pids": 512
+    }
+  },
+  "trial_sha256": "5bdad7001462cdfef5e5ac06201b266515b9f33314e77cb77b4a79c1710f39e7",
+  "returncode": 1,
+  "credential_env_names": [],
+  "cleanup_errors": [],
+  "outputs": [],
+  "measurement_scope": "generation event to OpenCode exit, including model waits, retries and MCP work; startup recorded separately",
+  "startup_seconds": 5.125,
+  "candidate_stopped": true,
+  "candidate_container_id": "ca82ed63f4a8229d8efcfc12d6eaf16222694f10982b06dc374e7b2d58bf7f0d",
+  "duration_seconds": 4.641,
+  "missing_outputs": [
+    "racing-kart.FCStd",
+    "racing-kart.step"
+  ],
+  "finished_utc": "2026-10-17T07:12:19.143515+00:00",
+  "wall_seconds": 30.922,
+  "metrics": {
+    "event_types": {
+      "sandbox_runtime_identity": 1,
+      "sandbox_generation_start": 1,
+      "error": 2
+    },
+    "tool_calls": {},
+    "tokens": {},
+    "recorded_cost_usd": 0.0,
+    "errors": [
+      {
+        "type": "error",
+        "message": "{'name': 'UnknownError', 'data': {'message': 'Model not found: nonexistent-cad-provider/do-not-infer.'}}"
+      },
+      {
+        "type": "error",
+        "message": "{'name': 'UnknownError', 'data': {'message': 'Unexpected server error. Check server logs for details.', 'ref': 'err_099f8d42'}}"
+      }
+    ],
+    "session_ids": [
+      "ses_eb74bea28ffeKOnyB4DsJTzuxE"
+    ],
+    "non_json_stdout_lines": 0
+  },
+  "tool_failure_count": 0,
+  "public_export": {
+    "record_type": "historical_public_transformed_export",
+    "raw_record": false,
+    "provenance_manifest": "references/public-export-manifest.json",
+    "new_model_generation": false
+  }
+}

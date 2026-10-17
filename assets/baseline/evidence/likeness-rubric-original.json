@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "purpose": "Score visual reference fidelity for this one saved CAD output, not model-wide performance.",
+  "frozen_before_scoring": true,
+  "max_score": 100,
+  "criteria": [
+    {"id": "silhouette_proportions", "max": 25, "description": "Overall outer shape, low stance, relative wheelbase/track/body proportions. Judge visible proportions only; do not infer metric accuracy from a perspective image."},
+    {"id": "component_layout", "max": 20, "description": "Four wheels, frame, seat, steering, engine, bodywork and bumpers in the reference-like arrangement. Count placement and presence here; detailed surface shape belongs below."},
+    {"id": "characteristic_geometry", "max": 30, "description": "Reference-specific bucket seat, tapered nose and front bumper, steering wheel/column orientation, tire/rim geometry and curved frame shapes. Do not reward generic recognizability as precise shape matching."},
+    {"id": "mechanical_detail", "max": 20, "description": "Visible steering linkages, front axle joints, engine fins/casing, exhaust, rear drive/brake details and supports. Judge visible representation, not mechanical safety or operability."},
+    {"id": "color_material_regions", "max": 5, "description": "Blue frame, gray/silver bodywork, dark seat and black tires in corresponding regions. Ignore background, lighting, camera choice and render polish."}
+  ],
+  "anchors": {"0_percent": "Absent or unrelated", "25_percent": "Only a coarse placeholder or major mismatch", "50_percent": "Recognizable approximation with substantial differences", "75_percent": "Mostly reference-like, with clear localized differences", "100_percent": "Close visual match in the observable evidence"},
+  "excluded_from_score": ["MCP execution success", "File format export", "BRep validity", "Object or solid count", "Timing and cost", "Unverified dimensions", "Manufacturing suitability"],
+  "method": "Two independent image-based reviews using this frozen rubric, followed by parent reconciliation. Model identity is withheld from reviewers. This is judgment-based scoring, not an automatic image similarity metric."
+}

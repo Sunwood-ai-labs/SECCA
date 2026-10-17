@@ -1,0 +1,32 @@
+{
+  "algorithm": "sha256",
+  "files": {
+    "assets/baseline/evidence/geometry-validation-initial.json": "e59b405a8a97175cbc0f17179918ce66c9711d06f86a8c95aa01ef59ad2bb011",
+    "assets/baseline/evidence/geometry-validation.json": "439a3a53d5d699ecf3575487736afaefe28fb99ce59afa675cb62c4433fd003b",
+    "assets/baseline/evidence/kart-front-isometric-white.png": "22a9094686a734f0f87440f3420147dca9b44cf9959792800c7419b0db2740f8",
+    "assets/baseline/evidence/kart-front-preview-white.png": "6a13108fd43707dc63470318dedfb5e022bb4188d020ff7fd86488d1bf27e38f",
+    "assets/baseline/evidence/likeness-aggregation.json": "c1c19ab8a094af1afdbd14191c00fbc1649983d962973bcf5112398755ddf5b6",
+    "assets/baseline/evidence/likeness-blind-a.json": "93a15b8ef7a84539c46cf2b210694dd2e0b60b11e77b153b6a721817a3853474",
+    "assets/baseline/evidence/likeness-blind-b.json": "ec815e9293ad7da9a18b85355a1945a0e54b835eebb500a0c07adf3268ba5873",
+    "assets/baseline/evidence/likeness-parent-initial.json": "c5d144c2cf55a56637d2cd62911594b5b3c32602c90d7e6875943937ea4ed574",
+    "assets/baseline/evidence/likeness-rubric-original.json": "cdb3ba4005d7f3ab5b5790350845677c62a471683cbd8e11f5ce808575c285f8",
+    "assets/baseline/evidence/opencode-runtime.log": "3631116fbd76357f910683b8864c540882b629c9bb87137fdff5e1349b1312c2",
+    "assets/baseline/evidence/run.events.jsonl": "4d8715b1fa419b8762b18795f2e560bf7c4086a46baba5343a41cc6007a5e279",
+    "assets/baseline/evidence/run.json": "21549588d2f14f6bb898030fd5c8f2f5474061f0ed771043a3d96bfdf85a5f14",
+    "assets/baseline/evidence/score-right-white.png": "f4a908d949d49f5d2512d3ef4ac1a340d5c6f1e5b0f51951ac5b3f562e0b172e",
+    "assets/baseline/evidence/score-top-white.png": "d8291fc2684cd4ea467f90fc1a45fcdc4f6eaf5accabeb3017eda10e6de1cec0",
+    "assets/baseline/evidence/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "assets/baseline/evidence/transcript-audit.json": "419b0075741dd3946f07a88cf29fa269ff6cf9344917ddff0178118339f2d00d",
+    "assets/baseline/evidence/visual-review.json": "6ab7037978c4e1b14511a62e152fddda0e148f4de25e7d0850d0bbefc34cc521",
+    "assets/baseline/likeness-score.json": "95c46cf29f714fa443e34c9c0f87cebb24632207305c988d17f625dff06c699d",
+    "assets/baseline/original-result.json": "7aee2f50fc05938ffc9f458c42eb68f451f3dbaf54229efd01bd0f8155c647ab",
+    "assets/baseline/workspace/racing-kart.FCStd": "8394c8fbd8a856d9b2814ead4d6b513c2190a6e6796f98ab4f4ed62c86b61f6b",
+    "assets/baseline/workspace/racing-kart.step": "9735cc3b3dcb25630d2d9d0b99a184e5710c68855e81315651273cae7f3647d6",
+    "assets/prompt.txt": "bf99b58efc0de728de1ff6ca1af05df05bf7845f93a0b1dcbedcbb8a16149cbe",
+    "assets/protocol.json": "246a4eb27632eb172b704cfe36162a2953a72ce6d25f654fd3db0cbc5395cd89",
+    "assets/reference.jpg": "d3fcfa0a7a1b1fc0504fe7dfadfaa2a1beb0a8712bd088a0b6c8ccb0dd120cd3",
+    "assets/render-spec.json": "29b4663d2a72b343c2f0a833795ae3eedd12c1334419d6f321089d9fa2c43fa7",
+    "assets/rubric.json": "7028b7740c4012c2894ea8cfa567e696df0365546b579cc53653e36b2900a190"
+  },
+  "schema_version": 1
+}

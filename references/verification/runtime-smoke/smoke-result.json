@@ -1,0 +1,68 @@
+{
+  "success": true,
+  "uid": 10000,
+  "tools": [
+    "create_document",
+    "create_object",
+    "edit_object",
+    "delete_object",
+    "execute_code_async",
+    "execute_code_headless",
+    "get_async_status",
+    "execute_code",
+    "get_view",
+    "insert_part_from_library",
+    "get_objects",
+    "get_object",
+    "get_parts_list",
+    "reload_document",
+    "list_documents",
+    "get_rpc_status",
+    "run_fem_analysis"
+  ],
+  "geometry": {
+    "valid": true,
+    "volume": 23.999999999999996,
+    "solids": 1
+  },
+  "reopen": {
+    "native_valid": true,
+    "step_valid": true,
+    "step_volume": 23.999999999999996
+  },
+  "runtime": {
+    "freecad_version": [
+      "1",
+      "0",
+      "0",
+      "",
+      "https://code.launchpad.net/~vcs-imports/freecad/trunk",
+      "2026/08/25 11:49:11"
+    ],
+    "user_app_data": "/home/candidate/.local/share/FreeCAD/",
+    "python_version": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+    "rpc_start": "RPC Server started at 127.0.0.1:9875."
+  },
+  "files": {
+    "smoke.FCStd": {
+      "bytes": 12771,
+      "sha256": "c091f51166a21ba0c9d2fbafb5fdfef07b7e0805082a0d94f0a3e29fe20b1508"
+    },
+    "smoke.step": {
+      "bytes": 6756,
+      "sha256": "7e65a17032cf262c1fea9d477175fee3cbd3cf858249c34843bce17a36b54c4e"
+    },
+    "smoke.png": {
+      "bytes": 4468,
+      "sha256": "e7299e4048ce99af7c20ba146fcdac917e3711b9a5ff35917831cc9900521da7"
+    }
+  },
+  "opencode_version": "1.19.3",
+  "model_inference_performed": false,
+  "public_export": {
+    "record_type": "historical_public_transformed_export",
+    "raw_record": false,
+    "provenance_manifest": "references/public-export-manifest.json",
+    "new_model_generation": false
+  }
+}

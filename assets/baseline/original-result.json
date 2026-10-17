@@ -1,0 +1,97 @@
+{
+  "trial_count": 1,
+  "requested_model_family": "GLM 5.3 Flash",
+  "route_model": "opencode/glm-5.3-flash-free",
+  "opencode_version": "1.19.3",
+  "prompt": "添付画像のレーシングカートをFreeCAD MCPで作成し、racing-kart.FCStdとracing-kart.stepに保存してください。",
+  "image_supplied": true,
+  "run_completed": true,
+  "duration_seconds_including_retries_and_tool_work": 509.969,
+  "setup_and_independent_verification_excluded_from_duration": true,
+  "api_key_supplied": false,
+  "recorded_cost_usd": 0.0,
+  "freecad_mcp_calls": 11,
+  "freecad_python_calls": 10,
+  "model_execution_errors_self_corrected": 2,
+  "upstream_errors_before_success": 2,
+  "parent_geometry_edits": false,
+  "manual_quality_feedback_sent": false,
+  "native_and_step_validation_passed": true,
+  "native_solids": 77,
+  "step_solids": 77,
+  "native_step_bounds_match": true,
+  "source_files_unchanged_during_validation": true,
+  "visual_review_file": "evidence/visual-review.json",
+  "visual_summary": "Recognizable simplified racing kart; steering orientation and protruding shaft differ from reference; seat, nose and engine are simplified.",
+  "limitations": [
+    "One image-conditioned trial; no comparison or general quality ranking.",
+    "Model-generated geometry was not manually repaired.",
+    "Initial validator double-counted container Shape aggregates and selected STEP origin datum. The validator was corrected and rerun; CAD files stayed unchanged.",
+    "Screenshots were taken after reloading the saved FCStd; only camera orientation was changed for the front preview."
+  ],
+  "files": [
+    {
+      "path": "workspace/racing-kart.FCStd",
+      "bytes": 115455,
+      "sha256": "8394c8fbd8a856d9b2814ead4d6b513c2190a6e6796f98ab4f4ed62c86b61f6b"
+    },
+    {
+      "path": "workspace/racing-kart.step",
+      "bytes": 381230,
+      "sha256": "9735cc3b3dcb25630d2d9d0b99a184e5710c68855e81315651273cae7f3647d6"
+    },
+    {
+      "path": "workspace/reference.jpg",
+      "bytes": 217832,
+      "sha256": "d3fcfa0a7a1b1fc0504fe7dfadfaa2a1beb0a8712bd088a0b6c8ccb0dd120cd3"
+    },
+    {
+      "path": "evidence/kart-front-preview.png",
+      "bytes": 45248,
+      "sha256": "7b07d6d13d92c58feee1a0a027e69ad2d034e7a2141f7e3a4e34511ab632ed57"
+    },
+    {
+      "path": "evidence/kart-isometric.png",
+      "bytes": 103165,
+      "sha256": "9ba26a20f2946d842bc8a4b0c0431ab450d6160efbce69da02af8d4943ce5081"
+    },
+    {
+      "path": "evidence/kart-top.png",
+      "bytes": 90212,
+      "sha256": "e0c2b0959533380ce5efd3591e5c0671b5e0d1597081678a66c6dfb4ff5f1bfb"
+    },
+    {
+      "path": "evidence/kart-right.png",
+      "bytes": 56182,
+      "sha256": "62bc7b87c4c09600b7864d7a6863967d55032fd7b55f6269672939fef7e7ee80"
+    }
+  ],
+  "presentation_update": {
+    "request": "white background",
+    "preview": "evidence/kart-front-preview-white.png",
+    "full_size": "evidence/kart-front-isometric-white.png",
+    "geometry_modified": false,
+    "current_viewport_corner_rgb": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ]
+  }
+}

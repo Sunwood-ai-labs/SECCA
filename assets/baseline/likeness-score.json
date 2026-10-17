@@ -1,0 +1,102 @@
+{
+  "score_type": "visual_reference_fidelity",
+  "score": 43,
+  "max": 100,
+  "trial_count": 1,
+  "rubric": "evidence/likeness-rubric.json",
+  "aggregation_protocol": "evidence/likeness-aggregation.json",
+  "method": "Sum the per-criterion median of parent initial and two fresh-context model-blinded image reviews.",
+  "criteria": [
+    {
+      "id": "silhouette_proportions",
+      "max": 25,
+      "parent": 13,
+      "blind_a": 13,
+      "blind_b": 12,
+      "score": 13
+    },
+    {
+      "id": "component_layout",
+      "max": 20,
+      "parent": 14,
+      "blind_a": 12,
+      "blind_b": 13,
+      "score": 13
+    },
+    {
+      "id": "characteristic_geometry",
+      "max": 30,
+      "parent": 8,
+      "blind_a": 8,
+      "blind_b": 8,
+      "score": 8
+    },
+    {
+      "id": "mechanical_detail",
+      "max": 20,
+      "parent": 5,
+      "blind_a": 4,
+      "blind_b": 4,
+      "score": 4
+    },
+    {
+      "id": "color_material_regions",
+      "max": 5,
+      "parent": 5,
+      "blind_a": 5,
+      "blind_b": 5,
+      "score": 5
+    }
+  ],
+  "review_totals": {
+    "parent": 45,
+    "blind_a": 42,
+    "blind_b": 42
+  },
+  "review_total_range": [
+    42,
+    45
+  ],
+  "range_is_statistical_confidence_interval": false,
+  "judgment_based_not_automatic_image_metric": true,
+  "rubric_authored_after_generation_before_numeric_scoring": true,
+  "images": [
+    {
+      "path": "workspace/reference.jpg",
+      "sha256": "d3fcfa0a7a1b1fc0504fe7dfadfaa2a1beb0a8712bd088a0b6c8ccb0dd120cd3"
+    },
+    {
+      "path": "evidence/kart-front-isometric-white.png",
+      "sha256": "22a9094686a734f0f87440f3420147dca9b44cf9959792800c7419b0db2740f8"
+    },
+    {
+      "path": "evidence/score-top-white.png",
+      "sha256": "d8291fc2684cd4ea467f90fc1a45fcdc4f6eaf5accabeb3017eda10e6de1cec0"
+    },
+    {
+      "path": "evidence/score-right-white.png",
+      "sha256": "f4a908d949d49f5d2512d3ef4ac1a340d5c6f1e5b0f51951ac5b3f562e0b172e"
+    }
+  ],
+  "major_differences": [
+    "Flat rectangular seat rather than curved bucket seat.",
+    "Simplified wide nose and small front plate rather than sculpted nose and wraparound front bumper.",
+    "Wheel plane nearly horizontal, column too upright and protruding above hub.",
+    "Cylinder-like tires with little visible rim recess or shoulder rounding.",
+    "Simplified front steering links, joints, engine casing, exhaust and drive details.",
+    "Engine placed more behind the seat instead of reproducing the clearly offset side-rear arrangement."
+  ],
+  "cad_delivery_separate_from_score": {
+    "geometry_validation_passed": true,
+    "native_solids": 77,
+    "step_solids": 77,
+    "bounds_match": true,
+    "points_added_to_visual_score": 0
+  },
+  "limitations": [
+    "One generated artifact only; not a general model score.",
+    "Reference is one perspective screenshot; exact dimensions and hidden geometry are not scored.",
+    "Review contexts were independent and model-blinded, but the reviewers share an assistant model family; agreement is not evidence from human experts.",
+    "Previously inherited-context pilot agents were interrupted and excluded."
+  ]
+}

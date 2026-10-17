@@ -1,0 +1,314 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-17T07:36:01.2016019Z",
+  "trial": "trial-02",
+  "status": "completed",
+  "model": "opencode/beam-free",
+  "scope": "Read-only log audit. No candidate messaging, inference, CAD output inspection, rendering or scoring.",
+  "modality": {
+    "native_support": "Official current metadata says text-only input and attachment=false. Pinned OpenCode replaces unsupported attachments with text warning.",
+    "native_support_source": "source-check.json",
+    "expected_attachment_warning": "ERROR: Cannot read \"reference.jpg\" (this model does not support image input). Inform the user.",
+    "expected_warning_provenance": "Source-derived template only, filename substitution expected, not directly observed in this run.",
+    "warning_source_url": "https://github.com/anomalyco/opencode/blob/e3c4eb242585dcd77be1a867391b7c25fd47ce52/packages/opencode/src/provider/transform.ts#L432",
+    "exact_attachment_warning_observed": false,
+    "searched_logs": [
+      "trial-02/evidence/run.events.jsonl",
+      "trial-02/evidence/run.json",
+      "trial-02/evidence/gateway.log",
+      "trial-02/evidence/stderr.log"
+    ],
+    "wire_payload_visibility": "No raw inference request body in reviewed logs. Absence of image_url in event log is not proof of wire contents.",
+    "candidate_pixel_access": "Directly observed. Candidate wrote and ran PIL Image.open(/workspace/reference.jpg) scripts in its own sandbox.",
+    "classification": "Text-only model with candidate-authored pixel extraction producing textual tool results; not a demonstrated native vision run.",
+    "methods": [
+      "PIL luminance ASCII grids and color quantization/counts",
+      "Brightness threshold and connected-component masks, bounding boxes and row widths",
+      "PIL edge filter ASCII output",
+      "Principal-axis covariance/eigenvalue analysis and reprojected mask ASCII"
+    ],
+    "observed_input": {
+      "size": [
+        1280,
+        714
+      ],
+      "mode": "RGB",
+      "evidence_tool_index": 12
+    },
+    "pixel_evidence_tool_indexes": [
+      11,
+      12,
+      13,
+      16,
+      19,
+      20,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      42,
+      43,
+      44,
+      47,
+      48,
+      49,
+      52,
+      53
+    ]
+  },
+  "counts": {
+    "step_start": 53,
+    "step_finish": 53,
+    "tool_calls": 53,
+    "tools": {
+      "bash": 35,
+      "edit": 4,
+      "freecad_execute_code": 2,
+      "freecad_get_objects": 1,
+      "freecad_list_documents": 2,
+      "write": 9
+    },
+    "gateway_http_status": {
+      "200": 54
+    }
+  },
+  "usage": {
+    "tokens_summed_from_step_finish": {
+      "total": 1653444,
+      "input": 175776,
+      "output": 9418,
+      "reasoning": 9178,
+      "cache_write": 0,
+      "cache_read": 1459072
+    },
+    "recorded_cost_usd": 0.0,
+    "matches_run_json_metrics": true,
+    "note": "Per-step API token accounting, including repeated cached prompt context; not unique source tokens or context-window size. Cost is runtime-reported, not independently billed."
+  },
+  "failures": {
+    "parser_reported_tool_error_count": 1,
+    "tool_status_error_count": 1,
+    "nonzero_bash_exit_count": 4,
+    "bash_exit_zero_with_error_text_count": 11,
+    "distinct_calls_with_any_failure_evidence": 16,
+    "records": [
+      {
+        "tool_index": 2,
+        "call_id": "call-2a10bc55-1320-44ec-b127-0c25e07e1e61",
+        "tool": "bash",
+        "status": "completed",
+        "bash_exit": 128,
+        "error": null,
+        "output_error_lines": [],
+        "note": "git log in a repository with no commits, exit 128; stderr redirected."
+      },
+      {
+        "tool_index": 3,
+        "call_id": "call-80f75f34-a179-470c-b17f-fefc75133035",
+        "tool": "bash",
+        "status": "completed",
+        "bash_exit": 0,
+        "error": null,
+        "output_error_lines": [
+          "Traceback (most recent call last):",
+          "ModuleNotFoundError: No module named 'PIL'"
+        ],
+        "note": "Tool marked completed and shell exit 0 despite exception/error text."
+      },
+      {
+        "tool_index": 4,
+        "call_id": "call-198a4570-becf-43b1-a49e-7ec717e2dcd1",
+        "tool": "bash",
+        "status": "completed",
+        "bash_exit": 1,
+        "error": null,
+        "output_error_lines": [
+          "Traceback (most recent call last):",
+          "ModuleNotFoundError: No module named 'cv2'"
+        ],
+        "note": ""
+      },
+      {
+        "tool_index": 5,
+        "call_id": "call-d3cf20de-185e-4182-ac55-044735aa4ffb",
+        "tool": "bash",
+        "status": "completed",
+        "bash_exit": 0,
+        "error": null,
+        "output_error_lines": [
+          "Traceback (most recent call last):",
+          "<class 'ModuleNotFoundError'>: No module named 'cv2'"
+        ],
+        "note": "Tool marked completed and shell exit 0 despite exception/error text."
+      },
+      {
+        "tool_index": 6,
+        "call_id": "call-be33c90e-5e85-4a81-b89b-fc3ea7cf4e6e",
+        "tool": "bash",
+        "status": "completed",
+        "bash_exit": 1,
+        "error": null,
+        "output_error_lines": [
+          "Traceback (most recent call last):",
+          "ImportError: cannot import name '_imaging' from 'PIL' (/usr/lib/python3/dist-packages/PIL/__init__.py)",
+          "Traceback (most recent call last):",
+          "ImportError: cannot import name '_imaging' from 'PIL' (/usr/lib/python3/dist-packages/PIL/__init__.py)"
+        ],
+        "note": ""
+      },
+      {
+        "tool_index": 7,
+        "call_id": "call-81bed01f-7a59-4864-a103-d7251b4d5fae",
+        "tool": "bash",
+        "status": "completed",
+        "bash_exit": 0,
+        "error": null,
+        "output_error_lines": [
+          "/usr/bin/bash: line 1: /tmp/opencode/imginfo.py: Permission denied",
+          "Exception while processing file: /tmp/opencode/imginfo.py [Unknown file: /tmp/opencode/imginfo.py]"
+        ],
+        "note": "Tool marked completed and shell exit 0 despite exception/error text."
+      },
+      {
+        "tool_index": 8,
+        "call_id": "call-1e5d27b8-0265-4537-b8df-86c34be94649",
+        "tool": "bash",
+        "status": "completed",
+        "bash_exit": 1,
+        "error": null,
+        "output_error_lines": [
+          "touch: cannot touch '/tmp/opencode/test.txt': Permission denied"
+        ],
+        "note": ""
+      },
+      {
+        "tool_index": 12,
+        "call_id": "call-8ee84824-5921-4be7-a348-f89fa52da8b0",
+        "tool": "bash",
+        "status": "completed",
+        "bash_exit": 0,
+        "error": null,
+        "output_error_lines": [
+          "..:::::::....::::::::::::::::::::-++==+**###*+=:=::..:::::::::::::::::--:-:::..::::::...::::::::::::Exception while processing file: /workspace/tmpwork/imginfo.py [name 'PY' is not defined]"
+        ],
+        "note": "Tool marked completed and shell exit 0 despite exception/error text."
+      },
+      {
+        "tool_index": 14,
+        "call_id": "call-31ce579f-b633-4a9f-a8af-44310ba1075c",
+        "tool": "bash",
+        "status": "completed",
+        "bash_exit": 0,
+        "error": null,
+        "output_error_lines": [
+          "Exception while processing file: /workspace/tmpwork/crop.py [invalid syntax (crop.py, line 24)]"
+        ],
+        "note": "Tool marked completed and shell exit 0 despite exception/error text."
+      },
+      {
+        "tool_index": 16,
+        "call_id": "call-88901595-44f7-431e-a6b3-c4400de770a1",
+        "tool": "bash",
+        "status": "completed",
+        "bash_exit": 0,
+        "error": null,
+        "output_error_lines": [
+          "Exception while processing file: /workspace/tmpwork/crop.py [name 'PY' is not defined]"
+        ],
+        "note": "Tool marked completed and shell exit 0 despite exception/error text."
+      },
+      {
+        "tool_index": 20,
+        "call_id": "call-a8f8f8bc-3d93-468a-978a-258dcc3daf9f",
+        "tool": "bash",
+        "status": "completed",
+        "bash_exit": 0,
+        "error": null,
+        "output_error_lines": [
+          "Exception while processing file: /workspace/tmpwork/color.py [name 'PY' is not defined]"
+        ],
+        "note": "Tool marked completed and shell exit 0 despite exception/error text."
+      },
+      {
+        "tool_index": 21,
+        "call_id": "call-b39d8f76-7e3f-49a1-8dd8-458579d196e2",
+        "tool": "bash",
+        "status": "completed",
+        "bash_exit": 0,
+        "error": null,
+        "output_error_lines": [
+          "Exception while processing file: /workspace/tmpwork/sil.py [invalid syntax (sil.py, line 45)]"
+        ],
+        "note": "Tool marked completed and shell exit 0 despite exception/error text."
+      },
+      {
+        "tool_index": 23,
+        "call_id": "call-8b8bfb11-d874-43ad-bd80-80f7ad10e700",
+        "tool": "edit",
+        "status": "error",
+        "bash_exit": null,
+        "error": "Could not find oldString in the file. It must match exactly, including whitespace, indentation, and line endings.",
+        "output_error_lines": [],
+        "note": ""
+      },
+      {
+        "tool_index": 32,
+        "call_id": "call-2b90addd-11f9-4bd2-8b80-7104351e988f",
+        "tool": "bash",
+        "status": "completed",
+        "bash_exit": 0,
+        "error": null,
+        "output_error_lines": [
+          "Exception while processing file: /workspace/tmpwork/build.py ['NoneType' object has no attribute 'ShapeColor' and no __dict__ for setting new attributes]"
+        ],
+        "note": "Tool marked completed and shell exit 0 despite exception/error text."
+      },
+      {
+        "tool_index": 38,
+        "call_id": "call-d25a0216-8496-48ea-ba9e-350bebcb4eb5",
+        "tool": "bash",
+        "status": "completed",
+        "bash_exit": 0,
+        "error": null,
+        "output_error_lines": [
+          "Traceback (most recent call last):",
+          "<class 'TypeError'>: object of type 'NoneType' has no len()"
+        ],
+        "note": "Tool marked completed and shell exit 0 despite exception/error text."
+      },
+      {
+        "tool_index": 49,
+        "call_id": "call-30352382-4139-417e-a15c-78c0ff3b247f",
+        "tool": "bash",
+        "status": "completed",
+        "bash_exit": 0,
+        "error": null,
+        "output_error_lines": [
+          "Exception while processing file: /workspace/tmpwork/rot.py [invalid syntax (rot.py, line 54)]"
+        ],
+        "note": "Tool marked completed and shell exit 0 despite exception/error text."
+      }
+    ],
+    "interpretation": "Failures include environment/library probes, denied root-owned tmp path, malformed candidate scripts/stray heredoc markers, a headless ViewObject ShapeColor exception, an edit mismatch and a NoneType length assumption in an import probe. These are execution diagnostics, not CAD-quality scores."
+  },
+  "evidence": [
+    {
+      "path": "trial-02/evidence/run.events.jsonl",
+      "sha256": "65E691292D6D49CF4C0EDD48D3E609E2029A4F55F0919B77A5E0863F4576685C"
+    },
+    {
+      "path": "trial-02/evidence/run.json",
+      "sha256": "a66e63a5dc45c529cd58e06d9045cd476a2790008f638a85b113313c851f836f"
+    },
+    {
+      "path": "trial-02/evidence/gateway.log",
+      "sha256": "130143CF248801C5D30AE6DB441C36623A99AC5473D49DDDEF0642433FE63034"
+    },
+    {
+      "path": "trial-02/evidence/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    }
+  ]
+}

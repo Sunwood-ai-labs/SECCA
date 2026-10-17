@@ -1,0 +1,138 @@
+{
+  "schema_version": 2,
+  "model": "opencode/beam-free",
+  "protocol": "racing-kart-image-v2-podman",
+  "execution_attempts": 2,
+  "generated_outputs_scored": 1,
+  "excluded_attempt": {
+    "trial": "trial-01",
+    "reason": "HTTP403 before generation; no artifacts",
+    "score": null
+  },
+  "scored_trial": "trial-02",
+  "score": 25,
+  "max_score": 100,
+  "criteria": [
+    {
+      "id": "silhouette_proportions",
+      "median": 9,
+      "max": 25
+    },
+    {
+      "id": "component_layout",
+      "median": 9,
+      "max": 20
+    },
+    {
+      "id": "characteristic_geometry",
+      "median": 4,
+      "max": 30
+    },
+    {
+      "id": "mechanical_detail",
+      "median": 2,
+      "max": 20
+    },
+    {
+      "id": "color_material_regions",
+      "median": 1,
+      "max": 5
+    }
+  ],
+  "aggregation": "sum of per-criterion medians",
+  "generation_seconds": 152.219,
+  "startup_seconds": 7.281,
+  "runner_wall_seconds": 180.516,
+  "recorded_cost_usd": 0.0,
+  "tool_calls": 53,
+  "http_status": {
+    "200": 54
+  },
+  "rate_limit_inferred": false,
+  "native_solids": 33,
+  "step_solids": 33,
+  "cad_validation_success": true,
+  "source_unchanged": true,
+  "modality": "Text-only model with candidate-authored pixel extraction producing textual tool results; not a demonstrated native vision run.",
+  "runtime_image_id": "sha256:eaa68cdc9d07728f61aef2bdd5a223573eca5c9db647248bb2a440bf31bc9178",
+  "judging_execution": {
+    "coordinator_saved_before_independent_requests": true,
+    "independent_tasks": [
+      "/root/blind_review_a",
+      "/root/blind_review_b"
+    ],
+    "fork_turns": "none",
+    "allowed_materials": [
+      "README.txt",
+      "rubric.json",
+      "review-template.json",
+      "reference.jpg",
+      "renders/isometric.png",
+      "renders/top.png",
+      "renders/right.png"
+    ],
+    "reviewer_model_ids": "unknown; runtime model identifier not exposed",
+    "provenance_limit": "Parent execution record and review declarations; not independent cryptographic attestation.",
+    "packet_id": "sample-20261017-f3a7"
+  },
+  "historical_glm_strict_comparison": false,
+  "evidence_sha256": {
+    "beam-model-metadata.json": "cc9dbee227d2f062107ea206c9a30836a0a1d45c9ec1d98dd3faf246d488715d",
+    "source-check.json": "c908121087fb14e2d35fea819def2ada5fabf6fa999149991da842da6514e126",
+    "modality-observation.json": "edafae2dd6a4088a7f6498c4ed45be64c8078d2c94a7ef90c62232f362e481bb",
+    "modality-run-audit.json": "67f7f0666d91d269c2a622f97a3f5691612e754d0b69d9df973f283a3ea5ff83",
+    "plan.json": "b6a6c1b05407574030bdbfc0d0cb495a5c2574105ff7c1dedbc5e2563f4b2612",
+    "retry-plan.json": "c39909209ad2a9734037427ff2dd69e05ae18169ec20a150bc9e2d1c4d8ae0c8",
+    "trial-01/evidence/candidate-inspect-after.json": "84cb1222fe82a33b35e25b1b6677291267d96562aeb23e930f2e57e7ed353b13",
+    "trial-01/evidence/candidate-inspect-before.json": "b10b26530fa08a63ae02cfb6fe81144e83477025edde475b7022a16490b8e6c5",
+    "trial-01/evidence/gateway.log": "c28d583f1d9fe3dcf0543008c8b194ae232d751d86153f6aa1bde8474fed7e56",
+    "trial-01/evidence/run.events.jsonl": "9b7b4de4a7328ea7445aeb4c25b625b98718b2bb513b9f90de46b776ae7e3352",
+    "trial-01/evidence/run.json": "86cb196063c5b992f5ad88beeaf88c9e07a5d3914c04f43fbcfdd6a1f01f5738",
+    "trial-01/evidence/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "trial-01/protocol.json": "246a4eb27632eb172b704cfe36162a2953a72ce6d25f654fd3db0cbc5395cd89",
+    "trial-01/runtime-input/model-metadata.json": "cc9dbee227d2f062107ea206c9a30836a0a1d45c9ec1d98dd3faf246d488715d",
+    "trial-01/runtime-input/reference.jpg": "d3fcfa0a7a1b1fc0504fe7dfadfaa2a1beb0a8712bd088a0b6c8ccb0dd120cd3",
+    "trial-01/runtime-input/runtime.json": "11cd40e24068fd7d537ba067f182e23672b5db397e3bf559f1343d7e32c6de87",
+    "trial-01/trial.json": "534142ab79ddebf8a08fe2918dbfc9a0ab20577daf8d11f03d68ca042ed9789e",
+    "trial-01/workspace/reference.jpg": "d3fcfa0a7a1b1fc0504fe7dfadfaa2a1beb0a8712bd088a0b6c8ccb0dd120cd3",
+    "trial-02/evidence/candidate-inspect-after.json": "f9d2dd6336e759ac756959aac7c88004bcb6a8cf88311833466e4d04f83773ee",
+    "trial-02/evidence/candidate-inspect-before.json": "bfa894d56404d97443220e2cacbb84c0bb534c7324d5614b2a770c7c20d13b63",
+    "trial-02/evidence/gateway.log": "130143cf248801c5d30ae6db441c36623a99ac5473d49dddef0642433fe63034",
+    "trial-02/evidence/postprocess/220d9d446e8c424aaeded3d1fed125bd/container-inspect.json": "0ccf0d1ca6d100fb9da8f81b8498dae0b495b4fb85bf8c9747a00870eb5c5efa",
+    "trial-02/evidence/postprocess/220d9d446e8c424aaeded3d1fed125bd/container-render.json": "2bfc629d483175c007d8bac041822fdd9b821d8e5768ceb1c79eb3a6a176e1ed",
+    "trial-02/evidence/postprocess/220d9d446e8c424aaeded3d1fed125bd/process-isolation.json": "81082317da8f00acf5c831ba5aca2a9c310278f9691bd13c8132aad5b6ca2f53",
+    "trial-02/evidence/postprocess/220d9d446e8c424aaeded3d1fed125bd/render.json": "84ea56cb01eb395882874a3d67b4c092d76132a392b544e16fe9613e70b8a00f",
+    "trial-02/evidence/postprocess/3c5d6fa6ccc94b94b47443415c41c409/container-inspect.json": "b0451973df4b563eee016a44d588a7e0b7d63595c7ae946cd2febdb95928c813",
+    "trial-02/evidence/postprocess/3c5d6fa6ccc94b94b47443415c41c409/container-validation.json": "9a59e010b67399959e03541b1320878bb603c38ac13775a75a36b43a50fbaa09",
+    "trial-02/evidence/postprocess/3c5d6fa6ccc94b94b47443415c41c409/process-isolation.json": "81082317da8f00acf5c831ba5aca2a9c310278f9691bd13c8132aad5b6ca2f53",
+    "trial-02/evidence/postprocess/3c5d6fa6ccc94b94b47443415c41c409/validation.json": "0a290cb1a4c6a9c23f689009f33b4b97d36a4be3ede2fbcb53d9fec2b7b297ea",
+    "trial-02/evidence/render.json": "84ea56cb01eb395882874a3d67b4c092d76132a392b544e16fe9613e70b8a00f",
+    "trial-02/evidence/review/blind-a.json": "8397c4c7fb3f19414347a75b9f7f461afd23fcef6f0cb1af7a7c371e398cd06e",
+    "trial-02/evidence/review/blind-b.json": "969a48fde28994f945d404d089842f3af35bae44afaf35d36ca9b233f94fa20f",
+    "trial-02/evidence/review/coordinator.json": "f756bae565f2dc47f31ae2ce9f885fc274721cf37a8db6ccdfad7bece91d3960",
+    "trial-02/evidence/review/review-0197763b9d6d44f4829c9fa5d491cd05.FCStd": "ac86c7cf249986730b702d130f71be969fab037ae2d1f77b2a4bb1263b1a0392",
+    "trial-02/evidence/run.events.jsonl": "65e691292d6d49cf4c0edd48d3e609e2029a4f55f0919b77a5e0863f4576685c",
+    "trial-02/evidence/run.json": "a66e63a5dc45c529cd58e06d9045cd476a2790008f638a85b113313c851f836f",
+    "trial-02/evidence/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "trial-02/evidence/validation.json": "0a290cb1a4c6a9c23f689009f33b4b97d36a4be3ede2fbcb53d9fec2b7b297ea",
+    "trial-02/protocol.json": "246a4eb27632eb172b704cfe36162a2953a72ce6d25f654fd3db0cbc5395cd89",
+    "trial-02/renders/isometric.png": "aad5b3ec97ba175d638c8f8a78c1bb683a05e2a6457d61f4d3d74eb59c619c15",
+    "trial-02/renders/preview.png": "c0bc85040239f2a060f3819d13387e9b9992be9007770075fc3bb39711239835",
+    "trial-02/renders/right.png": "f63b6a39d8008b1d004ea2187ccf01a9b890b2d47e85198ad5b5a24e387a1950",
+    "trial-02/renders/top.png": "c4eefb976f5e56d979bc5abe6ce68086a5d9d7a89f95ebd9245a6d07197a47ae",
+    "trial-02/runtime-input/model-metadata.json": "cc9dbee227d2f062107ea206c9a30836a0a1d45c9ec1d98dd3faf246d488715d",
+    "trial-02/runtime-input/reference.jpg": "d3fcfa0a7a1b1fc0504fe7dfadfaa2a1beb0a8712bd088a0b6c8ccb0dd120cd3",
+    "trial-02/runtime-input/runtime.json": "11cd40e24068fd7d537ba067f182e23672b5db397e3bf559f1343d7e32c6de87",
+    "trial-02/score.json": "73359c7f9e91ebb09145caabfb83e965797064c933450296012d07698621971c",
+    "trial-02/trial.json": "33d137b98e219a7cf04b3b26ac3d9b68da3f6e12a1aba71119e1ab611b23d990",
+    "trial-02/workspace/racing-kart.FCStd": "ac86c7cf249986730b702d130f71be969fab037ae2d1f77b2a4bb1263b1a0392",
+    "trial-02/workspace/racing-kart.step": "0cff8fed07b44025fe2efdfdaf44f598bea7a96b7066fcbbf591907c9932ea63",
+    "trial-02/workspace/reference.jpg": "d3fcfa0a7a1b1fc0504fe7dfadfaa2a1beb0a8712bd088a0b6c8ccb0dd120cd3"
+  },
+  "export": {
+    "source_result_sha256": "77f5836ec46225cc480cc0d6e238535460ac54e803892d34d4d390abfa6651d8",
+    "manifest": "export-manifest.json",
+    "raw_originals_retained_outside_repository": true,
+    "source_unchanged_meaning": "Original CAD unchanged during original validation; portable metadata exports are separately identified in manifest."
+  }
+}

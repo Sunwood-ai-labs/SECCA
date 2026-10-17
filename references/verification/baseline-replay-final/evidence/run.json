@@ -1,0 +1,13 @@
+{
+  "scope": "Historical saved CAD replay for offline Podman inspect/render only; no new candidate generation",
+  "new_model_inference_performed": false,
+  "candidate_stopped": true,
+  "saved_artifact_replay": true,
+  "status": "completed",
+  "public_export": {
+    "record_type": "historical_public_transformed_export",
+    "raw_record": false,
+    "provenance_manifest": "references/public-export-manifest.json",
+    "new_model_generation": false
+  }
+}

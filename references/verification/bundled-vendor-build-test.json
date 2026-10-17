@@ -1,0 +1,19 @@
+{
+  "bundled_stage_success": true,
+  "external_source_refresh_used": false,
+  "manifest_files": 29,
+  "context_files": 38,
+  "manifest_hashes_match": true,
+  "exact_allowlist_inventory": true,
+  "forbidden_assets": [],
+  "manifest_escape_rejections": 4,
+  "hash_mismatch_rejected": true,
+  "vendor_unchanged": true,
+  "image_rebuilt": false,
+  "public_export": {
+    "record_type": "historical_public_transformed_export",
+    "raw_record": false,
+    "provenance_manifest": "references/public-export-manifest.json",
+    "new_model_generation": false
+  }
+}

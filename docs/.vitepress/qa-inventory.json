@@ -1,0 +1,8 @@
+{
+  "mode": "完全整備",
+  "scope": ["README.md", "README.ja.md", "brand", "docs", "package.json", "package-lock.json"],
+  "requirements": ["English and Japanese guides", "Original snow-crystal and CAD-cube identity", "Fixed white CAD render", "Evidence-qualified experimental results", "GitHub Pages base /SECCA/"],
+  "checks": ["Build docs", "Validate relative links and locale parity", "Validate nav and sidebar routes", "Inspect desktop and mobile preview when browser available", "Check canonical asset hashes", "Check Japanese prose against source material"],
+  "claims": ["Docs build result", "Number of pages and locale parity", "Scope of actual browser inspection", "Source links for reported experimental measurements"],
+  "browser_targets": ["English home desktop", "Japanese home mobile", "English guide navigation", "Japanese guide navigation", "Language switch", "Mobile menu", "Search"]
+}

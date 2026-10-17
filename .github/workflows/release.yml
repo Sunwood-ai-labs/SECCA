@@ -1,0 +1,43 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: astral-sh/setup-uv@1c37ad07a6a961277cf70c0d37d6f313000f5884 # v10.3.0
+        with:
+          version: "0.12.13"
+          python-version: "3.12"
+      - run: uv sync --frozen
+      - run: uv run --frozen python -m unittest discover -s scripts -p "test_*.py"
+      - run: uv run --frozen python -m unittest discover -s tools -p "test_*.py"
+      - run: uv run --frozen python tools/check_publication.py
+      - run: uv run --frozen python experiments/tools/test_export_beam.py
+      - name: Require successful CI for this exact tag commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          count=$(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/ci.yml/runs?head_sha=$GITHUB_SHA&event=push&status=completed&per_page=100" --jq '[.workflow_runs[] | select(.conclusion == "success")] | length')
+          if [ "$count" -lt 1 ]; then
+            echo "::error::The exact tagged commit must pass CI on main before release."
+            exit 1
+          fi
+      - name: Package verified public source as an installable skill
+        run: uv run --frozen python tools/package_skill.py --version "${GITHUB_REF_NAME#v}" --output dist
+      - name: Publish the tagged release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          version="${GITHUB_REF_NAME#v}"
+          gh release create "$GITHUB_REF_NAME" "dist/secca-$version.zip" "dist/secca-$version.zip.sha256" --verify-tag --title "SECCA $GITHUB_REF_NAME" --notes-file .github/RELEASE_NOTES.md

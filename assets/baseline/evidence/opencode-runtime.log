@@ -1,0 +1,147 @@
+timestamp=2026-10-17T05:50:23.909Z level=INFO run=4c5cf689 message="creating instance" directory="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace"
+timestamp=2026-10-17T05:50:23.912Z level=INFO run=4c5cf689 message=fromDirectory directory="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace"
+timestamp=2026-10-17T05:50:23.949Z level=INFO run=4c5cf689 message=bootstrapping directory="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace"
+timestamp=2026-10-17T05:50:23.962Z level=INFO run=4c5cf689 message=loading path="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\config\\opencode\\config.json"
+timestamp=2026-10-17T05:50:23.964Z level=INFO run=4c5cf689 message=loading path="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\config\\opencode\\opencode.json"
+timestamp=2026-10-17T05:50:23.975Z level=INFO run=4c5cf689 message=loading path="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\config\\opencode\\opencode.jsonc"
+timestamp=2026-10-17T05:50:23.987Z level=INFO run=4c5cf689 message=loading path="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\config\\opencode\\opencode.json"
+timestamp=2026-10-17T05:50:23.988Z level=INFO run=4c5cf689 message=loading path="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\config\\opencode\\opencode.jsonc"
+timestamp=2026-10-17T05:50:24.484Z level=INFO run=4c5cf689 message="all LSPs are disabled"
+timestamp=2026-10-17T05:50:24.486Z level=INFO run=4c5cf689 message="all formatters are disabled"
+timestamp=2026-10-17T05:50:24.486Z level=INFO run=4c5cf689 message=init
+timestamp=2026-10-17T05:50:26.626Z level=INFO run=4c5cf689 message="disposing instance" directory="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace"
+timestamp=2026-10-17T05:52:09.771Z level=INFO run=016a3d71 message="creating instance" directory="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace"
+timestamp=2026-10-17T05:52:09.776Z level=INFO run=016a3d71 message=fromDirectory directory="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace"
+timestamp=2026-10-17T05:52:10.679Z level=INFO run=016a3d71 message=bootstrapping directory="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace"
+timestamp=2026-10-17T05:52:10.712Z level=INFO run=016a3d71 message=loading path="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\config\\opencode\\config.json"
+timestamp=2026-10-17T05:52:10.723Z level=INFO run=016a3d71 message=loading path="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\config\\opencode\\opencode.json"
+timestamp=2026-10-17T05:52:10.724Z level=INFO run=016a3d71 message=loading path="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\config\\opencode\\opencode.jsonc"
+timestamp=2026-10-17T05:52:10.730Z level=INFO run=016a3d71 message=loading path="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\config\\opencode\\opencode.json"
+timestamp=2026-10-17T05:52:10.738Z level=INFO run=016a3d71 message=loading path="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\config\\opencode\\opencode.jsonc"
+timestamp=2026-10-17T05:52:11.031Z level=INFO run=016a3d71 message="all LSPs are disabled"
+timestamp=2026-10-17T05:52:11.033Z level=INFO run=016a3d71 message="all formatters are disabled"
+timestamp=2026-10-17T05:52:11.033Z level=INFO run=016a3d71 message=init
+timestamp=2026-10-17T05:52:11.625Z level=INFO run=016a3d71 message=created id=ses_eb7950a97ffeUa0ey1wGVDzvRg slug=quick-wizard version=1.19.3 projectID=global directory="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" path="" workspaceID=undefined parentID=undefined title="New session - 2026-10-17T05:52:11.625Z" agent=undefined model=undefined metadata=undefined permission="[{\"permission\":\"question\",\"pattern\":\"*\",\"action\":\"deny\"},{\"permission\":\"plan_enter\",\"pattern\":\"*\",\"action\":\"deny\"},{\"permission\":\"plan_exit\",\"pattern\":\"*\",\"action\":\"deny\"}]" cost=0 tokens.input=0 tokens.output=0 tokens.reasoning=0 tokens.cache.read=0 tokens.cache.write=0 time.created=1792216331625 time.updated=1792216331625
+timestamp=2026-10-17T05:52:11.662Z level=INFO run=016a3d71 message="event connected"
+timestamp=2026-10-17T05:52:12.404Z level=INFO run=016a3d71 message=file mime=text/plain
+timestamp=2026-10-17T05:52:12.446Z level=INFO run=016a3d71 message="shell tool using shell" shell="C:\\Program Files\\PowerShell\\7\\pwsh.EXE"
+timestamp=2026-10-17T05:52:14.141Z level=INFO run=016a3d71 message=loop session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg step=0
+timestamp=2026-10-17T05:52:14.215Z level=INFO run=016a3d71 message=stream providerID=opencode modelID=glm-5.3-flash-free session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg small=true agent=title mode=primary
+timestamp=2026-10-17T05:52:14.335Z level=INFO run=016a3d71 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=opencode llm.model=glm-5.3-flash-free
+timestamp=2026-10-17T05:52:16.551Z level=INFO run=016a3d71 message=initialized
+timestamp=2026-10-17T05:52:18.095Z level=INFO run=016a3d71 message=tracking hash=988df73764af44f39f93ec22db08d9f29f9ba07b cwd="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" git="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\data\\opencode\\snapshot\\global\\28cd61c7b7ea5fb0cb8f7c204cc179875bb25325"
+timestamp=2026-10-17T05:52:20.394Z level=INFO run=016a3d71 message=init count=69
+timestamp=2026-10-17T05:52:22.088Z level=INFO run=016a3d71 message="watcher backend" directory="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" platform=win32 backend=windows
+timestamp=2026-10-17T05:52:22.126Z level=INFO run=016a3d71 message="project copy refresh started" projectID=global
+timestamp=2026-10-17T05:52:22.131Z level=INFO run=016a3d71 message="project copy refresh done" projectID=global updated=[] removed=[]
+timestamp=2026-10-17T05:52:24.461Z level=INFO run=016a3d71 message="booting location services" directory="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" workspaceID=undefined
+timestamp=2026-10-17T05:52:24.484Z level=INFO run=016a3d71 message=process session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg messageID=msg_1486aff4c001C50G92freixQP2
+timestamp=2026-10-17T05:52:24.486Z level=INFO run=016a3d71 message=stream providerID=opencode modelID=glm-5.3-flash-free session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg small=false agent=build mode=primary
+timestamp=2026-10-17T05:52:24.495Z level=INFO run=016a3d71 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=opencode llm.model=glm-5.3-flash-free
+timestamp=2026-10-17T05:52:25.380Z level=ERROR run=016a3d71 message="stream error" providerID=opencode modelID=glm-5.3-flash-free session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg small=false agent=build mode=primary error.error="AI_APICallError: Upstream request failed: Endpoint is unavailable."
+timestamp=2026-10-17T05:52:27.582Z level=INFO run=016a3d71 message=stream providerID=opencode modelID=glm-5.3-flash-free session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg small=false agent=build mode=primary
+timestamp=2026-10-17T05:52:27.606Z level=INFO run=016a3d71 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=opencode llm.model=glm-5.3-flash-free
+timestamp=2026-10-17T05:52:28.069Z level=ERROR run=016a3d71 message="stream error" providerID=opencode modelID=glm-5.3-flash-free session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg small=false agent=build mode=primary error.error="AI_APICallError: Upstream request failed: Endpoint is unavailable."
+timestamp=2026-10-17T05:52:32.948Z level=INFO run=016a3d71 message=stream providerID=opencode modelID=glm-5.3-flash-free session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg small=false agent=build mode=primary
+timestamp=2026-10-17T05:52:32.953Z level=INFO run=016a3d71 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=opencode llm.model=glm-5.3-flash-free
+timestamp=2026-10-17T05:53:11.872Z level=INFO run=016a3d71 message=cleanup prune=7.days
+timestamp=2026-10-17T05:57:00.201Z level=INFO run=016a3d71 message=evaluated permission=todowrite pattern=* action.permission=* action.action=allow action.pattern=*
+timestamp=2026-10-17T05:57:00.830Z level=INFO run=016a3d71 message=tracking hash=988df73764af44f39f93ec22db08d9f29f9ba07b cwd="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" git="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\data\\opencode\\snapshot\\global\\28cd61c7b7ea5fb0cb8f7c204cc179875bb25325"
+timestamp=2026-10-17T05:57:01.684Z level=INFO run=016a3d71 message=loop session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg step=1
+timestamp=2026-10-17T05:57:02.317Z level=INFO run=016a3d71 message=tracking hash=988df73764af44f39f93ec22db08d9f29f9ba07b cwd="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" git="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\data\\opencode\\snapshot\\global\\28cd61c7b7ea5fb0cb8f7c204cc179875bb25325"
+timestamp=2026-10-17T05:57:02.349Z level=INFO run=016a3d71 message=process session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg messageID=msg_1486f627b0013ZAHEefUBqVzy0
+timestamp=2026-10-17T05:57:02.351Z level=INFO run=016a3d71 message=stream providerID=opencode modelID=glm-5.3-flash-free session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg small=false agent=build mode=primary
+timestamp=2026-10-17T05:57:02.372Z level=INFO run=016a3d71 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=opencode llm.model=glm-5.3-flash-free
+timestamp=2026-10-17T05:57:25.954Z level=INFO run=016a3d71 message=evaluated permission=freecad_execute_code pattern=* action.permission=* action.action=allow action.pattern=*
+timestamp=2026-10-17T05:57:26.720Z level=INFO run=016a3d71 message=tracking hash=988df73764af44f39f93ec22db08d9f29f9ba07b cwd="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" git="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\data\\opencode\\snapshot\\global\\28cd61c7b7ea5fb0cb8f7c204cc179875bb25325"
+timestamp=2026-10-17T05:57:27.312Z level=INFO run=016a3d71 message=loop session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg step=2
+timestamp=2026-10-17T05:57:27.979Z level=INFO run=016a3d71 message=tracking hash=988df73764af44f39f93ec22db08d9f29f9ba07b cwd="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" git="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\data\\opencode\\snapshot\\global\\28cd61c7b7ea5fb0cb8f7c204cc179875bb25325"
+timestamp=2026-10-17T05:57:27.993Z level=INFO run=016a3d71 message=process session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg messageID=msg_1486fc697001FMflXovs7utjHi
+timestamp=2026-10-17T05:57:27.995Z level=INFO run=016a3d71 message=stream providerID=opencode modelID=glm-5.3-flash-free session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg small=false agent=build mode=primary
+timestamp=2026-10-17T05:57:28.018Z level=INFO run=016a3d71 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=opencode llm.model=glm-5.3-flash-free
+timestamp=2026-10-17T05:57:47.394Z level=INFO run=016a3d71 message=evaluated permission=freecad_execute_code pattern=* action.permission=* action.action=allow action.pattern=*
+timestamp=2026-10-17T05:57:50.960Z level=INFO run=016a3d71 message=tracking hash=988df73764af44f39f93ec22db08d9f29f9ba07b cwd="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" git="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\data\\opencode\\snapshot\\global\\28cd61c7b7ea5fb0cb8f7c204cc179875bb25325"
+timestamp=2026-10-17T05:57:51.532Z level=INFO run=016a3d71 message=loop session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg step=3
+timestamp=2026-10-17T05:57:52.140Z level=INFO run=016a3d71 message=tracking hash=988df73764af44f39f93ec22db08d9f29f9ba07b cwd="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" git="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\data\\opencode\\snapshot\\global\\28cd61c7b7ea5fb0cb8f7c204cc179875bb25325"
+timestamp=2026-10-17T05:57:52.170Z level=INFO run=016a3d71 message=process session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg messageID=msg_148702533001dD8wQEoJbRNGcz
+timestamp=2026-10-17T05:57:52.171Z level=INFO run=016a3d71 message=stream providerID=opencode modelID=glm-5.3-flash-free session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg small=false agent=build mode=primary
+timestamp=2026-10-17T05:57:52.192Z level=INFO run=016a3d71 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=opencode llm.model=glm-5.3-flash-free
+timestamp=2026-10-17T05:58:15.209Z level=INFO run=016a3d71 message=evaluated permission=freecad_execute_code pattern=* action.permission=* action.action=allow action.pattern=*
+timestamp=2026-10-17T05:58:16.004Z level=INFO run=016a3d71 message=tracking hash=988df73764af44f39f93ec22db08d9f29f9ba07b cwd="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" git="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\data\\opencode\\snapshot\\global\\28cd61c7b7ea5fb0cb8f7c204cc179875bb25325"
+timestamp=2026-10-17T05:58:16.514Z level=INFO run=016a3d71 message=loop session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg step=4
+timestamp=2026-10-17T05:58:17.035Z level=INFO run=016a3d71 message=tracking hash=988df73764af44f39f93ec22db08d9f29f9ba07b cwd="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" git="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\data\\opencode\\snapshot\\global\\28cd61c7b7ea5fb0cb8f7c204cc179875bb25325"
+timestamp=2026-10-17T05:58:17.064Z level=INFO run=016a3d71 message=process session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg messageID=msg_1487086c8001pwcY5YOgSlW2ZG
+timestamp=2026-10-17T05:58:17.066Z level=INFO run=016a3d71 message=stream providerID=opencode modelID=glm-5.3-flash-free session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg small=false agent=build mode=primary
+timestamp=2026-10-17T05:58:17.085Z level=INFO run=016a3d71 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=opencode llm.model=glm-5.3-flash-free
+timestamp=2026-10-17T05:58:22.425Z level=INFO run=016a3d71 message=evaluated permission=freecad_list_documents pattern=* action.permission=* action.action=allow action.pattern=*
+timestamp=2026-10-17T05:58:23.050Z level=INFO run=016a3d71 message=tracking hash=988df73764af44f39f93ec22db08d9f29f9ba07b cwd="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" git="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\data\\opencode\\snapshot\\global\\28cd61c7b7ea5fb0cb8f7c204cc179875bb25325"
+timestamp=2026-10-17T05:58:23.613Z level=INFO run=016a3d71 message=loop session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg step=5
+timestamp=2026-10-17T05:58:24.235Z level=INFO run=016a3d71 message=tracking hash=988df73764af44f39f93ec22db08d9f29f9ba07b cwd="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" git="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\data\\opencode\\snapshot\\global\\28cd61c7b7ea5fb0cb8f7c204cc179875bb25325"
+timestamp=2026-10-17T05:58:24.261Z level=INFO run=016a3d71 message=process session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg messageID=msg_14870a282001jooV1bpxFhrUwN
+timestamp=2026-10-17T05:58:24.263Z level=INFO run=016a3d71 message=stream providerID=opencode modelID=glm-5.3-flash-free session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg small=false agent=build mode=primary
+timestamp=2026-10-17T05:58:24.278Z level=INFO run=016a3d71 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=opencode llm.model=glm-5.3-flash-free
+timestamp=2026-10-17T05:58:38.873Z level=INFO run=016a3d71 message=evaluated permission=freecad_execute_code pattern=* action.permission=* action.action=allow action.pattern=*
+timestamp=2026-10-17T05:58:39.984Z level=INFO run=016a3d71 message=tracking hash=988df73764af44f39f93ec22db08d9f29f9ba07b cwd="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" git="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\data\\opencode\\snapshot\\global\\28cd61c7b7ea5fb0cb8f7c204cc179875bb25325"
+timestamp=2026-10-17T05:58:40.451Z level=INFO run=016a3d71 message=loop session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg step=6
+timestamp=2026-10-17T05:58:40.920Z level=INFO run=016a3d71 message=tracking hash=988df73764af44f39f93ec22db08d9f29f9ba07b cwd="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" git="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\data\\opencode\\snapshot\\global\\28cd61c7b7ea5fb0cb8f7c204cc179875bb25325"
+timestamp=2026-10-17T05:58:40.949Z level=INFO run=016a3d71 message=process session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg messageID=msg_14870e44b001SVf2qzahSQl41g
+timestamp=2026-10-17T05:58:40.952Z level=INFO run=016a3d71 message=stream providerID=opencode modelID=glm-5.3-flash-free session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg small=false agent=build mode=primary
+timestamp=2026-10-17T05:58:40.979Z level=INFO run=016a3d71 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=opencode llm.model=glm-5.3-flash-free
+timestamp=2026-10-17T05:58:47.791Z level=INFO run=016a3d71 message=evaluated permission=freecad_execute_code pattern=* action.permission=* action.action=allow action.pattern=*
+timestamp=2026-10-17T05:58:48.459Z level=INFO run=016a3d71 message=tracking hash=988df73764af44f39f93ec22db08d9f29f9ba07b cwd="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" git="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\data\\opencode\\snapshot\\global\\28cd61c7b7ea5fb0cb8f7c204cc179875bb25325"
+timestamp=2026-10-17T05:58:49.084Z level=INFO run=016a3d71 message=loop session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg step=7
+timestamp=2026-10-17T05:58:49.749Z level=INFO run=016a3d71 message=tracking hash=988df73764af44f39f93ec22db08d9f29f9ba07b cwd="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" git="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\data\\opencode\\snapshot\\global\\28cd61c7b7ea5fb0cb8f7c204cc179875bb25325"
+timestamp=2026-10-17T05:58:49.761Z level=INFO run=016a3d71 message=process session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg messageID=msg_148710604001GBfP3pX9g79dER
+timestamp=2026-10-17T05:58:49.763Z level=INFO run=016a3d71 message=stream providerID=opencode modelID=glm-5.3-flash-free session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg small=false agent=build mode=primary
+timestamp=2026-10-17T05:58:49.792Z level=INFO run=016a3d71 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=opencode llm.model=glm-5.3-flash-free
+timestamp=2026-10-17T05:59:09.171Z level=INFO run=016a3d71 message=evaluated permission=freecad_execute_code pattern=* action.permission=* action.action=allow action.pattern=*
+timestamp=2026-10-17T05:59:09.726Z level=INFO run=016a3d71 message=tracking hash=988df73764af44f39f93ec22db08d9f29f9ba07b cwd="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" git="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\data\\opencode\\snapshot\\global\\28cd61c7b7ea5fb0cb8f7c204cc179875bb25325"
+timestamp=2026-10-17T05:59:10.202Z level=INFO run=016a3d71 message=loop session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg step=8
+timestamp=2026-10-17T05:59:10.599Z level=INFO run=016a3d71 message=tracking hash=988df73764af44f39f93ec22db08d9f29f9ba07b cwd="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" git="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\data\\opencode\\snapshot\\global\\28cd61c7b7ea5fb0cb8f7c204cc179875bb25325"
+timestamp=2026-10-17T05:59:10.618Z level=INFO run=016a3d71 message=process session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg messageID=msg_148715881001IRd2MvTiegdf1o
+timestamp=2026-10-17T05:59:10.619Z level=INFO run=016a3d71 message=stream providerID=opencode modelID=glm-5.3-flash-free session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg small=false agent=build mode=primary
+timestamp=2026-10-17T05:59:10.639Z level=INFO run=016a3d71 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=opencode llm.model=glm-5.3-flash-free
+timestamp=2026-10-17T05:59:22.581Z level=INFO run=016a3d71 message=evaluated permission=freecad_execute_code pattern=* action.permission=* action.action=allow action.pattern=*
+timestamp=2026-10-17T05:59:24.326Z level=INFO run=016a3d71 message=tracking hash=988df73764af44f39f93ec22db08d9f29f9ba07b cwd="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" git="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\data\\opencode\\snapshot\\global\\28cd61c7b7ea5fb0cb8f7c204cc179875bb25325"
+timestamp=2026-10-17T05:59:24.768Z level=INFO run=016a3d71 message=loop session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg step=9
+timestamp=2026-10-17T05:59:25.220Z level=INFO run=016a3d71 message=tracking hash=988df73764af44f39f93ec22db08d9f29f9ba07b cwd="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" git="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\data\\opencode\\snapshot\\global\\28cd61c7b7ea5fb0cb8f7c204cc179875bb25325"
+timestamp=2026-10-17T05:59:25.227Z level=INFO run=016a3d71 message=process session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg messageID=msg_1487191680013EgYZ35IQGZJqx
+timestamp=2026-10-17T05:59:25.228Z level=INFO run=016a3d71 message=stream providerID=opencode modelID=glm-5.3-flash-free session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg small=false agent=build mode=primary
+timestamp=2026-10-17T05:59:25.242Z level=INFO run=016a3d71 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=opencode llm.model=glm-5.3-flash-free
+timestamp=2026-10-17T05:59:44.315Z level=INFO run=016a3d71 message=evaluated permission=freecad_execute_code pattern=* action.permission=* action.action=allow action.pattern=*
+timestamp=2026-10-17T05:59:46.029Z level=INFO run=016a3d71 message=tracking hash=988df73764af44f39f93ec22db08d9f29f9ba07b cwd="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" git="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\data\\opencode\\snapshot\\global\\28cd61c7b7ea5fb0cb8f7c204cc179875bb25325"
+timestamp=2026-10-17T05:59:46.364Z level=INFO run=016a3d71 message=loop session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg step=10
+timestamp=2026-10-17T05:59:46.716Z level=INFO run=016a3d71 message=tracking hash=988df73764af44f39f93ec22db08d9f29f9ba07b cwd="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" git="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\data\\opencode\\snapshot\\global\\28cd61c7b7ea5fb0cb8f7c204cc179875bb25325"
+timestamp=2026-10-17T05:59:46.721Z level=INFO run=016a3d71 message=process session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg messageID=msg_14871e5c1001dwLn1kvRBKJp9T
+timestamp=2026-10-17T05:59:46.722Z level=INFO run=016a3d71 message=stream providerID=opencode modelID=glm-5.3-flash-free session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg small=false agent=build mode=primary
+timestamp=2026-10-17T05:59:46.732Z level=INFO run=016a3d71 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=opencode llm.model=glm-5.3-flash-free
+timestamp=2026-10-17T05:59:59.502Z level=INFO run=016a3d71 message=evaluated permission=freecad_execute_code pattern=* action.permission=* action.action=allow action.pattern=*
+timestamp=2026-10-17T06:00:01.688Z level=INFO run=016a3d71 message=tracking hash=54d5ba476743ce22af661ef8542e1f57a1873e1f cwd="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" git="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\data\\opencode\\snapshot\\global\\28cd61c7b7ea5fb0cb8f7c204cc179875bb25325"
+timestamp=2026-10-17T06:00:02.225Z level=INFO run=016a3d71 message=loop session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg step=11
+timestamp=2026-10-17T06:00:03.843Z level=INFO run=016a3d71 message=tracking hash=54d5ba476743ce22af661ef8542e1f57a1873e1f cwd="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" git="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\data\\opencode\\snapshot\\global\\28cd61c7b7ea5fb0cb8f7c204cc179875bb25325"
+timestamp=2026-10-17T06:00:03.868Z level=INFO run=016a3d71 message=process session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg messageID=msg_1487223ba001k3zQyB9fqe48P6
+timestamp=2026-10-17T06:00:03.870Z level=INFO run=016a3d71 message=stream providerID=opencode modelID=glm-5.3-flash-free session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg small=false agent=build mode=primary
+timestamp=2026-10-17T06:00:03.951Z level=INFO run=016a3d71 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=opencode llm.model=glm-5.3-flash-free
+timestamp=2026-10-17T06:00:10.508Z level=INFO run=016a3d71 message=evaluated permission=freecad_execute_code pattern=* action.permission=* action.action=allow action.pattern=*
+timestamp=2026-10-17T06:00:12.022Z level=INFO run=016a3d71 message=tracking hash=54d5ba476743ce22af661ef8542e1f57a1873e1f cwd="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" git="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\data\\opencode\\snapshot\\global\\28cd61c7b7ea5fb0cb8f7c204cc179875bb25325"
+timestamp=2026-10-17T06:00:12.416Z level=INFO run=016a3d71 message=loop session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg step=12
+timestamp=2026-10-17T06:00:12.837Z level=INFO run=016a3d71 message=tracking hash=54d5ba476743ce22af661ef8542e1f57a1873e1f cwd="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" git="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\data\\opencode\\snapshot\\global\\28cd61c7b7ea5fb0cb8f7c204cc179875bb25325"
+timestamp=2026-10-17T06:00:12.845Z level=INFO run=016a3d71 message=process session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg messageID=msg_148724b89001mIKwlINY74OOQE
+timestamp=2026-10-17T06:00:12.846Z level=INFO run=016a3d71 message=stream providerID=opencode modelID=glm-5.3-flash-free session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg small=false agent=build mode=primary
+timestamp=2026-10-17T06:00:12.861Z level=INFO run=016a3d71 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=opencode llm.model=glm-5.3-flash-free
+timestamp=2026-10-17T06:00:18.511Z level=INFO run=016a3d71 message=evaluated permission=bash pattern="Get-ChildItem \"racing-kart.*\"" action.permission=* action.action=allow action.pattern=*
+timestamp=2026-10-17T06:00:18.511Z level=INFO run=016a3d71 message=evaluated permission=bash pattern="Select-Object Name" action.permission=* action.action=allow action.pattern=*
+timestamp=2026-10-17T06:00:19.822Z level=INFO run=016a3d71 message=tracking hash=54d5ba476743ce22af661ef8542e1f57a1873e1f cwd="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" git="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\data\\opencode\\snapshot\\global\\28cd61c7b7ea5fb0cb8f7c204cc179875bb25325"
+timestamp=2026-10-17T06:00:20.191Z level=INFO run=016a3d71 message=loop session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg step=13
+timestamp=2026-10-17T06:00:20.700Z level=INFO run=016a3d71 message=tracking hash=54d5ba476743ce22af661ef8542e1f57a1873e1f cwd="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" git="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\data\\opencode\\snapshot\\global\\28cd61c7b7ea5fb0cb8f7c204cc179875bb25325"
+timestamp=2026-10-17T06:00:20.708Z level=INFO run=016a3d71 message=process session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg messageID=msg_1487269e9001g0EklaZzILWB3F
+timestamp=2026-10-17T06:00:20.709Z level=INFO run=016a3d71 message=stream providerID=opencode modelID=glm-5.3-flash-free session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg small=false agent=build mode=primary
+timestamp=2026-10-17T06:00:20.721Z level=INFO run=016a3d71 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=opencode llm.model=glm-5.3-flash-free
+timestamp=2026-10-17T06:00:25.633Z level=INFO run=016a3d71 message=evaluated permission=todowrite pattern=* action.permission=* action.action=allow action.pattern=*
+timestamp=2026-10-17T06:00:26.063Z level=INFO run=016a3d71 message=tracking hash=54d5ba476743ce22af661ef8542e1f57a1873e1f cwd="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" git="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\data\\opencode\\snapshot\\global\\28cd61c7b7ea5fb0cb8f7c204cc179875bb25325"
+timestamp=2026-10-17T06:00:26.473Z level=INFO run=016a3d71 message=loop session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg step=14
+timestamp=2026-10-17T06:00:26.866Z level=INFO run=016a3d71 message=tracking hash=54d5ba476743ce22af661ef8542e1f57a1873e1f cwd="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" git="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\data\\opencode\\snapshot\\global\\28cd61c7b7ea5fb0cb8f7c204cc179875bb25325"
+timestamp=2026-10-17T06:00:26.877Z level=INFO run=016a3d71 message=process session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg messageID=msg_148728271001ko7Ygy4EvMD17a
+timestamp=2026-10-17T06:00:26.878Z level=INFO run=016a3d71 message=stream providerID=opencode modelID=glm-5.3-flash-free session.id=ses_eb7950a97ffeUa0ey1wGVDzvRg small=false agent=build mode=primary
+timestamp=2026-10-17T06:00:26.898Z level=INFO run=016a3d71 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=opencode llm.model=glm-5.3-flash-free
+timestamp=2026-10-17T06:00:36.498Z level=INFO run=016a3d71 message=tracking hash=54d5ba476743ce22af661ef8542e1f57a1873e1f cwd="C:\\Prj\\research\\2026-10-17-kart-cad\\workspace" git="C:\\Prj\\research\\2026-10-17-kart-cad\\isolated\\data\\opencode\\snapshot\\global\\28cd61c7b7ea5fb0cb8f7c204cc179875bb25325"

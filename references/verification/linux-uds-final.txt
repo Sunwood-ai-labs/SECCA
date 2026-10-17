@@ -1,0 +1,26 @@
+Historical public transformed export; not a raw record. See references/public-export-manifest.json for source and export hashes.
+{"type": "gateway_request", "status": 200}
+test_custom_tool_schema_and_sse_pass_through (__main__.GatewayTests.test_custom_tool_schema_and_sse_pass_through) ... ok
+{"type": "gateway_request", "status": 200}
+test_loopback_adapter_to_actual_unix_socket (__main__.GatewayTests.test_loopback_adapter_to_actual_unix_socket) ... ok
+{"type": "gateway_request", "status": 400}
+{"type": "gateway_request", "status": 400}
+{"type": "gateway_request", "status": 400}
+{"type": "gateway_request", "status": 400}
+{"type": "gateway_request", "status": 400}
+{"type": "gateway_request", "status": 400}
+{"type": "gateway_request", "status": 400}
+{"type": "gateway_request", "status": 400}
+{"type": "gateway_request", "status": 400}
+{"type": "gateway_request", "status": 400}
+{"type": "gateway_request", "status": 400}
+{"type": "gateway_request", "status": 400}
+test_policy_rejections_never_touch_upstream (__main__.GatewayTests.test_policy_rejections_never_touch_upstream) ... ok
+test_private_dns_and_non_https_rejected (__main__.GatewayTests.test_private_dns_and_non_https_rejected) ... ok
+{"type": "gateway_request", "status": 400}
+test_redirect_is_not_followed (__main__.GatewayTests.test_redirect_is_not_followed) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 4.097s
+
+OK

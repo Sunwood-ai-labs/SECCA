@@ -1,0 +1,97 @@
+{
+  "review_id": "coordinator-initial",
+  "role": "coordinator",
+  "fresh_context": false,
+  "model_blinded": false,
+  "reviewer_model": "unknown; runtime model identifier not exposed",
+  "context_provenance": {
+    "statement": "Coordinator knows generation model and run history. Personally viewed the reference and all three fixed rendered views. Saved this initial score before requesting or reading independent reviews.",
+    "other_reviews_read": false,
+    "recorded_at": "2026-10-17T07:36:11.302329+00:00",
+    "signed_by": "root-coordinator"
+  },
+  "evidence_hashes": {
+    "reference": "d3fcfa0a7a1b1fc0504fe7dfadfaa2a1beb0a8712bd088a0b6c8ccb0dd120cd3",
+    "rubric": "7028b7740c4012c2894ea8cfa567e696df0365546b579cc53653e36b2900a190",
+    "isometric": "aad5b3ec97ba175d638c8f8a78c1bb683a05e2a6457d61f4d3d74eb59c619c15",
+    "top": "c4eefb976f5e56d979bc5abe6ce68086a5d9d7a89f95ebd9245a6d07197a47ae",
+    "right": "f63b6a39d8008b1d004ea2187ccf01a9b890b2d47e85198ad5b5a24e387a1950"
+  },
+  "criteria": [
+    {
+      "id": "silhouette_proportions",
+      "score": 12,
+      "max": 25,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "斜視図と上面図で四輪を持つ低い車体と、前後車輪の間にあるシートとハンドルを確認できる。"
+        },
+        {
+          "kind": "deduction",
+          "observation": "参照の幅広い外装でまとまった車体に比べ、細長い長方形の骨格が露出し、車輪と車体の見える比率が大きく異なる。"
+        }
+      ]
+    },
+    {
+      "id": "component_layout",
+      "score": 10,
+      "max": 20,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "四輪、中央のシート、その前のハンドル、前後のバンパー、後部のエンジン相当部と排気管が配置されている。"
+        },
+        {
+          "kind": "deduction",
+          "observation": "エンジン相当の箱が後部中央寄りにあり、参照のシート右側配置と異なる。左右の大きなサイドポッドも欠けている。"
+        }
+      ]
+    },
+    {
+      "id": "characteristic_geometry",
+      "score": 7,
+      "max": 30,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "円環のハンドル、円筒のタイヤ、座面と背もたれの組み合わせで、主要部品の粗い形状は判別できる。"
+        },
+        {
+          "kind": "deduction",
+          "observation": "シートは平板の直角形状で、参照の曲面バケット形状を欠く。ノーズは直方体で、湾曲したフロント外装、タイヤの丸みとリム、曲がったフレームも再現が乏しい。"
+        }
+      ]
+    },
+    {
+      "id": "mechanical_detail",
+      "score": 3,
+      "max": 20,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "斜視図には車軸の棒、床の支持材、エンジン相当部の横の単純な排気管が見える。"
+        },
+        {
+          "kind": "deduction",
+          "observation": "参照で目立つエンジンの冷却フィン、チェーンとスプロケット、操舵リンクやジョイント、複雑な排気系は確認できない。"
+        }
+      ]
+    },
+    {
+      "id": "color_material_regions",
+      "score": 1,
+      "max": 5,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "四つのタイヤが黒い領域になっており、参照のタイヤの配色に対応している。"
+        },
+        {
+          "kind": "deduction",
+          "observation": "参照の青いフレームは灰色、暗いシートは青紫色になり、銀色の外装に対応する部分は赤く、主要な色領域の対応が異なる。"
+        }
+      ]
+    }
+  ]
+}

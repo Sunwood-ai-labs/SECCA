@@ -1,0 +1,96 @@
+{
+  "checked_at_utc": "2026-10-17T07:21:46.4606726Z",
+  "scope": "Read-only source verification; no inference and no CAD outputs accessed.",
+  "wire": {
+    "opencode_selector": "opencode/beam-free",
+    "model_id": "beam-free",
+    "endpoint": "https://opencode.ai/inference/openai/v1/chat/completions",
+    "npm": "@ai-sdk/openai-compatible",
+    "direct_reflection_model_id": "Beam-1.0-501B-A23B",
+    "direct_reflection_endpoint": "https://api.reflection.ai/openai/v1/chat/completions",
+    "note": "Direct Reflection endpoint is a separate service and credential path, not the selected OpenCode route."
+  },
+  "capabilities": {
+    "attachment": false,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "tool_call": true,
+    "reasoning": true,
+    "reasoning_options": [
+      {
+        "type": "effort",
+        "values": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ]
+      }
+    ],
+    "interleaved": {
+      "field": "reasoning_content"
+    },
+    "structured_output": true,
+    "limits": {
+      "context": 1048576,
+      "output": 131072
+    },
+    "canonical_model_id": "reflection/beam-1.0-501b-a23b"
+  },
+  "price": {
+    "usd_per_million_tokens": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0
+    },
+    "availability": "Limited time; no fixed ending date identified in the reviewed model docs.",
+    "go_quota": "Go and Go Plus table lists Beam Free monthly usage as Unlimited for a limited time. This is not a promise of unlimited rate/concurrency."
+  },
+  "privacy": {
+    "training": "OpenCode docs state prompts and other inputs are not used for training.",
+    "retention": "30 days for safety",
+    "regions": "Country/territory restrictions apply; Japan is not in the published exclusion list."
+  },
+  "conclusion": "Official Reflection documentation expressly excludes image, audio and file input. models.dev agrees text-only. This is evidence of unsupported image-conditioned CAD input, not an inference-performance result.",
+  "sources": [
+    {
+      "url": "https://opencode.ai/v2/docs/console/models/",
+      "supports": "Model id, OpenCode selector pattern, gateway endpoint, free token price, limited-time availability, 30-day safety retention, no training, excluded regions"
+    },
+    {
+      "url": "https://opencode.ai/v2/docs/console/go/",
+      "supports": "Go quota table"
+    },
+    {
+      "url": "https://models.dev/api.json",
+      "supports": "Live provider/model capability fields",
+      "model_snapshot_last_updated": "2026-10-16"
+    },
+    {
+      "url": "https://github.com/anomalyco/models.dev/blob/afb79a25f8b73cba2f5802ff7795f6985ab005ca/providers/opencode/models/beam-free.toml",
+      "supports": "Pinned Beam Free route, free prices, canonical base model and reasoning effort",
+      "repository_head_sha": "afb79a25f8b73cba2f5802ff7795f6985ab005ca"
+    },
+    {
+      "url": "https://github.com/anomalyco/models.dev/blob/afb79a25f8b73cba2f5802ff7795f6985ab005ca/models/reflection/beam-1.0-501b-a23b.toml",
+      "supports": "Pinned text-only modality, tool call, reasoning, structured output and token limits"
+    },
+    {
+      "url": "https://developers.reflection.ai/openai-compatibility",
+      "supports": "Direct native wire id/endpoint; explicitly text-only input; no image/audio/files",
+      "document_last_modified": "2026-10-16"
+    },
+    {
+      "url": "https://developers.reflection.ai/models",
+      "supports": "Native model id, context 1048576, maximum output 131072 including reasoning",
+      "document_last_modified": "2026-10-16"
+    }
+  ]
+}

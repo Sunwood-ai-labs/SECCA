@@ -1,0 +1,15 @@
+{
+  "rubric": "likeness-rubric.json",
+  "scorer": "parent, before reading independent scores",
+  "scores": {"silhouette_proportions": 13, "component_layout": 14, "characteristic_geometry": 8, "mechanical_detail": 5, "color_material_regions": 5},
+  "total": 45,
+  "observations": [
+    "Four exposed wheels and low chassis support kart recognition; the tall flat seat back, broad barrel-like nose and sparse rectangular frame differ from the reference silhouette.",
+    "The major component classes are placed in broadly corresponding zones; the steering assembly is substantially more upright and farther forward relative to the seat.",
+    "The reference has a shaped bucket seat, tapered nose and full-width front bumper, inclined steering wheel, and visible rims. The generated output uses coarse approximations or omits these characteristic shapes.",
+    "Rear axle, engine fin plates and exhaust are represented, while the reference's front steering links, joints and detailed engine casing are not reproduced at comparable detail.",
+    "Blue frame, silver bodywork, dark seat and black tires match the reference's main material regions."
+  ],
+  "not_scored": ["File export", "BRep validity", "Unverified dimensions or operation"],
+  "measurement_status": "Rubric-based visual judgment for one output, not an automatic similarity measurement."
+}

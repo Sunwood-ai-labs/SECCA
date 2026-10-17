@@ -1,0 +1,257 @@
+{
+  "schema_version": 1,
+  "request_id": "3ac0687400e94b82ab55b8649b2cccd7",
+  "success": true,
+  "source_before": {
+    "racing-kart.FCStd": {
+      "path": "workspace/racing-kart.FCStd",
+      "exists": true,
+      "bytes": 115455,
+      "sha256": "8394c8fbd8a856d9b2814ead4d6b513c2190a6e6796f98ab4f4ed62c86b61f6b"
+    },
+    "racing-kart.step": {
+      "path": "workspace/racing-kart.step",
+      "exists": true,
+      "bytes": 381230,
+      "sha256": "9735cc3b3dcb25630d2d9d0b99a184e5710c68855e81315651273cae7f3647d6"
+    }
+  },
+  "render_spec": {
+    "path": "render-spec.json",
+    "exists": true,
+    "bytes": 1251,
+    "sha256": "29b4663d2a72b343c2f0a833795ae3eedd12c1334419d6f321089d9fa2c43fa7"
+  },
+  "freecad_version": [
+    "1",
+    "0",
+    "0",
+    "",
+    "https://code.launchpad.net/~vcs-imports/freecad/trunk",
+    "2026/08/25 11:49:11"
+  ],
+  "images": {
+    "isometric": {
+      "path": "renders/isometric.png",
+      "exists": true,
+      "bytes": 81969,
+      "sha256": "95e0f8d23476cdbd6b7f55f8d6b9d2a1d3ff37edff6c987d0520c5eea559de55",
+      "width": 1600,
+      "height": 1000,
+      "requested_quaternion_xyzw": [
+        -0.1759200418934682,
+        0.4247081339581416,
+        0.8204732652846073,
+        -0.339851086158641
+      ],
+      "actual_quaternion_xyzw": [
+        -0.1759200418934682,
+        0.4247081339581416,
+        0.8204732652846073,
+        -0.339851086158641
+      ],
+      "camera_type": "Orthographic",
+      "quaternion_max_delta": 0.0
+    },
+    "top": {
+      "path": "renders/top.png",
+      "exists": true,
+      "bytes": 44366,
+      "sha256": "bc6c1859c10d28074a4cf759eb5a756ac7015bfc076891dc10b4b3f3927f3d67",
+      "width": 1280,
+      "height": 900,
+      "requested_quaternion_xyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "actual_quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "camera_type": "Orthographic",
+      "quaternion_max_delta": 0.0
+    },
+    "right": {
+      "path": "renders/right.png",
+      "exists": true,
+      "bytes": 23466,
+      "sha256": "894b39e02613a0c10c195989d30d20f16e64a7b0a0df6b3c8452f34c53ce1656",
+      "width": 1280,
+      "height": 900,
+      "requested_quaternion_xyzw": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "actual_quaternion_xyzw": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "camera_type": "Orthographic",
+      "quaternion_max_delta": 0.0
+    },
+    "preview": {
+      "path": "renders/preview.png",
+      "exists": true,
+      "bytes": 41192,
+      "sha256": "502f5295fb488c57fea5e247220ae55c52fcf1ec32b8f0afcb0bed88920bddad",
+      "width": 960,
+      "height": 600,
+      "requested_quaternion_xyzw": [
+        -0.1759200418934682,
+        0.4247081339581416,
+        0.8204732652846073,
+        -0.339851086158641
+      ],
+      "actual_quaternion_xyzw": [
+        -0.1759200418934682,
+        0.4247081339581416,
+        0.8204732652846073,
+        -0.339851086158641
+      ],
+      "camera_type": "Orthographic",
+      "quaternion_max_delta": 0.0
+    }
+  },
+  "presentation": {
+    "background": "White",
+    "projection": "Orthographic",
+    "animation_enabled": false,
+    "display_mode": "Flat Lines",
+    "preserve_model_colors": true,
+    "preserve_model_visibility": true
+  },
+  "review_copy": {
+    "path": "evidence/review/review-1f0ebe3c3eca4b739565a78e64264c3b.FCStd",
+    "exists": true,
+    "bytes": 115455,
+    "sha256": "8394c8fbd8a856d9b2814ead4d6b513c2190a6e6796f98ab4f4ed62c86b61f6b"
+  },
+  "display_mode_objects": [
+    "RailR_1",
+    "RailR_2",
+    "RailR_3",
+    "RailR_4",
+    "RailR_5",
+    "RailL_1",
+    "RailL_2",
+    "RailL_3",
+    "RailL_4",
+    "RailL_5",
+    "CrossFR",
+    "Cross300",
+    "Cross60",
+    "Cross_180",
+    "Cross_350",
+    "CrossRear",
+    "AxleFL",
+    "AxleFR",
+    "RailBLend_L",
+    "RailBLend_R",
+    "SeatSupL",
+    "SeatSupR",
+    "SteerSupL",
+    "SteerSupR",
+    "FloorPan",
+    "SeatPan",
+    "SeatBack",
+    "SeatBolsterR",
+    "SeatBolsterL",
+    "SteerColumn",
+    "SteerWheel",
+    "SteerSpoke0",
+    "SteerSpoke1",
+    "SteerSpoke2",
+    "SteerHub",
+    "BumpBar",
+    "BumpPostL",
+    "BumpPostR",
+    "BumpLinkL",
+    "BumpLinkR",
+    "ArchV_L",
+    "ArchT_L",
+    "ArchV_R",
+    "ArchT_R",
+    "ArchTop",
+    "NoseCone",
+    "Splitter",
+    "SidePod_R",
+    "SidePod_L",
+    "FL_Tire",
+    "FL_Rim",
+    "FL_Hub",
+    "FR_Tire",
+    "FR_Rim",
+    "FR_Hub",
+    "RR_Tire",
+    "RR_Rim",
+    "RR_Hub",
+    "RL_Tire",
+    "RL_Rim",
+    "RL_Hub",
+    "RearAxle",
+    "BearingR",
+    "BearingL",
+    "Sprocket",
+    "BrakeDisc",
+    "Crankcase",
+    "EngineBlock",
+    "CylHead",
+    "HeadFin1",
+    "HeadFin2",
+    "HeadFin3",
+    "HeadFin4",
+    "Carb",
+    "Muffler",
+    "HeadPipe",
+    "TailPipe"
+  ],
+  "source_after": {
+    "racing-kart.FCStd": {
+      "path": "workspace/racing-kart.FCStd",
+      "exists": true,
+      "bytes": 115455,
+      "sha256": "8394c8fbd8a856d9b2814ead4d6b513c2190a6e6796f98ab4f4ed62c86b61f6b"
+    },
+    "racing-kart.step": {
+      "path": "workspace/racing-kart.step",
+      "exists": true,
+      "bytes": 381230,
+      "sha256": "9735cc3b3dcb25630d2d9d0b99a184e5710c68855e81315651273cae7f3647d6"
+    }
+  },
+  "source_unchanged": true,
+  "review_copy_after": {
+    "path": "evidence/review/review-1f0ebe3c3eca4b739565a78e64264c3b.FCStd",
+    "exists": true,
+    "bytes": 115455,
+    "sha256": "8394c8fbd8a856d9b2814ead4d6b513c2190a6e6796f98ab4f4ed62c86b61f6b"
+  },
+  "review_copy_unchanged": true,
+  "postprocess_exit_code": 0,
+  "host_source_unchanged": true,
+  "sandbox": {
+    "backend": "podman-offline-postprocess",
+    "connection": "<PODMAN_CONNECTION>",
+    "image_id": "sha256:7b6b24b1c1bf6a3404db634d26168afcf4e0e2bc4b020e74fac3800448a58a16",
+    "network": "none",
+    "user": "10000:10000",
+    "api_channel": false,
+    "bind_mounts": [],
+    "request_id": "3ac0687400e94b82ab55b8649b2cccd7",
+    "inspection": "evidence/postprocess/3ac0687400e94b82ab55b8649b2cccd7/container-inspect.json"
+  },
+  "public_export": {
+    "record_type": "historical_public_transformed_export",
+    "raw_record": false,
+    "provenance_manifest": "references/public-export-manifest.json",
+    "new_model_generation": false
+  }
+}

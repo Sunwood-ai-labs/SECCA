@@ -1,0 +1,4 @@
+interface:
+  display_name: "SECCA"
+  short_description: "隔離したFreeCAD MCPで固定画像からのCAD生成を実行し、保存・描画・採点する"
+  default_prompt: "Use $secca to run the fixed racing-kart CAD task with the specified model in an isolated Podman runtime containing FreeCAD MCP, then preserve the CAD, comparable white renders, and evidence-based scores."

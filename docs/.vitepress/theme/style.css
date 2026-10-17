@@ -1,0 +1,42 @@
+:root {
+  --vp-c-brand-1: #087481;
+  --vp-c-brand-2: #086570;
+  --vp-c-brand-3: #087f8c;
+  --vp-c-brand-soft: #e8f4f5;
+  --vp-c-text-1: #173d49;
+  --vp-c-text-2: #48626d;
+  --vp-c-bg-soft: #f2f7f8;
+  --vp-c-bg-alt: #f6f9fa;
+  --vp-font-family-base: 'Aptos', 'Yu Gothic', 'Hiragino Kaku Gothic ProN', sans-serif;
+  --vp-font-family-mono: 'Cascadia Code', 'SFMono-Regular', Consolas, monospace;
+  --vp-home-hero-name-color: #123b4a;
+  --vp-home-hero-image-background-image: none;
+  --vp-home-hero-image-filter: none;
+}
+.VPNavBarTitle .logo { width: 34px; height: 34px; }
+.VPHomeHero .name { letter-spacing: .055em; }
+.VPHomeHero .text { max-width: 780px; font-size: clamp(30px, 3.5vw, 49px); line-height: 1.14; font-weight: 650; }
+.VPHomeHero .tagline { max-width: 700px; line-height: 1.65; font-size: 19px; }
+.VPHomeHero .image-bg { display: none; }
+.VPHomeHero .image-src { max-height: 230px; max-width: 230px; }
+.VPHomeHero { background: linear-gradient(90deg, #f1f8f9, #fff); border-bottom: 1px solid #dce8eb; }
+.VPHome .vp-doc { max-width: 1152px; margin: 0 auto; padding: 0 32px 64px; }
+.VPFeature { border-radius: 6px !important; border: 1px solid #dce8eb !important; background: #fff !important; }
+.VPFeature .title { color: #087481; }
+.experiment-card { display: grid; grid-template-columns: 1.2fr 1fr; gap: 36px; align-items: center; margin: 42px 0; padding: 28px; border: 1px solid #d6e4e8; border-radius: 6px; background: #fff; }
+.experiment-card img { width: 100%; border: 1px solid #e5ecef; }
+.experiment-card h2 { margin-top: 0; padding-top: 0; border-top: 0; }
+.experiment-label { color: #087481; text-transform: uppercase; letter-spacing: .12em; font-size: 12px; font-weight: 700; }
+.experiment-score { font-size: 52px; line-height: 1.2; font-weight: 650; letter-spacing: -.04em; color: #123b4a; }
+.experiment-score small { font-size: 20px; letter-spacing: 0; color: #48626d; }
+.evidence-flow { padding: 20px 24px; background: #f2f7f8; border-left: 3px solid #087f8c; margin: 24px 0; line-height: 1.9; }
+.vp-doc a { text-underline-offset: 3px; }
+.vp-doc table { width: 100%; }
+@media (max-width: 767px) {
+  .VPHomeHero .tagline { font-size: 17px; }
+  .VPHomeHero .text { font-size: 28px; line-height: 1.35; text-wrap: balance; }
+  .VPHomeHero .image { display: none; }
+  .experiment-card { grid-template-columns: 1fr; gap: 18px; padding: 18px; }
+  .VPHome .vp-doc { padding: 0 24px 48px; }
+  .experiment-score { font-size: 44px; }
+}

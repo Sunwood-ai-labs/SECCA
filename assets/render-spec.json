@@ -1,0 +1,19 @@
+{
+  "version": "1.0",
+  "background": "White",
+  "projection": "Orthographic",
+  "animation_enabled": false,
+  "fit": "fitAll",
+  "display_mode": "Flat Lines",
+  "preserve_model_colors": true,
+  "preserve_model_visibility": true,
+  "save_document_after_presentation_changes": false,
+  "views": [
+    {"id": "isometric", "filename": "isometric.png", "quaternion_xyzw": [-0.1759200418934682, 0.4247081339581416, 0.8204732652846073, -0.339851086158641], "width": 1600, "height": 1000},
+    {"id": "top", "filename": "top.png", "quaternion_xyzw": [0,0,0,1], "width": 1280, "height": 900},
+    {"id": "right", "filename": "right.png", "quaternion_xyzw": [0.5,0.5,0.5,0.5], "width": 1280, "height": 900}
+  ],
+  "preview": {"from_view": "isometric", "filename": "preview.png", "width": 960, "height": 600},
+  "orientation_policy": "World coordinates are fixed for all runs. Do not rotate geometry or choose a more flattering primary camera per model. Supplemental views may be saved separately with their transforms recorded.",
+  "repeatability_scope": "Canonical camera, projection, framing, image size and white background are fixed. Byte-identical PNGs are checked on the same host but not promised across FreeCAD, Qt, GPU or graphics-driver versions."
+}

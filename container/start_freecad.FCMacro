@@ -1,0 +1,25 @@
+import json
+import os
+import sys
+import FreeCAD
+import FreeCADGui
+from PySide import QtCore
+
+sys.path.insert(0, "/opt/freecad-mcp/addon/FreeCADMCP")
+
+def start():
+    from rpc_server import rpc_server
+    os.makedirs("/workspace/.runtime", exist_ok=True)
+    data = {
+        "freecad_version": FreeCAD.Version(),
+        "user_app_data": FreeCAD.getUserAppDataDir(),
+        "python_version": sys.version,
+        "rpc_start": rpc_server.start_rpc_server(),
+    }
+    with open("/workspace/.runtime/freecad.json", "w") as stream:
+        json.dump(data, stream, indent=2)
+    FreeCADGui.getMainWindow().show()
+    FreeCAD.Console.PrintMessage("Sandbox RPC ready\\n")
+
+QtCore.QTimer.singleShot(0, start)
+

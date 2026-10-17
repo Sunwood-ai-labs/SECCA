@@ -1,0 +1,17 @@
+name: Experiment result
+description: Propose a documented model trial or benchmark result.
+body:
+  - type: textarea
+    id: record
+    attributes:
+      label: Trial record
+      description: Model/provider, input hashes, protocol, immutable runtime, raw evidence and transforms, renders, reviews, and score aggregation.
+    validations:
+      required: true
+  - type: textarea
+    id: limitations
+    attributes:
+      label: Failures, input modality, and comparison limits
+      description: Include failed attempts, provider errors, interventions, missing evidence, and input/data rights.
+    validations:
+      required: true

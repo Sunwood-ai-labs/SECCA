@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-10-17",
+  "scope": "SECCA release runtime verification without model inference; separate from recorded model experiments",
+  "protocol_id": "racing-kart-image-v2-podman",
+  "image_id": "sha256:b9e296032f921c96de5843b19e1a182ce5067d6cdca25a5d3ab7e7da23fe89cb",
+  "ready_tag": "localhost/kart-sbx-secca:v0.1.0",
+  "runtime_change": "MCP smoke client uses 127.0.0.1 rather than localhost so it works with --no-hosts and --network none. Vendored MCP source is unchanged.",
+  "embedded_sources": {
+    "files_matched": 36,
+    "source_manifest_matched": true,
+    "vendor_source_head": "5dbfe2c80b53c3102bff0723951676e16edf2d84",
+    "vendor_has_local_working_tree_files": true
+  },
+  "checks": {
+    "fixed_asset_files_verified": 26,
+    "historical_baseline_score": 43,
+    "historical_review_totals": [45, 42, 42],
+    "host_unit_tests": {"python": "3.12", "ran": 79, "passed": 77, "skipped": 2, "skip_reason": "Windows host Unix sockets unavailable"},
+    "linux_gateway_tests": {"ran": 8, "failures": 0, "errors": 0, "skipped": 0},
+    "skill_validation": "passed",
+    "native_saved_and_reopened": true,
+    "step_exported_and_reopened": true,
+    "valid_solids": 1,
+    "expected_volume": 24,
+    "white_png": {"width": 640, "height": 480, "white_corners": true, "nonempty": true, "visually_inspected": true},
+    "container_isolation_verified": true,
+    "capabilities_effective_permitted_bounding": 0,
+    "no_new_privileges": 1,
+    "own_container_removed": true,
+    "new_model_inference_calls": 0
+  },
+  "smoke_artifacts": {
+    "smoke.FCStd": {"bytes": 12783, "sha256": "eaa7176a3017ae89f9d3881b3b20a38cc34d9afabc45460ef974be3a8770cf96"},
+    "smoke.step": {"bytes": 6756, "sha256": "ac1644f17b8e877830229a89cb989146f094fc476791357b924a5b4fc86875ff"},
+    "smoke.png": {"bytes": 4469, "sha256": "fd5be8cae00921dee92344a460dc8c12ea3cb44b0777eb95665c2294e3cd8620"}
+  },
+  "reproduce": "uv run --frozen python scripts/verify_runtime.py --connection CONNECTION --image localhost/kart-sbx-secca:v0.1.0 --output NEW_DIRECTORY",
+  "limitations": [
+    "The smoke fixture does not generate or score a model's CAD output.",
+    "A new build can resolve different Debian transitive packages and produce a different image ID.",
+    "Native CAD, STEP, and PNG bytes are recorded for this run; future runs are not required to reproduce these artifact bytes.",
+    "The checked-in summary records the local verification. Re-run the helper to produce raw command evidence and smoke artifacts.",
+    "These checks do not establish a complete denial-of-service boundary."
+  ]
+}

@@ -1,0 +1,16 @@
+* text=auto eol=lf
+assets/** -text
+container/** -text
+experiments/** -text
+references/verification/** -text
+references/public-export-manifest.json -text
+references/verified-runtime.json -text
+*.png -text
+*.jpg -text
+*.jpeg -text
+*.gif -text
+*.webp -text
+*.FCStd -text
+*.step -text
+*.stp -text
+*.zip -text

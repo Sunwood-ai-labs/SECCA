@@ -1,0 +1,2765 @@
+{
+  "schema_version": 1,
+  "request_id": "3c5d6fa6ccc94b94b47443415c41c409",
+  "scope": "Independent disk reopen and STEP import; no recompute, save, grading, or structural safety assessment.",
+  "selection_note": "Visible physical Part::Feature and Body shapes; exclude containers, datum objects and Body internals. STEP object count is an import representation, not a manufactured part count.",
+  "success": true,
+  "freecad_version": [
+    "1",
+    "0",
+    "0",
+    "",
+    "https://code.launchpad.net/~vcs-imports/freecad/trunk",
+    "2026/08/25 11:49:11"
+  ],
+  "native": {
+    "file_before": {
+      "path": "/job/workspace/racing-kart.FCStd",
+      "exists": true,
+      "bytes": 41740,
+      "sha256": "ac86c7cf249986730b702d130f71be969fab037ae2d1f77b2a4bb1263b1a0392"
+    },
+    "document_name": "racing_kart",
+    "object_count": 33,
+    "all_shape_object_counts": {
+      "total": 33,
+      "null": 0,
+      "invalid": 0,
+      "inspection_exceptions": 0
+    },
+    "objects": [
+      {
+        "name": "ChassisRailLeft",
+        "label": "ChassisRailLeft",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 1170000.0,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              -650.0,
+              -150.0,
+              60.0
+            ],
+            "max": [
+              650.0,
+              -120.0,
+              90.0
+            ],
+            "size": [
+              1300.0,
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "ChassisRailRight",
+        "label": "ChassisRailRight",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 1170000.0,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              -650.0,
+              120.0,
+              60.0
+            ],
+            "max": [
+              650.0,
+              150.0,
+              90.0
+            ],
+            "size": [
+              1300.0,
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "CrossMember__500",
+        "label": "CrossMember__500",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 243000.0,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              -515.0,
+              -135.0,
+              60.0
+            ],
+            "max": [
+              -485.0,
+              135.0,
+              90.0
+            ],
+            "size": [
+              30.0,
+              270.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "CrossMember__100",
+        "label": "CrossMember__100",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 243000.0,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              -115.0,
+              -135.0,
+              60.0
+            ],
+            "max": [
+              -85.0,
+              135.0,
+              90.0
+            ],
+            "size": [
+              30.0,
+              270.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "CrossMember_250",
+        "label": "CrossMember_250",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 243000.0,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              235.0,
+              -135.0,
+              60.0
+            ],
+            "max": [
+              265.0,
+              135.0,
+              90.0
+            ],
+            "size": [
+              30.0,
+              270.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "CrossMember_500",
+        "label": "CrossMember_500",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 243000.0,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              485.0,
+              -135.0,
+              60.0
+            ],
+            "max": [
+              515.0,
+              135.0,
+              90.0
+            ],
+            "size": [
+              30.0,
+              270.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "ChassisFloor",
+        "label": "ChassisFloor",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 4050000.0,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              -450.0,
+              -150.0,
+              45.0
+            ],
+            "max": [
+              450.0,
+              150.0,
+              60.0
+            ],
+            "size": [
+              900.0,
+              300.0,
+              15.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "FrontAxle",
+        "label": "FrontAxle",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 488580.4894862848,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              488.0,
+              -540.0,
+              118.0
+            ],
+            "max": [
+              512.0,
+              540.0,
+              142.0
+            ],
+            "size": [
+              24.0,
+              1080.0,
+              24.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "RearAxle",
+        "label": "RearAxle",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 742201.2644105888,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -515.0,
+              -525.0,
+              145.0
+            ],
+            "max": [
+              -485.0,
+              525.0,
+              175.0
+            ],
+            "size": [
+              30.0,
+              1050.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "FrontWheelLeft",
+        "label": "FrontWheelLeft",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 4778362.426110075,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              370.0,
+              495.0,
+              0.0
+            ],
+            "max": [
+              630.0,
+              585.0,
+              260.0
+            ],
+            "size": [
+              260.0,
+              90.0,
+              260.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "FrontWheelLeft_Hub",
+        "label": "FrontWheelLeft_Hub",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 617868.8081539555,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              454.5,
+              492.5,
+              84.5
+            ],
+            "max": [
+              545.5,
+              587.5,
+              175.5
+            ],
+            "size": [
+              91.0,
+              95.0,
+              91.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "FrontWheelRight",
+        "label": "FrontWheelRight",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 4778362.426110075,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              370.0,
+              -585.0,
+              0.0
+            ],
+            "max": [
+              630.0,
+              -495.0,
+              260.0
+            ],
+            "size": [
+              260.0,
+              90.0,
+              260.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "FrontWheelRight_Hub",
+        "label": "FrontWheelRight_Hub",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 617868.8081539555,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              454.5,
+              -587.5,
+              84.5
+            ],
+            "max": [
+              545.5,
+              -492.5,
+              175.5
+            ],
+            "size": [
+              91.0,
+              95.0,
+              91.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "RearWheelLeft",
+        "label": "RearWheelLeft",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 9650972.631827844,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -660.0,
+              465.0,
+              0.0
+            ],
+            "max": [
+              -340.0,
+              585.0,
+              320.0
+            ],
+            "size": [
+              320.0,
+              120.0,
+              320.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "RearWheelLeft_Hub",
+        "label": "RearWheelLeft_Hub",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 1231504.320207199,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -556.0,
+              462.5,
+              104.0
+            ],
+            "max": [
+              -444.0,
+              587.5,
+              216.0
+            ],
+            "size": [
+              112.0,
+              125.0,
+              112.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "RearWheelRight",
+        "label": "RearWheelRight",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 9650972.631827844,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -660.0,
+              -585.0,
+              0.0
+            ],
+            "max": [
+              -340.0,
+              -465.0,
+              320.0
+            ],
+            "size": [
+              320.0,
+              120.0,
+              320.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "RearWheelRight_Hub",
+        "label": "RearWheelRight_Hub",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 1231504.320207199,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -556.0,
+              -587.5,
+              104.0
+            ],
+            "max": [
+              -444.0,
+              -462.5,
+              216.0
+            ],
+            "size": [
+              112.0,
+              125.0,
+              112.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "SteeringColumn",
+        "label": "SteeringColumn",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 135716.80263507905,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              238.0,
+              -12.0,
+              90.0
+            ],
+            "max": [
+              262.0,
+              12.0,
+              390.0
+            ],
+            "size": [
+              24.0,
+              24.0,
+              300.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "SteeringWheel",
+        "label": "SteeringWheel",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 341093.52810164826,
+          "solids": 1,
+          "faces": 1,
+          "bounds_mm": {
+            "min": [
+              107.12422956140401,
+              -142.875770438596,
+              378.0
+            ],
+            "max": [
+              392.87577043859596,
+              142.875770438596,
+              402.0
+            ],
+            "size": [
+              285.7515408771919,
+              285.751540877192,
+              24.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "SeatBase",
+        "label": "SeatBase",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 3840000.0,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              -360.0,
+              -150.0,
+              120.0
+            ],
+            "max": [
+              -40.0,
+              150.0,
+              160.0
+            ],
+            "size": [
+              320.0,
+              300.0,
+              40.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "SeatBack",
+        "label": "SeatBack",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 3120000.0,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              -360.0,
+              -150.0,
+              160.0
+            ],
+            "max": [
+              -320.0,
+              150.0,
+              420.0
+            ],
+            "size": [
+              40.0,
+              300.0,
+              260.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Engine",
+        "label": "Engine",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 14784000.0,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              -640.0,
+              -200.0,
+              100.0
+            ],
+            "max": [
+              -360.0,
+              40.0,
+              320.0
+            ],
+            "size": [
+              280.0,
+              240.0,
+              220.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Exhaust",
+        "label": "Exhaust",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 785398.1633974484,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -507.18369713915865,
+              -225.0,
+              176.0543428694712
+            ],
+            "max": [
+              -109.68578877238077,
+              -175.0,
+              338.88481135706695
+            ],
+            "size": [
+              397.4979083667779,
+              50.0,
+              162.83046848759574
+            ]
+          }
+        }
+      },
+      {
+        "name": "FrontBumper",
+        "label": "FrontBumper",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 763407.01482232,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              835.0,
+              -540.0,
+              115.0
+            ],
+            "max": [
+              865.0,
+              540.0,
+              145.0
+            ],
+            "size": [
+              30.0,
+              1080.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "RearBumper",
+        "label": "RearBumper",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 742201.2644105885,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -865.0,
+              -525.0,
+              145.0
+            ],
+            "max": [
+              -835.0,
+              525.0,
+              175.0
+            ],
+            "size": [
+              30.0,
+              1050.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "FrontSupport__300",
+        "label": "FrontSupport__300",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 40212.38596594933,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              750.0,
+              -308.0,
+              122.0
+            ],
+            "max": [
+              950.0,
+              -292.0,
+              138.0
+            ],
+            "size": [
+              200.0,
+              16.0,
+              16.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "RearSupport__300",
+        "label": "RearSupport__300",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 40212.38596594933,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -750.0,
+              -308.0,
+              152.0
+            ],
+            "max": [
+              -550.0,
+              -292.0,
+              168.0
+            ],
+            "size": [
+              200.0,
+              16.0,
+              16.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "FrontSupport_300",
+        "label": "FrontSupport_300",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 40212.38596594933,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              750.0,
+              292.0,
+              122.0
+            ],
+            "max": [
+              950.0,
+              308.0,
+              138.0
+            ],
+            "size": [
+              200.0,
+              16.0,
+              16.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "RearSupport_300",
+        "label": "RearSupport_300",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 40212.38596594933,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -750.0,
+              292.0,
+              152.0
+            ],
+            "max": [
+              -550.0,
+              308.0,
+              168.0
+            ],
+            "size": [
+              200.0,
+              16.0,
+              16.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "NoseFairing",
+        "label": "NoseFairing",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 12000000.0,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              650.0,
+              -200.0,
+              80.0
+            ],
+            "max": [
+              850.0,
+              200.0,
+              230.0
+            ],
+            "size": [
+              200.0,
+              400.0,
+              150.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "NerfBar_L",
+        "label": "NerfBar_L",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 542867.2105403163,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -600.0,
+              -372.0,
+              108.0
+            ],
+            "max": [
+              600.0,
+              -348.0,
+              132.0
+            ],
+            "size": [
+              1200.0,
+              24.0,
+              24.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "NerfBar_R",
+        "label": "NerfBar_R",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 542867.2105403163,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -600.0,
+              348.0,
+              108.0
+            ],
+            "max": [
+              600.0,
+              372.0,
+              132.0
+            ],
+            "size": [
+              1200.0,
+              24.0,
+              24.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "NumberPlate",
+        "label": "NumberPlate",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 300000.0,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              850.0,
+              -125.0,
+              170.0
+            ],
+            "max": [
+              860.0,
+              125.0,
+              290.0
+            ],
+            "size": [
+              10.0,
+              250.0,
+              120.0
+            ]
+          }
+        }
+      }
+    ],
+    "render_selection": {
+      "names": [
+        "ChassisRailLeft",
+        "ChassisRailRight",
+        "CrossMember__500",
+        "CrossMember__100",
+        "CrossMember_250",
+        "CrossMember_500",
+        "ChassisFloor",
+        "FrontAxle",
+        "RearAxle",
+        "FrontWheelLeft",
+        "FrontWheelLeft_Hub",
+        "FrontWheelRight",
+        "FrontWheelRight_Hub",
+        "RearWheelLeft",
+        "RearWheelLeft_Hub",
+        "RearWheelRight",
+        "RearWheelRight_Hub",
+        "SteeringColumn",
+        "SteeringWheel",
+        "SeatBase",
+        "SeatBack",
+        "Engine",
+        "Exhaust",
+        "FrontBumper",
+        "RearBumper",
+        "FrontSupport__300",
+        "RearSupport__300",
+        "FrontSupport_300",
+        "RearSupport_300",
+        "NoseFairing",
+        "NerfBar_L",
+        "NerfBar_R",
+        "NumberPlate"
+      ],
+      "object_count": 33,
+      "solid_count": 33,
+      "bounds_mm": {
+        "min": [
+          -865.0,
+          -587.5,
+          0.0
+        ],
+        "max": [
+          950.0,
+          587.5,
+          420.0
+        ],
+        "size": [
+          1815.0,
+          1175.0,
+          420.0
+        ]
+      },
+      "excluded": []
+    },
+    "geometry_valid": true,
+    "failures": [],
+    "file_after": {
+      "path": "/job/workspace/racing-kart.FCStd",
+      "exists": true,
+      "bytes": 41740,
+      "sha256": "ac86c7cf249986730b702d130f71be969fab037ae2d1f77b2a4bb1263b1a0392"
+    },
+    "source_unchanged": true
+  },
+  "step": {
+    "file_before": {
+      "path": "/job/workspace/racing-kart.step",
+      "exists": true,
+      "bytes": 167153,
+      "sha256": "0cff8fed07b44025fe2efdfdaf44f598bea7a96b7066fcbbf591907c9932ea63"
+    },
+    "document_name": "Independent_STEP_validation",
+    "object_count": 41,
+    "all_shape_object_counts": {
+      "total": 40,
+      "null": 0,
+      "invalid": 0,
+      "inspection_exceptions": 0
+    },
+    "objects": [
+      {
+        "name": "Part__Feature",
+        "label": "ChassisRailLeft",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 1170000.0,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              -650.0,
+              -150.0,
+              60.0
+            ],
+            "max": [
+              650.0,
+              -120.0,
+              90.0
+            ],
+            "size": [
+              1300.0,
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature001",
+        "label": "ChassisRailRight",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 1170000.0,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              -650.0,
+              120.0,
+              60.0
+            ],
+            "max": [
+              650.0,
+              150.0,
+              90.0
+            ],
+            "size": [
+              1300.0,
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature002",
+        "label": "CrossMember__500",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 243000.0,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              -515.0,
+              -135.0,
+              60.0
+            ],
+            "max": [
+              -485.0,
+              135.0,
+              90.0
+            ],
+            "size": [
+              30.0,
+              270.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature003",
+        "label": "CrossMember__100",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 243000.0,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              -115.0,
+              -135.0,
+              60.0
+            ],
+            "max": [
+              -85.0,
+              135.0,
+              90.0
+            ],
+            "size": [
+              30.0,
+              270.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature004",
+        "label": "CrossMember_250",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 243000.0,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              235.0,
+              -135.0,
+              60.0
+            ],
+            "max": [
+              265.0,
+              135.0,
+              90.0
+            ],
+            "size": [
+              30.0,
+              270.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature005",
+        "label": "CrossMember_500",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 243000.0,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              485.0,
+              -135.0,
+              60.0
+            ],
+            "max": [
+              515.0,
+              135.0,
+              90.0
+            ],
+            "size": [
+              30.0,
+              270.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature006",
+        "label": "ChassisFloor",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 4050000.0,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              -450.0,
+              -150.0,
+              45.0
+            ],
+            "max": [
+              450.0,
+              150.0,
+              60.0
+            ],
+            "size": [
+              900.0,
+              300.0,
+              15.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature007",
+        "label": "FrontAxle",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 488580.4894862848,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              488.0,
+              -540.0,
+              118.0
+            ],
+            "max": [
+              512.0,
+              540.0,
+              142.0
+            ],
+            "size": [
+              24.0,
+              1080.0,
+              24.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature008",
+        "label": "RearAxle",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 742201.2644105888,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -515.0,
+              -525.0,
+              145.0
+            ],
+            "max": [
+              -485.0,
+              525.0,
+              175.0
+            ],
+            "size": [
+              30.0,
+              1050.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature009",
+        "label": "FrontWheelLeft",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 4778362.426110075,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              370.0,
+              495.0,
+              0.0
+            ],
+            "max": [
+              630.0,
+              585.0,
+              260.0
+            ],
+            "size": [
+              260.0,
+              90.0,
+              260.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature010",
+        "label": "FrontWheelLeft_Hub",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 617868.8081539555,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              454.5,
+              492.5,
+              84.5
+            ],
+            "max": [
+              545.5,
+              587.5,
+              175.5
+            ],
+            "size": [
+              91.0,
+              95.0,
+              91.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature011",
+        "label": "FrontWheelRight",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 4778362.426110075,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              370.0,
+              -585.0,
+              0.0
+            ],
+            "max": [
+              630.0,
+              -495.0,
+              260.0
+            ],
+            "size": [
+              260.0,
+              90.0,
+              260.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature012",
+        "label": "FrontWheelRight_Hub",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 617868.8081539555,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              454.5,
+              -587.5,
+              84.5
+            ],
+            "max": [
+              545.5,
+              -492.5,
+              175.5
+            ],
+            "size": [
+              91.0,
+              95.0,
+              91.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature013",
+        "label": "RearWheelLeft",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 9650972.631827844,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -660.0,
+              465.0,
+              0.0
+            ],
+            "max": [
+              -340.0,
+              585.0,
+              320.0
+            ],
+            "size": [
+              320.0,
+              120.0,
+              320.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature014",
+        "label": "RearWheelLeft_Hub",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 1231504.320207199,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -556.0,
+              462.5,
+              104.0
+            ],
+            "max": [
+              -444.0,
+              587.5,
+              216.0
+            ],
+            "size": [
+              112.0,
+              125.0,
+              112.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature015",
+        "label": "RearWheelRight",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 9650972.631827844,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -660.0,
+              -585.0,
+              0.0
+            ],
+            "max": [
+              -340.0,
+              -465.0,
+              320.0
+            ],
+            "size": [
+              320.0,
+              120.0,
+              320.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature016",
+        "label": "RearWheelRight_Hub",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 1231504.320207199,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -556.0,
+              -587.5,
+              104.0
+            ],
+            "max": [
+              -444.0,
+              -462.5,
+              216.0
+            ],
+            "size": [
+              112.0,
+              125.0,
+              112.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature017",
+        "label": "SteeringColumn",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 135716.80263507905,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              238.0,
+              -12.0,
+              90.0
+            ],
+            "max": [
+              262.0,
+              12.0,
+              390.0
+            ],
+            "size": [
+              24.0,
+              24.0,
+              300.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature018",
+        "label": "SteeringWheel",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 341093.52810164826,
+          "solids": 1,
+          "faces": 1,
+          "bounds_mm": {
+            "min": [
+              107.12422956140401,
+              -142.875770438596,
+              378.0
+            ],
+            "max": [
+              392.87577043859596,
+              142.875770438596,
+              402.0
+            ],
+            "size": [
+              285.7515408771919,
+              285.751540877192,
+              24.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature019",
+        "label": "SeatBase",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 3840000.0,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              -360.0,
+              -150.0,
+              120.0
+            ],
+            "max": [
+              -40.0,
+              150.0,
+              160.0
+            ],
+            "size": [
+              320.0,
+              300.0,
+              40.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature020",
+        "label": "SeatBack",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 3120000.0,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              -360.0,
+              -150.0,
+              160.0
+            ],
+            "max": [
+              -320.0,
+              150.0,
+              420.0
+            ],
+            "size": [
+              40.0,
+              300.0,
+              260.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature021",
+        "label": "Engine",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 14784000.0,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              -640.0,
+              -200.0,
+              100.0
+            ],
+            "max": [
+              -360.0,
+              40.0,
+              320.0
+            ],
+            "size": [
+              280.0,
+              240.0,
+              220.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature022",
+        "label": "Exhaust",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 785398.1633975218,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -507.18369713915183,
+              -225.0,
+              176.0543428694691
+            ],
+            "max": [
+              -109.68578877227345,
+              -175.0,
+              338.8848113570608
+            ],
+            "size": [
+              397.4979083668784,
+              50.0,
+              162.8304684875917
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature023",
+        "label": "FrontBumper",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 763407.01482232,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              835.0,
+              -540.0,
+              115.0
+            ],
+            "max": [
+              865.0,
+              540.0,
+              145.0
+            ],
+            "size": [
+              30.0,
+              1080.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature024",
+        "label": "RearBumper",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 742201.2644105885,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -865.0,
+              -525.0,
+              145.0
+            ],
+            "max": [
+              -835.0,
+              525.0,
+              175.0
+            ],
+            "size": [
+              30.0,
+              1050.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature025",
+        "label": "FrontSupport__300",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 40212.38596594933,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              750.0,
+              -308.0,
+              122.0
+            ],
+            "max": [
+              950.0,
+              -292.0,
+              138.0
+            ],
+            "size": [
+              200.0,
+              16.0,
+              16.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature026",
+        "label": "RearSupport__300",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 40212.38596594933,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -750.0,
+              -308.0,
+              152.0
+            ],
+            "max": [
+              -550.0,
+              -292.0,
+              168.0
+            ],
+            "size": [
+              200.0,
+              16.0,
+              16.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature027",
+        "label": "FrontSupport_300",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 40212.38596594933,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              750.0,
+              292.0,
+              122.0
+            ],
+            "max": [
+              950.0,
+              308.0,
+              138.0
+            ],
+            "size": [
+              200.0,
+              16.0,
+              16.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature028",
+        "label": "RearSupport_300",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 40212.38596594933,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -750.0,
+              292.0,
+              152.0
+            ],
+            "max": [
+              -550.0,
+              308.0,
+              168.0
+            ],
+            "size": [
+              200.0,
+              16.0,
+              16.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature029",
+        "label": "NoseFairing",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 12000000.0,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              650.0,
+              -200.0,
+              80.0
+            ],
+            "max": [
+              850.0,
+              200.0,
+              230.0
+            ],
+            "size": [
+              200.0,
+              400.0,
+              150.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature030",
+        "label": "NerfBar_L",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 542867.2105403163,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -600.0,
+              -372.0,
+              108.0
+            ],
+            "max": [
+              600.0,
+              -348.0,
+              132.0
+            ],
+            "size": [
+              1200.0,
+              24.0,
+              24.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature031",
+        "label": "NerfBar_R",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 542867.2105403163,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -600.0,
+              348.0,
+              108.0
+            ],
+            "max": [
+              600.0,
+              372.0,
+              132.0
+            ],
+            "size": [
+              1200.0,
+              24.0,
+              24.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature032",
+        "label": "NumberPlate",
+        "type": "Part::Feature",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 300000.0,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              850.0,
+              -125.0,
+              170.0
+            ],
+            "max": [
+              860.0,
+              125.0,
+              290.0
+            ],
+            "size": [
+              10.0,
+              250.0,
+              120.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "racing_kart",
+        "label": "racing_kart",
+        "type": "App::Part",
+        "parents": [],
+        "children": [
+          "Origin",
+          "Part__Feature",
+          "Part__Feature001",
+          "Part__Feature002",
+          "Part__Feature003",
+          "Part__Feature004",
+          "Part__Feature005",
+          "Part__Feature006",
+          "Part__Feature007",
+          "Part__Feature008",
+          "Part__Feature009",
+          "Part__Feature010",
+          "Part__Feature011",
+          "Part__Feature012",
+          "Part__Feature013",
+          "Part__Feature014",
+          "Part__Feature015",
+          "Part__Feature016",
+          "Part__Feature017",
+          "Part__Feature018",
+          "Part__Feature019",
+          "Part__Feature020",
+          "Part__Feature021",
+          "Part__Feature022",
+          "Part__Feature023",
+          "Part__Feature024",
+          "Part__Feature025",
+          "Part__Feature026",
+          "Part__Feature027",
+          "Part__Feature028",
+          "Part__Feature029",
+          "Part__Feature030",
+          "Part__Feature031",
+          "Part__Feature032"
+        ],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 79208598.86480667,
+          "solids": 33,
+          "faces": 133,
+          "bounds_mm": {
+            "min": [
+              -865.0,
+              -587.5,
+              0.0
+            ],
+            "max": [
+              950.0,
+              587.5,
+              420.0
+            ],
+            "size": [
+              1815.0,
+              1175.0,
+              420.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Origin",
+        "label": "Origin",
+        "type": "App::Origin",
+        "parents": [
+          "racing_kart"
+        ],
+        "children": [
+          "X_Axis",
+          "Y_Axis",
+          "Z_Axis",
+          "XY_Plane",
+          "XZ_Plane",
+          "YZ_Plane"
+        ],
+        "visible": true,
+        "visibility_source": "object_property"
+      },
+      {
+        "name": "X_Axis",
+        "label": "X-axis",
+        "type": "App::Line",
+        "parents": [
+          "Origin"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 0,
+          "bounds_mm": {
+            "min": [
+              -1e+100,
+              0.0,
+              0.0
+            ],
+            "max": [
+              1e+100,
+              0.0,
+              0.0
+            ],
+            "size": [
+              2e+100,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Y_Axis",
+        "label": "Y-axis",
+        "type": "App::Line",
+        "parents": [
+          "Origin"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 0,
+          "bounds_mm": {
+            "min": [
+              0.0,
+              -1e+100,
+              0.0
+            ],
+            "max": [
+              0.0,
+              1e+100,
+              0.0
+            ],
+            "size": [
+              0.0,
+              2e+100,
+              0.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Z_Axis",
+        "label": "Z-axis",
+        "type": "App::Line",
+        "parents": [
+          "Origin"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 0,
+          "bounds_mm": {
+            "min": [
+              0.0,
+              0.0,
+              -1e+100
+            ],
+            "max": [
+              0.0,
+              0.0,
+              1e+100
+            ],
+            "size": [
+              0.0,
+              0.0,
+              2e+100
+            ]
+          }
+        }
+      },
+      {
+        "name": "XY_Plane",
+        "label": "XY-plane",
+        "type": "App::Plane",
+        "parents": [
+          "Origin"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 1,
+          "bounds_mm": {
+            "min": [
+              -1e+100,
+              -1e+100,
+              0.0
+            ],
+            "max": [
+              1e+100,
+              1e+100,
+              0.0
+            ],
+            "size": [
+              2e+100,
+              2e+100,
+              0.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "XZ_Plane",
+        "label": "XZ-plane",
+        "type": "App::Plane",
+        "parents": [
+          "Origin"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 1,
+          "bounds_mm": {
+            "min": [
+              -1e+100,
+              0.0,
+              -1e+100
+            ],
+            "max": [
+              1e+100,
+              0.0,
+              1e+100
+            ],
+            "size": [
+              2e+100,
+              0.0,
+              2e+100
+            ]
+          }
+        }
+      },
+      {
+        "name": "YZ_Plane",
+        "label": "YZ-plane",
+        "type": "App::Plane",
+        "parents": [
+          "Origin"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 1,
+          "bounds_mm": {
+            "min": [
+              0.0,
+              -1e+100,
+              -1e+100
+            ],
+            "max": [
+              0.0,
+              1e+100,
+              1e+100
+            ],
+            "size": [
+              0.0,
+              2e+100,
+              2e+100
+            ]
+          }
+        }
+      }
+    ],
+    "render_selection": {
+      "names": [
+        "Part__Feature",
+        "Part__Feature001",
+        "Part__Feature002",
+        "Part__Feature003",
+        "Part__Feature004",
+        "Part__Feature005",
+        "Part__Feature006",
+        "Part__Feature007",
+        "Part__Feature008",
+        "Part__Feature009",
+        "Part__Feature010",
+        "Part__Feature011",
+        "Part__Feature012",
+        "Part__Feature013",
+        "Part__Feature014",
+        "Part__Feature015",
+        "Part__Feature016",
+        "Part__Feature017",
+        "Part__Feature018",
+        "Part__Feature019",
+        "Part__Feature020",
+        "Part__Feature021",
+        "Part__Feature022",
+        "Part__Feature023",
+        "Part__Feature024",
+        "Part__Feature025",
+        "Part__Feature026",
+        "Part__Feature027",
+        "Part__Feature028",
+        "Part__Feature029",
+        "Part__Feature030",
+        "Part__Feature031",
+        "Part__Feature032"
+      ],
+      "object_count": 33,
+      "solid_count": 33,
+      "bounds_mm": {
+        "min": [
+          -865.0,
+          -587.5,
+          0.0
+        ],
+        "max": [
+          950.0,
+          587.5,
+          420.0
+        ],
+        "size": [
+          1815.0,
+          1175.0,
+          420.0
+        ]
+      },
+      "excluded": [
+        {
+          "name": "racing_kart",
+          "reason": "aggregate_container"
+        },
+        {
+          "name": "Origin",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "X_Axis",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "Y_Axis",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "Z_Axis",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "XY_Plane",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "XZ_Plane",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "YZ_Plane",
+          "reason": "origin_or_datum"
+        }
+      ]
+    },
+    "geometry_valid": true,
+    "failures": [],
+    "file_after": {
+      "path": "/job/workspace/racing-kart.step",
+      "exists": true,
+      "bytes": 167153,
+      "sha256": "0cff8fed07b44025fe2efdfdaf44f598bea7a96b7066fcbbf591907c9932ea63"
+    },
+    "source_unchanged": true
+  },
+  "comparison": {
+    "bounds_tolerance_mm": 0.01,
+    "native_render_solid_count": 33,
+    "step_import_solid_count": 33,
+    "step_import_render_object_count": 33,
+    "solid_counts_equal": true,
+    "bounds_match": true,
+    "max_bounds_delta_mm": 0.0
+  }
+}

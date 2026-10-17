@@ -1,0 +1,58 @@
+{
+  "schema_version": 2,
+  "status": "failed",
+  "started_utc": "2026-10-17T07:27:46.168376+00:00",
+  "model_id": "opencode/beam-free",
+  "sandbox": {
+    "backend": "podman-network-none-uds",
+    "connection": "local-connection",
+    "image_id": "sha256:17f7b40c06e9ed7434d6b88a6ac4c8e29384bae1f06f1f3b015bc3250536fd75",
+    "api_base_url": "https://opencode.ai/inference/openai/v1",
+    "api_model_id": "beam-free",
+    "limits": {
+      "timeout_seconds": 1800,
+      "memory": "4g",
+      "cpus": 2,
+      "pids": 512
+    }
+  },
+  "trial_sha256": "534142ab79ddebf8a08fe2918dbfc9a0ab20577daf8d11f03d68ca042ed9789e",
+  "returncode": 1,
+  "credential_env_names": [
+    "BEAM_BENCH_PUBLIC_TOKEN"
+  ],
+  "cleanup_errors": [],
+  "outputs": [],
+  "measurement_scope": "generation event to OpenCode exit, including model waits, retries and MCP work; startup recorded separately",
+  "startup_seconds": 5.547,
+  "candidate_stopped": true,
+  "candidate_container_id": "3028ed1e24535c9fa5ff70cf0089d4a32738425e4e2c6d6559d39fcb0355d7ef",
+  "duration_seconds": 8.484,
+  "missing_outputs": [
+    "racing-kart.FCStd",
+    "racing-kart.step"
+  ],
+  "finished_utc": "2026-10-17T07:28:21.029807+00:00",
+  "wall_seconds": 34.859,
+  "metrics": {
+    "event_types": {
+      "sandbox_runtime_identity": 1,
+      "sandbox_generation_start": 1,
+      "error": 1
+    },
+    "tool_calls": {},
+    "tokens": {},
+    "recorded_cost_usd": 0.0,
+    "errors": [
+      {
+        "type": "error",
+        "message": "{'name': 'APIError', 'data': {'message': \"OpenCode's free tier can only be used from within OpenCode. Download it at https://opencode.ai and keep building.\", 'statusCode': 403, 'isRetryable': False, 'responseHeaders': {'connection': 'close', 'content-type': 'application/json', 'date': 'Sat, 17 Oct 2026 07:28:06 GMT', 'server': 'BaseHTTP/0.6 Python/3.12.15'}, 'responseBody': '{\"type\":\"error\",\"error\":{\"type\":\"FreeTierError\",\"message\":\"OpenCode\\'s free tier can only be used from within OpenCode. Download it at https://opencode.ai and keep building.\"}}', 'metadata': {'url': 'http://127.0.0.1:18080/inference/openai/v1/chat/completions'}}}"
+      }
+    ],
+    "session_ids": [
+      "ses_eb73d4c78ffe1uyFaeHRQaCaOA"
+    ],
+    "non_json_stdout_lines": 0
+  },
+  "tool_failure_count": 0
+}

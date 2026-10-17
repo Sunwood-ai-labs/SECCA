@@ -1,0 +1,97 @@
+{
+  "review_id": "sample-20261017-f3a7-blind-a-01",
+  "role": "blind-a",
+  "fresh_context": true,
+  "model_blinded": true,
+  "reviewer_model": "unknown",
+  "context_provenance": {
+    "statement": "Fresh independent reviewer agent /root/blind_review_a spawned for this packet. Read only the packet README, rubric and template, and personally viewed the reference and all three specified renders. No model identity or other reviewer scores or reviews were provided or read.",
+    "other_reviews_read": false,
+    "recorded_at": "2026-10-17T16:36:52.5571470+09:00",
+    "signed_by": "/root/blind_review_a"
+  },
+  "evidence_hashes": {
+    "reference": "d3fcfa0a7a1b1fc0504fe7dfadfaa2a1beb0a8712bd088a0b6c8ccb0dd120cd3",
+    "rubric": "7028b7740c4012c2894ea8cfa567e696df0365546b579cc53653e36b2900a190",
+    "isometric": "aad5b3ec97ba175d638c8f8a78c1bb683a05e2a6457d61f4d3d74eb59c619c15",
+    "top": "c4eefb976f5e56d979bc5abe6ce68086a5d9d7a89f95ebd9245a6d07197a47ae",
+    "right": "f63b6a39d8008b1d004ea2187ccf01a9b890b2d47e85198ad5b5a24e387a1950"
+  },
+  "criteria": [
+    {
+      "id": "silhouette_proportions",
+      "score": 8,
+      "max": 25,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "Isometric and top views show four broad tires surrounding a low, open chassis with a central driver area, preserving a portion of the reference overall stance and wheel arrangement."
+        },
+        {
+          "kind": "deduction",
+          "observation": "The top and isometric silhouettes are dominated by a narrow straight ladder frame, a rectangular front block and isolated straight bumper rods. They lack the reference broad swept front fairing, tapered nose and side pods, while the seat is a small boxy form rather than the tall enveloping bucket."
+        }
+      ]
+    },
+    {
+      "id": "component_layout",
+      "score": 9,
+      "max": 20,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "Isometric and top views contain four wheels, longitudinal frame members, a seat behind a steering ring, a rear engine-like block and transverse bumper bars in broadly corresponding vehicle zones."
+        },
+        {
+          "kind": "deduction",
+          "observation": "The engine block sits behind the seat instead of beside its right side as in the reference. Both side pods are absent; the long nose fairing is replaced by a short rectangular block, and the rear exhaust assembly and surrounding bumper arrangement are substantially different."
+        }
+      ]
+    },
+    {
+      "id": "characteristic_geometry",
+      "score": 4,
+      "max": 30,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "The isometric view includes round tire bodies and a circular steering rim; the seat has an upright back and horizontal base, preserving limited elementary shapes visible in the reference."
+        },
+        {
+          "kind": "deduction",
+          "observation": "The reference sculpted bucket seat is replaced by perpendicular flat slabs, the tapered nose and curved front bumper are rectangular or straight, and curved chassis tubes become straight bars. The steering ring lies nearly horizontal on a vertical post rather than on the reference inclined column; tire faces use flat colored disks instead of recessed shaped rims."
+        }
+      ]
+    },
+    {
+      "id": "mechanical_detail",
+      "score": 2,
+      "max": 20,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "The top and isometric views represent transverse axle rods, chassis crossmembers and a pipe beside the engine block, providing a small amount of the visible support and exhaust vocabulary."
+        },
+        {
+          "kind": "deduction",
+          "observation": "The reference front steering tie rods, articulated axle joints, finned engine cylinder and casing features, chain or sprocket assembly and brake details are not visibly represented. The rear block and simple straight pipe do not reproduce the shaped exhaust and its supports."
+        }
+      ]
+    },
+    {
+      "id": "color_material_regions",
+      "score": 1,
+      "max": 5,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "All three render views show black tires in the same material region as the reference, and some gray structural or engine surfaces correspond loosely to metallic reference parts."
+        },
+        {
+          "kind": "deduction",
+          "observation": "The frame is gray instead of blue, the seat is blue or purple instead of dark gray, and the bumper bars and nose block are red instead of the reference silver bodywork. Yellow wheel-center disks also differ from the reference silver recessed rims."
+        }
+      ]
+    }
+  ]
+}

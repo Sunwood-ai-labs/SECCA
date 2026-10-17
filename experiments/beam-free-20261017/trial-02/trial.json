@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "created_utc": "2026-10-17T07:31:15.088312+00:00",
+  "model_id": "opencode/beam-free",
+  "protocol_id": "racing-kart-image-v2-podman",
+  "protocol_sha256": "246a4eb27632eb172b704cfe36162a2953a72ce6d25f654fd3db0cbc5395cd89",
+  "credential_env_names": [
+    "BEAM_BENCH_PUBLIC_TOKEN"
+  ],
+  "timeout_seconds": 1800,
+  "input": {
+    "prompt_text": "添付画像のレーシングカートをFreeCAD MCPで作成し、racing-kart.FCStdとracing-kart.stepに保存してください。\n",
+    "prompt_sent_utf8_sha256": "aa4242e218a5c890320fab0151334b80f1e24067444686c0fcdf5037512b0dce",
+    "reference_sha256": "d3fcfa0a7a1b1fc0504fe7dfadfaa2a1beb0a8712bd088a0b6c8ccb0dd120cd3"
+  },
+  "sandbox": {
+    "backend": "podman-network-none-uds",
+    "connection": "local-connection",
+    "image_id": "sha256:eaa68cdc9d07728f61aef2bdd5a223573eca5c9db647248bb2a440bf31bc9178",
+    "api_base_url": "https://opencode.ai/inference/openai/v1",
+    "api_model_id": "beam-free",
+    "limits": {
+      "timeout_seconds": 1800,
+      "memory": "4g",
+      "cpus": 2,
+      "pids": 512
+    }
+  },
+  "harness": {
+    "name": "OpenCode",
+    "version": "1.19.3",
+    "image_id": "sha256:eaa68cdc9d07728f61aef2bdd5a223573eca5c9db647248bb2a440bf31bc9178"
+  },
+  "protocol_deviations": [
+    "Podman Linux, container-local FreeCAD/Xvfb and Unix-socket API gateway",
+    "Explicit source-bound model catalog metadata supplements the bundled OpenCode registry"
+  ],
+  "file_hashes": {
+    "protocol.json": "246a4eb27632eb172b704cfe36162a2953a72ce6d25f654fd3db0cbc5395cd89",
+    "workspace/reference.jpg": "d3fcfa0a7a1b1fc0504fe7dfadfaa2a1beb0a8712bd088a0b6c8ccb0dd120cd3",
+    "runtime-input/runtime.json": "11cd40e24068fd7d537ba067f182e23672b5db397e3bf559f1343d7e32c6de87",
+    "runtime-input/reference.jpg": "d3fcfa0a7a1b1fc0504fe7dfadfaa2a1beb0a8712bd088a0b6c8ccb0dd120cd3",
+    "runtime-input/model-metadata.json": "cc9dbee227d2f062107ea206c9a30836a0a1d45c9ec1d98dd3faf246d488715d"
+  },
+  "model_metadata": {
+    "file": "runtime-input/model-metadata.json",
+    "source_url": "https://models.dev/api.json",
+    "source_sha256": "3b49565999aca0a0bf27213c00b32df333cc1cedb47a45abbed7a5ffaaaef60b"
+  }
+}
