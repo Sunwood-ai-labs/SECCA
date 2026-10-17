@@ -354,7 +354,7 @@ def main(argv=None):
     args = parser.parse_args(argv)
     try:
         result = packet(args.trial, args.output) if args.command == "packet" else aggregate(args.trial, args.reviews) if args.command == "aggregate" else verify_baseline()
-        print(json.dumps(result, ensure_ascii=False, indent=2, allow_nan=False))
+        print(json.dumps(result, ensure_ascii=True, indent=2, allow_nan=False))
         return 0
     except (ValueError, KeyError, TypeError, OSError) as error:
         print(f"scores: {error}", file=sys.stderr)

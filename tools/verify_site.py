@@ -61,7 +61,7 @@ def main():
             elif parsed.fragment and target in pages and unquote(parsed.fragment) not in pages[target].ids:
                 failures.append(f'Missing fragment: {source.relative_to(root)} -> {link}')
     print(json.dumps({'status': 'passed' if not failures else 'failed', 'pages': len(pages),
-                      'internal_links_checked': checked, 'failures': failures}, ensure_ascii=False))
+                      'internal_links_checked': checked, 'failures': failures}))
     return bool(failures)
 
 

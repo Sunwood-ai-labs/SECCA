@@ -216,7 +216,7 @@ def main():
         if args.command == "run":
             return run(args)
         result = prepare(args) if args.command == "prepare" else verify_assets()
-        print(json.dumps(result, ensure_ascii=False))
+        print(json.dumps(result, ensure_ascii=True))
         return 0
     except (OSError, ValueError, KeyError, TypeError, RuntimeError, subprocess.SubprocessError) as error:
         print(f"candidate: {type(error).__name__}: {error}", file=sys.stderr)
