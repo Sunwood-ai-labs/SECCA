@@ -3,7 +3,7 @@
   "success": true,
   "request": {
     "schema": "secca-supplemental-render-v1",
-    "request_id": "55a9d05d95384184989735469bc62737",
+    "request_id": "4535165dc54241bcb9d7c38507c217ed",
     "model": "deepseek",
     "source_sha256": "ee3bd4ff45073b06daab850246e5d8a93c6dc5683e9441d597bcafbb858ec392",
     "quaternion_xyzw": [
@@ -14,7 +14,7 @@
     ],
     "runtime_files_sha256": {
       "worker.py": "db1c1545bd1af02c1a953c80d1c548f96b6f1a573f7cd4ceb0e73ba0443daea0",
-      "freecad_worker.py": "be80e5bc6254d0b152726b8f22054e4a63a0e6e448a499f54e83f60e9ac0d6d5",
+      "freecad_worker.py": "505d0d80b1d3e637f48583f69b7b498633ca7a7865996234953839d2e62c9a63",
       "gui_lease.py": "6fc4690b10690a6c39d837ece0aeb6a56e8eaf63faef944814fa847a94fed2d6"
     },
     "images": {
@@ -29,7 +29,7 @@
     }
   },
   "worker": {
-    "request_id": "55a9d05d95384184989735469bc62737",
+    "request_id": "4535165dc54241bcb9d7c38507c217ed",
     "model": "deepseek",
     "source_before": {
       "path": "source.FCStd",
@@ -56,7 +56,7 @@
         "path": "reference-view.png",
         "exists": true,
         "bytes": 104743,
-        "sha256": "3777a203b570b771213e90d1711d0d70f8859747739a2355efe36d12d8b45189",
+        "sha256": "14a93e2128fa25a422535f977561ac473e957e4d1c7fcdffdee1a71550230d2c",
         "width": 1600,
         "height": 900
       },
@@ -64,14 +64,14 @@
         "path": "preview.png",
         "exists": true,
         "bytes": 48835,
-        "sha256": "80e278671de83196101faa629e3b691d9af2d184e3215c4212608b585625c621",
+        "sha256": "18a30f099648e2fc5596b880f944d3a338b5836cc88dffd45808fddc49443b32",
         "width": 960,
         "height": 540
       }
     },
     "runtime_files_sha256": {
       "worker.py": "db1c1545bd1af02c1a953c80d1c548f96b6f1a573f7cd4ceb0e73ba0443daea0",
-      "freecad_worker.py": "be80e5bc6254d0b152726b8f22054e4a63a0e6e448a499f54e83f60e9ac0d6d5",
+      "freecad_worker.py": "505d0d80b1d3e637f48583f69b7b498633ca7a7865996234953839d2e62c9a63",
       "gui_lease.py": "6fc4690b10690a6c39d837ece0aeb6a56e8eaf63faef944814fa847a94fed2d6"
     },
     "render_selection": {
@@ -311,7 +311,7 @@
       "white_corners": true,
       "nonblank": true,
       "edge_margin_at_least_4px": true,
-      "sha256": "3777a203b570b771213e90d1711d0d70f8859747739a2355efe36d12d8b45189",
+      "sha256": "14a93e2128fa25a422535f977561ac473e957e4d1c7fcdffdee1a71550230d2c",
       "bytes": 104743
     },
     "preview": {
@@ -326,7 +326,7 @@
       "white_corners": true,
       "nonblank": true,
       "edge_margin_at_least_4px": true,
-      "sha256": "80e278671de83196101faa629e3b691d9af2d184e3215c4212608b585625c621",
+      "sha256": "18a30f099648e2fc5596b880f944d3a338b5836cc88dffd45808fddc49443b32",
       "bytes": 48835
     }
   },
@@ -334,7 +334,7 @@
   "cleanup": {
     "success": true,
     "independent_query": {
-      "container_id": "9dbcb349d39271baa03bdcd3978c7fdecb327b588cd73eb574dca677fd5d3731",
+      "container_id": "3fabac034d16441cf263d20c06af40c22da6eca9566b122766e9f8e8542b7d02",
       "returncode": 0,
       "remaining_ids": [],
       "capture_stopped_reason": null
@@ -342,7 +342,7 @@
   },
   "runtime": {
     "image_id": "sha256:b9e296032f921c96de5843b19e1a182ce5067d6cdca25a5d3ab7e7da23fe89cb",
-    "container_id": "9dbcb349d39271baa03bdcd3978c7fdecb327b588cd73eb574dca677fd5d3731",
+    "container_id": "3fabac034d16441cf263d20c06af40c22da6eca9566b122766e9f8e8542b7d02",
     "network": "none",
     "user": "10000:10000",
     "root_readonly": true,
@@ -354,6 +354,6 @@
       "NoNewPrivs": 1
     }
   },
-  "original_evidence_sha256": "6f80052453ceb0181f2ea01fde026de95d16de465e5704708a762f5e4ab87663",
+  "original_evidence_sha256": "95732b2f26cc6ea959c6a3ef6eecafcbc61c1b28bafaaa0f271c59f4fd434af1",
   "transformation": "Allowlist export. Omit host command logs, named connection and host paths. Normalize worker CAD path."
 }

@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "reviewed_at_utc": "2026-10-18T03:19:55.295334+00:00",
+  "reviewed_at_utc": "2026-10-18T03:27:58.784301+00:00",
   "reviewer_task": "/root/reference_camera_analysis",
-  "scope": "Direct visual QA of the reference and all four final full-resolution supplemental renders plus their four final preview images. These final images were opened with view_image directly. No model call, scoring, geometry repair, or canonical image replacement.",
+  "scope": "Final supplemental render visual QA by equivalence. Reference and all 8 attempt-2 render/preview images were directly inspected with view_image. All 8 final attempt-3 images independently matched their full decoded RGB pixels. No model call, scoring, geometry repair, or canonical image replacement.",
   "reference": {
     "path": "assets/reference.jpg",
     "sha256": "d3fcfa0a7a1b1fc0504fe7dfadfaa2a1beb0a8712bd088a0b6c8ccb0dd120cd3",
@@ -27,7 +27,7 @@
       "images": [
         {
           "path": "artifacts/glm/reference-view.png",
-          "sha256": "1a4f366ead7c2327ac40eebe7b62b4007d256bf9d1995ba62bf1d58582556fe6",
+          "sha256": "a144639260d83cc3d3e20c1da9f1f91fc19666ea5426d212910e15fb123dbae8",
           "size_pixels": [
             1600,
             900
@@ -39,12 +39,31 @@
             737
           ],
           "frame_edges_all_white": true,
-          "visually_inspected_with_view_image": true,
-          "same_rgb_pixels_as_prototype": true
+          "visually_inspected_with_view_image": false,
+          "same_rgb_pixels_as_prototype": true,
+          "verification_method": "RGB pixel equality to the attempt-2 image previously directly inspected with view_image; final PNG was not directly viewed.",
+          "direct_visual_qa_source": {
+            "qa_path": "visual-qa-attempt2.json",
+            "qa_sha256": "2e424bb3c8a1b695de8225eb1d4b33e6a6adf44a395828adfe0e4fe5097821e2",
+            "image_path": "render-output/attempts/66503c95e8fd439e8d9de790d6d59e02/glm/reference-view.png",
+            "image_sha256": "1a4f366ead7c2327ac40eebe7b62b4007d256bf9d1995ba62bf1d58582556fe6",
+            "visually_inspected_with_view_image": true
+          },
+          "rgb_equality_check": {
+            "image_mode": "RGB",
+            "size_pixels": [
+              1600,
+              900
+            ],
+            "prior_rgb_sha256": "b2063e9e79d40cb9f5261b2017d6fcb2192b8adc20e36ccd32db77be61d75ce6",
+            "final_rgb_sha256": "b2063e9e79d40cb9f5261b2017d6fcb2192b8adc20e36ccd32db77be61d75ce6",
+            "equal": true,
+            "imagechops_difference_bbox": null
+          }
         },
         {
           "path": "artifacts/glm/preview.png",
-          "sha256": "2adc31444a2535c938a914d0802e0def6af5f2a08e5cf705738829878e219df7",
+          "sha256": "e49d65d94e23316b1ebe8abafb7cb85654a9416db1eb94d7dd3bb47b1a638bc3",
           "size_pixels": [
             960,
             540
@@ -56,8 +75,27 @@
             443
           ],
           "frame_edges_all_white": true,
-          "visually_inspected_with_view_image": true,
-          "same_rgb_pixels_as_prototype": true
+          "visually_inspected_with_view_image": false,
+          "same_rgb_pixels_as_prototype": true,
+          "verification_method": "RGB pixel equality to the attempt-2 image previously directly inspected with view_image; final PNG was not directly viewed.",
+          "direct_visual_qa_source": {
+            "qa_path": "visual-qa-attempt2.json",
+            "qa_sha256": "2e424bb3c8a1b695de8225eb1d4b33e6a6adf44a395828adfe0e4fe5097821e2",
+            "image_path": "render-output/attempts/66503c95e8fd439e8d9de790d6d59e02/glm/preview.png",
+            "image_sha256": "2adc31444a2535c938a914d0802e0def6af5f2a08e5cf705738829878e219df7",
+            "visually_inspected_with_view_image": true
+          },
+          "rgb_equality_check": {
+            "image_mode": "RGB",
+            "size_pixels": [
+              960,
+              540
+            ],
+            "prior_rgb_sha256": "1f88d279b1e9c7323ab4bbb0e0579acc9b96e3146786916de92542bfcae8e93f",
+            "final_rgb_sha256": "1f88d279b1e9c7323ab4bbb0e0579acc9b96e3146786916de92542bfcae8e93f",
+            "equal": true,
+            "imagechops_difference_bbox": null
+          }
         }
       ]
     },
@@ -73,7 +111,7 @@
       "images": [
         {
           "path": "artifacts/beam/reference-view.png",
-          "sha256": "a394453c0da51b95b0143da687262e62d5d39d78779f01bffc1c91d0534c5ba6",
+          "sha256": "f2ea6f22364b7543050b82f7c5a6e292a55e1d24d3e17ccdddb6541e9d8474d0",
           "size_pixels": [
             1600,
             900
@@ -85,12 +123,31 @@
             708
           ],
           "frame_edges_all_white": true,
-          "visually_inspected_with_view_image": true,
-          "same_rgb_pixels_as_prototype": true
+          "visually_inspected_with_view_image": false,
+          "same_rgb_pixels_as_prototype": true,
+          "verification_method": "RGB pixel equality to the attempt-2 image previously directly inspected with view_image; final PNG was not directly viewed.",
+          "direct_visual_qa_source": {
+            "qa_path": "visual-qa-attempt2.json",
+            "qa_sha256": "2e424bb3c8a1b695de8225eb1d4b33e6a6adf44a395828adfe0e4fe5097821e2",
+            "image_path": "render-output/attempts/66503c95e8fd439e8d9de790d6d59e02/beam/reference-view.png",
+            "image_sha256": "a394453c0da51b95b0143da687262e62d5d39d78779f01bffc1c91d0534c5ba6",
+            "visually_inspected_with_view_image": true
+          },
+          "rgb_equality_check": {
+            "image_mode": "RGB",
+            "size_pixels": [
+              1600,
+              900
+            ],
+            "prior_rgb_sha256": "bf4998807ee859b3619d8f8d61db0dd3907e6dc0c8014abe0c42ff0a1f68322d",
+            "final_rgb_sha256": "bf4998807ee859b3619d8f8d61db0dd3907e6dc0c8014abe0c42ff0a1f68322d",
+            "equal": true,
+            "imagechops_difference_bbox": null
+          }
         },
         {
           "path": "artifacts/beam/preview.png",
-          "sha256": "5947ba22c896b12a77ec7c197ab883d4303dd9d0b2b0f5f56b9722e1a0b70de8",
+          "sha256": "c84497118ebdb6e925a0cd0bf3869f0a59bea5c52c40f6bfd90bbb964239fbed",
           "size_pixels": [
             960,
             540
@@ -102,8 +159,27 @@
             425
           ],
           "frame_edges_all_white": true,
-          "visually_inspected_with_view_image": true,
-          "same_rgb_pixels_as_prototype": true
+          "visually_inspected_with_view_image": false,
+          "same_rgb_pixels_as_prototype": true,
+          "verification_method": "RGB pixel equality to the attempt-2 image previously directly inspected with view_image; final PNG was not directly viewed.",
+          "direct_visual_qa_source": {
+            "qa_path": "visual-qa-attempt2.json",
+            "qa_sha256": "2e424bb3c8a1b695de8225eb1d4b33e6a6adf44a395828adfe0e4fe5097821e2",
+            "image_path": "render-output/attempts/66503c95e8fd439e8d9de790d6d59e02/beam/preview.png",
+            "image_sha256": "5947ba22c896b12a77ec7c197ab883d4303dd9d0b2b0f5f56b9722e1a0b70de8",
+            "visually_inspected_with_view_image": true
+          },
+          "rgb_equality_check": {
+            "image_mode": "RGB",
+            "size_pixels": [
+              960,
+              540
+            ],
+            "prior_rgb_sha256": "79942d55c242dccd5c4d931f5773d49df8caf162e59faed5059f41ee41716ea1",
+            "final_rgb_sha256": "79942d55c242dccd5c4d931f5773d49df8caf162e59faed5059f41ee41716ea1",
+            "equal": true,
+            "imagechops_difference_bbox": null
+          }
         }
       ]
     },
@@ -119,7 +195,7 @@
       "images": [
         {
           "path": "artifacts/nemotron/reference-view.png",
-          "sha256": "ec2a19c9080000afa6a8bfb9dd29e8fa1a628a199578ac49412cfbe4378c86f5",
+          "sha256": "310f9053d5105d9dd971fa7d16005da1e5d6a9f916a565abdff8693219821b91",
           "size_pixels": [
             1600,
             900
@@ -131,12 +207,31 @@
             665
           ],
           "frame_edges_all_white": true,
-          "visually_inspected_with_view_image": true,
-          "same_rgb_pixels_as_prototype": true
+          "visually_inspected_with_view_image": false,
+          "same_rgb_pixels_as_prototype": true,
+          "verification_method": "RGB pixel equality to the attempt-2 image previously directly inspected with view_image; final PNG was not directly viewed.",
+          "direct_visual_qa_source": {
+            "qa_path": "visual-qa-attempt2.json",
+            "qa_sha256": "2e424bb3c8a1b695de8225eb1d4b33e6a6adf44a395828adfe0e4fe5097821e2",
+            "image_path": "render-output/attempts/66503c95e8fd439e8d9de790d6d59e02/nemotron/reference-view.png",
+            "image_sha256": "ec2a19c9080000afa6a8bfb9dd29e8fa1a628a199578ac49412cfbe4378c86f5",
+            "visually_inspected_with_view_image": true
+          },
+          "rgb_equality_check": {
+            "image_mode": "RGB",
+            "size_pixels": [
+              1600,
+              900
+            ],
+            "prior_rgb_sha256": "2204314486f6ee56bc461e57fd6602af478c0d14be6fd5119fbaecfc030d846f",
+            "final_rgb_sha256": "2204314486f6ee56bc461e57fd6602af478c0d14be6fd5119fbaecfc030d846f",
+            "equal": true,
+            "imagechops_difference_bbox": null
+          }
         },
         {
           "path": "artifacts/nemotron/preview.png",
-          "sha256": "47e756937eb3a4bbb8b7047e894adf55794550c9689e27eec29496ae5f9db334",
+          "sha256": "c234157132fe86d5bdc08562547aceabbe4c2b88e2d830906c9aeb372f894f37",
           "size_pixels": [
             960,
             540
@@ -148,8 +243,27 @@
             399
           ],
           "frame_edges_all_white": true,
-          "visually_inspected_with_view_image": true,
-          "same_rgb_pixels_as_prototype": true
+          "visually_inspected_with_view_image": false,
+          "same_rgb_pixels_as_prototype": true,
+          "verification_method": "RGB pixel equality to the attempt-2 image previously directly inspected with view_image; final PNG was not directly viewed.",
+          "direct_visual_qa_source": {
+            "qa_path": "visual-qa-attempt2.json",
+            "qa_sha256": "2e424bb3c8a1b695de8225eb1d4b33e6a6adf44a395828adfe0e4fe5097821e2",
+            "image_path": "render-output/attempts/66503c95e8fd439e8d9de790d6d59e02/nemotron/preview.png",
+            "image_sha256": "47e756937eb3a4bbb8b7047e894adf55794550c9689e27eec29496ae5f9db334",
+            "visually_inspected_with_view_image": true
+          },
+          "rgb_equality_check": {
+            "image_mode": "RGB",
+            "size_pixels": [
+              960,
+              540
+            ],
+            "prior_rgb_sha256": "34f9184f34537e2cf43788ff10b56a93c199ac42add3ec1b043dcd0cc782b01a",
+            "final_rgb_sha256": "34f9184f34537e2cf43788ff10b56a93c199ac42add3ec1b043dcd0cc782b01a",
+            "equal": true,
+            "imagechops_difference_bbox": null
+          }
         }
       ]
     },
@@ -165,7 +279,7 @@
       "images": [
         {
           "path": "artifacts/deepseek/reference-view.png",
-          "sha256": "3777a203b570b771213e90d1711d0d70f8859747739a2355efe36d12d8b45189",
+          "sha256": "14a93e2128fa25a422535f977561ac473e957e4d1c7fcdffdee1a71550230d2c",
           "size_pixels": [
             1600,
             900
@@ -177,12 +291,31 @@
             736
           ],
           "frame_edges_all_white": true,
-          "visually_inspected_with_view_image": true,
-          "same_rgb_pixels_as_prototype": true
+          "visually_inspected_with_view_image": false,
+          "same_rgb_pixels_as_prototype": true,
+          "verification_method": "RGB pixel equality to the attempt-2 image previously directly inspected with view_image; final PNG was not directly viewed.",
+          "direct_visual_qa_source": {
+            "qa_path": "visual-qa-attempt2.json",
+            "qa_sha256": "2e424bb3c8a1b695de8225eb1d4b33e6a6adf44a395828adfe0e4fe5097821e2",
+            "image_path": "render-output/attempts/66503c95e8fd439e8d9de790d6d59e02/deepseek/reference-view.png",
+            "image_sha256": "3777a203b570b771213e90d1711d0d70f8859747739a2355efe36d12d8b45189",
+            "visually_inspected_with_view_image": true
+          },
+          "rgb_equality_check": {
+            "image_mode": "RGB",
+            "size_pixels": [
+              1600,
+              900
+            ],
+            "prior_rgb_sha256": "4c3ded19fb4f4f2ab0f878f7ce38e8dc1e20729b72a03249cba8a5fbbe4cb39a",
+            "final_rgb_sha256": "4c3ded19fb4f4f2ab0f878f7ce38e8dc1e20729b72a03249cba8a5fbbe4cb39a",
+            "equal": true,
+            "imagechops_difference_bbox": null
+          }
         },
         {
           "path": "artifacts/deepseek/preview.png",
-          "sha256": "80e278671de83196101faa629e3b691d9af2d184e3215c4212608b585625c621",
+          "sha256": "18a30f099648e2fc5596b880f944d3a338b5836cc88dffd45808fddc49443b32",
           "size_pixels": [
             960,
             540
@@ -194,8 +327,27 @@
             442
           ],
           "frame_edges_all_white": true,
-          "visually_inspected_with_view_image": true,
-          "same_rgb_pixels_as_prototype": true
+          "visually_inspected_with_view_image": false,
+          "same_rgb_pixels_as_prototype": true,
+          "verification_method": "RGB pixel equality to the attempt-2 image previously directly inspected with view_image; final PNG was not directly viewed.",
+          "direct_visual_qa_source": {
+            "qa_path": "visual-qa-attempt2.json",
+            "qa_sha256": "2e424bb3c8a1b695de8225eb1d4b33e6a6adf44a395828adfe0e4fe5097821e2",
+            "image_path": "render-output/attempts/66503c95e8fd439e8d9de790d6d59e02/deepseek/preview.png",
+            "image_sha256": "80e278671de83196101faa629e3b691d9af2d184e3215c4212608b585625c621",
+            "visually_inspected_with_view_image": true
+          },
+          "rgb_equality_check": {
+            "image_mode": "RGB",
+            "size_pixels": [
+              960,
+              540
+            ],
+            "prior_rgb_sha256": "bc902cbef043ba5180b12cfa4862ed8bc2b9ae5d08388e89d435fd2aa396c42f",
+            "final_rgb_sha256": "bc902cbef043ba5180b12cfa4862ed8bc2b9ae5d08388e89d435fd2aa396c42f",
+            "equal": true,
+            "imagechops_difference_bbox": null
+          }
         }
       ]
     }
@@ -204,13 +356,20 @@
     "The shared view is a reproducible reference-oriented approximation. The original camera cannot be recovered exactly from the JPEG.",
     "All model extents fit inside their frames. Natural component occlusion remains and is not cropping.",
     "CAD hash preservation requires the renderer or independent byte-level audit. This visual QA does not claim to prove unchanged geometry from pixels alone.",
-    "The visual scores and original judging renders remain outside this QA scope."
+    "The visual scores and original judging renders remain outside this QA scope.",
+    "The final attempt-3 PNG files were not opened with view_image; acceptance uses exact decoded RGB equality to the directly inspected attempt-2 PNG files."
   ],
-  "presentation_attempt": "66503c95e8fd439e8d9de790d6d59e02",
+  "presentation_attempt": "64464f34e8bb467996db112730074fec",
   "prototype_qa": {
     "path": "visual-qa-prototype.json",
     "sha256": "897c605d071dbb24029ab34906166f92f498f31a6c7123c0644de678403b1284"
   },
-  "original_evidence_sha256": "2e424bb3c8a1b695de8225eb1d4b33e6a6adf44a395828adfe0e4fe5097821e2",
+  "verification_method": "Attempt 2 received direct visual inspection with view_image. All 8 attempt-3 RGB images independently matched those directly reviewed images, so the existing visual judgment is bound to the new PNG hashes without a claim of direct viewing of attempt 3.",
+  "direct_visual_qa_provenance": {
+    "path": "visual-qa-attempt2.json",
+    "sha256": "2e424bb3c8a1b695de8225eb1d4b33e6a6adf44a395828adfe0e4fe5097821e2",
+    "presentation_attempt": "66503c95e8fd439e8d9de790d6d59e02"
+  },
+  "original_evidence_sha256": "72a2f3c991d19f9051d26495b92790d6b244d9f0f18179c72965b73dbf1df459",
   "transformation": "Image paths changed to public experiment-relative artifacts; observations and image hashes preserved."
 }

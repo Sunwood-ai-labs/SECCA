@@ -3,7 +3,7 @@
   "success": true,
   "request": {
     "schema": "secca-supplemental-render-v1",
-    "request_id": "6cfc02dee3e144e1a35edd0976b3cdf7",
+    "request_id": "e70d420e2f664f3a9ca426dbd227b7ba",
     "model": "beam",
     "source_sha256": "ac86c7cf249986730b702d130f71be969fab037ae2d1f77b2a4bb1263b1a0392",
     "quaternion_xyzw": [
@@ -14,7 +14,7 @@
     ],
     "runtime_files_sha256": {
       "worker.py": "db1c1545bd1af02c1a953c80d1c548f96b6f1a573f7cd4ceb0e73ba0443daea0",
-      "freecad_worker.py": "be80e5bc6254d0b152726b8f22054e4a63a0e6e448a499f54e83f60e9ac0d6d5",
+      "freecad_worker.py": "505d0d80b1d3e637f48583f69b7b498633ca7a7865996234953839d2e62c9a63",
       "gui_lease.py": "6fc4690b10690a6c39d837ece0aeb6a56e8eaf63faef944814fa847a94fed2d6"
     },
     "images": {
@@ -29,7 +29,7 @@
     }
   },
   "worker": {
-    "request_id": "6cfc02dee3e144e1a35edd0976b3cdf7",
+    "request_id": "e70d420e2f664f3a9ca426dbd227b7ba",
     "model": "beam",
     "source_before": {
       "path": "source.FCStd",
@@ -56,7 +56,7 @@
         "path": "reference-view.png",
         "exists": true,
         "bytes": 65069,
-        "sha256": "a394453c0da51b95b0143da687262e62d5d39d78779f01bffc1c91d0534c5ba6",
+        "sha256": "f2ea6f22364b7543050b82f7c5a6e292a55e1d24d3e17ccdddb6541e9d8474d0",
         "width": 1600,
         "height": 900
       },
@@ -64,14 +64,14 @@
         "path": "preview.png",
         "exists": true,
         "bytes": 29124,
-        "sha256": "5947ba22c896b12a77ec7c197ab883d4303dd9d0b2b0f5f56b9722e1a0b70de8",
+        "sha256": "c84497118ebdb6e925a0cd0bf3869f0a59bea5c52c40f6bfd90bbb964239fbed",
         "width": 960,
         "height": 540
       }
     },
     "runtime_files_sha256": {
       "worker.py": "db1c1545bd1af02c1a953c80d1c548f96b6f1a573f7cd4ceb0e73ba0443daea0",
-      "freecad_worker.py": "be80e5bc6254d0b152726b8f22054e4a63a0e6e448a499f54e83f60e9ac0d6d5",
+      "freecad_worker.py": "505d0d80b1d3e637f48583f69b7b498633ca7a7865996234953839d2e62c9a63",
       "gui_lease.py": "6fc4690b10690a6c39d837ece0aeb6a56e8eaf63faef944814fa847a94fed2d6"
     },
     "render_selection": {
@@ -162,7 +162,7 @@
       "white_corners": true,
       "nonblank": true,
       "edge_margin_at_least_4px": true,
-      "sha256": "a394453c0da51b95b0143da687262e62d5d39d78779f01bffc1c91d0534c5ba6",
+      "sha256": "f2ea6f22364b7543050b82f7c5a6e292a55e1d24d3e17ccdddb6541e9d8474d0",
       "bytes": 65069
     },
     "preview": {
@@ -177,7 +177,7 @@
       "white_corners": true,
       "nonblank": true,
       "edge_margin_at_least_4px": true,
-      "sha256": "5947ba22c896b12a77ec7c197ab883d4303dd9d0b2b0f5f56b9722e1a0b70de8",
+      "sha256": "c84497118ebdb6e925a0cd0bf3869f0a59bea5c52c40f6bfd90bbb964239fbed",
       "bytes": 29124
     }
   },
@@ -185,7 +185,7 @@
   "cleanup": {
     "success": true,
     "independent_query": {
-      "container_id": "e90b934d47535f55683790b3dac0b86621bee8df0488b0bc403e877f84a4f682",
+      "container_id": "b13c2bca8ce3d6b76ba4c7dbeed6756072e7100282251a3077cb01cb194746d3",
       "returncode": 0,
       "remaining_ids": [],
       "capture_stopped_reason": null
@@ -193,7 +193,7 @@
   },
   "runtime": {
     "image_id": "sha256:b9e296032f921c96de5843b19e1a182ce5067d6cdca25a5d3ab7e7da23fe89cb",
-    "container_id": "e90b934d47535f55683790b3dac0b86621bee8df0488b0bc403e877f84a4f682",
+    "container_id": "b13c2bca8ce3d6b76ba4c7dbeed6756072e7100282251a3077cb01cb194746d3",
     "network": "none",
     "user": "10000:10000",
     "root_readonly": true,
@@ -205,6 +205,6 @@
       "NoNewPrivs": 1
     }
   },
-  "original_evidence_sha256": "16946b1a3e7ea11015162e6d0236dbd0e21e92f6d0e8f16103efaa8d79127774",
+  "original_evidence_sha256": "e27c037606c0aba92bed7e6e773e7c44c80fa3fac996604171c748dd40f3c17d",
   "transformation": "Allowlist export. Omit host command logs, named connection and host paths. Normalize worker CAD path."
 }

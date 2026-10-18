@@ -213,7 +213,7 @@
     },
     {
       "path": "scripts/freecad_worker.py",
-      "sha256": "be80e5bc6254d0b152726b8f22054e4a63a0e6e448a499f54e83f60e9ac0d6d5"
+      "sha256": "505d0d80b1d3e637f48583f69b7b498633ca7a7865996234953839d2e62c9a63"
     },
     {
       "path": "scripts/gui_lease.py",
@@ -225,5 +225,11 @@
     }
   ],
   "helper_source_git_revision": "364eea57e3f61bd7b886d361375ce33e45e019e6",
-  "axis_evidence_sha256": "7863d585d319c2fb70d318b3175b0b41264e9ccb5a8d9a55a3d858ffacc258c3"
+  "axis_evidence_sha256": "7863d585d319c2fb70d318b3175b0b41264e9ccb5a8d9a55a3d858ffacc258c3",
+  "line_ending_normalization": {
+    "path": "scripts/freecad_worker.py",
+    "previous_working_copy_sha256": "be80e5bc6254d0b152726b8f22054e4a63a0e6e448a499f54e83f60e9ac0d6d5",
+    "canonical_git_blob_sha256": "505d0d80b1d3e637f48583f69b7b498633ca7a7865996234953839d2e62c9a63",
+    "scope": "CRLF to LF only. Bytes otherwise identical to published Git HEAD. No logic change."
+  }
 }

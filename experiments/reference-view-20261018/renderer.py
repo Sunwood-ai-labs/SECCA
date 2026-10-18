@@ -8,6 +8,7 @@ import math
 from pathlib import Path
 import re
 import shutil
+import subprocess
 import sys
 import tempfile
 import uuid
@@ -55,6 +56,19 @@ def execution_sources():
     files = [HERE / name for name in ("renderer.py", "worker.py", "spec.json", "sources.json", "camera-analysis.json")]
     files.extend(ROOT / "scripts" / name for name in ("sandbox_postprocess.py", "freecad_worker.py", "gui_lease.py"))
     return {path.relative_to(ROOT).as_posix(): digest(path) for path in files}
+
+
+def git_canonical_checks(paths):
+    checks = {}
+    for relative in sorted(paths):
+        data = safe_source(relative).read_bytes()
+        raw = hashlib.sha1(b"blob " + str(len(data)).encode("ascii") + b"\0" + data).hexdigest()
+        filtered = subprocess.run(["git", "hash-object", "--path=" + relative, "--stdin"],
+                                  cwd=ROOT, input=data, capture_output=True, timeout=30, check=True).stdout.decode("ascii").strip()
+        if raw != filtered:
+            raise ValueError("Git filters change execution/source bytes: " + relative)
+        checks[relative] = {"raw_git_blob": raw, "canonical_git_blob": filtered}
+    return checks
 
 
 def verify_inputs(sources):
@@ -161,6 +175,7 @@ def run(args):
     selftest(args)
     executed = execution_sources()
     before = verify_inputs(sources)
+    canonical = git_canonical_checks(set(executed) | set(before))
     attempt = Path(args.output).resolve() / "attempts" / uuid.uuid4().hex
     attempt.mkdir(parents=True)
     archive = attempt / "execution-sources"
@@ -183,6 +198,7 @@ def run(args):
     final = {"schema": "secca-supplemental-attempt-v1", "attempt": str(attempt),
              "success": len(results) == 4 and all(item["success"] for item in results.values()) and before == after and execution_unchanged,
              "executed_sources_sha256": executed, "execution_sources_unchanged": execution_unchanged,
+             "git_canonical_checks": canonical,
              "protected_before": before, "protected_after": after, "historical_evidence_unchanged": before == after,
              "models": list(results)}
     write_json(attempt / "result.json", final)
@@ -257,8 +273,12 @@ def export(args):
                "historical_evidence_unchanged": final["historical_evidence_unchanged"],
                "executed_sources_sha256": final["executed_sources_sha256"],
                "execution_sources_unchanged": final["execution_sources_unchanged"],
+               "git_canonical_checks": final["git_canonical_checks"],
                "presentation_attempts": [{"attempt_id": path.parent.name, "success": read_json(path)["success"],
-                                           "source_binding": "frozen start/end source SHA capture" if "executed_sources_sha256" in read_json(path) else "prototype, no executed-host-source snapshot"}
+                                           "publication_portable": bool(read_json(path).get("git_canonical_checks")),
+                                           "source_binding": ("execution-bound Git-canonical source bytes" if "git_canonical_checks" in read_json(path)
+                                                              else "execution-bound but unportable; CRLF helper differed from published LF blob" if "executed_sources_sha256" in read_json(path)
+                                                              else "prototype, no executed-host-source snapshot")}
                                           for path in sorted((Path(args.output) / "attempts").glob("*/result.json"), key=lambda path:path.stat().st_mtime_ns)],
                "accepted_attempt_id": attempt.name,
                "protected_historical_and_helper_files": len(final["protected_before"]),
@@ -273,6 +293,8 @@ def verify(_args):
     manifest = read_json(HERE / "manifest.json")
     if manifest["executed_sources_sha256"] != execution_sources() or manifest["execution_sources_unchanged"] is not True:
         raise ValueError("Package differs from executed source snapshot")
+    if not manifest["git_canonical_checks"] or any(item["raw_git_blob"] != item["canonical_git_blob"] for item in manifest["git_canonical_checks"].values()):
+        raise ValueError("Executed sources did not pass Git byte-preservation checks")
     verify_inputs(read_json(HERE / "sources.json"))
     for filename, key in (("spec.json", "spec_sha256"), ("sources.json", "sources_sha256"), ("renderer.py", "renderer_sha256"), ("worker.py", "worker_sha256"), ("visual-qa.json", "visual_qa_sha256")):
         if digest(HERE / filename) != manifest[key]:

@@ -21,11 +21,11 @@ These scores were assigned using the original evaluation images. This pass did n
 - [camera-analysis.json](camera-analysis.json) records the front/up-axis evidence and its uncertainty. GLM front is +Y, Beam and DeepSeek front are +X, and Nemotron front is -X. All use +Z up. World-Z camera yaws are 0, -90, -90 and +90 degrees respectively.
 - [manifest.json](manifest.json) binds the published scripts, specification, sources, images, public evidence and original private evidence hashes.
 - The [GLM](artifacts/glm/evidence.json), [Beam](artifacts/beam/evidence.json), [Nemotron](artifacts/nemotron/evidence.json) and [DeepSeek](artifacts/deepseek/evidence.json) evidence records contain requested and actual camera quaternions, PNG checks, original-CAD hash checks, FreeCAD version and distinct offline rendering container IDs.
-- [visual-qa.json](visual-qa.json) records direct inspection of all eight rendered images against the input. The camera direction, white background and framing passed for all four models. Byte preservation is checked separately with hashes.
+- [visual-qa.json](visual-qa.json) records visual inspection and the accepted PNG hashes. The camera direction, white background and framing passed for all four models. When later PNGs contain identical decoded RGB pixels, the record names the directly reviewed attempt and the independent RGB comparison instead of claiming new direct inspection. CAD byte preservation is checked separately with hashes.
 
 The original standard images and scoring evidence remain at [GLM](../../assets/baseline/evidence/), [Beam](../beam-free-20261017/trial-02/renders/), [Nemotron](../dual-free-20261018/nemotron/trial-01/renders/) and [DeepSeek](../dual-free-20261018/deepseek/trial-01/renders/).
 
-Two successful presentation attempts are retained in the private research record. The first tested the image exporter and camera. Its host-side execution source snapshot was absent, so it is a prototype. The second accepted attempt binds the final renderer, worker, camera specification, sources, axis analysis and helpers with start/end SHA-256 snapshots. Each FreeCAD worker also verifies the uploaded runtime source hashes. Both attempts use the same camera rules and original CAD bytes. The public manifest lists their IDs and identifies the accepted attempt. This is presentation iteration, with no repeated model generation or judging.
+Three successful rendering attempts are retained in the private research record. The first tested the image exporter and camera without a host-side execution source snapshot. The second captured executed source hashes, but anonymous ZIP verification exposed a CRLF/LF mismatch in `scripts/freecad_worker.py`; it is superseded. The helper working copy was normalized to its exact existing Git blob, with no logic change. The third accepted attempt binds Git-canonical renderer, worker, camera specification, sources, axis analysis and helpers with start/end SHA-256 snapshots. Each FreeCAD worker also verifies the uploaded runtime source hashes. All attempts use the same camera rules and original CAD bytes. The public manifest lists their IDs and identifies the accepted attempt. This is presentation iteration, with no repeated model generation or judging.
 
 ## Reproduce without model inference
 
@@ -45,7 +45,7 @@ uv run --frozen python experiments/reference-view-20261018/renderer.py render \
   --output /absolute/path/to/new-output
 ```
 
-The renderer imports the repository's offline-container and FreeCAD helpers. Their hashes are pinned in `sources.json`; helper changes require an explicit new presentation record. It uses no canonical trial or render-spec override. It closes each CAD without saving or recomputing it.
+The renderer imports the repository's offline-container and FreeCAD helpers. Their hashes are pinned in `sources.json`; helper changes require an explicit new presentation record. Before rendering, it checks that Git clean filters preserve all execution and protected-source bytes. A CRLF working copy that Git would publish as LF is rejected before execution. It uses no canonical trial or render-spec override. It closes each CAD without saving or recomputing it.
 
 Publication uses an allowlist export. After direct image QA has produced a compatible `visual-qa.json`, export with the following command. It independently queries the four exact rendering container IDs to confirm cleanup, then verifies the public package. Raw host command logs and machine-specific paths stay in the private output directory.
 

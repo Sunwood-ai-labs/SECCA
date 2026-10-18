@@ -3,7 +3,7 @@
   "success": true,
   "request": {
     "schema": "secca-supplemental-render-v1",
-    "request_id": "a061305e5c614105a630dc9e74af94f7",
+    "request_id": "4aebc3b00b484bcd8a5a43f8e0251a13",
     "model": "nemotron",
     "source_sha256": "4d3a994d12f1e0ddd985cd7f2e68cd54c43ff45651ae5c007cbb45f22d41b227",
     "quaternion_xyzw": [
@@ -14,7 +14,7 @@
     ],
     "runtime_files_sha256": {
       "worker.py": "db1c1545bd1af02c1a953c80d1c548f96b6f1a573f7cd4ceb0e73ba0443daea0",
-      "freecad_worker.py": "be80e5bc6254d0b152726b8f22054e4a63a0e6e448a499f54e83f60e9ac0d6d5",
+      "freecad_worker.py": "505d0d80b1d3e637f48583f69b7b498633ca7a7865996234953839d2e62c9a63",
       "gui_lease.py": "6fc4690b10690a6c39d837ece0aeb6a56e8eaf63faef944814fa847a94fed2d6"
     },
     "images": {
@@ -29,7 +29,7 @@
     }
   },
   "worker": {
-    "request_id": "a061305e5c614105a630dc9e74af94f7",
+    "request_id": "4aebc3b00b484bcd8a5a43f8e0251a13",
     "model": "nemotron",
     "source_before": {
       "path": "source.FCStd",
@@ -56,7 +56,7 @@
         "path": "reference-view.png",
         "exists": true,
         "bytes": 47053,
-        "sha256": "ec2a19c9080000afa6a8bfb9dd29e8fa1a628a199578ac49412cfbe4378c86f5",
+        "sha256": "310f9053d5105d9dd971fa7d16005da1e5d6a9f916a565abdff8693219821b91",
         "width": 1600,
         "height": 900
       },
@@ -64,14 +64,14 @@
         "path": "preview.png",
         "exists": true,
         "bytes": 21330,
-        "sha256": "47e756937eb3a4bbb8b7047e894adf55794550c9689e27eec29496ae5f9db334",
+        "sha256": "c234157132fe86d5bdc08562547aceabbe4c2b88e2d830906c9aeb372f894f37",
         "width": 960,
         "height": 540
       }
     },
     "runtime_files_sha256": {
       "worker.py": "db1c1545bd1af02c1a953c80d1c548f96b6f1a573f7cd4ceb0e73ba0443daea0",
-      "freecad_worker.py": "be80e5bc6254d0b152726b8f22054e4a63a0e6e448a499f54e83f60e9ac0d6d5",
+      "freecad_worker.py": "505d0d80b1d3e637f48583f69b7b498633ca7a7865996234953839d2e62c9a63",
       "gui_lease.py": "6fc4690b10690a6c39d837ece0aeb6a56e8eaf63faef944814fa847a94fed2d6"
     },
     "render_selection": {
@@ -159,7 +159,7 @@
       "white_corners": true,
       "nonblank": true,
       "edge_margin_at_least_4px": true,
-      "sha256": "ec2a19c9080000afa6a8bfb9dd29e8fa1a628a199578ac49412cfbe4378c86f5",
+      "sha256": "310f9053d5105d9dd971fa7d16005da1e5d6a9f916a565abdff8693219821b91",
       "bytes": 47053
     },
     "preview": {
@@ -174,7 +174,7 @@
       "white_corners": true,
       "nonblank": true,
       "edge_margin_at_least_4px": true,
-      "sha256": "47e756937eb3a4bbb8b7047e894adf55794550c9689e27eec29496ae5f9db334",
+      "sha256": "c234157132fe86d5bdc08562547aceabbe4c2b88e2d830906c9aeb372f894f37",
       "bytes": 21330
     }
   },
@@ -182,7 +182,7 @@
   "cleanup": {
     "success": true,
     "independent_query": {
-      "container_id": "638299609e10de58322e49a0ce311fb21ad5ad51134c5175a519b0f313f794cf",
+      "container_id": "8d5a5a1bb1189fce00ee78de0c58208a99388f4ce77fd6f8d7f12e79ea5f3952",
       "returncode": 0,
       "remaining_ids": [],
       "capture_stopped_reason": null
@@ -190,7 +190,7 @@
   },
   "runtime": {
     "image_id": "sha256:b9e296032f921c96de5843b19e1a182ce5067d6cdca25a5d3ab7e7da23fe89cb",
-    "container_id": "638299609e10de58322e49a0ce311fb21ad5ad51134c5175a519b0f313f794cf",
+    "container_id": "8d5a5a1bb1189fce00ee78de0c58208a99388f4ce77fd6f8d7f12e79ea5f3952",
     "network": "none",
     "user": "10000:10000",
     "root_readonly": true,
@@ -202,6 +202,6 @@
       "NoNewPrivs": 1
     }
   },
-  "original_evidence_sha256": "463849d39190a2d740b2826fc5b3d6c49b24ff8eaf953c23c072b5ba77ed3402",
+  "original_evidence_sha256": "7f7310720f5cf46ee821e511b2700913ce71cbc6ffd4c23bfcbe6edb948dd8c4",
   "transformation": "Allowlist export. Omit host command logs, named connection and host paths. Normalize worker CAD path."
 }
