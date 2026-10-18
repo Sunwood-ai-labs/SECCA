@@ -1,0 +1,25 @@
+{
+  "created_at": "2026-10-17T23:50:43.437499+00:00",
+  "scope": "One independent SECCA CAD generation per model, native validation, fixed white renders, three evidence-bound visual reviews per output; no model-wide ranking or speed superiority claim",
+  "models": [
+    "opencode/nemotron-3.5-super-vl-free",
+    "opencode/deepseek-v4.1-flash-free"
+  ],
+  "generation_attempts_planned_per_model": 1,
+  "timeout_seconds": 1800,
+  "protocol_id": "racing-kart-image-v2-podman",
+  "protocol_sha256": "246a4eb27632eb172b704cfe36162a2953a72ce6d25f654fd3db0cbc5395cd89",
+  "runtime_image_id": "sha256:b9e296032f921c96de5843b19e1a182ce5067d6cdca25a5d3ab7e7da23fe89cb",
+  "connection": "local-connection",
+  "source_commit": "dc7b1273fcdd1534b903185e2d7921cb7e7784f5",
+  "metadata_source_commit": "8deeec23540f4c0e2c473be7f08130366e662c78",
+  "fixed_inputs": {
+    "reference_image_sha256": "d3fcfa0a7a1b1fc0504fe7dfadfaa2a1beb0a8712bd088a0b6c8ccb0dd120cd3",
+    "prompt_file_sha256": "bf99b58efc0de728de1ff6ca1af05df05bf7845f93a0b1dcbedcbb8a16149cbe",
+    "prompt_sent_utf8_sha256": "aa4242e218a5c890320fab0151334b80f1e24067444686c0fcdf5037512b0dce",
+    "rubric_sha256": "7028b7740c4012c2894ea8cfa567e696df0365546b579cc53653e36b2900a190",
+    "render_spec_sha256": "29b4663d2a72b343c2f0a833795ae3eedd12c1334419d6f321089d9fa2c43fa7"
+  },
+  "resource_policy": "Separate per-trial candidates/gateways/work/home/channel volumes. Candidate network none; no host binds. Same existing runtime, parallel allocation; timings are descriptive single-run values only.",
+  "review_policy": "Identity-aware coordinator freezes initial review before two fresh-context model-blinded independent reviews for each output; sum per-criterion medians."
+}

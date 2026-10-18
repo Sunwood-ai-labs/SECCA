@@ -22,7 +22,24 @@ SECCA evaluates how a CAD construction agent turns a fixed racing-kart image and
 
 The current task is a visual reconstruction experiment. It does not establish dimensional accuracy, mechanical function, manufacturing suitability, or general model performance.
 
-## 🧪 Published experiment
+## 🧪 Published experiments
+
+### Nemotron and DeepSeek · 2026-10-18
+
+| Nemotron 3.5 Super VL Free | DeepSeek V4.1 Flash Free |
+| --- | --- |
+| ![Nemotron racing-kart output on white](experiments/dual-free-20261018/nemotron/trial-01/renders/preview.png) | ![DeepSeek racing-kart output on white](experiments/dual-free-20261018/deepseek/trial-01/renders/preview.png) |
+| **28.75/100** likeness | **50/100** likeness |
+| FCStd: 30 valid solids. STEP: no imported geometry. | FCStd and STEP: 26 valid solids each. |
+| Generation: 71.464 seconds. | Generation: 442.688 seconds. |
+
+Each model generated one output in its own Podman environment using the same fixed inputs and runtime image. One coordinator and two fresh-context, model-blinded reviewers scored each output. The final score sums the criterion medians. CAD validity is separate from likeness: Nemotron's empty STEP fails the output-pair check.
+
+These are two saved outputs, not a general model ranking or a speed comparison. The CAD runs did not retain inference request bodies, so their image payloads cannot be checked against wire records. OpenCode recorded $0 for each run; billing was not independently audited. The earlier Beam and Windows GLM samples used different runtimes and remain separate records.
+
+[Experiment files and evidence](experiments/dual-free-20261018/README.md) · [Results and score reasons](docs/guide/results.md)
+
+### Beam Free · 2026-10-17
 
 ![Beam Free racing-kart output on a white background](experiments/beam-free-20261017/trial-02/renders/preview.png)
 

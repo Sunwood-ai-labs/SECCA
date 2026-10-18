@@ -1,0 +1,109 @@
+{
+  "method": "sum of per-criterion medians",
+  "score": 50.0,
+  "max_score": 100,
+  "criteria": [
+    {
+      "id": "silhouette_proportions",
+      "median": 12.5,
+      "max": 25
+    },
+    {
+      "id": "component_layout",
+      "median": 15,
+      "max": 20
+    },
+    {
+      "id": "characteristic_geometry",
+      "median": 7.5,
+      "max": 30
+    },
+    {
+      "id": "mechanical_detail",
+      "median": 10.0,
+      "max": 20
+    },
+    {
+      "id": "color_material_regions",
+      "median": 5.0,
+      "max": 5
+    }
+  ],
+  "review_ids": [
+    "coordinator-maple-06186df5-3d1c-4a4a-b54b-27d0e6e90a18",
+    "22d4100d-4b4a-4e84-b5ac-ec05c98beec1",
+    "029385b6-0212-4b47-b5ff-bacb34751c5f"
+  ],
+  "review_provenance": [
+    {
+      "review_id": "coordinator-maple-06186df5-3d1c-4a4a-b54b-27d0e6e90a18",
+      "role": "coordinator",
+      "fresh_context": true,
+      "model_blinded": false,
+      "reviewer_model": "unknown; inherited evaluator model identifier not exposed",
+      "context_provenance": {
+        "statement": "Fresh context for this review. Candidate model identity DeepSeekV4.1FlashFree was disclosed. Visual evidence was limited to reference.jpg and renders/isometric.png, renders/top.png, renders/right.png, with rubric.json; review-template.json and README.txt were used only for reporting instructions. No source CAD, trial logs, other reviews, history, baselines, or outside-project evidence were consulted. The four images were opened with view_image. Scores judge only visible reference fidelity, without reward for CAD validity, render polish, camera angle, timing, or cost. Exact metric dimensions cannot be established from these images. Evaluation followed the supplied rubric and direct artifact inspection under Prove It Works. No independent review was read or requested before saving this initial review.",
+        "other_reviews_read": false,
+        "recorded_at": "2026-10-18T00:00:57.0000000Z",
+        "signed_by": "/root/coordinator_maple"
+      }
+    },
+    {
+      "review_id": "22d4100d-4b4a-4e84-b5ac-ec05c98beec1",
+      "role": "blind-a",
+      "fresh_context": true,
+      "model_blinded": true,
+      "reviewer_model": "unknown; inherited evaluator model identifier not exposed",
+      "context_provenance": {
+        "statement": "This is a new reviewer created with fork_turns=none. Scoring uses only the anonymous image-only packet, comprising reference.jpg, three saved renders, the fixed rubric, and the neutral template and README. No candidate identity, source CAD, execution logs, other reviews, history, or outcome metrics were read. Skill instructions were read only to govern workflow and wording.",
+        "other_reviews_read": false,
+        "recorded_at": "2026-10-18T00:03:05Z",
+        "signed_by": "/root/review_maple_a"
+      }
+    },
+    {
+      "review_id": "029385b6-0212-4b47-b5ff-bacb34751c5f",
+      "role": "blind-b",
+      "fresh_context": true,
+      "model_blinded": true,
+      "reviewer_model": "unknown; inherited evaluator model identifier not exposed",
+      "context_provenance": {
+        "statement": "This independent review was created in a new fork_turns=none context from the anonymous image-only packet consisting of the reference, three saved renders, fixed rubric and template. No candidate identity, source CAD, logs, history, outcome metrics or other reviews were supplied or read. Mandatory response-style skills were consulted separately and supplied no candidate evidence.",
+        "other_reviews_read": false,
+        "recorded_at": "2026-10-18T00:03:16.0386114+00:00",
+        "signed_by": "/root/review_maple_b"
+      }
+    }
+  ],
+  "evidence_hashes": {
+    "reference": "d3fcfa0a7a1b1fc0504fe7dfadfaa2a1beb0a8712bd088a0b6c8ccb0dd120cd3",
+    "rubric": "7028b7740c4012c2894ea8cfa567e696df0365546b579cc53653e36b2900a190",
+    "isometric": "b045a8cf1d6eb44faed73c89cda543eba1cc6a2cd02ed56150bbceaeed3aa0a8",
+    "top": "0f88408877ca641be94d3c7927f555d9c897b7856f374da7949ece44653904f6",
+    "right": "3ad7880a4306ab311767812690635c27b0817354c78417776651023521452f1a"
+  },
+  "scope": "Visual likeness of this one output only. No CAD-validity bonus or model-population ranking.",
+  "limitations": [
+    "JSON declarations and timestamps cannot prove actual fresh contexts, independence or model blinding.",
+    "One oblique reference cannot establish exact dimensions or mechanical function."
+  ],
+  "review_files": [
+    {
+      "path": "reviews/deepseek/coordinator.json",
+      "sha256": "c0c1fbd3116134d38e6aa55630fe8ab615c82b814afad5f5a821373b330b49ec"
+    },
+    {
+      "path": "reviews/deepseek/blind-a.json",
+      "sha256": "fc565499ac954c55a0a4a8e77ccc4c08006ff21dc6549e16f8863d5f7584a0ea"
+    },
+    {
+      "path": "reviews/deepseek/blind-b.json",
+      "sha256": "ae6a52c0bd1a08a3f9b21123d04b755a6f4f7fe6c55d8f916bd033e2331a4fd7"
+    }
+  ],
+  "cad_validation": {
+    "path": "evidence/validation.json",
+    "sha256": "1e48253bc03cd6ae5dd49b1edf5dfbc5b0f908dba8e016304cff63dd665eaa85",
+    "separate_from_visual_score": true
+  }
+}

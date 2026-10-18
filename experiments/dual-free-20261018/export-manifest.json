@@ -1,0 +1,394 @@
+{
+  "schema_version": 1,
+  "algorithm": "sha256",
+  "source_record_date": "2026-10-18",
+  "files": [
+    {
+      "path": "PLAN.json",
+      "source_path": "PLAN.json",
+      "bytes": 1728,
+      "source_sha256": "af04a3c7320343760644eddf755ad06bb4f2499bb10afc69c3d6d80509fd1642",
+      "export_sha256": "d0ad25bd36dcec75c88927fefe1f8dd3255f0ecb71bf738da1a422b32b715256",
+      "transformation": "portable paths and local connection; affected exported cross-file SHA256 rebound"
+    },
+    {
+      "path": "isolation-audit.json",
+      "source_path": "isolation-audit.json",
+      "bytes": 1038,
+      "source_sha256": "178e6f1d6b6a5a73ff98424893732a0458740c436847738bbcbb62c75422ef0f",
+      "export_sha256": "178e6f1d6b6a5a73ff98424893732a0458740c436847738bbcbb62c75422ef0f",
+      "transformation": "none"
+    },
+    {
+      "path": "trial-audit.json",
+      "source_path": "trial-audit.json",
+      "bytes": 47122,
+      "source_sha256": "4dfc171da71d3a7082eeecfc6453a6ddf23fb1fbae1ce4dc8150539bf30231e8",
+      "export_sha256": "c463b1506049c3674d72ad65f0744b4c4520568e2285928ccfd4ea4dec84425f",
+      "transformation": "portable paths and local connection; affected exported cross-file SHA256 rebound"
+    },
+    {
+      "path": "final-cleanup-check.json",
+      "source_path": "final-cleanup-check.json",
+      "bytes": 799,
+      "source_sha256": "4742b0663c3f7e6150ab507a8b4834719f5ea52981fb10dc13e062fd10eb65eb",
+      "export_sha256": "afad5b61748d50e86a2a63868825ac1454496a7892b3bf7e565601e903b323f0",
+      "transformation": "portable paths and local connection; affected exported cross-file SHA256 rebound"
+    },
+    {
+      "path": "review-dispatch.json",
+      "source_path": "review-dispatch.json",
+      "bytes": 1880,
+      "source_sha256": "98891e8a6efb71de47c6000dca5f9971dad9a800d2ca03280298800014f5713f",
+      "export_sha256": "6b23497958f3268ad89ca60af27709b9f8a9ec8a8956cfd51e0adf2d439df469",
+      "transformation": "portable paths and local connection; affected exported cross-file SHA256 rebound"
+    },
+    {
+      "path": "reviews/nemotron/coordinator.json",
+      "source_path": "reviews/nemotron/coordinator.json",
+      "bytes": 5089,
+      "source_sha256": "668e26c3929e2d765a51df3d37b6311d1e9d454a3e7c74258dafe2cb166448f5",
+      "export_sha256": "668e26c3929e2d765a51df3d37b6311d1e9d454a3e7c74258dafe2cb166448f5",
+      "transformation": "none"
+    },
+    {
+      "path": "reviews/nemotron/blind-a.json",
+      "source_path": "reviews/nemotron/blind-a.json",
+      "bytes": 4731,
+      "source_sha256": "df2630c6904a49ce45d48f4e1e833d231afa2d079ede94f29c3f1fcf851dd841",
+      "export_sha256": "df2630c6904a49ce45d48f4e1e833d231afa2d079ede94f29c3f1fcf851dd841",
+      "transformation": "none"
+    },
+    {
+      "path": "reviews/nemotron/blind-b.json",
+      "source_path": "reviews/nemotron/blind-b.json",
+      "bytes": 5231,
+      "source_sha256": "126adbe073b3ff53b6d76f382f3603e63ca31f01412d5af94a315e9079793258",
+      "export_sha256": "126adbe073b3ff53b6d76f382f3603e63ca31f01412d5af94a315e9079793258",
+      "transformation": "none"
+    },
+    {
+      "path": "nemotron/trial-01/trial.json",
+      "source_path": "nemotron/trial-01/trial.json",
+      "bytes": 2255,
+      "source_sha256": "af55090030c0d1f2761dab6e741da9f31b3d58b0defc1ae24c89cde355a8d462",
+      "export_sha256": "2ce9c34a044280d1e066055e08e514a99e706c8072b5d6d22e7335e0b239406c",
+      "transformation": "portable paths and local connection; affected exported cross-file SHA256 rebound"
+    },
+    {
+      "path": "nemotron/trial-01/protocol.json",
+      "source_path": "nemotron/trial-01/protocol.json",
+      "bytes": 4724,
+      "source_sha256": "246a4eb27632eb172b704cfe36162a2953a72ce6d25f654fd3db0cbc5395cd89",
+      "export_sha256": "246a4eb27632eb172b704cfe36162a2953a72ce6d25f654fd3db0cbc5395cd89",
+      "transformation": "none"
+    },
+    {
+      "path": "nemotron/trial-01/score.json",
+      "source_path": "nemotron/trial-01/score.json",
+      "bytes": 4950,
+      "source_sha256": "2155dfdbee29b6a0a211780a21b4be04eb36c32844de5167cc92d60d98649b76",
+      "export_sha256": "8806eaaf5e018f90b2054883167c8132c771ea48ec8c359acf661764c4302746",
+      "transformation": "portable paths and local connection; affected exported cross-file SHA256 rebound"
+    },
+    {
+      "path": "nemotron/trial-01/runtime-input/runtime.json",
+      "source_path": "nemotron/trial-01/runtime-input/runtime.json",
+      "bytes": 525,
+      "source_sha256": "a9e3ed11c7a529f474f626ebcd988bedfd43642e6ada2ec28209c91d9dca7c71",
+      "export_sha256": "a9e3ed11c7a529f474f626ebcd988bedfd43642e6ada2ec28209c91d9dca7c71",
+      "transformation": "none"
+    },
+    {
+      "path": "nemotron/trial-01/runtime-input/model-metadata.json",
+      "source_path": "nemotron/trial-01/runtime-input/model-metadata.json",
+      "bytes": 1926,
+      "source_sha256": "45e405860c62c80b8e75170912ca5c9e8a061cf6b59065c596c0c4c6fdf268b0",
+      "export_sha256": "45e405860c62c80b8e75170912ca5c9e8a061cf6b59065c596c0c4c6fdf268b0",
+      "transformation": "none"
+    },
+    {
+      "path": "nemotron/trial-01/workspace/racing-kart.FCStd",
+      "source_path": "nemotron/trial-01/workspace/racing-kart.FCStd",
+      "bytes": 52634,
+      "source_sha256": "4d3a994d12f1e0ddd985cd7f2e68cd54c43ff45651ae5c007cbb45f22d41b227",
+      "export_sha256": "4d3a994d12f1e0ddd985cd7f2e68cd54c43ff45651ae5c007cbb45f22d41b227",
+      "transformation": "none"
+    },
+    {
+      "path": "nemotron/trial-01/workspace/racing-kart.step",
+      "source_path": "nemotron/trial-01/workspace/racing-kart.step",
+      "bytes": 1640,
+      "source_sha256": "f136ca00b88e189e64c98e0881f4b614d00beab1ee54cfe11caf1589ed05a29e",
+      "export_sha256": "f136ca00b88e189e64c98e0881f4b614d00beab1ee54cfe11caf1589ed05a29e",
+      "transformation": "none"
+    },
+    {
+      "path": "nemotron/trial-01/evidence/run.json",
+      "source_path": "nemotron/trial-01/evidence/run.json",
+      "bytes": 1894,
+      "source_sha256": "9fdbbe08765d9930504fb8f17fde5026d0020fc8ea51dd243a2ef17b9da67228",
+      "export_sha256": "74b0e0583615f78b9d9aad340992add2f33ff54bad604b335854d8cf992811d6",
+      "transformation": "portable paths and local connection; affected exported cross-file SHA256 rebound"
+    },
+    {
+      "path": "nemotron/trial-01/evidence/run.events.jsonl",
+      "source_path": "nemotron/trial-01/evidence/run.events.jsonl",
+      "bytes": 131950,
+      "source_sha256": "b3c59cd0731cdba7ebd018ef88b7513b1ff65e3e9ec9cf36cb1a2c2e6c93e84d",
+      "export_sha256": "b3c59cd0731cdba7ebd018ef88b7513b1ff65e3e9ec9cf36cb1a2c2e6c93e84d",
+      "transformation": "none"
+    },
+    {
+      "path": "nemotron/trial-01/evidence/gateway.log",
+      "source_path": "nemotron/trial-01/evidence/gateway.log",
+      "bytes": 370,
+      "source_sha256": "eed23faa6695f90b1e6aaef3944e027e42845cc21e911618a63f7096c93f974a",
+      "export_sha256": "eed23faa6695f90b1e6aaef3944e027e42845cc21e911618a63f7096c93f974a",
+      "transformation": "none"
+    },
+    {
+      "path": "nemotron/trial-01/evidence/stderr.log",
+      "source_path": "nemotron/trial-01/evidence/stderr.log",
+      "bytes": 0,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "none"
+    },
+    {
+      "path": "nemotron/trial-01/evidence/validation.json",
+      "source_path": "nemotron/trial-01/evidence/validation.json",
+      "bytes": 26977,
+      "source_sha256": "b640fdd4d5d01d7bceecdf983ac951dfa7e99f6b6d57712f53a14822b6c8f467",
+      "export_sha256": "4f3030144bbd8c6a6e9f60213aad691506189586466983837f67cf6efaa228a3",
+      "transformation": "portable paths and local connection; affected exported cross-file SHA256 rebound"
+    },
+    {
+      "path": "nemotron/trial-01/evidence/render.json",
+      "source_path": "nemotron/trial-01/evidence/render.json",
+      "bytes": 5295,
+      "source_sha256": "82cfd4ed8e359ad351134fcd17230c21c64eb3dce73b90672c95e520abe6b0c2",
+      "export_sha256": "d50686864f51b48f30dc5232120ad672908cbb0cc89965fe931c82884f4372a2",
+      "transformation": "portable paths and local connection; affected exported cross-file SHA256 rebound"
+    },
+    {
+      "path": "nemotron/trial-01/renders/isometric.png",
+      "source_path": "nemotron/trial-01/renders/isometric.png",
+      "bytes": 54700,
+      "source_sha256": "785a6c8fd14e27791de881705e11174e688dea6af4ac3dc17e737c352f388f48",
+      "export_sha256": "785a6c8fd14e27791de881705e11174e688dea6af4ac3dc17e737c352f388f48",
+      "transformation": "none"
+    },
+    {
+      "path": "nemotron/trial-01/renders/top.png",
+      "source_path": "nemotron/trial-01/renders/top.png",
+      "bytes": 17298,
+      "source_sha256": "6a52c7e27841ac4abb48226dd1eb55e4d37e8b8db28ef373f29c1fbd3b6f859b",
+      "export_sha256": "6a52c7e27841ac4abb48226dd1eb55e4d37e8b8db28ef373f29c1fbd3b6f859b",
+      "transformation": "none"
+    },
+    {
+      "path": "nemotron/trial-01/renders/right.png",
+      "source_path": "nemotron/trial-01/renders/right.png",
+      "bytes": 12172,
+      "source_sha256": "7ac543540828f88dbe027eb021fb9dd3f1f1801d31605979053274e06359e908",
+      "export_sha256": "7ac543540828f88dbe027eb021fb9dd3f1f1801d31605979053274e06359e908",
+      "transformation": "none"
+    },
+    {
+      "path": "nemotron/trial-01/renders/preview.png",
+      "source_path": "nemotron/trial-01/renders/preview.png",
+      "bytes": 25968,
+      "source_sha256": "ad6e1c0003aa53cd8c2028b173a94a09310137bec905eabc2f388fca0b509ab0",
+      "export_sha256": "ad6e1c0003aa53cd8c2028b173a94a09310137bec905eabc2f388fca0b509ab0",
+      "transformation": "none"
+    },
+    {
+      "path": "reviews/deepseek/coordinator.json",
+      "source_path": "reviews/deepseek/coordinator.json",
+      "bytes": 5627,
+      "source_sha256": "c0c1fbd3116134d38e6aa55630fe8ab615c82b814afad5f5a821373b330b49ec",
+      "export_sha256": "c0c1fbd3116134d38e6aa55630fe8ab615c82b814afad5f5a821373b330b49ec",
+      "transformation": "none"
+    },
+    {
+      "path": "reviews/deepseek/blind-a.json",
+      "source_path": "reviews/deepseek/blind-a.json",
+      "bytes": 5386,
+      "source_sha256": "fc565499ac954c55a0a4a8e77ccc4c08006ff21dc6549e16f8863d5f7584a0ea",
+      "export_sha256": "fc565499ac954c55a0a4a8e77ccc4c08006ff21dc6549e16f8863d5f7584a0ea",
+      "transformation": "none"
+    },
+    {
+      "path": "reviews/deepseek/blind-b.json",
+      "source_path": "reviews/deepseek/blind-b.json",
+      "bytes": 5641,
+      "source_sha256": "ae6a52c0bd1a08a3f9b21123d04b755a6f4f7fe6c55d8f916bd033e2331a4fd7",
+      "export_sha256": "ae6a52c0bd1a08a3f9b21123d04b755a6f4f7fe6c55d8f916bd033e2331a4fd7",
+      "transformation": "none"
+    },
+    {
+      "path": "deepseek/trial-01/trial.json",
+      "source_path": "deepseek/trial-01/trial.json",
+      "bytes": 2249,
+      "source_sha256": "c33a00bfc6ff8a6d2ff6fe1e116c3982dc8882a25422fed32c0f98007d763ed4",
+      "export_sha256": "36d3e3daaf7089b7485d3c4a50796f06f68848ee1ebdd4aa566f80a90dc66b4d",
+      "transformation": "portable paths and local connection; affected exported cross-file SHA256 rebound"
+    },
+    {
+      "path": "deepseek/trial-01/protocol.json",
+      "source_path": "deepseek/trial-01/protocol.json",
+      "bytes": 4724,
+      "source_sha256": "246a4eb27632eb172b704cfe36162a2953a72ce6d25f654fd3db0cbc5395cd89",
+      "export_sha256": "246a4eb27632eb172b704cfe36162a2953a72ce6d25f654fd3db0cbc5395cd89",
+      "transformation": "none"
+    },
+    {
+      "path": "deepseek/trial-01/score.json",
+      "source_path": "deepseek/trial-01/score.json",
+      "bytes": 5051,
+      "source_sha256": "b305cb30dac637df0c4a65bc23f194741187733aa451e25de86eec3e148986b7",
+      "export_sha256": "659a540b02bbcb8e0c89c279f88e330c38449feb17225898c0a56521b0b2d10a",
+      "transformation": "portable paths and local connection; affected exported cross-file SHA256 rebound"
+    },
+    {
+      "path": "deepseek/trial-01/runtime-input/runtime.json",
+      "source_path": "deepseek/trial-01/runtime-input/runtime.json",
+      "bytes": 521,
+      "source_sha256": "c55d54e50bd020fd3537cdbcc373ed230c61496ef50ae38224d15097ae91eaea",
+      "export_sha256": "c55d54e50bd020fd3537cdbcc373ed230c61496ef50ae38224d15097ae91eaea",
+      "transformation": "none"
+    },
+    {
+      "path": "deepseek/trial-01/runtime-input/model-metadata.json",
+      "source_path": "deepseek/trial-01/runtime-input/model-metadata.json",
+      "bytes": 1850,
+      "source_sha256": "5eb81ea959cd1a46db2fdedf61c0eaebfd6c1ad23e7d2e753ec91666edd4a8b3",
+      "export_sha256": "5eb81ea959cd1a46db2fdedf61c0eaebfd6c1ad23e7d2e753ec91666edd4a8b3",
+      "transformation": "none"
+    },
+    {
+      "path": "deepseek/trial-01/workspace/racing-kart.FCStd",
+      "source_path": "deepseek/trial-01/workspace/racing-kart.FCStd",
+      "bytes": 475767,
+      "source_sha256": "ee3bd4ff45073b06daab850246e5d8a93c6dc5683e9441d597bcafbb858ec392",
+      "export_sha256": "ee3bd4ff45073b06daab850246e5d8a93c6dc5683e9441d597bcafbb858ec392",
+      "transformation": "none"
+    },
+    {
+      "path": "deepseek/trial-01/workspace/racing-kart.step",
+      "source_path": "deepseek/trial-01/workspace/racing-kart.step",
+      "bytes": 1035601,
+      "source_sha256": "cee222789509cc0499e2af0da0dd7deab6c5b30cc941e84a0ca9a53ea8eaf727",
+      "export_sha256": "cee222789509cc0499e2af0da0dd7deab6c5b30cc941e84a0ca9a53ea8eaf727",
+      "transformation": "none"
+    },
+    {
+      "path": "deepseek/trial-01/evidence/run.json",
+      "source_path": "deepseek/trial-01/evidence/run.json",
+      "bytes": 2772,
+      "source_sha256": "171f908ccf9c81b08ec95bde6633d6e3ea285d56eb957bb74542b79e2558f442",
+      "export_sha256": "f29613be85882990cbd0c04dde08c8295109f69d9e65ba01da41312b2e0ae160",
+      "transformation": "portable paths and local connection; affected exported cross-file SHA256 rebound"
+    },
+    {
+      "path": "deepseek/trial-01/evidence/run.events.jsonl",
+      "source_path": "deepseek/trial-01/evidence/run.events.jsonl",
+      "bytes": 507927,
+      "source_sha256": "81747e65bb195f1d3b154d6bc7dfbf1a7cf13900cf7991db5f4b47c9df97a7e1",
+      "export_sha256": "81747e65bb195f1d3b154d6bc7dfbf1a7cf13900cf7991db5f4b47c9df97a7e1",
+      "transformation": "none"
+    },
+    {
+      "path": "deepseek/trial-01/evidence/gateway.log",
+      "source_path": "deepseek/trial-01/evidence/gateway.log",
+      "bytes": 1144,
+      "source_sha256": "3eae4725feaf695535a19f07171ba91296282d24f1d35ddd4c3b7dbd6454c998",
+      "export_sha256": "3eae4725feaf695535a19f07171ba91296282d24f1d35ddd4c3b7dbd6454c998",
+      "transformation": "none"
+    },
+    {
+      "path": "deepseek/trial-01/evidence/stderr.log",
+      "source_path": "deepseek/trial-01/evidence/stderr.log",
+      "bytes": 0,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "none"
+    },
+    {
+      "path": "deepseek/trial-01/evidence/validation.json",
+      "source_path": "deepseek/trial-01/evidence/validation.json",
+      "bytes": 82971,
+      "source_sha256": "802993ca0fd687641a2cfb0a4ea3b8ca690f285396c110288e704e35c4d47d17",
+      "export_sha256": "1e48253bc03cd6ae5dd49b1edf5dfbc5b0f908dba8e016304cff63dd665eaa85",
+      "transformation": "portable paths and local connection; affected exported cross-file SHA256 rebound"
+    },
+    {
+      "path": "deepseek/trial-01/evidence/render.json",
+      "source_path": "deepseek/trial-01/evidence/render.json",
+      "bytes": 5126,
+      "source_sha256": "bffac233fdeea27a7cdda19a1aba49383519bd7548cf32abb8e5aa37a0e4880a",
+      "export_sha256": "2797f06cb45eb9c251230e0617f0f993baf10f0c58a1935d64d5755c430afc6e",
+      "transformation": "portable paths and local connection; affected exported cross-file SHA256 rebound"
+    },
+    {
+      "path": "deepseek/trial-01/renders/isometric.png",
+      "source_path": "deepseek/trial-01/renders/isometric.png",
+      "bytes": 134850,
+      "source_sha256": "b045a8cf1d6eb44faed73c89cda543eba1cc6a2cd02ed56150bbceaeed3aa0a8",
+      "export_sha256": "b045a8cf1d6eb44faed73c89cda543eba1cc6a2cd02ed56150bbceaeed3aa0a8",
+      "transformation": "none"
+    },
+    {
+      "path": "deepseek/trial-01/renders/top.png",
+      "source_path": "deepseek/trial-01/renders/top.png",
+      "bytes": 55755,
+      "source_sha256": "0f88408877ca641be94d3c7927f555d9c897b7856f374da7949ece44653904f6",
+      "export_sha256": "0f88408877ca641be94d3c7927f555d9c897b7856f374da7949ece44653904f6",
+      "transformation": "none"
+    },
+    {
+      "path": "deepseek/trial-01/renders/right.png",
+      "source_path": "deepseek/trial-01/renders/right.png",
+      "bytes": 22065,
+      "source_sha256": "3ad7880a4306ab311767812690635c27b0817354c78417776651023521452f1a",
+      "export_sha256": "3ad7880a4306ab311767812690635c27b0817354c78417776651023521452f1a",
+      "transformation": "none"
+    },
+    {
+      "path": "deepseek/trial-01/renders/preview.png",
+      "source_path": "deepseek/trial-01/renders/preview.png",
+      "bytes": 62500,
+      "source_sha256": "3c7798172e966d4cf5ac3622e6dd038c5945dec414fac370c9e54f70de099818",
+      "export_sha256": "3c7798172e966d4cf5ac3622e6dd038c5945dec414fac370c9e54f70de099818",
+      "transformation": "none"
+    }
+  ],
+  "generated_files": [
+    {
+      "path": "RESULT.json",
+      "bytes": 2271,
+      "export_sha256": "67ed352f1857bdb6075e7c4d18567ae8e5f6e654ea8c7c8182855010a5ce712d"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 9173,
+      "export_sha256": "e78b29633dbcc6efd167087c07f67e19516c9870f7133224cb43eb3eed9bac53"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1263,
+      "export_sha256": "0826a817df831aa945c38a33b1ea28a88c3f9e0796db612a8be52433f80d5437"
+    }
+  ],
+  "original_result_sha256": "62a935c5af96dd9b8f8a5a35f651c8356d7933bbb6d8e0c4fb25aab42bc07896",
+  "original_report_sha256": "852c8a0e755a1c635648fc01b1ce4d54c598b4c1b2d1dbc28560381e9d256171",
+  "omitted": [
+    "Original REPORT.md and RESULT.json replaced by public summaries",
+    "Duplicate reference images; use repository assets/reference.jpg",
+    "Full Podman inspect storage/host state, transport commands, temporary review FCStd copies",
+    "Local decision trail, preflight management records, original host paths and connection name",
+    "Separate earlier image-input probe and complete external model catalogs"
+  ],
+  "hash_scope": "Export hashes identify published bytes; source hashes identify archived originals. Hashes in audit source references to omitted files remain historical identifiers. Review JSON, CAD, PNG, events and logs retain their source bytes."
+}

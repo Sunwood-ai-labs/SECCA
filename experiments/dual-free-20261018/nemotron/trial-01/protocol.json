@@ -1,0 +1,115 @@
+{
+  "id": "racing-kart-image-v2-podman",
+  "version": "2.0",
+  "frozen_at": "2026-10-17",
+  "candidate_prompt_file": "assets/prompt.txt",
+  "reference_image_file": "assets/reference.jpg",
+  "rubric_file": "assets/rubric.json",
+  "render_spec_file": "assets/render-spec.json",
+  "prompt_text": "添付画像のレーシングカートをFreeCAD MCPで作成し、racing-kart.FCStdとracing-kart.stepに保存してください。\n",
+  "prompt_file_sha256": "bf99b58efc0de728de1ff6ca1af05df05bf7845f93a0b1dcbedcbb8a16149cbe",
+  "prompt_sent_utf8_sha256": "aa4242e218a5c890320fab0151334b80f1e24067444686c0fcdf5037512b0dce",
+  "reference_image_sha256": "d3fcfa0a7a1b1fc0504fe7dfadfaa2a1beb0a8712bd088a0b6c8ccb0dd120cd3",
+  "rubric_sha256": "7028b7740c4012c2894ea8cfa567e696df0365546b579cc53653e36b2900a190",
+  "render_spec_sha256": "29b4663d2a72b343c2f0a833795ae3eedd12c1334419d6f321089d9fa2c43fa7",
+  "outputs": [
+    "racing-kart.FCStd",
+    "racing-kart.step"
+  ],
+  "harness": {
+    "name": "OpenCode",
+    "baseline_version": "1.19.3",
+    "command": [
+      "run",
+      "--pure",
+      "-m",
+      "{model}",
+      "--format",
+      "json",
+      "-f",
+      "{reference_image}",
+      "--",
+      "{prompt}"
+    ],
+    "agent_prompt": "Create the requested artifact using the available tools. Work only inside the current workspace. Do not read or modify management documents outside this workspace.",
+    "permission": {
+      "*": "allow"
+    },
+    "share": "disabled",
+    "small_model": "same as selected model",
+    "timeout_seconds": 1800,
+    "fresh_xdg": true,
+    "fresh_workspace_git_boundary": true,
+    "temperature": "provider default; record if changed",
+    "seed": "not specified; record if provider exposes it"
+  },
+  "scoring": {
+    "criterion_ids": [
+      "silhouette_proportions",
+      "component_layout",
+      "characteristic_geometry",
+      "mechanical_detail",
+      "color_material_regions"
+    ],
+    "weights": [
+      25,
+      20,
+      30,
+      20,
+      5
+    ],
+    "reviewer_count": 3,
+    "new_run_review_context": "One identity-aware coordinator records its initial score before reading two fresh-context model-blinded independent reviews.",
+    "aggregation": "median per criterion, sum medians",
+    "exclude_from_likeness": [
+      "CAD format export",
+      "BRep validity",
+      "solid count",
+      "time",
+      "cost",
+      "unverified exact dimensions"
+    ],
+    "baseline_exception": "The historical 43 uses coordinator45 plus blind42/blind42. This is the default compatible reviewer-role protocol, not three fully blinded raters.",
+    "rubric_timing": "Designed after baseline generation before numeric scoring; frozen before future model runs.",
+    "reviewer_roles": [
+      "coordinator",
+      "blind-a",
+      "blind-b"
+    ],
+    "fresh_context_required_for": [
+      "blind-a",
+      "blind-b"
+    ],
+    "model_blinded_required_for": [
+      "blind-a",
+      "blind-b"
+    ]
+  },
+  "historical_baseline": {
+    "model": "opencode/glm-5.3-flash-free",
+    "trial_count": 1,
+    "duration_seconds": 509.969,
+    "score": 43,
+    "native_and_step_solids": 77,
+    "artifacts": "assets/baseline",
+    "is_model_population_estimate": false,
+    "os_isolated": false,
+    "comparison_status": "Historical Windows host run. Rerun in Podman/Linux for a strict sandboxed comparison; 43 is not a new Podman result."
+  },
+  "comparability_policy": "Changing prompt, reference, tools, harness/version, sandbox image, rendering or rubric is a protocol deviation. The v2 Podman/Linux environment differs from the v1 Windows host baseline and requires a fresh baseline for strict comparisons. Provider stochasticity and load remain uncontrolled.",
+  "rubric_method_clarification": "The canonical rubric clarifies the already-used three-review per-criterion median method. Criteria, anchors, weights and exclusions are unchanged. The exact historical rubric is retained in assets/baseline/evidence/likeness-rubric-original.json; historical review hashes use that original.",
+  "execution_boundary": {
+    "root_filesystem": "read-only",
+    "api_transport": "loopback HTTP to private per-trial Unix socket to fixed provider inference gateway",
+    "host_bind_mounts": [],
+    "mode": "podman",
+    "candidate_network": "none",
+    "host_mcp_allowed": false,
+    "drop_capabilities": "ALL",
+    "shared_model_workspaces_allowed": false,
+    "postprocess": "fresh network-none container after candidate termination",
+    "candidate_uid": 10000,
+    "no_new_privileges": true,
+    "candidate_includes": "OpenCode, FreeCAD GUI on Xvfb, stdio FreeCAD MCP"
+  }
+}

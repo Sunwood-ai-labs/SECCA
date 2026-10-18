@@ -1,0 +1,50 @@
+{
+  "provider_id": "opencode",
+  "provider_api": "https://opencode.ai/inference/openai/v1",
+  "provider_npm": "@ai-sdk/openai-compatible",
+  "model": {
+    "name": "DeepSeek V4.1 Flash Free",
+    "family": "deepseek-flash",
+    "attachment": true,
+    "reasoning": true,
+    "temperature": true,
+    "tool_call": true,
+    "structured_output": true,
+    "limit": {
+      "context": 200000,
+      "output": 32000
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "interleaved": {
+      "field": "reasoning_content"
+    },
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0
+    },
+    "id": "deepseek-v4.1-flash-free"
+  },
+  "source_url": "https://github.com/anomalyco/models.dev/blob/8deeec23540f4c0e2c473be7f08130366e662c78/providers/opencode/models/deepseek-v4.1-flash-free.toml",
+  "source_sha256": "74bba04931c168647c1951fdab594f348bbe9c3a7be7213bf508932c10d1f63f",
+  "sources": [
+    {
+      "url": "https://github.com/anomalyco/models.dev/blob/8deeec23540f4c0e2c473be7f08130366e662c78/providers/opencode/models/deepseek-v4.1-flash-free.toml",
+      "sha256": "74bba04931c168647c1951fdab594f348bbe9c3a7be7213bf508932c10d1f63f"
+    },
+    {
+      "url": "https://github.com/anomalyco/models.dev/blob/8deeec23540f4c0e2c473be7f08130366e662c78/models/deepseek/deepseek-v4.1-flash.toml",
+      "sha256": "ef594fbed1c96863ff728e31530dbc1987d8862e36c5f1b5f08e5376d631aee0"
+    }
+  ],
+  "provenance_note": "Model attributes are the previously verified merged provider and base TOML definitions. source_sha256 binds the pinned provider TOML. sources binds both original TOML definitions.",
+  "verified_merged_metadata_sha256": "8c92471a7e51942a6c4ea73d862a87d75d6bf54c539c3a83ea67add6d5821848"
+}

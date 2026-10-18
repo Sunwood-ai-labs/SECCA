@@ -1,0 +1,67 @@
+{
+  "schema_version": 2,
+  "status": "completed",
+  "started_utc": "2026-10-17T23:50:21.789660+00:00",
+  "model_id": "opencode/nemotron-3.5-super-vl-free",
+  "sandbox": {
+    "backend": "podman-network-none-uds",
+    "connection": "local-connection",
+    "image_id": "sha256:b9e296032f921c96de5843b19e1a182ce5067d6cdca25a5d3ab7e7da23fe89cb",
+    "api_base_url": "https://opencode.ai/inference/openai/v1",
+    "api_model_id": "nemotron-3.5-super-vl-free",
+    "limits": {
+      "timeout_seconds": 1800,
+      "memory": "4g",
+      "cpus": 2,
+      "pids": 512
+    }
+  },
+  "trial_sha256": "2ce9c34a044280d1e066055e08e514a99e706c8072b5d6d22e7335e0b239406c",
+  "returncode": 0,
+  "credential_env_names": [
+    "SECCA_FREE_TOKEN"
+  ],
+  "cleanup_errors": [],
+  "outputs": [
+    "racing-kart.FCStd",
+    "racing-kart.step"
+  ],
+  "measurement_scope": "generation event to OpenCode exit, including model waits, retries and MCP work; startup recorded separately",
+  "startup_seconds": 8.079,
+  "candidate_stopped": true,
+  "candidate_container_id": "9574e1710374b855131619faeb7a44d209e16af357f367ee2052174081dbe766",
+  "duration_seconds": 71.464,
+  "finished_utc": "2026-10-17T23:52:03.297769+00:00",
+  "wall_seconds": 101.507,
+  "metrics": {
+    "event_types": {
+      "sandbox_runtime_identity": 1,
+      "sandbox_generation_start": 1,
+      "step_start": 7,
+      "tool_use": 7,
+      "text": 7,
+      "step_finish": 7
+    },
+    "tool_calls": {
+      "freecad_list_documents": 1,
+      "bash": 2,
+      "freecad_execute_code": 3,
+      "read": 1
+    },
+    "tokens": {
+      "total": 131593,
+      "input": 34091,
+      "output": 4058,
+      "reasoning": 2388,
+      "cache.write": 0,
+      "cache.read": 91056
+    },
+    "recorded_cost_usd": 0.0,
+    "errors": [],
+    "session_ids": [
+      "ses_eb3b9a800ffejrwzoR25jPhldR"
+    ],
+    "non_json_stdout_lines": 0
+  },
+  "tool_failure_count": 0
+}

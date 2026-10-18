@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "created_utc": "2026-10-17T23:50:05.576323+00:00",
+  "model_id": "opencode/deepseek-v4.1-flash-free",
+  "protocol_id": "racing-kart-image-v2-podman",
+  "protocol_sha256": "246a4eb27632eb172b704cfe36162a2953a72ce6d25f654fd3db0cbc5395cd89",
+  "credential_env_names": [
+    "SECCA_FREE_TOKEN"
+  ],
+  "timeout_seconds": 1800,
+  "input": {
+    "prompt_text": "添付画像のレーシングカートをFreeCAD MCPで作成し、racing-kart.FCStdとracing-kart.stepに保存してください。\n",
+    "prompt_sent_utf8_sha256": "aa4242e218a5c890320fab0151334b80f1e24067444686c0fcdf5037512b0dce",
+    "reference_sha256": "d3fcfa0a7a1b1fc0504fe7dfadfaa2a1beb0a8712bd088a0b6c8ccb0dd120cd3"
+  },
+  "sandbox": {
+    "backend": "podman-network-none-uds",
+    "connection": "local-connection",
+    "image_id": "sha256:b9e296032f921c96de5843b19e1a182ce5067d6cdca25a5d3ab7e7da23fe89cb",
+    "api_base_url": "https://opencode.ai/inference/openai/v1",
+    "api_model_id": "deepseek-v4.1-flash-free",
+    "limits": {
+      "timeout_seconds": 1800,
+      "memory": "4g",
+      "cpus": 2,
+      "pids": 512
+    }
+  },
+  "harness": {
+    "name": "OpenCode",
+    "version": "1.19.3",
+    "image_id": "sha256:b9e296032f921c96de5843b19e1a182ce5067d6cdca25a5d3ab7e7da23fe89cb"
+  },
+  "protocol_deviations": [
+    "Podman Linux, container-local FreeCAD/Xvfb and Unix-socket API gateway",
+    "Explicit source-bound model catalog metadata supplements the bundled OpenCode registry"
+  ],
+  "file_hashes": {
+    "protocol.json": "246a4eb27632eb172b704cfe36162a2953a72ce6d25f654fd3db0cbc5395cd89",
+    "../../../../assets/reference.jpg": "d3fcfa0a7a1b1fc0504fe7dfadfaa2a1beb0a8712bd088a0b6c8ccb0dd120cd3",
+    "runtime-input/runtime.json": "c55d54e50bd020fd3537cdbcc373ed230c61496ef50ae38224d15097ae91eaea",
+    "runtime-input/model-metadata.json": "5eb81ea959cd1a46db2fdedf61c0eaebfd6c1ad23e7d2e753ec91666edd4a8b3"
+  },
+  "model_metadata": {
+    "file": "runtime-input/model-metadata.json",
+    "source_url": "https://github.com/anomalyco/models.dev/blob/8deeec23540f4c0e2c473be7f08130366e662c78/providers/opencode/models/deepseek-v4.1-flash-free.toml",
+    "source_sha256": "74bba04931c168647c1951fdab594f348bbe9c3a7be7213bf508932c10d1f63f"
+  }
+}

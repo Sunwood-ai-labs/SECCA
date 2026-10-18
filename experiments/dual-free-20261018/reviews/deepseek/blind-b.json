@@ -1,0 +1,97 @@
+{
+  "review_id": "029385b6-0212-4b47-b5ff-bacb34751c5f",
+  "role": "blind-b",
+  "fresh_context": true,
+  "model_blinded": true,
+  "reviewer_model": "unknown; inherited evaluator model identifier not exposed",
+  "context_provenance": {
+    "statement": "This independent review was created in a new fork_turns=none context from the anonymous image-only packet consisting of the reference, three saved renders, fixed rubric and template. No candidate identity, source CAD, logs, history, outcome metrics or other reviews were supplied or read. Mandatory response-style skills were consulted separately and supplied no candidate evidence.",
+    "other_reviews_read": false,
+    "recorded_at": "2026-10-18T00:03:16.0386114+00:00",
+    "signed_by": "/root/review_maple_b"
+  },
+  "evidence_hashes": {
+    "reference": "d3fcfa0a7a1b1fc0504fe7dfadfaa2a1beb0a8712bd088a0b6c8ccb0dd120cd3",
+    "rubric": "7028b7740c4012c2894ea8cfa567e696df0365546b579cc53653e36b2900a190",
+    "isometric": "b045a8cf1d6eb44faed73c89cda543eba1cc6a2cd02ed56150bbceaeed3aa0a8",
+    "top": "0f88408877ca641be94d3c7927f555d9c897b7856f374da7949ece44653904f6",
+    "right": "3ad7880a4306ab311767812690635c27b0817354c78417776651023521452f1a"
+  },
+  "criteria": [
+    {
+      "id": "silhouette_proportions",
+      "score": 12.5,
+      "max": 25,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "The isometric and top renders show a low open four-wheel chassis, wider rear tires, a central seat and an exposed blue perimeter frame, matching these broad proportions visible in the reference."
+        },
+        {
+          "kind": "deduction",
+          "observation": "In the isometric and right renders the tall rectangular front body block and thick box-shaped side pods create a bulky rectangular outline. The reference has a long slim tapered nose, a low swept front bumper and longer thin side panels. The rendered seat also rises as a straight angular slab rather than the reference curved shell."
+        }
+      ]
+    },
+    {
+      "id": "component_layout",
+      "score": 15,
+      "max": 20,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "The top render places four wheels outside the frame, the steering wheel ahead of a central seat, an engine beside the rear of the seat, an exhaust near the rear axle and silver pods on both sides, corresponding to the major component arrangement in the reference."
+        },
+        {
+          "kind": "deduction",
+          "observation": "In the top and isometric renders the main front silver block lies ahead of the steering and front axle without the reference long nose extending rearward toward the steering column. The separate compact side blocks do not extend along the seat sides as far as the reference side panels, and the reference broad front bumper arrangement is replaced by a central block with small side blocks."
+        }
+      ]
+    },
+    {
+      "id": "characteristic_geometry",
+      "score": 7.5,
+      "max": 30,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "The isometric render includes a tilted circular steering ring, cylindrical tires with rounded outer edges and a curved blue rear perimeter rail. These reproduce limited shape elements visible in the reference."
+        },
+        {
+          "kind": "deduction",
+          "observation": "The isometric render shows an angular seat made of flat straight panels instead of the reference continuous curved bucket with raised rounded sides. The top render shows a rectangular front body block instead of the reference taper, and the rendered front bumper lacks the reference swept wing ends. Wheel centers are flat discs rather than the reference recessed shaped rims, and the steering wheel has many thin spokes instead of the reference broad sparse spokes."
+        }
+      ]
+    },
+    {
+      "id": "mechanical_detail",
+      "score": 5,
+      "max": 20,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "The isometric render visibly includes stacked engine fins, a bent pipe leading to a cylindrical silencer, a transverse rear axle with discs and blue frame braces. The top render also shows rods running toward the front wheels, corresponding to mechanical component types visible in the reference."
+        },
+        {
+          "kind": "deduction",
+          "observation": "The isometric engine is a coarse cylindrical fin stack on a plain rectangular block, lacking the reference shaped crankcase, dense cooling fins and smaller attached fittings. The rendered rear discs have no visible reference-like chain and toothed sprocket detail, and the front-wheel rods lack the distinct articulated joints and paired steering links visible in the reference."
+        }
+      ]
+    },
+    {
+      "id": "color_material_regions",
+      "score": 5,
+      "max": 5,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "The isometric and top renders place blue on the tubular frame, silver-gray on the body blocks, rims, axle and engine, dark gray or black on the seat, and black on the tires. These color regions correspond to the reference."
+        },
+        {
+          "kind": "no_deduction",
+          "observation": "The observable main frame, bodywork, seat and tire regions have the reference color assignments. Shape differences are scored in other criteria, and lighting differences do not justify a color deduction."
+        }
+      ]
+    }
+  ]
+}

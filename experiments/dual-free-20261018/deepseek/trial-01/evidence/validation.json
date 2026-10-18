@@ -1,0 +1,3662 @@
+{
+  "schema_version": 1,
+  "request_id": "ccc009a06f7a410f8d3fc17f6864a9cd",
+  "scope": "Independent disk reopen and STEP import; no recompute, save, grading, or structural safety assessment.",
+  "selection_note": "Visible physical Part::Feature and Body shapes; exclude containers, datum objects and Body internals. STEP object count is an import representation, not a manufactured part count.",
+  "success": true,
+  "freecad_version": [
+    "1",
+    "0",
+    "0",
+    "",
+    "https://code.launchpad.net/~vcs-imports/freecad/trunk",
+    "2026/08/25 11:49:11"
+  ],
+  "native": {
+    "file_before": {
+      "path": "workspace/racing-kart.FCStd",
+      "exists": true,
+      "bytes": 475767,
+      "sha256": "ee3bd4ff45073b06daab850246e5d8a93c6dc5683e9441d597bcafbb858ec392"
+    },
+    "document_name": "racing_kart",
+    "object_count": 61,
+    "all_shape_object_counts": {
+      "total": 56,
+      "null": 0,
+      "invalid": 0,
+      "inspection_exceptions": 0
+    },
+    "objects": [
+      {
+        "name": "Tire_FL",
+        "label": "Tire FL",
+        "type": "Part::Feature",
+        "parents": [
+          "Wheels"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 6773273.761139593,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              380.0,
+              555.0,
+              0.0
+            ],
+            "max": [
+              660.0,
+              665.0,
+              280.0
+            ],
+            "size": [
+              280.0,
+              110.0,
+              280.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Rim_FL",
+        "label": "Rim FL",
+        "type": "Part::Feature",
+        "parents": [
+          "Wheels"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 1964692.7322857566,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              447.2,
+              551.0,
+              67.2
+            ],
+            "max": [
+              592.8,
+              669.0,
+              212.8
+            ],
+            "size": [
+              145.59999999999997,
+              118.0,
+              145.60000000000002
+            ]
+          }
+        }
+      },
+      {
+        "name": "Tire_FR",
+        "label": "Tire FR",
+        "type": "Part::Feature",
+        "parents": [
+          "Wheels"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 6773273.761139593,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              380.0,
+              -665.0,
+              0.0
+            ],
+            "max": [
+              660.0,
+              -555.0,
+              280.0
+            ],
+            "size": [
+              280.0,
+              110.0,
+              280.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Rim_FR",
+        "label": "Rim FR",
+        "type": "Part::Feature",
+        "parents": [
+          "Wheels"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 1964692.7322857566,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              447.2,
+              -669.0,
+              67.2
+            ],
+            "max": [
+              592.8,
+              -551.0,
+              212.8
+            ],
+            "size": [
+              145.59999999999997,
+              118.0,
+              145.60000000000002
+            ]
+          }
+        }
+      },
+      {
+        "name": "Tire_RL",
+        "label": "Tire RL",
+        "type": "Part::Feature",
+        "parents": [
+          "Wheels"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 12829478.999097317,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -705.0,
+              545.0,
+              0.0
+            ],
+            "max": [
+              -375.0,
+              695.0,
+              330.0
+            ],
+            "size": [
+              330.0,
+              150.0,
+              330.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Rim_RL",
+        "label": "Rim RL",
+        "type": "Part::Feature",
+        "parents": [
+          "Wheels"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 3654109.3144948967,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -625.8,
+              541.0,
+              79.2
+            ],
+            "max": [
+              -454.2,
+              699.0,
+              250.8
+            ],
+            "size": [
+              171.59999999999997,
+              158.0,
+              171.60000000000002
+            ]
+          }
+        }
+      },
+      {
+        "name": "Tire_RR",
+        "label": "Tire RR",
+        "type": "Part::Feature",
+        "parents": [
+          "Wheels"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 12829478.999097317,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -705.0,
+              -695.0,
+              0.0
+            ],
+            "max": [
+              -375.0,
+              -545.0,
+              330.0
+            ],
+            "size": [
+              330.0,
+              150.0,
+              330.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Rim_RR",
+        "label": "Rim RR",
+        "type": "Part::Feature",
+        "parents": [
+          "Wheels"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 3654109.3144948967,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -625.8,
+              -699.0,
+              79.2
+            ],
+            "max": [
+              -454.2,
+              -541.0,
+              250.8
+            ],
+            "size": [
+              171.59999999999997,
+              158.0,
+              171.60000000000002
+            ]
+          }
+        }
+      },
+      {
+        "name": "Chassis",
+        "label": "Chassis",
+        "type": "Part::Feature",
+        "parents": [
+          "ChassisAssembly"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 5268374.289087473,
+          "solids": 1,
+          "faces": 123,
+          "bounds_mm": {
+            "min": [
+              -960.9187138166457,
+              -543.9362836435521,
+              59.0
+            ],
+            "max": [
+              740.9058934764463,
+              543.9362836435521,
+              175.908824179891
+            ],
+            "size": [
+              1701.824607293092,
+              1087.8725672871042,
+              116.90882417989101
+            ]
+          }
+        }
+      },
+      {
+        "name": "FrontAxle",
+        "label": "Front Axle",
+        "type": "Part::Feature",
+        "parents": [
+          "ChassisAssembly"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 184683.61908666533,
+          "solids": 2,
+          "faces": 10,
+          "bounds_mm": {
+            "min": [
+              508.0,
+              -615.0,
+              55.0
+            ],
+            "max": [
+              532.0,
+              615.0,
+              205.0
+            ],
+            "size": [
+              24.0,
+              1230.0,
+              150.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "RearAxle",
+        "label": "Rear Axle",
+        "type": "Part::Feature",
+        "parents": [
+          "ChassisAssembly"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 3851806.2216015314,
+          "solids": 1,
+          "faces": 15,
+          "bounds_mm": {
+            "min": [
+              -660.0,
+              -700.0,
+              45.0
+            ],
+            "max": [
+              -420.0,
+              700.0,
+              285.0
+            ],
+            "size": [
+              240.0,
+              1400.0,
+              240.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Steering",
+        "label": "Steering Linkage",
+        "type": "Part::Feature",
+        "parents": [
+          "ChassisAssembly"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 833271.5753834385,
+          "solids": 2,
+          "faces": 23,
+          "bounds_mm": {
+            "min": [
+              129.57046198566383,
+              -542.0107657199966,
+              142.00082249524712
+            ],
+            "max": [
+              527.7440286974379,
+              542.0107657199966,
+              506.6208309137903
+            ],
+            "size": [
+              398.1735667117741,
+              1084.0215314399932,
+              364.6200084185432
+            ]
+          }
+        }
+      },
+      {
+        "name": "Seat",
+        "label": "Seat",
+        "type": "Part::Feature",
+        "parents": [
+          "Bodywork"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 12015000.00000001,
+          "solids": 2,
+          "faces": 28,
+          "bounds_mm": {
+            "min": [
+              -331.9756081437326,
+              -150.00000000000003,
+              90.0
+            ],
+            "max": [
+              70.0,
+              150.00000000000003,
+              467.75441512427363
+            ],
+            "size": [
+              401.9756081437326,
+              300.00000000000006,
+              377.75441512427363
+            ]
+          }
+        }
+      },
+      {
+        "name": "FloorTray",
+        "label": "Floor Tray",
+        "type": "Part::Feature",
+        "parents": [
+          "ChassisAssembly"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 3588000.0,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              -400.0,
+              -230.0,
+              74.0
+            ],
+            "max": [
+              250.0,
+              230.0,
+              86.0
+            ],
+            "size": [
+              650.0,
+              460.0,
+              12.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "NoseCone",
+        "label": "Nose Cone",
+        "type": "Part::Feature",
+        "parents": [
+          "Bodywork"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 50918730.08086409,
+          "solids": 1,
+          "faces": 26,
+          "bounds_mm": {
+            "min": [
+              490.0,
+              -280.0,
+              69.99999999999999
+            ],
+            "max": [
+              810.0,
+              280.0,
+              370.0
+            ],
+            "size": [
+              320.0,
+              560.0,
+              300.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "FrontFairing_L",
+        "label": "Front Fairing L",
+        "type": "Part::Feature",
+        "parents": [
+          "Bodywork"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 4517522.023056942,
+          "solids": 1,
+          "faces": 26,
+          "bounds_mm": {
+            "min": [
+              470.0,
+              300.0,
+              80.0
+            ],
+            "max": [
+              730.0,
+              390.0,
+              290.0
+            ],
+            "size": [
+              260.0,
+              90.0,
+              210.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "FrontFairing_R",
+        "label": "Front Fairing R",
+        "type": "Part::Feature",
+        "parents": [
+          "Bodywork"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 4517522.023056942,
+          "solids": 1,
+          "faces": 26,
+          "bounds_mm": {
+            "min": [
+              470.0,
+              -390.0,
+              80.0
+            ],
+            "max": [
+              730.0,
+              -300.0,
+              290.0
+            ],
+            "size": [
+              260.0,
+              90.0,
+              210.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "SidePod_L",
+        "label": "Side Pod L",
+        "type": "Part::Feature",
+        "parents": [
+          "Bodywork"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 25243293.8426395,
+          "solids": 1,
+          "faces": 26,
+          "bounds_mm": {
+            "min": [
+              -330.0,
+              330.0,
+              70.0
+            ],
+            "max": [
+              140.0,
+              630.0,
+              260.0
+            ],
+            "size": [
+              470.0,
+              300.0,
+              190.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "SidePod_R",
+        "label": "Side Pod R",
+        "type": "Part::Feature",
+        "parents": [
+          "Bodywork"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 25243293.8426395,
+          "solids": 1,
+          "faces": 26,
+          "bounds_mm": {
+            "min": [
+              -330.0,
+              -630.0,
+              70.0
+            ],
+            "max": [
+              140.0,
+              -330.0,
+              260.0
+            ],
+            "size": [
+              470.0,
+              300.0,
+              190.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Engine",
+        "label": "Engine",
+        "type": "Part::Feature",
+        "parents": [
+          "Powertrain"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 8351502.407640873,
+          "solids": 2,
+          "faces": 35,
+          "bounds_mm": {
+            "min": [
+              -215.0,
+              90.0,
+              110.0
+            ],
+            "max": [
+              0.0,
+              325.0,
+              490.0
+            ],
+            "size": [
+              215.0,
+              235.0,
+              380.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Exhaust",
+        "label": "Exhaust",
+        "type": "Part::Feature",
+        "parents": [
+          "Powertrain"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 3506590.0512031717,
+          "solids": 2,
+          "faces": 11,
+          "bounds_mm": {
+            "min": [
+              -850.0,
+              248.0,
+              343.0
+            ],
+            "max": [
+              -96.82651745993955,
+              352.0,
+              449.80226807613394
+            ],
+            "size": [
+              753.1734825400605,
+              104.0,
+              106.80226807613394
+            ]
+          }
+        }
+      },
+      {
+        "name": "RacingKart",
+        "label": "Racing Kart",
+        "type": "App::Part",
+        "parents": [],
+        "children": [
+          "Origin",
+          "ChassisAssembly",
+          "Bodywork",
+          "Powertrain",
+          "Wheels"
+        ],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 198482203.3669095,
+          "solids": 26,
+          "faces": 405,
+          "bounds_mm": {
+            "min": [
+              -960.9187138166457,
+              -700.0,
+              0.0
+            ],
+            "max": [
+              810.0,
+              700.0,
+              506.6208309137903
+            ],
+            "size": [
+              1770.9187138166458,
+              1400.0,
+              506.6208309137903
+            ]
+          }
+        }
+      },
+      {
+        "name": "Origin",
+        "label": "Origin",
+        "type": "App::Origin",
+        "parents": [
+          "RacingKart"
+        ],
+        "children": [
+          "X_Axis",
+          "Y_Axis",
+          "Z_Axis",
+          "XY_Plane",
+          "XZ_Plane",
+          "YZ_Plane"
+        ],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml"
+      },
+      {
+        "name": "X_Axis",
+        "label": "X-axis",
+        "type": "App::Line",
+        "parents": [
+          "Origin"
+        ],
+        "children": [],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 0,
+          "bounds_mm": {
+            "min": [
+              -1e+100,
+              0.0,
+              0.0
+            ],
+            "max": [
+              1e+100,
+              0.0,
+              0.0
+            ],
+            "size": [
+              2e+100,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Y_Axis",
+        "label": "Y-axis",
+        "type": "App::Line",
+        "parents": [
+          "Origin"
+        ],
+        "children": [],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 0,
+          "bounds_mm": {
+            "min": [
+              0.0,
+              -1e+100,
+              0.0
+            ],
+            "max": [
+              0.0,
+              1e+100,
+              0.0
+            ],
+            "size": [
+              0.0,
+              2e+100,
+              0.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Z_Axis",
+        "label": "Z-axis",
+        "type": "App::Line",
+        "parents": [
+          "Origin"
+        ],
+        "children": [],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 0,
+          "bounds_mm": {
+            "min": [
+              0.0,
+              0.0,
+              -1e+100
+            ],
+            "max": [
+              0.0,
+              0.0,
+              1e+100
+            ],
+            "size": [
+              0.0,
+              0.0,
+              2e+100
+            ]
+          }
+        }
+      },
+      {
+        "name": "XY_Plane",
+        "label": "XY-plane",
+        "type": "App::Plane",
+        "parents": [
+          "Origin"
+        ],
+        "children": [],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 1,
+          "bounds_mm": {
+            "min": [
+              -1e+100,
+              -1e+100,
+              0.0
+            ],
+            "max": [
+              1e+100,
+              1e+100,
+              0.0
+            ],
+            "size": [
+              2e+100,
+              2e+100,
+              0.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "XZ_Plane",
+        "label": "XZ-plane",
+        "type": "App::Plane",
+        "parents": [
+          "Origin"
+        ],
+        "children": [],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 1,
+          "bounds_mm": {
+            "min": [
+              -1e+100,
+              0.0,
+              -1e+100
+            ],
+            "max": [
+              1e+100,
+              0.0,
+              1e+100
+            ],
+            "size": [
+              2e+100,
+              0.0,
+              2e+100
+            ]
+          }
+        }
+      },
+      {
+        "name": "YZ_Plane",
+        "label": "YZ-plane",
+        "type": "App::Plane",
+        "parents": [
+          "Origin"
+        ],
+        "children": [],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 1,
+          "bounds_mm": {
+            "min": [
+              0.0,
+              -1e+100,
+              -1e+100
+            ],
+            "max": [
+              0.0,
+              1e+100,
+              1e+100
+            ],
+            "size": [
+              0.0,
+              2e+100,
+              2e+100
+            ]
+          }
+        }
+      },
+      {
+        "name": "ChassisAssembly",
+        "label": "Chassis Assembly",
+        "type": "App::Part",
+        "parents": [
+          "RacingKart"
+        ],
+        "children": [
+          "Origin001",
+          "Chassis",
+          "FrontAxle",
+          "RearAxle",
+          "Steering",
+          "FloorTray"
+        ],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 13725876.188404605,
+          "solids": 7,
+          "faces": 177,
+          "bounds_mm": {
+            "min": [
+              -960.9187138166457,
+              -700.0,
+              45.0
+            ],
+            "max": [
+              740.9058934764463,
+              700.0,
+              506.6208309137903
+            ],
+            "size": [
+              1701.824607293092,
+              1400.0,
+              461.6208309137903
+            ]
+          }
+        }
+      },
+      {
+        "name": "Origin001",
+        "label": "Origin001",
+        "type": "App::Origin",
+        "parents": [
+          "ChassisAssembly"
+        ],
+        "children": [
+          "X_Axis001",
+          "Y_Axis001",
+          "Z_Axis001",
+          "XY_Plane001",
+          "XZ_Plane001",
+          "YZ_Plane001"
+        ],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml"
+      },
+      {
+        "name": "X_Axis001",
+        "label": "X-axis001",
+        "type": "App::Line",
+        "parents": [
+          "Origin001"
+        ],
+        "children": [],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 0,
+          "bounds_mm": {
+            "min": [
+              -1e+100,
+              0.0,
+              0.0
+            ],
+            "max": [
+              1e+100,
+              0.0,
+              0.0
+            ],
+            "size": [
+              2e+100,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Y_Axis001",
+        "label": "Y-axis001",
+        "type": "App::Line",
+        "parents": [
+          "Origin001"
+        ],
+        "children": [],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 0,
+          "bounds_mm": {
+            "min": [
+              0.0,
+              -1e+100,
+              0.0
+            ],
+            "max": [
+              0.0,
+              1e+100,
+              0.0
+            ],
+            "size": [
+              0.0,
+              2e+100,
+              0.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Z_Axis001",
+        "label": "Z-axis001",
+        "type": "App::Line",
+        "parents": [
+          "Origin001"
+        ],
+        "children": [],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 0,
+          "bounds_mm": {
+            "min": [
+              0.0,
+              0.0,
+              -1e+100
+            ],
+            "max": [
+              0.0,
+              0.0,
+              1e+100
+            ],
+            "size": [
+              0.0,
+              0.0,
+              2e+100
+            ]
+          }
+        }
+      },
+      {
+        "name": "XY_Plane001",
+        "label": "XY-plane001",
+        "type": "App::Plane",
+        "parents": [
+          "Origin001"
+        ],
+        "children": [],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 1,
+          "bounds_mm": {
+            "min": [
+              -1e+100,
+              -1e+100,
+              0.0
+            ],
+            "max": [
+              1e+100,
+              1e+100,
+              0.0
+            ],
+            "size": [
+              2e+100,
+              2e+100,
+              0.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "XZ_Plane001",
+        "label": "XZ-plane001",
+        "type": "App::Plane",
+        "parents": [
+          "Origin001"
+        ],
+        "children": [],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 1,
+          "bounds_mm": {
+            "min": [
+              -1e+100,
+              0.0,
+              -1e+100
+            ],
+            "max": [
+              1e+100,
+              0.0,
+              1e+100
+            ],
+            "size": [
+              2e+100,
+              0.0,
+              2e+100
+            ]
+          }
+        }
+      },
+      {
+        "name": "YZ_Plane001",
+        "label": "YZ-plane001",
+        "type": "App::Plane",
+        "parents": [
+          "Origin001"
+        ],
+        "children": [],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 1,
+          "bounds_mm": {
+            "min": [
+              0.0,
+              -1e+100,
+              -1e+100
+            ],
+            "max": [
+              0.0,
+              1e+100,
+              1e+100
+            ],
+            "size": [
+              0.0,
+              2e+100,
+              2e+100
+            ]
+          }
+        }
+      },
+      {
+        "name": "Bodywork",
+        "label": "Bodywork",
+        "type": "App::Part",
+        "parents": [
+          "RacingKart"
+        ],
+        "children": [
+          "Origin002",
+          "NoseCone",
+          "FrontFairing_L",
+          "FrontFairing_R",
+          "SidePod_L",
+          "SidePod_R",
+          "Seat"
+        ],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 122455361.81225698,
+          "solids": 7,
+          "faces": 158,
+          "bounds_mm": {
+            "min": [
+              -331.9756081437326,
+              -630.0,
+              69.99999999999999
+            ],
+            "max": [
+              810.0,
+              630.0,
+              467.75441512427363
+            ],
+            "size": [
+              1141.9756081437326,
+              1260.0,
+              397.75441512427363
+            ]
+          }
+        }
+      },
+      {
+        "name": "Origin002",
+        "label": "Origin002",
+        "type": "App::Origin",
+        "parents": [
+          "Bodywork"
+        ],
+        "children": [
+          "X_Axis002",
+          "Y_Axis002",
+          "Z_Axis002",
+          "XY_Plane002",
+          "XZ_Plane002",
+          "YZ_Plane002"
+        ],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml"
+      },
+      {
+        "name": "X_Axis002",
+        "label": "X-axis002",
+        "type": "App::Line",
+        "parents": [
+          "Origin002"
+        ],
+        "children": [],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 0,
+          "bounds_mm": {
+            "min": [
+              -1e+100,
+              0.0,
+              0.0
+            ],
+            "max": [
+              1e+100,
+              0.0,
+              0.0
+            ],
+            "size": [
+              2e+100,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Y_Axis002",
+        "label": "Y-axis002",
+        "type": "App::Line",
+        "parents": [
+          "Origin002"
+        ],
+        "children": [],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 0,
+          "bounds_mm": {
+            "min": [
+              0.0,
+              -1e+100,
+              0.0
+            ],
+            "max": [
+              0.0,
+              1e+100,
+              0.0
+            ],
+            "size": [
+              0.0,
+              2e+100,
+              0.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Z_Axis002",
+        "label": "Z-axis002",
+        "type": "App::Line",
+        "parents": [
+          "Origin002"
+        ],
+        "children": [],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 0,
+          "bounds_mm": {
+            "min": [
+              0.0,
+              0.0,
+              -1e+100
+            ],
+            "max": [
+              0.0,
+              0.0,
+              1e+100
+            ],
+            "size": [
+              0.0,
+              0.0,
+              2e+100
+            ]
+          }
+        }
+      },
+      {
+        "name": "XY_Plane002",
+        "label": "XY-plane002",
+        "type": "App::Plane",
+        "parents": [
+          "Origin002"
+        ],
+        "children": [],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 1,
+          "bounds_mm": {
+            "min": [
+              -1e+100,
+              -1e+100,
+              0.0
+            ],
+            "max": [
+              1e+100,
+              1e+100,
+              0.0
+            ],
+            "size": [
+              2e+100,
+              2e+100,
+              0.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "XZ_Plane002",
+        "label": "XZ-plane002",
+        "type": "App::Plane",
+        "parents": [
+          "Origin002"
+        ],
+        "children": [],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 1,
+          "bounds_mm": {
+            "min": [
+              -1e+100,
+              0.0,
+              -1e+100
+            ],
+            "max": [
+              1e+100,
+              0.0,
+              1e+100
+            ],
+            "size": [
+              2e+100,
+              0.0,
+              2e+100
+            ]
+          }
+        }
+      },
+      {
+        "name": "YZ_Plane002",
+        "label": "YZ-plane002",
+        "type": "App::Plane",
+        "parents": [
+          "Origin002"
+        ],
+        "children": [],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 1,
+          "bounds_mm": {
+            "min": [
+              0.0,
+              -1e+100,
+              -1e+100
+            ],
+            "max": [
+              0.0,
+              1e+100,
+              1e+100
+            ],
+            "size": [
+              0.0,
+              2e+100,
+              2e+100
+            ]
+          }
+        }
+      },
+      {
+        "name": "Powertrain",
+        "label": "Powertrain",
+        "type": "App::Part",
+        "parents": [
+          "RacingKart"
+        ],
+        "children": [
+          "Origin003",
+          "Engine",
+          "Exhaust"
+        ],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 11858092.458850987,
+          "solids": 4,
+          "faces": 46,
+          "bounds_mm": {
+            "min": [
+              -850.0,
+              90.0,
+              110.0
+            ],
+            "max": [
+              0.0,
+              352.0,
+              490.0
+            ],
+            "size": [
+              850.0,
+              262.0,
+              380.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Origin003",
+        "label": "Origin003",
+        "type": "App::Origin",
+        "parents": [
+          "Powertrain"
+        ],
+        "children": [
+          "X_Axis003",
+          "Y_Axis003",
+          "Z_Axis003",
+          "XY_Plane003",
+          "XZ_Plane003",
+          "YZ_Plane003"
+        ],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml"
+      },
+      {
+        "name": "X_Axis003",
+        "label": "X-axis003",
+        "type": "App::Line",
+        "parents": [
+          "Origin003"
+        ],
+        "children": [],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 0,
+          "bounds_mm": {
+            "min": [
+              -1e+100,
+              0.0,
+              0.0
+            ],
+            "max": [
+              1e+100,
+              0.0,
+              0.0
+            ],
+            "size": [
+              2e+100,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Y_Axis003",
+        "label": "Y-axis003",
+        "type": "App::Line",
+        "parents": [
+          "Origin003"
+        ],
+        "children": [],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 0,
+          "bounds_mm": {
+            "min": [
+              0.0,
+              -1e+100,
+              0.0
+            ],
+            "max": [
+              0.0,
+              1e+100,
+              0.0
+            ],
+            "size": [
+              0.0,
+              2e+100,
+              0.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Z_Axis003",
+        "label": "Z-axis003",
+        "type": "App::Line",
+        "parents": [
+          "Origin003"
+        ],
+        "children": [],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 0,
+          "bounds_mm": {
+            "min": [
+              0.0,
+              0.0,
+              -1e+100
+            ],
+            "max": [
+              0.0,
+              0.0,
+              1e+100
+            ],
+            "size": [
+              0.0,
+              0.0,
+              2e+100
+            ]
+          }
+        }
+      },
+      {
+        "name": "XY_Plane003",
+        "label": "XY-plane003",
+        "type": "App::Plane",
+        "parents": [
+          "Origin003"
+        ],
+        "children": [],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 1,
+          "bounds_mm": {
+            "min": [
+              -1e+100,
+              -1e+100,
+              0.0
+            ],
+            "max": [
+              1e+100,
+              1e+100,
+              0.0
+            ],
+            "size": [
+              2e+100,
+              2e+100,
+              0.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "XZ_Plane003",
+        "label": "XZ-plane003",
+        "type": "App::Plane",
+        "parents": [
+          "Origin003"
+        ],
+        "children": [],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 1,
+          "bounds_mm": {
+            "min": [
+              -1e+100,
+              0.0,
+              -1e+100
+            ],
+            "max": [
+              1e+100,
+              0.0,
+              1e+100
+            ],
+            "size": [
+              2e+100,
+              0.0,
+              2e+100
+            ]
+          }
+        }
+      },
+      {
+        "name": "YZ_Plane003",
+        "label": "YZ-plane003",
+        "type": "App::Plane",
+        "parents": [
+          "Origin003"
+        ],
+        "children": [],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 1,
+          "bounds_mm": {
+            "min": [
+              0.0,
+              -1e+100,
+              -1e+100
+            ],
+            "max": [
+              0.0,
+              1e+100,
+              1e+100
+            ],
+            "size": [
+              0.0,
+              2e+100,
+              2e+100
+            ]
+          }
+        }
+      },
+      {
+        "name": "Wheels",
+        "label": "Wheels",
+        "type": "App::Part",
+        "parents": [
+          "RacingKart"
+        ],
+        "children": [
+          "Origin004",
+          "Tire_FL",
+          "Tire_FR",
+          "Tire_RL",
+          "Tire_RR",
+          "Rim_FL",
+          "Rim_FR",
+          "Rim_RL",
+          "Rim_RR"
+        ],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 50443109.61403513,
+          "solids": 8,
+          "faces": 24,
+          "bounds_mm": {
+            "min": [
+              -705.0,
+              -699.0,
+              0.0
+            ],
+            "max": [
+              660.0,
+              699.0,
+              330.0
+            ],
+            "size": [
+              1365.0,
+              1398.0,
+              330.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Origin004",
+        "label": "Origin004",
+        "type": "App::Origin",
+        "parents": [
+          "Wheels"
+        ],
+        "children": [
+          "X_Axis004",
+          "Y_Axis004",
+          "Z_Axis004",
+          "XY_Plane004",
+          "XZ_Plane004",
+          "YZ_Plane004"
+        ],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml"
+      },
+      {
+        "name": "X_Axis004",
+        "label": "X-axis004",
+        "type": "App::Line",
+        "parents": [
+          "Origin004"
+        ],
+        "children": [],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 0,
+          "bounds_mm": {
+            "min": [
+              -1e+100,
+              0.0,
+              0.0
+            ],
+            "max": [
+              1e+100,
+              0.0,
+              0.0
+            ],
+            "size": [
+              2e+100,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Y_Axis004",
+        "label": "Y-axis004",
+        "type": "App::Line",
+        "parents": [
+          "Origin004"
+        ],
+        "children": [],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 0,
+          "bounds_mm": {
+            "min": [
+              0.0,
+              -1e+100,
+              0.0
+            ],
+            "max": [
+              0.0,
+              1e+100,
+              0.0
+            ],
+            "size": [
+              0.0,
+              2e+100,
+              0.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Z_Axis004",
+        "label": "Z-axis004",
+        "type": "App::Line",
+        "parents": [
+          "Origin004"
+        ],
+        "children": [],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 0,
+          "bounds_mm": {
+            "min": [
+              0.0,
+              0.0,
+              -1e+100
+            ],
+            "max": [
+              0.0,
+              0.0,
+              1e+100
+            ],
+            "size": [
+              0.0,
+              0.0,
+              2e+100
+            ]
+          }
+        }
+      },
+      {
+        "name": "XY_Plane004",
+        "label": "XY-plane004",
+        "type": "App::Plane",
+        "parents": [
+          "Origin004"
+        ],
+        "children": [],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 1,
+          "bounds_mm": {
+            "min": [
+              -1e+100,
+              -1e+100,
+              0.0
+            ],
+            "max": [
+              1e+100,
+              1e+100,
+              0.0
+            ],
+            "size": [
+              2e+100,
+              2e+100,
+              0.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "XZ_Plane004",
+        "label": "XZ-plane004",
+        "type": "App::Plane",
+        "parents": [
+          "Origin004"
+        ],
+        "children": [],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 1,
+          "bounds_mm": {
+            "min": [
+              -1e+100,
+              0.0,
+              -1e+100
+            ],
+            "max": [
+              1e+100,
+              0.0,
+              1e+100
+            ],
+            "size": [
+              2e+100,
+              0.0,
+              2e+100
+            ]
+          }
+        }
+      },
+      {
+        "name": "YZ_Plane004",
+        "label": "YZ-plane004",
+        "type": "App::Plane",
+        "parents": [
+          "Origin004"
+        ],
+        "children": [],
+        "visible": false,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 1,
+          "bounds_mm": {
+            "min": [
+              0.0,
+              -1e+100,
+              -1e+100
+            ],
+            "max": [
+              0.0,
+              1e+100,
+              1e+100
+            ],
+            "size": [
+              0.0,
+              2e+100,
+              2e+100
+            ]
+          }
+        }
+      }
+    ],
+    "render_selection": {
+      "names": [
+        "Tire_FL",
+        "Rim_FL",
+        "Tire_FR",
+        "Rim_FR",
+        "Tire_RL",
+        "Rim_RL",
+        "Tire_RR",
+        "Rim_RR",
+        "Chassis",
+        "FrontAxle",
+        "RearAxle",
+        "Steering",
+        "Seat",
+        "FloorTray",
+        "NoseCone",
+        "FrontFairing_L",
+        "FrontFairing_R",
+        "SidePod_L",
+        "SidePod_R",
+        "Engine",
+        "Exhaust"
+      ],
+      "object_count": 21,
+      "solid_count": 26,
+      "bounds_mm": {
+        "min": [
+          -960.9187138166457,
+          -700.0,
+          0.0
+        ],
+        "max": [
+          810.0,
+          700.0,
+          506.6208309137903
+        ],
+        "size": [
+          1770.9187138166458,
+          1400.0,
+          506.6208309137903
+        ]
+      },
+      "excluded": [
+        {
+          "name": "RacingKart",
+          "reason": "aggregate_container"
+        },
+        {
+          "name": "Origin",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "X_Axis",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "Y_Axis",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "Z_Axis",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "XY_Plane",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "XZ_Plane",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "YZ_Plane",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "ChassisAssembly",
+          "reason": "aggregate_container"
+        },
+        {
+          "name": "Origin001",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "X_Axis001",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "Y_Axis001",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "Z_Axis001",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "XY_Plane001",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "XZ_Plane001",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "YZ_Plane001",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "Bodywork",
+          "reason": "aggregate_container"
+        },
+        {
+          "name": "Origin002",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "X_Axis002",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "Y_Axis002",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "Z_Axis002",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "XY_Plane002",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "XZ_Plane002",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "YZ_Plane002",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "Powertrain",
+          "reason": "aggregate_container"
+        },
+        {
+          "name": "Origin003",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "X_Axis003",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "Y_Axis003",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "Z_Axis003",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "XY_Plane003",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "XZ_Plane003",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "YZ_Plane003",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "Wheels",
+          "reason": "aggregate_container"
+        },
+        {
+          "name": "Origin004",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "X_Axis004",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "Y_Axis004",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "Z_Axis004",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "XY_Plane004",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "XZ_Plane004",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "YZ_Plane004",
+          "reason": "origin_or_datum"
+        }
+      ]
+    },
+    "geometry_valid": true,
+    "failures": [],
+    "file_after": {
+      "path": "workspace/racing-kart.FCStd",
+      "exists": true,
+      "bytes": 475767,
+      "sha256": "ee3bd4ff45073b06daab850246e5d8a93c6dc5683e9441d597bcafbb858ec392"
+    },
+    "source_unchanged": true
+  },
+  "step": {
+    "file_before": {
+      "path": "workspace/racing-kart.step",
+      "exists": true,
+      "bytes": 1035601,
+      "sha256": "cee222789509cc0499e2af0da0dd7deab6c5b30cc941e84a0ca9a53ea8eaf727"
+    },
+    "document_name": "Independent_STEP_validation",
+    "object_count": 34,
+    "all_shape_object_counts": {
+      "total": 33,
+      "null": 0,
+      "invalid": 0,
+      "inspection_exceptions": 0
+    },
+    "objects": [
+      {
+        "name": "Part__Feature",
+        "label": "Open CASCADE STEP translator 7.8 1",
+        "type": "Part::Feature",
+        "parents": [
+          "Open_CASCADE_STEP_translator_7_8_1"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 6773273.761139593,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              380.0,
+              555.0,
+              0.0
+            ],
+            "max": [
+              660.0,
+              665.0,
+              280.0
+            ],
+            "size": [
+              280.0,
+              110.0,
+              280.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature001",
+        "label": "Open CASCADE STEP translator 7.8 002",
+        "type": "Part::Feature",
+        "parents": [
+          "Open_CASCADE_STEP_translator_7_8_1"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 1964692.732285757,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              447.2,
+              551.0,
+              67.2
+            ],
+            "max": [
+              592.8,
+              669.0,
+              212.8
+            ],
+            "size": [
+              145.59999999999997,
+              118.0,
+              145.60000000000002
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature002",
+        "label": "Open CASCADE STEP translator 7.8 003",
+        "type": "Part::Feature",
+        "parents": [
+          "Open_CASCADE_STEP_translator_7_8_1"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 6773273.761139593,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              380.0,
+              -665.0,
+              0.0
+            ],
+            "max": [
+              660.0,
+              -555.0,
+              280.0
+            ],
+            "size": [
+              280.0,
+              110.0,
+              280.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature003",
+        "label": "Open CASCADE STEP translator 7.8 004",
+        "type": "Part::Feature",
+        "parents": [
+          "Open_CASCADE_STEP_translator_7_8_1"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 1964692.732285757,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              447.2,
+              -669.0,
+              67.2
+            ],
+            "max": [
+              592.8,
+              -551.0,
+              212.8
+            ],
+            "size": [
+              145.59999999999997,
+              118.0,
+              145.60000000000002
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature004",
+        "label": "Open CASCADE STEP translator 7.8 005",
+        "type": "Part::Feature",
+        "parents": [
+          "Open_CASCADE_STEP_translator_7_8_1"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 12829478.999097321,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -705.0,
+              545.0,
+              0.0
+            ],
+            "max": [
+              -375.0,
+              695.0,
+              330.0
+            ],
+            "size": [
+              330.0,
+              150.0,
+              330.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature005",
+        "label": "Open CASCADE STEP translator 7.8 006",
+        "type": "Part::Feature",
+        "parents": [
+          "Open_CASCADE_STEP_translator_7_8_1"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 3654109.3144948967,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -625.8,
+              541.0,
+              79.2
+            ],
+            "max": [
+              -454.2,
+              699.0,
+              250.8
+            ],
+            "size": [
+              171.59999999999997,
+              158.0,
+              171.60000000000002
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature006",
+        "label": "Open CASCADE STEP translator 7.8 007",
+        "type": "Part::Feature",
+        "parents": [
+          "Open_CASCADE_STEP_translator_7_8_1"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 12829478.999097321,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -705.0,
+              -695.0,
+              0.0
+            ],
+            "max": [
+              -375.0,
+              -545.0,
+              330.0
+            ],
+            "size": [
+              330.0,
+              150.0,
+              330.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature007",
+        "label": "Open CASCADE STEP translator 7.8 008",
+        "type": "Part::Feature",
+        "parents": [
+          "Open_CASCADE_STEP_translator_7_8_1"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 3654109.3144948967,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -625.8,
+              -699.0,
+              79.2
+            ],
+            "max": [
+              -454.2,
+              -541.0,
+              250.8
+            ],
+            "size": [
+              171.59999999999997,
+              158.0,
+              171.60000000000002
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature008",
+        "label": "Open CASCADE STEP translator 7.8 009",
+        "type": "Part::Feature",
+        "parents": [
+          "Open_CASCADE_STEP_translator_7_8_1"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 5267801.618283726,
+          "solids": 1,
+          "faces": 123,
+          "bounds_mm": {
+            "min": [
+              -960.9187138155738,
+              -543.9362836435553,
+              59.0
+            ],
+            "max": [
+              740.9058934751121,
+              543.9362836435553,
+              175.90882417991824
+            ],
+            "size": [
+              1701.824607290686,
+              1087.8725672871105,
+              116.90882417991824
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature009",
+        "label": "Open CASCADE STEP translator 7.8 010",
+        "type": "Part::Feature",
+        "parents": [
+          "Open_CASCADE_STEP_translator_7_8_1"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 92358.92854908245,
+          "solids": 1,
+          "faces": 5,
+          "bounds_mm": {
+            "min": [
+              508.0,
+              528.0,
+              55.0
+            ],
+            "max": [
+              532.0,
+              615.0,
+              205.0
+            ],
+            "size": [
+              24.0,
+              87.0,
+              150.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature010",
+        "label": "Open CASCADE STEP translator 7.8 011",
+        "type": "Part::Feature",
+        "parents": [
+          "Open_CASCADE_STEP_translator_7_8_1"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 92360.15385588557,
+          "solids": 1,
+          "faces": 5,
+          "bounds_mm": {
+            "min": [
+              508.0,
+              -615.0,
+              55.0
+            ],
+            "max": [
+              532.0,
+              -528.0,
+              205.0
+            ],
+            "size": [
+              24.0,
+              87.0,
+              150.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature011",
+        "label": "Open CASCADE STEP translator 7.8 012",
+        "type": "Part::Feature",
+        "parents": [
+          "Open_CASCADE_STEP_translator_7_8_1"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 3851806.2216015314,
+          "solids": 1,
+          "faces": 15,
+          "bounds_mm": {
+            "min": [
+              -660.0,
+              -700.0,
+              45.0
+            ],
+            "max": [
+              -420.0,
+              700.0,
+              285.0
+            ],
+            "size": [
+              240.0,
+              1400.0,
+              240.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature012",
+        "label": "Open CASCADE STEP translator 7.8 013",
+        "type": "Part::Feature",
+        "parents": [
+          "Open_CASCADE_STEP_translator_7_8_1"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 609091.7651777875,
+          "solids": 1,
+          "faces": 17,
+          "bounds_mm": {
+            "min": [
+              129.57046198567184,
+              -135.29902503654924,
+              143.52054366859483
+            ],
+            "max": [
+              425.1003289871874,
+              135.29902503654924,
+              506.6208309138037
+            ],
+            "size": [
+              295.5298670015156,
+              270.5980500730985,
+              363.10028724520885
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature013",
+        "label": "Open CASCADE STEP translator 7.8 014",
+        "type": "Part::Feature",
+        "parents": [
+          "Open_CASCADE_STEP_translator_7_8_1"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 224171.80182816918,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              372.2559713025617,
+              -542.0107657199972,
+              142.00082249524712
+            ],
+            "max": [
+              527.7440286974766,
+              542.0107657199972,
+              165.9991775047529
+            ],
+            "size": [
+              155.48805739491485,
+              1084.0215314399943,
+              23.998355009505786
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature014",
+        "label": "Open CASCADE STEP translator 7.8 015",
+        "type": "Part::Feature",
+        "parents": [
+          "Open_CASCADE_STEP_translator_7_8_1"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 4500000.0,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              -230.0,
+              -150.0,
+              90.0
+            ],
+            "max": [
+              70.0,
+              150.0,
+              140.0
+            ],
+            "size": [
+              300.0,
+              300.0,
+              50.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature015",
+        "label": "Open CASCADE STEP translator 7.8 016",
+        "type": "Part::Feature",
+        "parents": [
+          "Open_CASCADE_STEP_translator_7_8_1"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 7515000.000000802,
+          "solids": 1,
+          "faces": 22,
+          "bounds_mm": {
+            "min": [
+              -331.9756081437599,
+              -150.0,
+              140.0
+            ],
+            "max": [
+              55.316954888546,
+              150.0,
+              467.7544151242819
+            ],
+            "size": [
+              387.2925630323059,
+              300.0,
+              327.7544151242819
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature016",
+        "label": "Open CASCADE STEP translator 7.8 017",
+        "type": "Part::Feature",
+        "parents": [
+          "Open_CASCADE_STEP_translator_7_8_1"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 3588000.0,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              -400.0,
+              -230.0,
+              74.0
+            ],
+            "max": [
+              250.0,
+              230.0,
+              86.0
+            ],
+            "size": [
+              650.0,
+              460.0,
+              12.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature017",
+        "label": "Open CASCADE STEP translator 7.8 018",
+        "type": "Part::Feature",
+        "parents": [
+          "Open_CASCADE_STEP_translator_7_8_1"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 50918730.08086409,
+          "solids": 1,
+          "faces": 26,
+          "bounds_mm": {
+            "min": [
+              490.0,
+              -280.0,
+              70.0
+            ],
+            "max": [
+              810.0,
+              280.0,
+              370.0
+            ],
+            "size": [
+              320.0,
+              560.0,
+              300.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature018",
+        "label": "Open CASCADE STEP translator 7.8 019",
+        "type": "Part::Feature",
+        "parents": [
+          "Open_CASCADE_STEP_translator_7_8_1"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 4517522.023056941,
+          "solids": 1,
+          "faces": 26,
+          "bounds_mm": {
+            "min": [
+              470.0,
+              300.0,
+              80.0
+            ],
+            "max": [
+              730.0,
+              390.0,
+              290.0
+            ],
+            "size": [
+              260.0,
+              90.0,
+              210.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature019",
+        "label": "Open CASCADE STEP translator 7.8 020",
+        "type": "Part::Feature",
+        "parents": [
+          "Open_CASCADE_STEP_translator_7_8_1"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 4517522.023056941,
+          "solids": 1,
+          "faces": 26,
+          "bounds_mm": {
+            "min": [
+              470.0,
+              -390.0,
+              80.0
+            ],
+            "max": [
+              730.0,
+              -300.0,
+              290.0
+            ],
+            "size": [
+              260.0,
+              90.0,
+              210.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature020",
+        "label": "Open CASCADE STEP translator 7.8 021",
+        "type": "Part::Feature",
+        "parents": [
+          "Open_CASCADE_STEP_translator_7_8_1"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 25243293.84263949,
+          "solids": 1,
+          "faces": 26,
+          "bounds_mm": {
+            "min": [
+              -330.0,
+              330.0,
+              70.0
+            ],
+            "max": [
+              140.0,
+              630.0,
+              260.0
+            ],
+            "size": [
+              470.0,
+              300.0,
+              190.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature021",
+        "label": "Open CASCADE STEP translator 7.8 022",
+        "type": "Part::Feature",
+        "parents": [
+          "Open_CASCADE_STEP_translator_7_8_1"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 25243293.84263949,
+          "solids": 1,
+          "faces": 26,
+          "bounds_mm": {
+            "min": [
+              -330.0,
+              -630.0,
+              70.0
+            ],
+            "max": [
+              140.0,
+              -330.0,
+              260.0
+            ],
+            "size": [
+              470.0,
+              300.0,
+              190.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature022",
+        "label": "Open CASCADE STEP translator 7.8 023",
+        "type": "Part::Feature",
+        "parents": [
+          "Open_CASCADE_STEP_translator_7_8_1"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 8237462.594315563,
+          "solids": 1,
+          "faces": 32,
+          "bounds_mm": {
+            "min": [
+              -200.0,
+              155.0,
+              120.0
+            ],
+            "max": [
+              0.0,
+              325.0,
+              490.0
+            ],
+            "size": [
+              200.0,
+              170.0,
+              370.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature023",
+        "label": "Open CASCADE STEP translator 7.8 024",
+        "type": "Part::Feature",
+        "parents": [
+          "Open_CASCADE_STEP_translator_7_8_1"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 114039.81332530949,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -215.0,
+              90.0,
+              110.0
+            ],
+            "max": [
+              -105.0,
+              102.0,
+              220.0
+            ],
+            "size": [
+              110.0,
+              12.0,
+              110.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature024",
+        "label": "Open CASCADE STEP translator 7.8 025",
+        "type": "Part::Feature",
+        "parents": [
+          "Open_CASCADE_STEP_translator_7_8_1"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 3336944.13748567,
+          "solids": 1,
+          "faces": 8,
+          "bounds_mm": {
+            "min": [
+              -730.0,
+              248.0,
+              343.0
+            ],
+            "max": [
+              -96.8265174598725,
+              352.0,
+              449.8022680761399
+            ],
+            "size": [
+              633.1734825401275,
+              104.0,
+              106.80226807613991
+            ]
+          }
+        }
+      },
+      {
+        "name": "Part__Feature025",
+        "label": "Open CASCADE STEP translator 7.8 026",
+        "type": "Part::Feature",
+        "parents": [
+          "Open_CASCADE_STEP_translator_7_8_1"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 169646.00329384883,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -850.0,
+              270.0,
+              365.0
+            ],
+            "max": [
+              -790.0,
+              330.0,
+              425.0
+            ],
+            "size": [
+              60.0,
+              60.0,
+              60.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Open_CASCADE_STEP_translator_7_8_1",
+        "label": "Open CASCADE STEP translator 7.8 027",
+        "type": "App::Part",
+        "parents": [],
+        "children": [
+          "Origin",
+          "Part__Feature",
+          "Part__Feature001",
+          "Part__Feature002",
+          "Part__Feature003",
+          "Part__Feature004",
+          "Part__Feature005",
+          "Part__Feature006",
+          "Part__Feature007",
+          "Part__Feature008",
+          "Part__Feature009",
+          "Part__Feature010",
+          "Part__Feature011",
+          "Part__Feature012",
+          "Part__Feature013",
+          "Part__Feature014",
+          "Part__Feature015",
+          "Part__Feature016",
+          "Part__Feature017",
+          "Part__Feature018",
+          "Part__Feature019",
+          "Part__Feature020",
+          "Part__Feature021",
+          "Part__Feature022",
+          "Part__Feature023",
+          "Part__Feature024",
+          "Part__Feature025"
+        ],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 198481782.93440482,
+          "solids": 26,
+          "faces": 405,
+          "bounds_mm": {
+            "min": [
+              -960.9187138155738,
+              -700.0,
+              0.0
+            ],
+            "max": [
+              810.0,
+              700.0,
+              506.6208309138037
+            ],
+            "size": [
+              1770.918713815574,
+              1400.0,
+              506.6208309138037
+            ]
+          }
+        }
+      },
+      {
+        "name": "Origin",
+        "label": "Origin",
+        "type": "App::Origin",
+        "parents": [
+          "Open_CASCADE_STEP_translator_7_8_1"
+        ],
+        "children": [
+          "X_Axis",
+          "Y_Axis",
+          "Z_Axis",
+          "XY_Plane",
+          "XZ_Plane",
+          "YZ_Plane"
+        ],
+        "visible": true,
+        "visibility_source": "object_property"
+      },
+      {
+        "name": "X_Axis",
+        "label": "X-axis",
+        "type": "App::Line",
+        "parents": [
+          "Origin"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 0,
+          "bounds_mm": {
+            "min": [
+              -1e+100,
+              0.0,
+              0.0
+            ],
+            "max": [
+              1e+100,
+              0.0,
+              0.0
+            ],
+            "size": [
+              2e+100,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Y_Axis",
+        "label": "Y-axis",
+        "type": "App::Line",
+        "parents": [
+          "Origin"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 0,
+          "bounds_mm": {
+            "min": [
+              0.0,
+              -1e+100,
+              0.0
+            ],
+            "max": [
+              0.0,
+              1e+100,
+              0.0
+            ],
+            "size": [
+              0.0,
+              2e+100,
+              0.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Z_Axis",
+        "label": "Z-axis",
+        "type": "App::Line",
+        "parents": [
+          "Origin"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 0,
+          "bounds_mm": {
+            "min": [
+              0.0,
+              0.0,
+              -1e+100
+            ],
+            "max": [
+              0.0,
+              0.0,
+              1e+100
+            ],
+            "size": [
+              0.0,
+              0.0,
+              2e+100
+            ]
+          }
+        }
+      },
+      {
+        "name": "XY_Plane",
+        "label": "XY-plane",
+        "type": "App::Plane",
+        "parents": [
+          "Origin"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 1,
+          "bounds_mm": {
+            "min": [
+              -1e+100,
+              -1e+100,
+              0.0
+            ],
+            "max": [
+              1e+100,
+              1e+100,
+              0.0
+            ],
+            "size": [
+              2e+100,
+              2e+100,
+              0.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "XZ_Plane",
+        "label": "XZ-plane",
+        "type": "App::Plane",
+        "parents": [
+          "Origin"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 1,
+          "bounds_mm": {
+            "min": [
+              -1e+100,
+              0.0,
+              -1e+100
+            ],
+            "max": [
+              1e+100,
+              0.0,
+              1e+100
+            ],
+            "size": [
+              2e+100,
+              0.0,
+              2e+100
+            ]
+          }
+        }
+      },
+      {
+        "name": "YZ_Plane",
+        "label": "YZ-plane",
+        "type": "App::Plane",
+        "parents": [
+          "Origin"
+        ],
+        "children": [],
+        "visible": true,
+        "visibility_source": "object_property",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 0.0,
+          "solids": 0,
+          "faces": 1,
+          "bounds_mm": {
+            "min": [
+              0.0,
+              -1e+100,
+              -1e+100
+            ],
+            "max": [
+              0.0,
+              1e+100,
+              1e+100
+            ],
+            "size": [
+              0.0,
+              2e+100,
+              2e+100
+            ]
+          }
+        }
+      }
+    ],
+    "render_selection": {
+      "names": [
+        "Part__Feature",
+        "Part__Feature001",
+        "Part__Feature002",
+        "Part__Feature003",
+        "Part__Feature004",
+        "Part__Feature005",
+        "Part__Feature006",
+        "Part__Feature007",
+        "Part__Feature008",
+        "Part__Feature009",
+        "Part__Feature010",
+        "Part__Feature011",
+        "Part__Feature012",
+        "Part__Feature013",
+        "Part__Feature014",
+        "Part__Feature015",
+        "Part__Feature016",
+        "Part__Feature017",
+        "Part__Feature018",
+        "Part__Feature019",
+        "Part__Feature020",
+        "Part__Feature021",
+        "Part__Feature022",
+        "Part__Feature023",
+        "Part__Feature024",
+        "Part__Feature025"
+      ],
+      "object_count": 26,
+      "solid_count": 26,
+      "bounds_mm": {
+        "min": [
+          -960.9187138155738,
+          -700.0,
+          0.0
+        ],
+        "max": [
+          810.0,
+          700.0,
+          506.6208309138037
+        ],
+        "size": [
+          1770.918713815574,
+          1400.0,
+          506.6208309138037
+        ]
+      },
+      "excluded": [
+        {
+          "name": "Open_CASCADE_STEP_translator_7_8_1",
+          "reason": "aggregate_container"
+        },
+        {
+          "name": "Origin",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "X_Axis",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "Y_Axis",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "Z_Axis",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "XY_Plane",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "XZ_Plane",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "YZ_Plane",
+          "reason": "origin_or_datum"
+        }
+      ]
+    },
+    "geometry_valid": true,
+    "failures": [],
+    "file_after": {
+      "path": "workspace/racing-kart.step",
+      "exists": true,
+      "bytes": 1035601,
+      "sha256": "cee222789509cc0499e2af0da0dd7deab6c5b30cc941e84a0ca9a53ea8eaf727"
+    },
+    "source_unchanged": true
+  },
+  "comparison": {
+    "bounds_tolerance_mm": 0.01,
+    "native_render_solid_count": 26,
+    "step_import_solid_count": 26,
+    "step_import_render_object_count": 26,
+    "solid_counts_equal": true,
+    "bounds_match": true,
+    "max_bounds_delta_mm": 1.071839506039396e-09
+  },
+  "postprocess_exit_code": 0,
+  "host_source_unchanged": true,
+  "sandbox": {
+    "backend": "podman-offline-postprocess",
+    "connection": "local-connection",
+    "image_id": "sha256:b9e296032f921c96de5843b19e1a182ce5067d6cdca25a5d3ab7e7da23fe89cb",
+    "network": "none",
+    "user": "10000:10000",
+    "api_channel": false,
+    "bind_mounts": [],
+    "request_id": "ccc009a06f7a410f8d3fc17f6864a9cd",
+    "inspection": "evidence/postprocess/ccc009a06f7a410f8d3fc17f6864a9cd/container-inspect.json"
+  }
+}

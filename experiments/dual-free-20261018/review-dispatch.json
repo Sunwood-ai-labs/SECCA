@@ -1,0 +1,57 @@
+{
+  "recorded_at": "2026-10-18T00:03:22.648014+00:00",
+  "reviewer_model": "unknown; inherited evaluator identifier not exposed",
+  "records": [
+    {
+      "task": "/root/coordinator_cedar",
+      "role": "coordinator",
+      "fork_turns": "none",
+      "model_identity_disclosed": true,
+      "other_reviews_provided": false,
+      "packet": "<private-image-packet>/sample-20261018-7c92",
+      "initial_signed_before_blind_dispatch": true
+    },
+    {
+      "task": "/root/review_cedar_a",
+      "role": "blind-a",
+      "fork_turns": "none",
+      "model_identity_disclosed": false,
+      "other_reviews_provided": false,
+      "packet": "<private-image-packet>/sample-20261018-7c92-a"
+    },
+    {
+      "task": "/root/review_cedar_b",
+      "role": "blind-b",
+      "fork_turns": "none",
+      "model_identity_disclosed": false,
+      "other_reviews_provided": false,
+      "packet": "<private-image-packet>/sample-20261018-7c92-b"
+    },
+    {
+      "task": "/root/coordinator_maple",
+      "role": "coordinator",
+      "fork_turns": "none",
+      "model_identity_disclosed": true,
+      "other_reviews_provided": false,
+      "packet": "<private-image-packet>/sample-20261018-d4b1",
+      "initial_signed_before_blind_dispatch": true
+    },
+    {
+      "task": "/root/review_maple_a",
+      "role": "blind-a",
+      "fork_turns": "none",
+      "model_identity_disclosed": false,
+      "other_reviews_provided": false,
+      "packet": "<private-image-packet>/sample-20261018-d4b1-a"
+    },
+    {
+      "task": "/root/review_maple_b",
+      "role": "blind-b",
+      "fork_turns": "none",
+      "model_identity_disclosed": false,
+      "other_reviews_provided": false,
+      "packet": "<private-image-packet>/sample-20261018-d4b1-b"
+    }
+  ],
+  "limitation": "Dispatcher record plus signed statements; full fresh-context tool calls are also present in this chat history."
+}

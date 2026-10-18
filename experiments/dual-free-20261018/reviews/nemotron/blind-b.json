@@ -1,0 +1,97 @@
+{
+  "review_id": "blind-b-4d41dd74-8544-4ac2-b9ed-a612a99f31d5",
+  "role": "blind-b",
+  "fresh_context": true,
+  "model_blinded": true,
+  "reviewer_model": "unknown; inherited evaluator model identifier not exposed",
+  "context_provenance": {
+    "statement": "New fork_turns=none reviewer context with an image-only candidate packet. I inspected only the supplied reference image, isometric, top and right renderings and the fixed rubric/template/README for candidate evidence. No candidate identity, source CAD, logs, other reviews, history or outcome metrics were provided or consulted. Mandatory general writing skills contained no candidate evidence.",
+    "other_reviews_read": false,
+    "recorded_at": "2026-10-17T23:56:46.2791372+00:00",
+    "signed_by": "/root/review_cedar_b"
+  },
+  "evidence_hashes": {
+    "reference": "d3fcfa0a7a1b1fc0504fe7dfadfaa2a1beb0a8712bd088a0b6c8ccb0dd120cd3",
+    "rubric": "7028b7740c4012c2894ea8cfa567e696df0365546b579cc53653e36b2900a190",
+    "isometric": "785a6c8fd14e27791de881705e11174e688dea6af4ac3dc17e737c352f388f48",
+    "top": "6a52c7e27841ac4abb48226dd1eb55e4d37e8b8db28ef373f29c1fbd3b6f859b",
+    "right": "7ac543540828f88dbe027eb021fb9dd3f1f1801d31605979053274e06359e908"
+  },
+  "criteria": [
+    {
+      "id": "silhouette_proportions",
+      "score": 6.25,
+      "max": 25,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "The top view has four wheels at the corners of a roughly rectangular footprint, and the isometric view has low horizontal blue members beneath a central driver block, retaining part of the reference kart outline."
+        },
+        {
+          "kind": "deduction",
+          "observation": "In the top and isometric views, widely separated straight bars extend beyond and away from the central assembly, replacing the reference compact connected curved chassis. The central rectangular block lacks the tall bucket-seat profile, and the wheel volumes are thin disks rather than the reference thick rounded tires."
+        }
+      ]
+    },
+    {
+      "id": "component_layout",
+      "score": 5,
+      "max": 20,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "The top and isometric views contain four wheels, a central dark seat placeholder, a steering ring ahead of it, an offset engine block toward the rear and paired light side panels, matching the broad reference component ordering."
+        },
+        {
+          "kind": "deduction",
+          "observation": "The top view shows large gaps between frame bars, wheels and body panels, and the isometric view has an isolated rectangular front block and separated rear bar. The reference nose joins the front bumper, the side pods follow the cockpit and the engine sits within a connected rear chassis."
+        }
+      ]
+    },
+    {
+      "id": "characteristic_geometry",
+      "score": 7.5,
+      "max": 30,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "The isometric view has a circular steering ring on a shaft, cylindrical black wheel volumes and round blue frame members. These approximate some reference shape categories at a coarse level."
+        },
+        {
+          "kind": "deduction",
+          "observation": "In the isometric view, the seat is a rectangular box without a concave bucket or curved back, the nose and front bumper are rectangular blocks without taper or swept curvature, and the wheels lack recessed rims and rounded tire shoulders. The straight scattered rods omit the reference curved frame outline."
+        }
+      ]
+    },
+    {
+      "id": "mechanical_detail",
+      "score": 5,
+      "max": 20,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "The isometric view includes a straight silver shaft at the rear wheel region, a steering shaft and diagonal blue supports. These provide coarse representations of visible axle, steering and support elements."
+        },
+        {
+          "kind": "deduction",
+          "observation": "In the isometric view, the engine is a plain cube without the reference finned cylinder or layered casing. The reference cylindrical exhaust, toothed drive parts, brake details and front steering joints are not visibly represented, and the exposed shafts and supports are unjointed straight rods."
+        }
+      ]
+    },
+    {
+      "id": "color_material_regions",
+      "score": 5,
+      "max": 5,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "The isometric view assigns blue to the frame members, light gray to the body panels, dark gray to the central seat block and black to the tire volumes. These correspond to the reference material-color regions."
+        },
+        {
+          "kind": "no_deduction",
+          "observation": "No deduction for color regions: the isometric rendering visibly places all four scored reference color groups on their corresponding component placeholders. Geometry omissions are scored under the other criteria, and lighting or side-view face brightness is excluded."
+        }
+      ]
+    }
+  ]
+}

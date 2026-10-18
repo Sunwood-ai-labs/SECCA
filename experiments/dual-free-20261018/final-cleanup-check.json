@@ -1,0 +1,31 @@
+{
+  "recorded_at": "2026-10-18T00:06:37.929948+00:00",
+  "connection": "local-connection",
+  "scope": "Read-only independent post-run Podman queries for exact labels and own secret-name prefixes; no resources modified",
+  "trials": [
+    {
+      "model": "nemotron",
+      "exact_trial_label": "cad-039effd95441481e866476c5519713b2",
+      "containers_remaining": [],
+      "volumes_remaining": [],
+      "matching_secrets_remaining": [],
+      "query_exit_codes": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "model": "deepseek",
+      "exact_trial_label": "cad-9c5e4ffadff948ff9c4bcb5ee6adc334",
+      "containers_remaining": [],
+      "volumes_remaining": [],
+      "matching_secrets_remaining": [],
+      "query_exit_codes": [
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "recorded_at": "2026-10-17T23:51:42.868775+00:00",
+  "distinct_candidate_volumes": 6,
+  "shared_mutable_volumes": [],
+  "trials": {
+    "nemotron": {
+      "candidate_id": "9574e1710374b855131619faeb7a44d209e16af357f367ee2052174081dbe766",
+      "volumes": [
+        "cad-039effd95441481e866476c5519713b2-work",
+        "cad-039effd95441481e866476c5519713b2-home",
+        "cad-039effd95441481e866476c5519713b2-channel"
+      ],
+      "candidate_network": "none",
+      "host_bind_mounts": [],
+      "readonly_root": true,
+      "candidate_key_mount": false
+    },
+    "deepseek": {
+      "candidate_id": "5b06fcbd7954a60c9f6daefec7ed8d34470b1e8fcaa83270b096321e171bdded",
+      "volumes": [
+        "cad-9c5e4ffadff948ff9c4bcb5ee6adc334-work",
+        "cad-9c5e4ffadff948ff9c4bcb5ee6adc334-home",
+        "cad-9c5e4ffadff948ff9c4bcb5ee6adc334-channel"
+      ],
+      "candidate_network": "none",
+      "host_bind_mounts": [],
+      "readonly_root": true,
+      "candidate_key_mount": false
+    }
+  }
+}

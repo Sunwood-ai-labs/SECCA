@@ -1,0 +1,1426 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-10-17T23:59:40.552607+00:00",
+  "scope": "Read-only saved-artifact audit; no inference, CAD modifications, scoring, rerendering or speed ranking",
+  "separate_candidate_volume_names": true,
+  "trials": [
+    {
+      "name": "nemotron",
+      "trial": "nemotron/trial-01",
+      "checks": [
+        {
+          "check": "canonical protocol",
+          "pass": true,
+          "source": "nemotron/trial-01/protocol.json",
+          "detail": null
+        },
+        {
+          "check": "fixed reference.jpg",
+          "pass": true,
+          "source": "../../assets/reference.jpg",
+          "detail": null
+        },
+        {
+          "check": "fixed prompt.txt",
+          "pass": true,
+          "source": "../../assets/prompt.txt",
+          "detail": null
+        },
+        {
+          "check": "fixed rubric.json",
+          "pass": true,
+          "source": "../../assets/rubric.json",
+          "detail": null
+        },
+        {
+          "check": "fixed render-spec.json",
+          "pass": true,
+          "source": "../../assets/render-spec.json",
+          "detail": null
+        },
+        {
+          "check": "prompt sent UTF8",
+          "pass": true,
+          "source": "nemotron/trial-01/trial.json",
+          "detail": null
+        },
+        {
+          "check": "runtime image",
+          "pass": true,
+          "source": "nemotron/trial-01/trial.json",
+          "detail": null
+        },
+        {
+          "check": "manifest hash protocol.json",
+          "pass": true,
+          "source": "nemotron/trial-01/protocol.json",
+          "detail": null
+        },
+        {
+          "check": "manifest hash workspace/reference.jpg",
+          "pass": true,
+          "source": "nemotron/trial-01/workspace/reference.jpg",
+          "detail": null
+        },
+        {
+          "check": "manifest hash runtime-input/runtime.json",
+          "pass": true,
+          "source": "nemotron/trial-01/runtime-input/runtime.json",
+          "detail": null
+        },
+        {
+          "check": "manifest hash runtime-input/reference.jpg",
+          "pass": true,
+          "source": "nemotron/trial-01/runtime-input/reference.jpg",
+          "detail": null
+        },
+        {
+          "check": "manifest hash runtime-input/model-metadata.json",
+          "pass": true,
+          "source": "nemotron/trial-01/runtime-input/model-metadata.json",
+          "detail": null
+        },
+        {
+          "check": "reference copy hash",
+          "pass": true,
+          "source": "nemotron/trial-01/runtime-input/reference.jpg",
+          "detail": null
+        },
+        {
+          "check": "image metadata preserved",
+          "pass": true,
+          "source": "nemotron/trial-01/runtime-input/model-metadata.json",
+          "detail": null
+        },
+        {
+          "check": "prepared official metadata unchanged",
+          "pass": true,
+          "source": "nemotron/trial-01/runtime-input/model-metadata.json",
+          "detail": null
+        },
+        {
+          "check": "candidate isolation",
+          "pass": true,
+          "source": "nemotron/trial-01/evidence/candidate-inspect-before.json",
+          "detail": null
+        },
+        {
+          "check": "runtime identity and zero capabilities",
+          "pass": true,
+          "source": "nemotron/trial-01/evidence/run.events.jsonl",
+          "detail": null
+        },
+        {
+          "check": "run terminal and candidate stopped",
+          "pass": true,
+          "source": "nemotron/trial-01/evidence/run.json",
+          "detail": null
+        },
+        {
+          "check": "run successful",
+          "pass": true,
+          "source": "nemotron/trial-01/evidence/run.json",
+          "detail": null
+        },
+        {
+          "check": "cleanup recorded successful",
+          "pass": true,
+          "source": "nemotron/trial-01/evidence/run.json",
+          "detail": null
+        },
+        {
+          "check": "candidate inspected stopped",
+          "pass": true,
+          "source": "nemotron/trial-01/evidence/candidate-inspect-after.json",
+          "detail": null
+        },
+        {
+          "check": "raw/parser tool counts agree",
+          "pass": true,
+          "source": "nemotron/trial-01/evidence/run.json",
+          "detail": null
+        },
+        {
+          "check": "both nonempty CAD artifacts",
+          "pass": true,
+          "source": "nemotron/trial-01/workspace",
+          "detail": null
+        },
+        {
+          "check": "native and STEP independently validated",
+          "pass": false,
+          "source": "nemotron/trial-01/evidence/validation.json",
+          "detail": null
+        },
+        {
+          "check": "native source hashes preserved",
+          "pass": true,
+          "source": "nemotron/trial-01/evidence/validation.json",
+          "detail": null
+        },
+        {
+          "check": "step source hashes preserved",
+          "pass": true,
+          "source": "nemotron/trial-01/evidence/validation.json",
+          "detail": null
+        },
+        {
+          "check": "fixed render completed",
+          "pass": true,
+          "source": "nemotron/trial-01/evidence/render.json",
+          "detail": null
+        },
+        {
+          "check": "render preserved racing-kart.FCStd",
+          "pass": true,
+          "source": "nemotron/trial-01/evidence/render.json",
+          "detail": null
+        },
+        {
+          "check": "render preserved racing-kart.step",
+          "pass": true,
+          "source": "nemotron/trial-01/evidence/render.json",
+          "detail": null
+        },
+        {
+          "check": "render hash isometric",
+          "pass": true,
+          "source": "nemotron/trial-01/renders/isometric.png",
+          "detail": null
+        },
+        {
+          "check": "fixed camera isometric",
+          "pass": true,
+          "source": "nemotron/trial-01/evidence/render.json",
+          "detail": null
+        },
+        {
+          "check": "white nonempty PNG isometric",
+          "pass": true,
+          "source": "nemotron/trial-01/renders/isometric.png",
+          "detail": null
+        },
+        {
+          "check": "render hash top",
+          "pass": true,
+          "source": "nemotron/trial-01/renders/top.png",
+          "detail": null
+        },
+        {
+          "check": "fixed camera top",
+          "pass": true,
+          "source": "nemotron/trial-01/evidence/render.json",
+          "detail": null
+        },
+        {
+          "check": "white nonempty PNG top",
+          "pass": true,
+          "source": "nemotron/trial-01/renders/top.png",
+          "detail": null
+        },
+        {
+          "check": "render hash right",
+          "pass": true,
+          "source": "nemotron/trial-01/renders/right.png",
+          "detail": null
+        },
+        {
+          "check": "fixed camera right",
+          "pass": true,
+          "source": "nemotron/trial-01/evidence/render.json",
+          "detail": null
+        },
+        {
+          "check": "white nonempty PNG right",
+          "pass": true,
+          "source": "nemotron/trial-01/renders/right.png",
+          "detail": null
+        },
+        {
+          "check": "render hash preview",
+          "pass": true,
+          "source": "nemotron/trial-01/renders/preview.png",
+          "detail": null
+        },
+        {
+          "check": "fixed camera preview",
+          "pass": true,
+          "source": "nemotron/trial-01/evidence/render.json",
+          "detail": null
+        },
+        {
+          "check": "white nonempty PNG preview",
+          "pass": true,
+          "source": "nemotron/trial-01/renders/preview.png",
+          "detail": null
+        }
+      ],
+      "unknowns": [],
+      "modality": {
+        "attachment": true,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "source_url": "https://github.com/anomalyco/models.dev/blob/8deeec23540f4c0e2c473be7f08130366e662c78/providers/opencode/models/nemotron-3.5-super-vl-free.toml",
+        "sources": [
+          {
+            "url": "https://github.com/anomalyco/models.dev/blob/8deeec23540f4c0e2c473be7f08130366e662c78/providers/opencode/models/nemotron-3.5-super-vl-free.toml",
+            "sha256": "91668ae2633b10ef69754e717a4fb0874ab4cc4f2b158201da851b75f95a0e05"
+          },
+          {
+            "url": "https://github.com/anomalyco/models.dev/blob/8deeec23540f4c0e2c473be7f08130366e662c78/models/nvidia/nemotron-3.5-super-vl-120b-a12b.toml",
+            "sha256": "4ff661d7cb48738acb3f58482b5d40ed811ce405f3b740b1790fc9f3f1333a1c"
+          }
+        ],
+        "cad_wire_payload_visibility": "No request-body capture in the fixed CAD harness; separate synthetic native-vision checks are not CAD wire evidence."
+      },
+      "volumes": [
+        "cad-039effd95441481e866476c5519713b2-work",
+        "cad-039effd95441481e866476c5519713b2-home",
+        "cad-039effd95441481e866476c5519713b2-channel"
+      ],
+      "candidate_container_id": "9574e1710374b855131619faeb7a44d209e16af357f367ee2052174081dbe766",
+      "runtime_identity": {
+        "type": "sandbox_runtime_identity",
+        "opencode_version": "1.19.3",
+        "process_security": {
+          "CapEff": "0000000000000000",
+          "CapPrm": "0000000000000000",
+          "CapBnd": "0000000000000000",
+          "NoNewPrivs": "1"
+        },
+        "locks_sha256": {
+          "/opt/debian-packages.lock": "5cd7c6bfac8df0c7b0a7425b6254bc3deac15630d807b6e68cd3bf40d080e608",
+          "/opt/mcp-source-manifest.json": "34a81a6b5914906a79e86d2e0c8d589e21beec3b5e1112b258292b4c667f9091",
+          "/opt/opencode-version.txt": "577a2e518704a9ee9ebfa4ce98063388fcc7bd840cb71a455f51fa59116e98c3"
+        },
+        "freecad": {
+          "freecad_version": [
+            "1",
+            "0",
+            "0",
+            "",
+            "https://code.launchpad.net/~vcs-imports/freecad/trunk",
+            "2026/08/25 11:49:11"
+          ],
+          "user_app_data": "/home/candidate/.local/share/FreeCAD/",
+          "python_version": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+          "rpc_start": "RPC Server started at 127.0.0.1:9875."
+        }
+      },
+      "raw_events": {
+        "types": {
+          "sandbox_runtime_identity": 1,
+          "sandbox_generation_start": 1,
+          "step_start": 7,
+          "tool_use": 7,
+          "text": 7,
+          "step_finish": 7
+        },
+        "non_json_lines": 0,
+        "tool_calls": {
+          "freecad_list_documents": 1,
+          "bash": 2,
+          "freecad_execute_code": 3,
+          "read": 1
+        },
+        "tool_total": 7,
+        "parser_tool_error_count": 0,
+        "nonzero_exit_tool_count": 1,
+        "returned_error_sign_tool_count": 0,
+        "returned_error_signs_with_exit_zero": 0,
+        "tool_call_audit": [
+          {
+            "index": 1,
+            "tool": "freecad_list_documents",
+            "call_id": "call-91244ae6-16a2-422b-8519-af2517c9d17b",
+            "parser_status": "completed",
+            "exit_codes": [],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 2,
+            "tool": "bash",
+            "call_id": "call-cdce2105-1a56-481a-a6c6-06c81b3e771d",
+            "parser_status": "completed",
+            "exit_codes": [
+              0
+            ],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 3,
+            "tool": "freecad_execute_code",
+            "call_id": "call-40fa63b0-3bbe-49c8-86c6-4f5e55ee8807",
+            "parser_status": "completed",
+            "exit_codes": [],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 4,
+            "tool": "freecad_execute_code",
+            "call_id": "call-f7bcbebf-8d4d-44b7-9968-cc0d62621374",
+            "parser_status": "completed",
+            "exit_codes": [],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 5,
+            "tool": "freecad_execute_code",
+            "call_id": "call-1e6c28d4-7f74-440e-ae60-df43bab11921",
+            "parser_status": "completed",
+            "exit_codes": [],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 6,
+            "tool": "bash",
+            "call_id": "call-866f47f2-9827-4ce1-8e97-28bb67d32c16",
+            "parser_status": "completed",
+            "exit_codes": [
+              127
+            ],
+            "parser_error": false,
+            "nonzero_exit": true,
+            "returned_error_signs": [],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 7,
+            "tool": "read",
+            "call_id": "call-7e1c6e37-2453-4d76-8738-d64acc876cf0",
+            "parser_status": "completed",
+            "exit_codes": [],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [],
+            "error_signs_with_exit_zero": false
+          }
+        ],
+        "gateway_http_status_counts": {
+          "200": 8
+        },
+        "gateway_non_json_lines": 0,
+        "errors": []
+      },
+      "run": {
+        "status": "completed",
+        "returncode": 0,
+        "outputs": [
+          "racing-kart.FCStd",
+          "racing-kart.step"
+        ],
+        "candidate_stopped": true,
+        "cleanup_errors": []
+      },
+      "timing_and_client_accounting": {
+        "duration_seconds": 71.464,
+        "startup_seconds": 8.079,
+        "wall_seconds": 101.507,
+        "measurement_scope": "generation event to OpenCode exit, including model waits, retries and MCP work; startup recorded separately",
+        "recorded_cost_usd": 0.0,
+        "generation_seconds": 71.464,
+        "tokens": {
+          "total": 131593,
+          "input": 34091,
+          "output": 4058,
+          "reasoning": 2388,
+          "cache.write": 0,
+          "cache.read": 91056
+        },
+        "cost_scope": "OpenCode recorded amount only; not independent billing verification",
+        "timing_scope": "One concurrent trial per model; descriptive timings only, no speed ranking"
+      },
+      "cad_artifacts": {
+        "racing-kart.FCStd": {
+          "path": "nemotron/trial-01/workspace/racing-kart.FCStd",
+          "sha256": "4d3a994d12f1e0ddd985cd7f2e68cd54c43ff45651ae5c007cbb45f22d41b227",
+          "bytes": 52634
+        },
+        "racing-kart.step": {
+          "path": "nemotron/trial-01/workspace/racing-kart.step",
+          "sha256": "f136ca00b88e189e64c98e0881f4b614d00beab1ee54cfe11caf1589ed05a29e",
+          "bytes": 1640
+        }
+      },
+      "native_validation": {
+        "success": false,
+        "comparison": {
+          "bounds_tolerance_mm": 0.01,
+          "native_render_solid_count": 30,
+          "step_import_solid_count": 0,
+          "step_import_render_object_count": 0,
+          "solid_counts_equal": false,
+          "bounds_match": null
+        },
+        "native": {
+          "object_count": 30,
+          "all_shape_object_counts": {
+            "total": 30,
+            "null": 0,
+            "invalid": 0,
+            "inspection_exceptions": 0
+          },
+          "geometry_valid": true,
+          "failures": [],
+          "source_unchanged": true
+        },
+        "step": {
+          "object_count": 0,
+          "all_shape_object_counts": {
+            "total": 0,
+            "null": 0,
+            "invalid": 0,
+            "inspection_exceptions": 0
+          },
+          "geometry_valid": false,
+          "failures": [
+            "no_render_shape_objects"
+          ],
+          "source_unchanged": true
+        }
+      },
+      "renders": [
+        {
+          "view": "isometric",
+          "path": "nemotron/trial-01/renders/isometric.png",
+          "sha256": "785a6c8fd14e27791de881705e11174e688dea6af4ac3dc17e737c352f388f48",
+          "pixels": {
+            "size": [
+              1600,
+              1000
+            ],
+            "corners_white": true,
+            "nonwhite_bounds": [
+              443,
+              243,
+              1230,
+              800
+            ]
+          }
+        },
+        {
+          "view": "top",
+          "path": "nemotron/trial-01/renders/top.png",
+          "sha256": "6a52c7e27841ac4abb48226dd1eb55e4d37e8b8db28ef373f29c1fbd3b6f859b",
+          "pixels": {
+            "size": [
+              1280,
+              900
+            ],
+            "corners_white": true,
+            "nonwhite_bounds": [
+              290,
+              214,
+              990,
+              686
+            ]
+          }
+        },
+        {
+          "view": "right",
+          "path": "nemotron/trial-01/renders/right.png",
+          "sha256": "7ac543540828f88dbe027eb021fb9dd3f1f1801d31605979053274e06359e908",
+          "pixels": {
+            "size": [
+              1280,
+              900
+            ],
+            "corners_white": true,
+            "nonwhite_bounds": [
+              404,
+              290,
+              876,
+              611
+            ]
+          }
+        },
+        {
+          "view": "preview",
+          "path": "nemotron/trial-01/renders/preview.png",
+          "sha256": "ad6e1c0003aa53cd8c2028b173a94a09310137bec905eabc2f388fca0b509ab0",
+          "pixels": {
+            "size": [
+              960,
+              600
+            ],
+            "corners_white": true,
+            "nonwhite_bounds": [
+              265,
+              146,
+              738,
+              480
+            ]
+          }
+        }
+      ],
+      "limitations": [
+        "No CAD wire request capture; image input support in metadata is preserved but not direct proof of bytes in these CAD requests.",
+        "No candidate full filesystem snapshot; absence of host binds and fresh home volume are evidenced by inspect and fixed runner copy policy.",
+        "Tool returned error signs are heuristics, distinct from parser failure or verified task failure.",
+        "CAD validation and rendered geometry do not establish manufacturing or structural safety.",
+        "Visual likeness scoring is separate and is not inferred from validity or process exit status."
+      ],
+      "source_hashes": {
+        "trial.json": "2ce9c34a044280d1e066055e08e514a99e706c8072b5d6d22e7335e0b239406c",
+        "evidence/run.json": "74b0e0583615f78b9d9aad340992add2f33ff54bad604b335854d8cf992811d6",
+        "evidence/run.events.jsonl": "b3c59cd0731cdba7ebd018ef88b7513b1ff65e3e9ec9cf36cb1a2c2e6c93e84d",
+        "evidence/gateway.log": "eed23faa6695f90b1e6aaef3944e027e42845cc21e911618a63f7096c93f974a",
+        "evidence/validation.json": "4f3030144bbd8c6a6e9f60213aad691506189586466983837f67cf6efaa228a3",
+        "evidence/render.json": "d50686864f51b48f30dc5232120ad672908cbb0cc89965fe931c82884f4372a2"
+      },
+      "status": "fail"
+    },
+    {
+      "name": "deepseek",
+      "trial": "deepseek/trial-01",
+      "checks": [
+        {
+          "check": "canonical protocol",
+          "pass": true,
+          "source": "deepseek/trial-01/protocol.json",
+          "detail": null
+        },
+        {
+          "check": "fixed reference.jpg",
+          "pass": true,
+          "source": "../../assets/reference.jpg",
+          "detail": null
+        },
+        {
+          "check": "fixed prompt.txt",
+          "pass": true,
+          "source": "../../assets/prompt.txt",
+          "detail": null
+        },
+        {
+          "check": "fixed rubric.json",
+          "pass": true,
+          "source": "../../assets/rubric.json",
+          "detail": null
+        },
+        {
+          "check": "fixed render-spec.json",
+          "pass": true,
+          "source": "../../assets/render-spec.json",
+          "detail": null
+        },
+        {
+          "check": "prompt sent UTF8",
+          "pass": true,
+          "source": "deepseek/trial-01/trial.json",
+          "detail": null
+        },
+        {
+          "check": "runtime image",
+          "pass": true,
+          "source": "deepseek/trial-01/trial.json",
+          "detail": null
+        },
+        {
+          "check": "manifest hash protocol.json",
+          "pass": true,
+          "source": "deepseek/trial-01/protocol.json",
+          "detail": null
+        },
+        {
+          "check": "manifest hash workspace/reference.jpg",
+          "pass": true,
+          "source": "deepseek/trial-01/workspace/reference.jpg",
+          "detail": null
+        },
+        {
+          "check": "manifest hash runtime-input/runtime.json",
+          "pass": true,
+          "source": "deepseek/trial-01/runtime-input/runtime.json",
+          "detail": null
+        },
+        {
+          "check": "manifest hash runtime-input/reference.jpg",
+          "pass": true,
+          "source": "deepseek/trial-01/runtime-input/reference.jpg",
+          "detail": null
+        },
+        {
+          "check": "manifest hash runtime-input/model-metadata.json",
+          "pass": true,
+          "source": "deepseek/trial-01/runtime-input/model-metadata.json",
+          "detail": null
+        },
+        {
+          "check": "reference copy hash",
+          "pass": true,
+          "source": "deepseek/trial-01/runtime-input/reference.jpg",
+          "detail": null
+        },
+        {
+          "check": "image metadata preserved",
+          "pass": true,
+          "source": "deepseek/trial-01/runtime-input/model-metadata.json",
+          "detail": null
+        },
+        {
+          "check": "prepared official metadata unchanged",
+          "pass": true,
+          "source": "deepseek/trial-01/runtime-input/model-metadata.json",
+          "detail": null
+        },
+        {
+          "check": "candidate isolation",
+          "pass": true,
+          "source": "deepseek/trial-01/evidence/candidate-inspect-before.json",
+          "detail": null
+        },
+        {
+          "check": "runtime identity and zero capabilities",
+          "pass": true,
+          "source": "deepseek/trial-01/evidence/run.events.jsonl",
+          "detail": null
+        },
+        {
+          "check": "run terminal and candidate stopped",
+          "pass": true,
+          "source": "deepseek/trial-01/evidence/run.json",
+          "detail": null
+        },
+        {
+          "check": "run successful",
+          "pass": true,
+          "source": "deepseek/trial-01/evidence/run.json",
+          "detail": null
+        },
+        {
+          "check": "cleanup recorded successful",
+          "pass": true,
+          "source": "deepseek/trial-01/evidence/run.json",
+          "detail": null
+        },
+        {
+          "check": "candidate inspected stopped",
+          "pass": true,
+          "source": "deepseek/trial-01/evidence/candidate-inspect-after.json",
+          "detail": null
+        },
+        {
+          "check": "raw/parser tool counts agree",
+          "pass": true,
+          "source": "deepseek/trial-01/evidence/run.json",
+          "detail": null
+        },
+        {
+          "check": "both nonempty CAD artifacts",
+          "pass": true,
+          "source": "deepseek/trial-01/workspace",
+          "detail": null
+        },
+        {
+          "check": "native and STEP independently validated",
+          "pass": true,
+          "source": "deepseek/trial-01/evidence/validation.json",
+          "detail": null
+        },
+        {
+          "check": "native source hashes preserved",
+          "pass": true,
+          "source": "deepseek/trial-01/evidence/validation.json",
+          "detail": null
+        },
+        {
+          "check": "step source hashes preserved",
+          "pass": true,
+          "source": "deepseek/trial-01/evidence/validation.json",
+          "detail": null
+        },
+        {
+          "check": "fixed render completed",
+          "pass": true,
+          "source": "deepseek/trial-01/evidence/render.json",
+          "detail": null
+        },
+        {
+          "check": "render preserved racing-kart.FCStd",
+          "pass": true,
+          "source": "deepseek/trial-01/evidence/render.json",
+          "detail": null
+        },
+        {
+          "check": "render preserved racing-kart.step",
+          "pass": true,
+          "source": "deepseek/trial-01/evidence/render.json",
+          "detail": null
+        },
+        {
+          "check": "render hash isometric",
+          "pass": true,
+          "source": "deepseek/trial-01/renders/isometric.png",
+          "detail": null
+        },
+        {
+          "check": "fixed camera isometric",
+          "pass": true,
+          "source": "deepseek/trial-01/evidence/render.json",
+          "detail": null
+        },
+        {
+          "check": "white nonempty PNG isometric",
+          "pass": true,
+          "source": "deepseek/trial-01/renders/isometric.png",
+          "detail": null
+        },
+        {
+          "check": "render hash top",
+          "pass": true,
+          "source": "deepseek/trial-01/renders/top.png",
+          "detail": null
+        },
+        {
+          "check": "fixed camera top",
+          "pass": true,
+          "source": "deepseek/trial-01/evidence/render.json",
+          "detail": null
+        },
+        {
+          "check": "white nonempty PNG top",
+          "pass": true,
+          "source": "deepseek/trial-01/renders/top.png",
+          "detail": null
+        },
+        {
+          "check": "render hash right",
+          "pass": true,
+          "source": "deepseek/trial-01/renders/right.png",
+          "detail": null
+        },
+        {
+          "check": "fixed camera right",
+          "pass": true,
+          "source": "deepseek/trial-01/evidence/render.json",
+          "detail": null
+        },
+        {
+          "check": "white nonempty PNG right",
+          "pass": true,
+          "source": "deepseek/trial-01/renders/right.png",
+          "detail": null
+        },
+        {
+          "check": "render hash preview",
+          "pass": true,
+          "source": "deepseek/trial-01/renders/preview.png",
+          "detail": null
+        },
+        {
+          "check": "fixed camera preview",
+          "pass": true,
+          "source": "deepseek/trial-01/evidence/render.json",
+          "detail": null
+        },
+        {
+          "check": "white nonempty PNG preview",
+          "pass": true,
+          "source": "deepseek/trial-01/renders/preview.png",
+          "detail": null
+        }
+      ],
+      "unknowns": [],
+      "modality": {
+        "attachment": true,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "source_url": "https://github.com/anomalyco/models.dev/blob/8deeec23540f4c0e2c473be7f08130366e662c78/providers/opencode/models/deepseek-v4.1-flash-free.toml",
+        "sources": [
+          {
+            "url": "https://github.com/anomalyco/models.dev/blob/8deeec23540f4c0e2c473be7f08130366e662c78/providers/opencode/models/deepseek-v4.1-flash-free.toml",
+            "sha256": "74bba04931c168647c1951fdab594f348bbe9c3a7be7213bf508932c10d1f63f"
+          },
+          {
+            "url": "https://github.com/anomalyco/models.dev/blob/8deeec23540f4c0e2c473be7f08130366e662c78/models/deepseek/deepseek-v4.1-flash.toml",
+            "sha256": "ef594fbed1c96863ff728e31530dbc1987d8862e36c5f1b5f08e5376d631aee0"
+          }
+        ],
+        "cad_wire_payload_visibility": "No request-body capture in the fixed CAD harness; separate synthetic native-vision checks are not CAD wire evidence."
+      },
+      "volumes": [
+        "cad-9c5e4ffadff948ff9c4bcb5ee6adc334-work",
+        "cad-9c5e4ffadff948ff9c4bcb5ee6adc334-home",
+        "cad-9c5e4ffadff948ff9c4bcb5ee6adc334-channel"
+      ],
+      "candidate_container_id": "5b06fcbd7954a60c9f6daefec7ed8d34470b1e8fcaa83270b096321e171bdded",
+      "runtime_identity": {
+        "type": "sandbox_runtime_identity",
+        "opencode_version": "1.19.3",
+        "process_security": {
+          "CapEff": "0000000000000000",
+          "CapPrm": "0000000000000000",
+          "CapBnd": "0000000000000000",
+          "NoNewPrivs": "1"
+        },
+        "locks_sha256": {
+          "/opt/debian-packages.lock": "5cd7c6bfac8df0c7b0a7425b6254bc3deac15630d807b6e68cd3bf40d080e608",
+          "/opt/mcp-source-manifest.json": "34a81a6b5914906a79e86d2e0c8d589e21beec3b5e1112b258292b4c667f9091",
+          "/opt/opencode-version.txt": "577a2e518704a9ee9ebfa4ce98063388fcc7bd840cb71a455f51fa59116e98c3"
+        },
+        "freecad": {
+          "freecad_version": [
+            "1",
+            "0",
+            "0",
+            "",
+            "https://code.launchpad.net/~vcs-imports/freecad/trunk",
+            "2026/08/25 11:49:11"
+          ],
+          "user_app_data": "/home/candidate/.local/share/FreeCAD/",
+          "python_version": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+          "rpc_start": "RPC Server started at 127.0.0.1:9875."
+        }
+      },
+      "raw_events": {
+        "types": {
+          "sandbox_runtime_identity": 1,
+          "sandbox_generation_start": 1,
+          "step_start": 25,
+          "text": 22,
+          "tool_use": 28,
+          "step_finish": 25
+        },
+        "non_json_lines": 0,
+        "tool_calls": {
+          "freecad_list_documents": 1,
+          "bash": 3,
+          "todowrite": 2,
+          "write": 2,
+          "freecad_execute_code_headless": 2,
+          "freecad_execute_code": 13,
+          "freecad_get_view": 3,
+          "edit": 2
+        },
+        "tool_total": 28,
+        "parser_tool_error_count": 1,
+        "nonzero_exit_tool_count": 0,
+        "returned_error_sign_tool_count": 3,
+        "returned_error_signs_with_exit_zero": 0,
+        "tool_call_audit": [
+          {
+            "index": 1,
+            "tool": "freecad_list_documents",
+            "call_id": "call_01_dik6l7smx6ykdk4obeq3ydyj",
+            "parser_status": "completed",
+            "exit_codes": [],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 2,
+            "tool": "bash",
+            "call_id": "call_00_11orhbkz029na6lt237qb25p",
+            "parser_status": "completed",
+            "exit_codes": [
+              0
+            ],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 3,
+            "tool": "todowrite",
+            "call_id": "chatcmpl-tool-e5a7dd502a6740c186bd30d4b832cbec",
+            "parser_status": "completed",
+            "exit_codes": [],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 4,
+            "tool": "write",
+            "call_id": "chatcmpl-tool-6cc325f7badc49ee9f940737ae43a4cc",
+            "parser_status": "error",
+            "exit_codes": [],
+            "parser_error": true,
+            "nonzero_exit": false,
+            "returned_error_signs": [],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 5,
+            "tool": "write",
+            "call_id": "chatcmpl-tool-6075a3f1d44140d59869cf16901ba56f",
+            "parser_status": "completed",
+            "exit_codes": [],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 6,
+            "tool": "freecad_execute_code_headless",
+            "call_id": "chatcmpl-tool-8d9c8cc3a14c4811a491cb806b081681",
+            "parser_status": "completed",
+            "exit_codes": [],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 7,
+            "tool": "freecad_execute_code",
+            "call_id": "chatcmpl-tool-23b775083a1b4c298fff4b315c4c7dd9",
+            "parser_status": "completed",
+            "exit_codes": [],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [
+              "AttributeError:"
+            ],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 8,
+            "tool": "freecad_execute_code",
+            "call_id": "chatcmpl-tool-efcfa7d6850a414ebf861424e21ec6d6",
+            "parser_status": "completed",
+            "exit_codes": [],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 9,
+            "tool": "freecad_execute_code",
+            "call_id": "chatcmpl-tool-9867b8225e004c1eb56fb0c6a62af6ce",
+            "parser_status": "completed",
+            "exit_codes": [],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 10,
+            "tool": "freecad_get_view",
+            "call_id": "call_b97aefd559e76b9153800234cb093b81",
+            "parser_status": "completed",
+            "exit_codes": [],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 11,
+            "tool": "freecad_execute_code",
+            "call_id": "call_7a5030305f7d83512c1208f923cc1cce",
+            "parser_status": "completed",
+            "exit_codes": [],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [
+              "AttributeError:"
+            ],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 12,
+            "tool": "freecad_execute_code",
+            "call_id": "call_f6377b03922681c789e47b125adca950",
+            "parser_status": "completed",
+            "exit_codes": [],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 13,
+            "tool": "freecad_execute_code",
+            "call_id": "call_38437a7d7c1ad8fd9b8c92e3af2d1683",
+            "parser_status": "completed",
+            "exit_codes": [],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [
+              "NameError:"
+            ],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 14,
+            "tool": "freecad_execute_code",
+            "call_id": "call_80527b9163ef8c89c3abb3e71c78d331",
+            "parser_status": "completed",
+            "exit_codes": [],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 15,
+            "tool": "freecad_execute_code",
+            "call_id": "call_8b3059d8ded8121e2532ac232e07a756",
+            "parser_status": "completed",
+            "exit_codes": [],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 16,
+            "tool": "freecad_execute_code",
+            "call_id": "call_61dd9d5b2aae1ed8604004861d9b70ab",
+            "parser_status": "completed",
+            "exit_codes": [],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 17,
+            "tool": "freecad_execute_code",
+            "call_id": "call_dfd699f2fc220cd3a56317a81260b94a",
+            "parser_status": "completed",
+            "exit_codes": [],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 18,
+            "tool": "edit",
+            "call_id": "call_e7c0ff3a1962a26699b1caa0e8df764c",
+            "parser_status": "completed",
+            "exit_codes": [],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 19,
+            "tool": "edit",
+            "call_id": "call_9e82203ed2f27a53a073ed83893fe1b1",
+            "parser_status": "completed",
+            "exit_codes": [],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 20,
+            "tool": "freecad_execute_code",
+            "call_id": "call_bc35053e99bf7f6328958f115e225ac3",
+            "parser_status": "completed",
+            "exit_codes": [],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 21,
+            "tool": "freecad_get_view",
+            "call_id": "call_d70b26442aec96798bc47ccffdaa9ba9",
+            "parser_status": "completed",
+            "exit_codes": [],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 22,
+            "tool": "freecad_get_view",
+            "call_id": "call_e9e8cac8963d95182271d2b64f132cdd",
+            "parser_status": "completed",
+            "exit_codes": [],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 23,
+            "tool": "freecad_execute_code",
+            "call_id": "call_eb0c3419f6ae326d2532301afb5007dc",
+            "parser_status": "completed",
+            "exit_codes": [],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 24,
+            "tool": "freecad_execute_code_headless",
+            "call_id": "call_633f499d0e65df4cfc9a44dfcc46e2a7",
+            "parser_status": "completed",
+            "exit_codes": [],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 25,
+            "tool": "bash",
+            "call_id": "call_a6764d90cb5b939c624836db6fa9ba62",
+            "parser_status": "completed",
+            "exit_codes": [
+              0
+            ],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 26,
+            "tool": "freecad_execute_code",
+            "call_id": "call_b9a549c63bee69d8bc80ba49517ad314",
+            "parser_status": "completed",
+            "exit_codes": [],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 27,
+            "tool": "bash",
+            "call_id": "call_25543a480383e3c1aaeb8c64f6fa7b33",
+            "parser_status": "completed",
+            "exit_codes": [
+              0
+            ],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [],
+            "error_signs_with_exit_zero": false
+          },
+          {
+            "index": 28,
+            "tool": "todowrite",
+            "call_id": "call_dccb16d1beb616bd13e7dcc09991cf5a",
+            "parser_status": "completed",
+            "exit_codes": [],
+            "parser_error": false,
+            "nonzero_exit": false,
+            "returned_error_signs": [],
+            "error_signs_with_exit_zero": false
+          }
+        ],
+        "gateway_http_status_counts": {
+          "200": 26
+        },
+        "gateway_non_json_lines": 0,
+        "errors": []
+      },
+      "run": {
+        "status": "completed",
+        "returncode": 0,
+        "outputs": [
+          "racing-kart.FCStd",
+          "racing-kart.step"
+        ],
+        "candidate_stopped": true,
+        "cleanup_errors": []
+      },
+      "timing_and_client_accounting": {
+        "duration_seconds": 442.688,
+        "startup_seconds": 7.912,
+        "wall_seconds": 472.03,
+        "measurement_scope": "generation event to OpenCode exit, including model waits, retries and MCP work; startup recorded separately",
+        "recorded_cost_usd": 0.0,
+        "generation_seconds": 442.688,
+        "tokens": {
+          "total": 950181,
+          "input": 143658,
+          "output": 11828,
+          "reasoning": 18544,
+          "cache.write": 0,
+          "cache.read": 776151
+        },
+        "cost_scope": "OpenCode recorded amount only; not independent billing verification",
+        "timing_scope": "One concurrent trial per model; descriptive timings only, no speed ranking"
+      },
+      "cad_artifacts": {
+        "racing-kart.FCStd": {
+          "path": "deepseek/trial-01/workspace/racing-kart.FCStd",
+          "sha256": "ee3bd4ff45073b06daab850246e5d8a93c6dc5683e9441d597bcafbb858ec392",
+          "bytes": 475767
+        },
+        "racing-kart.step": {
+          "path": "deepseek/trial-01/workspace/racing-kart.step",
+          "sha256": "cee222789509cc0499e2af0da0dd7deab6c5b30cc941e84a0ca9a53ea8eaf727",
+          "bytes": 1035601
+        }
+      },
+      "native_validation": {
+        "success": true,
+        "comparison": {
+          "bounds_tolerance_mm": 0.01,
+          "native_render_solid_count": 26,
+          "step_import_solid_count": 26,
+          "step_import_render_object_count": 26,
+          "solid_counts_equal": true,
+          "bounds_match": true,
+          "max_bounds_delta_mm": 1.071839506039396e-09
+        },
+        "native": {
+          "object_count": 61,
+          "all_shape_object_counts": {
+            "total": 56,
+            "null": 0,
+            "invalid": 0,
+            "inspection_exceptions": 0
+          },
+          "geometry_valid": true,
+          "failures": [],
+          "source_unchanged": true
+        },
+        "step": {
+          "object_count": 34,
+          "all_shape_object_counts": {
+            "total": 33,
+            "null": 0,
+            "invalid": 0,
+            "inspection_exceptions": 0
+          },
+          "geometry_valid": true,
+          "failures": [],
+          "source_unchanged": true
+        }
+      },
+      "renders": [
+        {
+          "view": "isometric",
+          "path": "deepseek/trial-01/renders/isometric.png",
+          "sha256": "b045a8cf1d6eb44faed73c89cda543eba1cc6a2cd02ed56150bbceaeed3aa0a8",
+          "pixels": {
+            "size": [
+              1600,
+              1000
+            ],
+            "corners_white": true,
+            "nonwhite_bounds": [
+              371,
+              260,
+              1206,
+              801
+            ]
+          }
+        },
+        {
+          "view": "top",
+          "path": "deepseek/trial-01/renders/top.png",
+          "sha256": "0f88408877ca641be94d3c7927f555d9c897b7856f374da7949ece44653904f6",
+          "pixels": {
+            "size": [
+              1280,
+              900
+            ],
+            "corners_white": true,
+            "nonwhite_bounds": [
+              294,
+              177,
+              986,
+              723
+            ]
+          }
+        },
+        {
+          "view": "right",
+          "path": "deepseek/trial-01/renders/right.png",
+          "sha256": "3ad7880a4306ab311767812690635c27b0817354c78417776651023521452f1a",
+          "pixels": {
+            "size": [
+              1280,
+              900
+            ],
+            "corners_white": true,
+            "nonwhite_bounds": [
+              367,
+              352,
+              913,
+              548
+            ]
+          }
+        },
+        {
+          "view": "preview",
+          "path": "deepseek/trial-01/renders/preview.png",
+          "sha256": "3c7798172e966d4cf5ac3622e6dd038c5945dec414fac370c9e54f70de099818",
+          "pixels": {
+            "size": [
+              960,
+              600
+            ],
+            "corners_white": true,
+            "nonwhite_bounds": [
+              222,
+              156,
+              724,
+              481
+            ]
+          }
+        }
+      ],
+      "limitations": [
+        "No CAD wire request capture; image input support in metadata is preserved but not direct proof of bytes in these CAD requests.",
+        "No candidate full filesystem snapshot; absence of host binds and fresh home volume are evidenced by inspect and fixed runner copy policy.",
+        "Tool returned error signs are heuristics, distinct from parser failure or verified task failure.",
+        "CAD validation and rendered geometry do not establish manufacturing or structural safety.",
+        "Visual likeness scoring is separate and is not inferred from validity or process exit status."
+      ],
+      "source_hashes": {
+        "trial.json": "36d3e3daaf7089b7485d3c4a50796f06f68848ee1ebdd4aa566f80a90dc66b4d",
+        "evidence/run.json": "f29613be85882990cbd0c04dde08c8295109f69d9e65ba01da41312b2e0ae160",
+        "evidence/run.events.jsonl": "81747e65bb195f1d3b154d6bc7dfbf1a7cf13900cf7991db5f4b47c9df97a7e1",
+        "evidence/gateway.log": "3eae4725feaf695535a19f07171ba91296282d24f1d35ddd4c3b7dbd6454c998",
+        "evidence/validation.json": "1e48253bc03cd6ae5dd49b1edf5dfbc5b0f908dba8e016304cff63dd665eaa85",
+        "evidence/render.json": "2797f06cb45eb9c251230e0617f0f993baf10f0c58a1935d64d5755c430afc6e"
+      },
+      "status": "pass"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "review_id": "coordinator-maple-06186df5-3d1c-4a4a-b54b-27d0e6e90a18",
+  "role": "coordinator",
+  "fresh_context": true,
+  "model_blinded": false,
+  "reviewer_model": "unknown; inherited evaluator model identifier not exposed",
+  "context_provenance": {
+    "statement": "Fresh context for this review. Candidate model identity DeepSeekV4.1FlashFree was disclosed. Visual evidence was limited to reference.jpg and renders/isometric.png, renders/top.png, renders/right.png, with rubric.json; review-template.json and README.txt were used only for reporting instructions. No source CAD, trial logs, other reviews, history, baselines, or outside-project evidence were consulted. The four images were opened with view_image. Scores judge only visible reference fidelity, without reward for CAD validity, render polish, camera angle, timing, or cost. Exact metric dimensions cannot be established from these images. Evaluation followed the supplied rubric and direct artifact inspection under Prove It Works. No independent review was read or requested before saving this initial review.",
+    "other_reviews_read": false,
+    "recorded_at": "2026-10-18T00:00:57.0000000Z",
+    "signed_by": "/root/coordinator_maple"
+  },
+  "evidence_hashes": {
+    "reference": "d3fcfa0a7a1b1fc0504fe7dfadfaa2a1beb0a8712bd088a0b6c8ccb0dd120cd3",
+    "rubric": "7028b7740c4012c2894ea8cfa567e696df0365546b579cc53653e36b2900a190",
+    "isometric": "b045a8cf1d6eb44faed73c89cda543eba1cc6a2cd02ed56150bbceaeed3aa0a8",
+    "top": "0f88408877ca641be94d3c7927f555d9c897b7856f374da7949ece44653904f6",
+    "right": "3ad7880a4306ab311767812690635c27b0817354c78417776651023521452f1a"
+  },
+  "criteria": [
+    {
+      "id": "silhouette_proportions",
+      "score": 12.5,
+      "max": 25,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "斜視図と上面図では、四隅に幅広いタイヤがあり、低い青色フレームの中央に座席を置く全体構成が参照画像と対応している。"
+        },
+        {
+          "kind": "deduction",
+          "observation": "上面図の前部は中央の大きな箱と左右の小箱で占められ、参照画像の低く前へ細くなるノーズと横へ広がる前バンパーの輪郭を再現していない。斜視図でも側面の箱が短く厚く、外形の比率が異なる。透視画像から実寸の正確さは判定しない。"
+        }
+      ]
+    },
+    {
+      "id": "component_layout",
+      "score": 15.0,
+      "max": 20,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "上面図と斜視図で、前後二対の車輪、中央の座席、その前の操舵輪、座席横のエンジン、左右の外装、後車軸と後部の保護バーが確認でき、主要部品の前後左右の配置はおおむね対応する。"
+        },
+        {
+          "kind": "deduction",
+          "observation": "参照画像の座席前にある独立した細長いノーズが見当たらず、前部の大きな横長箱がその領域を占める。前端を広く囲む低いバンパーも参照どおりの構成ではない。"
+        }
+      ]
+    },
+    {
+      "id": "characteristic_geometry",
+      "score": 7.5,
+      "max": 30,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "斜視図には、黒い輪状の操舵輪、円筒状のタイヤと灰色の車輪中心、後端で曲がる青い管があり、参照形状の一部に対応する要素が見える。"
+        },
+        {
+          "kind": "deduction",
+          "observation": "斜視図の座席は平板と角張った側壁で構成され、参照画像の連続して湾曲するバケット形状がない。外装は丸角の直方体で、ノーズの絞りと前バンパーの曲面を欠く。車輪中心は平たい円盤で、参照の深いリム形状がない。フレームの大部分も直線の長方形で、参照の座席周囲の曲がりが省略されている。"
+        }
+      ]
+    },
+    {
+      "id": "mechanical_detail",
+      "score": 10.0,
+      "max": 20,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "斜視図でエンジンの積層したフィン、曲がる排気管と円筒形の消音器、後車軸と複数の円盤が確認できる。上面図では前輪側へ伸びる細い棒も見える。"
+        },
+        {
+          "kind": "deduction",
+          "observation": "エンジン下部は単純な箱で、参照画像の複雑なクランクケースや締結部を欠く。後部の円盤は平滑で、参照の歯付き駆動部やチェーンの形状が見えない。前輪周辺も参照のナックル、継手、複数の操舵リンクに比べて細部が大きく省略されている。"
+        }
+      ]
+    },
+    {
+      "id": "color_material_regions",
+      "score": 5.0,
+      "max": 5,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "斜視図と上面図でフレームは青、外装と機械部は灰色から銀色、座席は濃色、タイヤは黒であり、参照画像の対応する部位と配色が一致している。"
+        },
+        {
+          "kind": "no_deduction",
+          "observation": "評価対象の色領域は参照画像に対応しているため減点しない。背景、照明、陰影の滑らかさ、カメラ方向は採点に含めていない。"
+        }
+      ]
+    }
+  ]
+}

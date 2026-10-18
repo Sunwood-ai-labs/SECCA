@@ -1,0 +1,50 @@
+{
+  "provider_id": "opencode",
+  "provider_api": "https://opencode.ai/inference/openai/v1",
+  "provider_npm": "@ai-sdk/openai-compatible",
+  "model": {
+    "name": "Nemotron 3.5 Super VL Free",
+    "family": "nemotron-free",
+    "attachment": true,
+    "reasoning": true,
+    "temperature": true,
+    "tool_call": true,
+    "limit": {
+      "context": 1048576,
+      "output": 131072,
+      "input": 1048576
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "interleaved": {
+      "field": "reasoning_content"
+    },
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0
+    },
+    "id": "nemotron-3.5-super-vl-free"
+  },
+  "source_url": "https://github.com/anomalyco/models.dev/blob/8deeec23540f4c0e2c473be7f08130366e662c78/providers/opencode/models/nemotron-3.5-super-vl-free.toml",
+  "source_sha256": "91668ae2633b10ef69754e717a4fb0874ab4cc4f2b158201da851b75f95a0e05",
+  "merged_metadata_sha256": "8eafa8834231ad6007cffcf8939e763f6fb09883cfbdd86616e6057c56edcd7e",
+  "sources": [
+    {
+      "url": "https://github.com/anomalyco/models.dev/blob/8deeec23540f4c0e2c473be7f08130366e662c78/providers/opencode/models/nemotron-3.5-super-vl-free.toml",
+      "sha256": "91668ae2633b10ef69754e717a4fb0874ab4cc4f2b158201da851b75f95a0e05"
+    },
+    {
+      "url": "https://github.com/anomalyco/models.dev/blob/8deeec23540f4c0e2c473be7f08130366e662c78/models/nvidia/nemotron-3.5-super-vl-120b-a12b.toml",
+      "sha256": "4ff661d7cb48738acb3f58482b5d40ed811ce405f3b740b1790fc9f3f1333a1c"
+    }
+  ],
+  "provenance_note": "Model attributes copied unchanged from verified merged provider and base model metadata. source_sha256 binds the pinned provider TOML; sources additionally binds the inherited base model TOML. merged_metadata_sha256 binds official-merged-metadata.json."
+}

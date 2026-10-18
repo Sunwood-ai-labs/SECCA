@@ -1,0 +1,1142 @@
+{
+  "schema_version": 1,
+  "request_id": "cc3b4ed131ab4569837c4fae250b8ba0",
+  "scope": "Independent disk reopen and STEP import; no recompute, save, grading, or structural safety assessment.",
+  "selection_note": "Visible physical Part::Feature and Body shapes; exclude containers, datum objects and Body internals. STEP object count is an import representation, not a manufactured part count.",
+  "success": false,
+  "freecad_version": [
+    "1",
+    "0",
+    "0",
+    "",
+    "https://code.launchpad.net/~vcs-imports/freecad/trunk",
+    "2026/08/25 11:49:11"
+  ],
+  "native": {
+    "file_before": {
+      "path": "workspace/racing-kart.FCStd",
+      "exists": true,
+      "bytes": 52634,
+      "sha256": "4d3a994d12f1e0ddd985cd7f2e68cd54c43ff45651ae5c007cbb45f22d41b227"
+    },
+    "document_name": "racing_kart",
+    "object_count": 30,
+    "all_shape_object_counts": {
+      "total": 30,
+      "null": 0,
+      "invalid": 0,
+      "inspection_exceptions": 0
+    },
+    "objects": [
+      {
+        "name": "Frame_00",
+        "label": "Frame_00",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 233671.247650437,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -19.768535604484022,
+              263.0149012750068,
+              -30.254432526492955
+            ],
+            "max": [
+              299.7685356044841,
+              696.9850987249931,
+              13.72756972069458
+            ],
+            "size": [
+              319.53707120896814,
+              433.9701974499863,
+              43.98200224718754
+            ]
+          }
+        }
+      },
+      {
+        "name": "Frame_01",
+        "label": "Frame_01",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 619789.9090402139,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              824.9124110924328,
+              468.0,
+              -462.01792826883826
+            ],
+            "max": [
+              2195.0875889075674,
+              492.0,
+              -428.01856759541437
+            ],
+            "size": [
+              1370.1751778151347,
+              24.0,
+              33.999360673423894
+            ]
+          }
+        }
+      },
+      {
+        "name": "Frame_02",
+        "label": "Frame_02",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 202213.4816198605,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              1573.6958510367306,
+              -154.10668538664277,
+              -40.46790885465905
+            ],
+            "max": [
+              1746.3041489632694,
+              274.1066853866427,
+              13.477976082118829
+            ],
+            "size": [
+              172.60829792653885,
+              428.2133707732855,
+              53.94588493677788
+            ]
+          }
+        }
+      },
+      {
+        "name": "Frame_03",
+        "label": "Frame_03",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 233671.24765043703,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -19.768535604484022,
+              -696.9850987249931,
+              -30.254432526492955
+            ],
+            "max": [
+              299.7685356044841,
+              -263.0149012750068,
+              13.72756972069458
+            ],
+            "size": [
+              319.53707120896814,
+              433.9701974499863,
+              43.98200224718754
+            ]
+          }
+        }
+      },
+      {
+        "name": "Frame_04",
+        "label": "Frame_04",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 619789.9090402139,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              824.9124110924328,
+              -492.0,
+              -462.01792826883826
+            ],
+            "max": [
+              2195.0875889075674,
+              -468.0,
+              -428.01856759541437
+            ],
+            "size": [
+              1370.1751778151347,
+              24.0,
+              33.999360673423894
+            ]
+          }
+        }
+      },
+      {
+        "name": "Frame_05",
+        "label": "Frame_05",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 202213.48161986045,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              1573.6958510367306,
+              -274.1066853866427,
+              -40.46790885465905
+            ],
+            "max": [
+              1746.3041489632694,
+              154.10668538664277,
+              13.477976082118829
+            ],
+            "size": [
+              172.60829792653885,
+              428.2133707732855,
+              53.94588493677788
+            ]
+          }
+        }
+      },
+      {
+        "name": "Frame_06",
+        "label": "Frame_06",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 434293.7684322528,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              128.0,
+              0.0,
+              -242.0
+            ],
+            "max": [
+              152.0,
+              960.0,
+              -218.0
+            ],
+            "size": [
+              24.0,
+              960.0,
+              24.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Frame_07",
+        "label": "Frame_07",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 434293.7684322533,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              1498.0,
+              0.0,
+              -252.0
+            ],
+            "max": [
+              1522.0,
+              960.0,
+              -228.0
+            ],
+            "size": [
+              24.0,
+              960.0,
+              24.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Frame_08",
+        "label": "Frame_08",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 434293.768432253,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              388.0,
+              0.0,
+              -232.0
+            ],
+            "max": [
+              412.0,
+              960.0,
+              -208.0
+            ],
+            "size": [
+              24.0,
+              960.0,
+              24.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Frame_09",
+        "label": "Frame_09",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 434293.7684322528,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              128.0,
+              0.0,
+              -242.0
+            ],
+            "max": [
+              152.0,
+              960.0,
+              -218.0
+            ],
+            "size": [
+              24.0,
+              960.0,
+              24.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Frame_10",
+        "label": "Frame_10",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 434293.7684322533,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              1498.0,
+              0.0,
+              -252.0
+            ],
+            "max": [
+              1522.0,
+              960.0,
+              -228.0
+            ],
+            "size": [
+              24.0,
+              960.0,
+              24.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Frame_11",
+        "label": "Frame_11",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 434293.768432253,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              388.0,
+              0.0,
+              -232.0
+            ],
+            "max": [
+              412.0,
+              960.0,
+              -208.0
+            ],
+            "size": [
+              24.0,
+              960.0,
+              24.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Frame_12",
+        "label": "Frame_12",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 85953.97500221674,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              688.0,
+              468.0,
+              240.0
+            ],
+            "max": [
+              712.0,
+              492.0,
+              430.0
+            ],
+            "size": [
+              24.0,
+              24.0,
+              190.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Frame_13",
+        "label": "Frame_13",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 215063.43810741892,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              1038.0,
+              -173.02906276576402,
+              20.691306251143622
+            ],
+            "max": [
+              1062.0,
+              293.029062765764,
+              163.91412078866787
+            ],
+            "size": [
+              24.0,
+              466.05812553152805,
+              143.22281453752424
+            ]
+          }
+        }
+      },
+      {
+        "name": "Frame_14",
+        "label": "Frame_14",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 85953.97500221674,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              688.0,
+              -492.0,
+              240.0
+            ],
+            "max": [
+              712.0,
+              -468.0,
+              430.0
+            ],
+            "size": [
+              24.0,
+              24.0,
+              190.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Frame_15",
+        "label": "Frame_15",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 215063.43810741892,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              1038.0,
+              -293.029062765764,
+              20.691306251143622
+            ],
+            "max": [
+              1062.0,
+              173.02906276576402,
+              163.91412078866787
+            ],
+            "size": [
+              24.0,
+              466.05812553152805,
+              143.22281453752424
+            ]
+          }
+        }
+      },
+      {
+        "name": "Frame_16",
+        "label": "Frame_16",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 135716.80263507905,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              338.0,
+              -12.0,
+              260.0
+            ],
+            "max": [
+              362.0,
+              12.0,
+              560.0
+            ],
+            "size": [
+              24.0,
+              24.0,
+              300.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "FrontWheel_1",
+        "label": "FrontWheel_1",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 9676890.771219961,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -165.00000000000003,
+              355.0,
+              80.0
+            ],
+            "max": [
+              -74.99999999999996,
+              725.0,
+              450.0
+            ],
+            "size": [
+              90.00000000000007,
+              370.0,
+              370.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "FrontWheel_2",
+        "label": "FrontWheel_2",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 9676890.771219961,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              -165.00000000000003,
+              -725.0,
+              80.0
+            ],
+            "max": [
+              -74.99999999999996,
+              -355.0,
+              450.0
+            ],
+            "size": [
+              90.00000000000007,
+              370.0,
+              370.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "RearWheel_1",
+        "label": "RearWheel_1",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 9676890.771219961,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              1555.0,
+              345.0,
+              55.0
+            ],
+            "max": [
+              1645.0,
+              715.0,
+              425.0
+            ],
+            "size": [
+              90.0,
+              370.0,
+              370.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "RearWheel_2",
+        "label": "RearWheel_2",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 9676890.771219961,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              1555.0,
+              -715.0,
+              55.0
+            ],
+            "max": [
+              1645.0,
+              -345.0,
+              425.0
+            ],
+            "size": [
+              90.0,
+              370.0,
+              370.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Seat",
+        "label": "Seat",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 20672000.0,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              390.0,
+              -190.0,
+              240.0
+            ],
+            "max": [
+              730.0,
+              190.0,
+              400.0
+            ],
+            "size": [
+              340.0,
+              380.0,
+              160.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "FrontNose",
+        "label": "FrontNose",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 13440000.0,
+          "solids": 1,
+          "faces": 7,
+          "bounds_mm": {
+            "min": [
+              -300.0,
+              -160.0,
+              100.0
+            ],
+            "max": [
+              0.0,
+              160.0,
+              240.0
+            ],
+            "size": [
+              300.0,
+              320.0,
+              140.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "SidePanel_1",
+        "label": "SidePanel_1",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 6480000.0,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              150.0,
+              490.0,
+              180.0
+            ],
+            "max": [
+              750.0,
+              550.0,
+              360.0
+            ],
+            "size": [
+              600.0,
+              60.0,
+              180.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "SidePanel_2",
+        "label": "SidePanel_2",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 6480000.0,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              150.0,
+              -490.0,
+              180.0
+            ],
+            "max": [
+              750.0,
+              -430.0,
+              360.0
+            ],
+            "size": [
+              600.0,
+              60.0,
+              180.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "RearSpoiler",
+        "label": "RearSpoiler",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 2160000.0,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              1700.0,
+              -60.0,
+              330.0
+            ],
+            "max": [
+              2000.0,
+              60.0,
+              390.0
+            ],
+            "size": [
+              300.0,
+              120.0,
+              60.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "EngineBlock",
+        "label": "EngineBlock",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 13156000.0,
+          "solids": 1,
+          "faces": 6,
+          "bounds_mm": {
+            "min": [
+              1320.0,
+              270.0,
+              250.0
+            ],
+            "max": [
+              1580.0,
+              490.0,
+              480.0
+            ],
+            "size": [
+              260.0,
+              220.0,
+              230.0
+            ]
+          }
+        }
+      },
+      {
+        "name": "Muffler",
+        "label": "Muffler",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 186360.42014542135,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              1688.1497079187257,
+              446.0,
+              214.79534988622754
+            ],
+            "max": [
+              1991.8502920812743,
+              474.0,
+              282.5497311053413
+            ],
+            "size": [
+              303.7005841625487,
+              28.0,
+              67.75438121911378
+            ]
+          }
+        }
+      },
+      {
+        "name": "SteeringWheel",
+        "label": "SteeringWheel",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 425577.34177497297,
+          "solids": 1,
+          "faces": 1,
+          "bounds_mm": {
+            "min": [
+              215.78336716374315,
+              -14.000000000000027,
+              425.78336716374315
+            ],
+            "max": [
+              484.21663283625685,
+              14.000000000000027,
+              694.2166328362568
+            ],
+            "size": [
+              268.4332656725137,
+              28.000000000000053,
+              268.4332656725137
+            ]
+          }
+        }
+      },
+      {
+        "name": "SteeringShaft",
+        "label": "SteeringShaft",
+        "type": "Part::Feature",
+        "parents": [],
+        "children": [],
+        "visible": true,
+        "visibility_source": "saved_GuiDocument.xml",
+        "shape": {
+          "null": false,
+          "valid": true,
+          "volume_mm3": 23323.18386025063,
+          "solids": 1,
+          "faces": 3,
+          "bounds_mm": {
+            "min": [
+              342.0,
+              -8.0,
+              430.0
+            ],
+            "max": [
+              358.0,
+              8.0,
+              546.0
+            ],
+            "size": [
+              16.0,
+              16.0,
+              116.0
+            ]
+          }
+        }
+      }
+    ],
+    "render_selection": {
+      "names": [
+        "Frame_00",
+        "Frame_01",
+        "Frame_02",
+        "Frame_03",
+        "Frame_04",
+        "Frame_05",
+        "Frame_06",
+        "Frame_07",
+        "Frame_08",
+        "Frame_09",
+        "Frame_10",
+        "Frame_11",
+        "Frame_12",
+        "Frame_13",
+        "Frame_14",
+        "Frame_15",
+        "Frame_16",
+        "FrontWheel_1",
+        "FrontWheel_2",
+        "RearWheel_1",
+        "RearWheel_2",
+        "Seat",
+        "FrontNose",
+        "SidePanel_1",
+        "SidePanel_2",
+        "RearSpoiler",
+        "EngineBlock",
+        "Muffler",
+        "SteeringWheel",
+        "SteeringShaft"
+      ],
+      "object_count": 30,
+      "solid_count": 30,
+      "bounds_mm": {
+        "min": [
+          -300.0,
+          -725.0,
+          -462.01792826883826
+        ],
+        "max": [
+          2195.0875889075674,
+          960.0,
+          694.2166328362568
+        ],
+        "size": [
+          2495.0875889075674,
+          1685.0,
+          1156.234561105095
+        ]
+      },
+      "excluded": []
+    },
+    "geometry_valid": true,
+    "failures": [],
+    "file_after": {
+      "path": "workspace/racing-kart.FCStd",
+      "exists": true,
+      "bytes": 52634,
+      "sha256": "4d3a994d12f1e0ddd985cd7f2e68cd54c43ff45651ae5c007cbb45f22d41b227"
+    },
+    "source_unchanged": true
+  },
+  "step": {
+    "file_before": {
+      "path": "workspace/racing-kart.step",
+      "exists": true,
+      "bytes": 1640,
+      "sha256": "f136ca00b88e189e64c98e0881f4b614d00beab1ee54cfe11caf1589ed05a29e"
+    },
+    "document_name": "Independent_STEP_validation",
+    "object_count": 0,
+    "all_shape_object_counts": {
+      "total": 0,
+      "null": 0,
+      "invalid": 0,
+      "inspection_exceptions": 0
+    },
+    "objects": [],
+    "render_selection": {
+      "names": [],
+      "object_count": 0,
+      "solid_count": 0,
+      "bounds_mm": null,
+      "excluded": []
+    },
+    "geometry_valid": false,
+    "failures": [
+      "no_render_shape_objects"
+    ],
+    "file_after": {
+      "path": "workspace/racing-kart.step",
+      "exists": true,
+      "bytes": 1640,
+      "sha256": "f136ca00b88e189e64c98e0881f4b614d00beab1ee54cfe11caf1589ed05a29e"
+    },
+    "source_unchanged": true
+  },
+  "comparison": {
+    "bounds_tolerance_mm": 0.01,
+    "native_render_solid_count": 30,
+    "step_import_solid_count": 0,
+    "step_import_render_object_count": 0,
+    "solid_counts_equal": false,
+    "bounds_match": null
+  },
+  "postprocess_exit_code": 0,
+  "host_source_unchanged": true,
+  "sandbox": {
+    "backend": "podman-offline-postprocess",
+    "connection": "local-connection",
+    "image_id": "sha256:b9e296032f921c96de5843b19e1a182ce5067d6cdca25a5d3ab7e7da23fe89cb",
+    "network": "none",
+    "user": "10000:10000",
+    "api_channel": false,
+    "bind_mounts": [],
+    "request_id": "cc3b4ed131ab4569837c4fae250b8ba0",
+    "inspection": "evidence/postprocess/cc3b4ed131ab4569837c4fae250b8ba0/container-inspect.json"
+  }
+}

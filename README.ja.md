@@ -24,6 +24,23 @@ SECCAは、固定のレーシングカート画像と依頼文から、CAD構築
 
 ## 🧪 公開実験
 
+### Nemotron・DeepSeek · 2026-10-18
+
+| Nemotron 3.5 Super VL Free | DeepSeek V4.1 Flash Free |
+| --- | --- |
+| ![白背景で描画したNemotronの生成物](experiments/dual-free-20261018/nemotron/trial-01/renders/preview.png) | ![白背景で描画したDeepSeekの生成物](experiments/dual-free-20261018/deepseek/trial-01/renders/preview.png) |
+| 見た目の再現度 **28.75/100点** | 見た目の再現度 **50/100点** |
+| FCStdは30有効ソリッド。STEPは形状なし。 | FCStd・STEPとも26有効ソリッド。 |
+| 生成時間は71.464秒。 | 生成時間は442.688秒。 |
+
+同じ固定入力とランタイムイメージを使い、モデルごとに独立したPodman環境で1生成物ずつ作りました。各生成物をコーディネータ1件と、新しいコンテキストでモデル名を伏せた独立評価2件で採点し、項目別中央値を合計しています。CADの成立は再現度とは別に判定し、Nemotronは空のSTEPにより出力一式の検査に不合格でした。
+
+この2生成物の結果から、モデル全体の順位や速度の優劣は示していません。CAD本試行の推論リクエスト本文は保存しておらず、画像ペイロードを通信記録と照合することはできません。OpenCodeの記録費用は各0ドルですが、請求明細は独立監査していません。過去のBeamとWindows版GLMはランタイムが異なるため、別の記録として扱います。
+
+[実験ファイルと根拠](experiments/dual-free-20261018/README.md) · [結果と採点理由](docs/ja/guide/results.md)
+
+### Beam Free · 2026-10-17
+
 ![白背景で描画したBeam Freeのレーシングカート](experiments/beam-free-20261017/trial-02/renders/preview.png)
 
 | 実験 | 結果 | 対象 |

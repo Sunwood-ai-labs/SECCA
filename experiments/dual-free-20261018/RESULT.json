@@ -1,0 +1,65 @@
+{
+  "status": "completed",
+  "scope": "One saved output per model; no model-population ranking, speed claim, metric-dimension or manufacturability conclusion",
+  "source_commit": "dc7b1273fcdd1534b903185e2d7921cb7e7784f5",
+  "runtime_image": "sha256:b9e296032f921c96de5843b19e1a182ce5067d6cdca25a5d3ab7e7da23fe89cb",
+  "protocol": "racing-kart-image-v2-podman",
+  "models": [
+    {
+      "model": "opencode/nemotron-3.5-super-vl-free",
+      "generation_attempts": 1,
+      "generation_seconds": 71.464,
+      "startup_seconds": 8.079,
+      "wall_seconds": 101.507,
+      "visual_score": 28.75,
+      "max_visual_score": 100,
+      "native_valid": true,
+      "native_solids": 30,
+      "step_valid": false,
+      "step_solids": 0,
+      "cad_pair_valid": false,
+      "tool_calls": 7,
+      "gateway_http_status_counts": {
+        "200": 8
+      },
+      "recorded_cost_usd": 0.0,
+      "cost_scope": "OpenCode record only; billing not audited",
+      "candidate_stopped": true,
+      "cleanup_errors": [],
+      "score_path": "nemotron/trial-01/score.json",
+      "trial_path": "nemotron/trial-01"
+    },
+    {
+      "model": "opencode/deepseek-v4.1-flash-free",
+      "generation_attempts": 1,
+      "generation_seconds": 442.688,
+      "startup_seconds": 7.912,
+      "wall_seconds": 472.03,
+      "visual_score": 50.0,
+      "max_visual_score": 100,
+      "native_valid": true,
+      "native_solids": 26,
+      "step_valid": true,
+      "step_solids": 26,
+      "cad_pair_valid": true,
+      "tool_calls": 28,
+      "gateway_http_status_counts": {
+        "200": 26
+      },
+      "recorded_cost_usd": 0.0,
+      "cost_scope": "OpenCode record only; billing not audited",
+      "candidate_stopped": true,
+      "cleanup_errors": [],
+      "score_path": "deepseek/trial-01/score.json",
+      "trial_path": "deepseek/trial-01"
+    }
+  ],
+  "review_method": "Identity-aware initial coordinator then two fresh-context model-blinded reviews, sum per-criterion medians",
+  "reviewer_model_identity": "unknown; inherited model identifiers not exposed",
+  "publication": {
+    "manifest": "export-manifest.json",
+    "raw_source_retained_outside_repository": true,
+    "wire_image_payload_captured_in_cad_trials": false,
+    "reference": "../../assets/reference.jpg"
+  }
+}

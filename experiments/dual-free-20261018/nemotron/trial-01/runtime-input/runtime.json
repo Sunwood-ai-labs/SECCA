@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "model_id": "opencode/nemotron-3.5-super-vl-free",
+  "api_model_id": "nemotron-3.5-super-vl-free",
+  "prompt_text": "添付画像のレーシングカートをFreeCAD MCPで作成し、racing-kart.FCStdとracing-kart.stepに保存してください。\n",
+  "prompt_sha256": "aa4242e218a5c890320fab0151334b80f1e24067444686c0fcdf5037512b0dce",
+  "reference_sha256": "d3fcfa0a7a1b1fc0504fe7dfadfaa2a1beb0a8712bd088a0b6c8ccb0dd120cd3",
+  "api_base_url": "http://127.0.0.1:18080/inference/openai/v1"
+}

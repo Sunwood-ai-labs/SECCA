@@ -31,6 +31,7 @@ jobs:
       - run: uv run --frozen python scripts/validate_skill.py
       - run: uv run --frozen python tools/check_publication.py
       - run: uv run --frozen python experiments/tools/test_export_beam.py
+      - run: uv run --frozen python experiments/tools/export_dual.py --verify experiments/dual-free-20261018
 
   docs:
     name: Documentation build

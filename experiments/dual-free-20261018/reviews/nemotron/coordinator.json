@@ -1,0 +1,97 @@
+{
+  "review_id": "coordinator-a29d4725-c375-4a35-98cd-71be75f4982c",
+  "role": "coordinator",
+  "fresh_context": true,
+  "model_blinded": false,
+  "reviewer_model": "unknown; inherited evaluator model identifier not exposed",
+  "context_provenance": {
+    "statement": "This review was conducted in a newly spawned context with candidate identity Nemotron3.5SuperVLFree disclosed. Scoring evidence was limited to reference.jpg, renders/isometric.png, renders/top.png, renders/right.png and the fixed rubric.json; review-template.json and README.txt supplied administrative instructions. Standing user-required skills were read only for procedural guidance. No source CAD, trial logs, other reviews, history or baselines were read. The four images were opened directly using view_image. The coordinator initial review was saved before requesting any independent reviews. Metric dimensions cannot be established from these views and were not scored.",
+    "other_reviews_read": false,
+    "recorded_at": "2026-10-17T23:55:10Z",
+    "signed_by": "/root/coordinator_cedar"
+  },
+  "evidence_hashes": {
+    "reference": "d3fcfa0a7a1b1fc0504fe7dfadfaa2a1beb0a8712bd088a0b6c8ccb0dd120cd3",
+    "rubric": "7028b7740c4012c2894ea8cfa567e696df0365546b579cc53653e36b2900a190",
+    "isometric": "785a6c8fd14e27791de881705e11174e688dea6af4ac3dc17e737c352f388f48",
+    "top": "6a52c7e27841ac4abb48226dd1eb55e4d37e8b8db28ef373f29c1fbd3b6f859b",
+    "right": "7ac543540828f88dbe027eb021fb9dd3f1f1801d31605979053274e06359e908"
+  },
+  "criteria": [
+    {
+      "id": "silhouette_proportions",
+      "score": 6.25,
+      "max": 25,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "上面図では四輪が前後二組に並び、中央の座席相当の箱と低い横方向の部材があり、カートの大まかな平面構成を保っている。"
+        },
+        {
+          "kind": "deduction",
+          "observation": "斜視図と側面図では棒や箱、車輪の間に大きな空隙があり、参照画像の一体的で低くまとまった外形になっていない。側面図では下方に離れた横棒も見える。実寸の一致は画像から判定しない。"
+        }
+      ]
+    },
+    {
+      "id": "component_layout",
+      "score": 10,
+      "max": 20,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "上面図と斜視図で四輪、中央の暗色の座席相当部、前方の操舵輪、後方片側のエンジン相当の箱、左右の長い側面部材を確認できる。"
+        },
+        {
+          "kind": "deduction",
+          "observation": "斜視図でフレームの棒が互いに途切れ、車輪や前方の箱とのつながりも離れて見える。参照画像の座席を囲む連続したフレームと前端を横断するバンパーの配置を再現できていない。"
+        }
+      ]
+    },
+    {
+      "id": "characteristic_geometry",
+      "score": 7.5,
+      "max": 30,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "斜視図では黒い円筒状タイヤと輪状の操舵輪があり、参照画像の丸いタイヤとステアリングの基本形を部分的に表している。"
+        },
+        {
+          "kind": "deduction",
+          "observation": "座席は背もたれと側壁が湾曲するバケット形状ではなく直方体で、ノーズも先細り形状ではない。タイヤ側面のリムの凹み、前バンパーの曲面、曲がったフレームも見えない。"
+        }
+      ]
+    },
+    {
+      "id": "mechanical_detail",
+      "score": 5,
+      "max": 20,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "斜視図にはエンジン相当の箱とその近傍の銀色の細い棒があり、青い棒状部材でも軸や支持部の粗い表現を確認できる。"
+        },
+        {
+          "kind": "deduction",
+          "observation": "参照画像で見える操舵リンクの接合部、エンジンの冷却フィンと丸いケース、長い排気筒、後輪駆動部の歯車やブレーキの細部を、提出された三方向の画像では確認できない。"
+        }
+      ]
+    },
+    {
+      "id": "color_material_regions",
+      "score": 5,
+      "max": 5,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "斜視図ではフレーム相当の棒が青色、側面のボディ部材が灰銀色、中央の座席相当の箱が暗色、四本のタイヤが黒色で、参照画像の主要な色領域に対応している。"
+        },
+        {
+          "kind": "no_deduction",
+          "observation": "主要な青・灰銀・暗色・黒の領域が対応しており、この配点対象では明確な配色上の不一致を確認できない。形状の簡略化と部品間の空隙は他の基準で評価した。"
+        }
+      ]
+    }
+  ]
+}

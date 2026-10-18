@@ -1,0 +1,97 @@
+{
+  "review_id": "25b6cdad-50b3-4616-b7b0-0c217676dc91",
+  "role": "blind-a",
+  "fresh_context": true,
+  "model_blinded": true,
+  "reviewer_model": "unknown; inherited evaluator model identifier not exposed",
+  "context_provenance": {
+    "statement": "This review uses a newly spawned fork_turns=none context and an anonymous image-only evaluation packet. I viewed reference.jpg and all three rendering images and read the fixed rubric and packet instructions. No candidate identity, source CAD, other reviews, history, or outcome metrics were provided or read. General writing skills were read separately and supplied no candidate information.",
+    "other_reviews_read": false,
+    "recorded_at": "2026-10-17T23:56:47.9676797+00:00",
+    "signed_by": "/root/review_cedar_a"
+  },
+  "evidence_hashes": {
+    "reference": "d3fcfa0a7a1b1fc0504fe7dfadfaa2a1beb0a8712bd088a0b6c8ccb0dd120cd3",
+    "rubric": "7028b7740c4012c2894ea8cfa567e696df0365546b579cc53653e36b2900a190",
+    "isometric": "785a6c8fd14e27791de881705e11174e688dea6af4ac3dc17e737c352f388f48",
+    "top": "6a52c7e27841ac4abb48226dd1eb55e4d37e8b8db28ef373f29c1fbd3b6f859b",
+    "right": "7ac543540828f88dbe027eb021fb9dd3f1f1801d31605979053274e06359e908"
+  },
+  "criteria": [
+    {
+      "id": "silhouette_proportions",
+      "score": 6.25,
+      "max": 25,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "Isometric and top views show four round wheels around a central dark seat block, preserving a coarse four-corner vehicle footprint."
+        },
+        {
+          "kind": "deduction",
+          "observation": "The top view spreads unjoined straight rods past the wheel pairs; the right view separates lower frame rods from the elevated wheel and block group. This lacks the reference continuous low chassis silhouette."
+        }
+      ]
+    },
+    {
+      "id": "component_layout",
+      "score": 5,
+      "max": 20,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "The isometric view places a dark seat block between the wheel pairs, with a steering ring near it, two long gray side panels, and an offset gray engine-like block."
+        },
+        {
+          "kind": "deduction",
+          "observation": "The top and isometric views show frame bars detached from one another and several major blocks. The nose/front-bumper region is a separate rectangular block rather than an integrated assembly ahead of the seat, unlike the reference arrangement."
+        }
+      ]
+    },
+    {
+      "id": "characteristic_geometry",
+      "score": 7.5,
+      "max": 30,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "The isometric view contains cylindrical tires and an open circular steering ring, matching the reference at the level of basic geometric forms."
+        },
+        {
+          "kind": "deduction",
+          "observation": "The seat in the isometric view is a rectangular box without the reference curved bucket back and sides. The nose and bumper are rectangular blocks, the tires have plain closed faces without recessed rims, and the frame rods lack the reference bent perimeter curves."
+        }
+      ]
+    },
+    {
+      "id": "mechanical_detail",
+      "score": 0,
+      "max": 20,
+      "evidence": [
+        {
+          "kind": "no_positive",
+          "observation": "No positive mechanical-detail match is visible: the top and isometric views contain plain rods and boxes without identifiable joints, linkages, engine fins, exhaust, or drive hardware."
+        },
+        {
+          "kind": "deduction",
+          "observation": "The isometric and top views show an engine-like cube without cooling fins or casing relief. The reference exhaust, rear sprocket/brake detail, front steering joints, and articulated linkages have no visible counterparts."
+        }
+      ]
+    },
+    {
+      "id": "color_material_regions",
+      "score": 5,
+      "max": 5,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "The isometric view assigns blue to the rods representing the frame, gray to body panels and the engine-like block, dark gray to the seat block, and black to the tires, corresponding to the reference color regions."
+        },
+        {
+          "kind": "no_deduction",
+          "observation": "The represented frame, bodywork, seat, and tire regions have the corresponding visible colors in the isometric image. Shape omissions are scored under geometry and layout; background and illumination are excluded, so there is no separate color-region deduction."
+        }
+      ]
+    }
+  ]
+}

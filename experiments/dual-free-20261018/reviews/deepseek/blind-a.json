@@ -1,0 +1,97 @@
+{
+  "review_id": "22d4100d-4b4a-4e84-b5ac-ec05c98beec1",
+  "role": "blind-a",
+  "fresh_context": true,
+  "model_blinded": true,
+  "reviewer_model": "unknown; inherited evaluator model identifier not exposed",
+  "context_provenance": {
+    "statement": "This is a new reviewer created with fork_turns=none. Scoring uses only the anonymous image-only packet, comprising reference.jpg, three saved renders, the fixed rubric, and the neutral template and README. No candidate identity, source CAD, execution logs, other reviews, history, or outcome metrics were read. Skill instructions were read only to govern workflow and wording.",
+    "other_reviews_read": false,
+    "recorded_at": "2026-10-18T00:03:05Z",
+    "signed_by": "/root/review_maple_a"
+  },
+  "evidence_hashes": {
+    "reference": "d3fcfa0a7a1b1fc0504fe7dfadfaa2a1beb0a8712bd088a0b6c8ccb0dd120cd3",
+    "rubric": "7028b7740c4012c2894ea8cfa567e696df0365546b579cc53653e36b2900a190",
+    "isometric": "b045a8cf1d6eb44faed73c89cda543eba1cc6a2cd02ed56150bbceaeed3aa0a8",
+    "top": "0f88408877ca641be94d3c7927f555d9c897b7856f374da7949ece44653904f6",
+    "right": "3ad7880a4306ab311767812690635c27b0817354c78417776651023521452f1a"
+  },
+  "criteria": [
+    {
+      "id": "silhouette_proportions",
+      "score": 12.5,
+      "max": 25,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "Isometric and top views show a low open chassis between four outboard tires, with the seat between the axles and the rear tires broader than the front tires, consistent with the reference overall arrangement."
+        },
+        {
+          "kind": "deduction",
+          "observation": "The isometric and right views show a tall broad rectangular front body block instead of the reference low elongated tapering nose. The top view also shows short thick side body blocks and a nearly rectangular frame outline, rather than the reference slimmer side panels and shaped chassis."
+        }
+      ]
+    },
+    {
+      "id": "component_layout",
+      "score": 15,
+      "max": 20,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "Top and isometric views contain four wheels, a central seat, a steering wheel forward of the seat, an engine beside the rear of the seat, an exhaust by the rear axle, paired side bodywork, and front and rear guards in reference-like relative locations."
+        },
+        {
+          "kind": "deduction",
+          "observation": "The top view has no separate long central nose extending into the front bumper as in the reference. Its front bodywork is a single broad block with two small lateral blocks, and the side bodywork sits as compact pods beside the seat rather than long narrow panels."
+        }
+      ]
+    },
+    {
+      "id": "characteristic_geometry",
+      "score": 7.5,
+      "max": 30,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "The isometric view shows a circular steering rim on a sloped column, round tires with lighter central hub disks, blue tubular frame members, and a curved tubular rear guard. The body blocks have rounded edges rather than sharp corners."
+        },
+        {
+          "kind": "deduction",
+          "observation": "The isometric seat is made of flat back, base and side plates instead of the reference smoothly curved bucket with a flared upper back and rounded thigh supports. The front lacks the tapered nose and swept sculpted bumper. Tires have flat cylindrical profiles and plain hub disks instead of rounded sidewalls and recessed rims; the steering has many radial spokes instead of the reference sparse spoke shape, and most frame bends are replaced by straight bars."
+        }
+      ]
+    },
+    {
+      "id": "mechanical_detail",
+      "score": 10,
+      "max": 20,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "Isometric and top views visibly include engine cooling rings, a lower engine casing, a bent exhaust connection and cylindrical muffler, a rear axle with disks, front steering rods, and diagonal blue frame supports."
+        },
+        {
+          "kind": "deduction",
+          "observation": "In the isometric view the engine is a stacked cylinder on a box, lacking the reference detailed finned head, ribbed casing and fasteners. Rear drive parts are smooth disks without the visible sprocket teeth and chain detail in the reference. Front steering joints and wheel hubs remain simple rods and disks rather than the reference articulated fittings and recessed hub structures."
+        }
+      ]
+    },
+    {
+      "id": "color_material_regions",
+      "score": 3.75,
+      "max": 5,
+      "evidence": [
+        {
+          "kind": "positive",
+          "observation": "All three renders place blue on the tubular frame, gray or silver on the bodywork, engine and exhaust, dark material on the seat, and black on the tires, matching those major reference regions."
+        },
+        {
+          "kind": "deduction",
+          "observation": "The isometric and top views show the rear curved bumper in blue, while the corresponding rear bumper in the reference is dark gray or black. This is a localized mismatch within otherwise corresponding major color regions."
+        }
+      ]
+    }
+  ]
+}
