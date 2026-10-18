@@ -1,0 +1,186 @@
+{
+  "schema": "secca-supplemental-package-v1",
+  "success": true,
+  "scope": "Estimated near-reference presentation only. No new generation or scoring.",
+  "historical_evidence_unchanged": true,
+  "executed_sources_sha256": {
+    "experiments/reference-view-20261018/renderer.py": "577b7cf04d35901f42ebcc1c3efe46798aab7c1ecc982980a3406eb6ef61a584",
+    "experiments/reference-view-20261018/worker.py": "db1c1545bd1af02c1a953c80d1c548f96b6f1a573f7cd4ceb0e73ba0443daea0",
+    "experiments/reference-view-20261018/spec.json": "6d43948b961889d784c4220ea8a26d405a89349c8a61d88b43d620c08b34c365",
+    "experiments/reference-view-20261018/sources.json": "2a19fa829df077e3f274ebd6244aed45b6d35952e30317a22d9d0f1fd88f0984",
+    "experiments/reference-view-20261018/camera-analysis.json": "7863d585d319c2fb70d318b3175b0b41264e9ccb5a8d9a55a3d858ffacc258c3",
+    "scripts/sandbox_postprocess.py": "2c9140df5d02fc7cf04c397ddd93c36eec4e92a98e0c595fc0fedefc09e8b29c",
+    "scripts/freecad_worker.py": "be80e5bc6254d0b152726b8f22054e4a63a0e6e448a499f54e83f60e9ac0d6d5",
+    "scripts/gui_lease.py": "6fc4690b10690a6c39d837ece0aeb6a56e8eaf63faef944814fa847a94fed2d6"
+  },
+  "execution_sources_unchanged": true,
+  "presentation_attempts": [
+    {
+      "attempt_id": "be467af38f084e75b6df4dd6297a961f",
+      "success": true,
+      "source_binding": "prototype, no executed-host-source snapshot"
+    },
+    {
+      "attempt_id": "66503c95e8fd439e8d9de790d6d59e02",
+      "success": true,
+      "source_binding": "frozen start/end source SHA capture"
+    }
+  ],
+  "accepted_attempt_id": "66503c95e8fd439e8d9de790d6d59e02",
+  "protected_historical_and_helper_files": 33,
+  "spec_sha256": "6d43948b961889d784c4220ea8a26d405a89349c8a61d88b43d620c08b34c365",
+  "sources_sha256": "2a19fa829df077e3f274ebd6244aed45b6d35952e30317a22d9d0f1fd88f0984",
+  "renderer_sha256": "577b7cf04d35901f42ebcc1c3efe46798aab7c1ecc982980a3406eb6ef61a584",
+  "worker_sha256": "db1c1545bd1af02c1a953c80d1c548f96b6f1a573f7cd4ceb0e73ba0443daea0",
+  "visual_qa_sha256": "c15a73e4830d3343cf5690a4a9165b16e0ab9dbea7ca5312223245ee20a4afb3",
+  "models": [
+    {
+      "model": "glm",
+      "original_evidence_sha256": "0e8b4bbd664ba7da50323a4d0c92cc17fb9045a2ca68e00c953eecc85d352093",
+      "public_evidence_sha256": "1a1796dc2cb7d55dc5e3f627dc70013f24c660fc72e2a50edfd93713b1af4416",
+      "images": {
+        "reference-view": {
+          "width": 1600,
+          "height": 900,
+          "nonwhite_bounds_px": [
+            458,
+            226,
+            1210,
+            737
+          ],
+          "white_corners": true,
+          "nonblank": true,
+          "edge_margin_at_least_4px": true,
+          "sha256": "1a4f366ead7c2327ac40eebe7b62b4007d256bf9d1995ba62bf1d58582556fe6",
+          "bytes": 73083
+        },
+        "preview": {
+          "width": 960,
+          "height": 540,
+          "nonwhite_bounds_px": [
+            275,
+            135,
+            726,
+            443
+          ],
+          "white_corners": true,
+          "nonblank": true,
+          "edge_margin_at_least_4px": true,
+          "sha256": "2adc31444a2535c938a914d0802e0def6af5f2a08e5cf705738829878e219df7",
+          "bytes": 35780
+        }
+      }
+    },
+    {
+      "model": "beam",
+      "original_evidence_sha256": "16946b1a3e7ea11015162e6d0236dbd0e21e92f6d0e8f16103efaa8d79127774",
+      "public_evidence_sha256": "c960b1b5b2312a494fbdb15e63d398f530c985a0f81a9779c73913c1693463fe",
+      "images": {
+        "reference-view": {
+          "width": 1600,
+          "height": 900,
+          "nonwhite_bounds_px": [
+            405,
+            218,
+            1215,
+            708
+          ],
+          "white_corners": true,
+          "nonblank": true,
+          "edge_margin_at_least_4px": true,
+          "sha256": "a394453c0da51b95b0143da687262e62d5d39d78779f01bffc1c91d0534c5ba6",
+          "bytes": 65069
+        },
+        "preview": {
+          "width": 960,
+          "height": 540,
+          "nonwhite_bounds_px": [
+            243,
+            130,
+            729,
+            425
+          ],
+          "white_corners": true,
+          "nonblank": true,
+          "edge_margin_at_least_4px": true,
+          "sha256": "5947ba22c896b12a77ec7c197ab883d4303dd9d0b2b0f5f56b9722e1a0b70de8",
+          "bytes": 29124
+        }
+      }
+    },
+    {
+      "model": "nemotron",
+      "original_evidence_sha256": "463849d39190a2d740b2826fc5b3d6c49b24ff8eaf953c23c072b5ba77ed3402",
+      "public_evidence_sha256": "a46a52a473a7094a6bbc472364f7b509c6c8979928da8b9ee0ac8b9f203cc9a7",
+      "images": {
+        "reference-view": {
+          "width": 1600,
+          "height": 900,
+          "nonwhite_bounds_px": [
+            459,
+            246,
+            1168,
+            665
+          ],
+          "white_corners": true,
+          "nonblank": true,
+          "edge_margin_at_least_4px": true,
+          "sha256": "ec2a19c9080000afa6a8bfb9dd29e8fa1a628a199578ac49412cfbe4378c86f5",
+          "bytes": 47053
+        },
+        "preview": {
+          "width": 960,
+          "height": 540,
+          "nonwhite_bounds_px": [
+            275,
+            147,
+            701,
+            399
+          ],
+          "white_corners": true,
+          "nonblank": true,
+          "edge_margin_at_least_4px": true,
+          "sha256": "47e756937eb3a4bbb8b7047e894adf55794550c9689e27eec29496ae5f9db334",
+          "bytes": 21330
+        }
+      }
+    },
+    {
+      "model": "deepseek",
+      "original_evidence_sha256": "6f80052453ceb0181f2ea01fde026de95d16de465e5704708a762f5e4ab87663",
+      "public_evidence_sha256": "77abaeb61fb456184e70a0af819cfb82b01d603311f3eeade93e94b7cc22c8f8",
+      "images": {
+        "reference-view": {
+          "width": 1600,
+          "height": 900,
+          "nonwhite_bounds_px": [
+            414,
+            233,
+            1166,
+            736
+          ],
+          "white_corners": true,
+          "nonblank": true,
+          "edge_margin_at_least_4px": true,
+          "sha256": "3777a203b570b771213e90d1711d0d70f8859747739a2355efe36d12d8b45189",
+          "bytes": 104743
+        },
+        "preview": {
+          "width": 960,
+          "height": 540,
+          "nonwhite_bounds_px": [
+            248,
+            140,
+            700,
+            442
+          ],
+          "white_corners": true,
+          "nonblank": true,
+          "edge_margin_at_least_4px": true,
+          "sha256": "80e278671de83196101faa629e3b691d9af2d184e3215c4212608b585625c621",
+          "bytes": 48835
+        }
+      }
+    }
+  ]
+}

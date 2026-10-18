@@ -1,0 +1,699 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-18T03:12:12.228463+00:00",
+  "analysis_type": "Read-only semantic orientation inference and supplemental camera proposal",
+  "source_root": "Repository-relative paths below refer to the SECCA repository root.",
+  "images_visually_reviewed": [
+    {
+      "role": "input reference",
+      "path": "assets/reference.jpg",
+      "observations": "The nose and front bumper are at lower left. Rear wheels, engine and rear bumper are at upper right. Both the top and one side are visible. The small axis triad appears to show Y upward, Z lower left and X lower right.",
+      "sha256": "d3fcfa0a7a1b1fc0504fe7dfadfaa2a1beb0a8712bd088a0b6c8ccb0dd120cd3",
+      "reviewed_with": "view_image tool, directly inspected on 2026-10-18"
+    },
+    {
+      "role": "glm existing preview",
+      "path": "assets/baseline/evidence/kart-front-preview-white.png",
+      "observations": "Nose is at lower left and seat back is at upper right.",
+      "sha256": "6a13108fd43707dc63470318dedfb5e022bb4188d020ff7fd86488d1bf27e38f",
+      "reviewed_with": "view_image tool, directly inspected on 2026-10-18"
+    },
+    {
+      "role": "beam existing preview",
+      "path": "experiments/beam-free-20261017/trial-02/renders/preview.png",
+      "observations": "Front fairing is at upper left, engine and rear bumper at lower right.",
+      "sha256": "c0bc85040239f2a060f3819d13387e9b9992be9007770075fc3bb39711239835",
+      "reviewed_with": "view_image tool, directly inspected on 2026-10-18"
+    },
+    {
+      "role": "nemotron existing preview",
+      "path": "experiments/dual-free-20261018/nemotron/trial-01/renders/preview.png",
+      "observations": "Front nose is at lower right; scattered geometry retains opposite longitudinal direction to Beam and DeepSeek.",
+      "sha256": "ad6e1c0003aa53cd8c2028b173a94a09310137bec905eabc2f388fca0b509ab0",
+      "reviewed_with": "view_image tool, directly inspected on 2026-10-18"
+    },
+    {
+      "role": "deepseek existing preview",
+      "path": "experiments/dual-free-20261018/deepseek/trial-01/renders/preview.png",
+      "observations": "Rear axle, exhaust and rear bumper are toward lower right; front nose and steering are toward upper left.",
+      "sha256": "3c7798172e966d4cf5ac3622e6dd038c5945dec414fac370c9e54f70de099818",
+      "reviewed_with": "view_image tool, directly inspected on 2026-10-18"
+    }
+  ],
+  "fixed_camera": {
+    "source": "assets/render-spec.json",
+    "source_sha256": "29b4663d2a72b343c2f0a833795ae3eedd12c1334419d6f321089d9fa2c43fa7",
+    "projection": "Orthographic",
+    "quaternion_xyzw": [
+      -0.1759200418934682,
+      0.4247081339581416,
+      0.8204732652846073,
+      -0.339851086158641
+    ],
+    "camera_back_direction_world_xyz": [
+      -0.577350424,
+      0.577350104,
+      0.57735028
+    ],
+    "elevation_degrees": 35.26439041468141,
+    "reason_for_existing_mismatch": "The canonical camera is fixed in world coordinates while the four saved models use three different longitudinal front axes."
+  },
+  "reference_view_interpretation": {
+    "semantic_view": "Elevated front-left three-quarter view, with the nose at lower left and rear at upper right. Left is defined as cross(up, front), not inferred from potentially inconsistent object Left/Right labels.",
+    "projection_inference": "A CAD parallel/orthographic style is plausible from the visible parallel lines. The exact original projection is not recoverable from this JPEG alone.",
+    "proposed_common_semantic_camera": {
+      "elevation_degrees": 35.26439041468141,
+      "azimuth_degrees_from_semantic_front_towards_semantic_left": 45,
+      "projection": "Orthographic"
+    },
+    "uncertainties": [
+      "The JPEG does not contain the original camera quaternion, focal length, position or orthographic height.",
+      "The common 35.264-degree elevated 45-degree azimuth camera is a reproducible approximation. It is not an exact recovered reference camera.",
+      "A per-model rigid camera yaw aligns the saved front axes. It does not repair malformed, detached or incorrectly oriented components.",
+      "The front-axis inference uses named nose/front-wheel/rear-wheel objects and their stored bounds, cross-checked with the saved previews. Some candidate object Left/Right labels may be inconsistent."
+    ]
+  },
+  "models": [
+    {
+      "model": "glm",
+      "source_validation": "assets/baseline/evidence/geometry-validation.json",
+      "source_validation_sha256": "439a3a53d5d699ecf3575487736afaefe28fb99ce59afa675cb62c4433fd003b",
+      "front_axis_world_xyz": [
+        0,
+        1,
+        0
+      ],
+      "up_axis_world_xyz": [
+        0,
+        0,
+        1
+      ],
+      "supplemental_world_z_camera_yaw_degrees": 0,
+      "supplemental_eye_direction_world_xyz": [
+        -1,
+        1,
+        1
+      ],
+      "supplemental_quaternion_xyzw": [
+        -0.1759200418934682,
+        0.4247081339581416,
+        0.8204732652846073,
+        -0.339851086158641
+      ],
+      "object_bounds_evidence": [
+        {
+          "object_name": "NoseCone",
+          "bounds_mm": {
+            "min": [
+              -248.00000000000747,
+              419.99999999999994,
+              -9.882645318539971
+            ],
+            "max": [
+              248.00000000000347,
+              692.0,
+              285.8826453186133
+            ],
+            "size": [
+              496.0000000000109,
+              272.00000000000006,
+              295.76529063715327
+            ]
+          }
+        },
+        {
+          "object_name": "FL_Tire",
+          "bounds_mm": {
+            "min": [
+              367.49999999999983,
+              299.9999999999998,
+              -5.684341886080802e-14
+            ],
+            "max": [
+              472.49999999999994,
+              559.9999999999998,
+              260.0
+            ],
+            "size": [
+              105.00000000000011,
+              260.0,
+              260.00000000000006
+            ]
+          }
+        },
+        {
+          "object_name": "FR_Tire",
+          "bounds_mm": {
+            "min": [
+              -472.49999999999983,
+              299.9999999999998,
+              -5.684341886080802e-14
+            ],
+            "max": [
+              -367.4999999999997,
+              559.9999999999998,
+              260.0
+            ],
+            "size": [
+              105.00000000000011,
+              260.0,
+              260.00000000000006
+            ]
+          }
+        },
+        {
+          "object_name": "RR_Tire",
+          "bounds_mm": {
+            "min": [
+              342.49999999999983,
+              -706.9999999999998,
+              -5.684341886080802e-14
+            ],
+            "max": [
+              517.4999999999999,
+              -412.9999999999998,
+              294.0
+            ],
+            "size": [
+              175.00000000000006,
+              294.0,
+              294.00000000000006
+            ]
+          }
+        },
+        {
+          "object_name": "RL_Tire",
+          "bounds_mm": {
+            "min": [
+              -517.4999999999998,
+              -706.9999999999998,
+              -5.684341886080802e-14
+            ],
+            "max": [
+              -342.4999999999997,
+              -412.9999999999998,
+              294.0
+            ],
+            "size": [
+              175.00000000000006,
+              294.0,
+              294.00000000000006
+            ]
+          }
+        },
+        {
+          "object_name": "SeatBack",
+          "bounds_mm": {
+            "min": [
+              -185.0,
+              -315.97683035501495,
+              96.49685923824487
+            ],
+            "max": [
+              185.0,
+              -184.023169644985,
+              563.5031407617552
+            ],
+            "size": [
+              370.0,
+              131.95366071002996,
+              467.0062815235103
+            ]
+          }
+        },
+        {
+          "object_name": "SteerWheel",
+          "bounds_mm": {
+            "min": [
+              -175.34753644736782,
+              284.23934298085214,
+              377.7817227112546
+            ],
+            "max": [
+              175.34753644736782,
+              625.7606570191479,
+              482.2182772887454
+            ],
+            "size": [
+              350.69507289473563,
+              341.5213140382957,
+              104.43655457749082
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "model": "beam",
+      "source_validation": "experiments/beam-free-20261017/trial-02/evidence/validation.json",
+      "source_validation_sha256": "0a290cb1a4c6a9c23f689009f33b4b97d36a4be3ede2fbcb53d9fec2b7b297ea",
+      "front_axis_world_xyz": [
+        1,
+        0,
+        0
+      ],
+      "up_axis_world_xyz": [
+        0,
+        0,
+        1
+      ],
+      "supplemental_world_z_camera_yaw_degrees": -90,
+      "supplemental_eye_direction_world_xyz": [
+        1,
+        1,
+        1
+      ],
+      "supplemental_quaternion_xyzw": [
+        0.1759197469773937,
+        0.42470825611637947,
+        0.8204732172814037,
+        0.3398512020486263
+      ],
+      "object_bounds_evidence": [
+        {
+          "object_name": "FrontAxle",
+          "bounds_mm": {
+            "min": [
+              488.0,
+              -540.0,
+              118.0
+            ],
+            "max": [
+              512.0,
+              540.0,
+              142.0
+            ],
+            "size": [
+              24.0,
+              1080.0,
+              24.0
+            ]
+          }
+        },
+        {
+          "object_name": "RearAxle",
+          "bounds_mm": {
+            "min": [
+              -515.0,
+              -525.0,
+              145.0
+            ],
+            "max": [
+              -485.0,
+              525.0,
+              175.0
+            ],
+            "size": [
+              30.0,
+              1050.0,
+              30.0
+            ]
+          }
+        },
+        {
+          "object_name": "NoseFairing",
+          "bounds_mm": {
+            "min": [
+              650.0,
+              -200.0,
+              80.0
+            ],
+            "max": [
+              850.0,
+              200.0,
+              230.0
+            ],
+            "size": [
+              200.0,
+              400.0,
+              150.0
+            ]
+          }
+        },
+        {
+          "object_name": "SeatBack",
+          "bounds_mm": {
+            "min": [
+              -360.0,
+              -150.0,
+              160.0
+            ],
+            "max": [
+              -320.0,
+              150.0,
+              420.0
+            ],
+            "size": [
+              40.0,
+              300.0,
+              260.0
+            ]
+          }
+        },
+        {
+          "object_name": "SteeringColumn",
+          "bounds_mm": {
+            "min": [
+              238.0,
+              -12.0,
+              90.0
+            ],
+            "max": [
+              262.0,
+              12.0,
+              390.0
+            ],
+            "size": [
+              24.0,
+              24.0,
+              300.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "model": "nemotron",
+      "source_validation": "experiments/dual-free-20261018/nemotron/trial-01/evidence/validation.json",
+      "source_validation_sha256": "4f3030144bbd8c6a6e9f60213aad691506189586466983837f67cf6efaa228a3",
+      "front_axis_world_xyz": [
+        -1,
+        0,
+        0
+      ],
+      "up_axis_world_xyz": [
+        0,
+        0,
+        1
+      ],
+      "supplemental_world_z_camera_yaw_degrees": 90,
+      "supplemental_eye_direction_world_xyz": [
+        -1,
+        -1,
+        1
+      ],
+      "supplemental_quaternion_xyzw": [
+        -0.42470825611637947,
+        0.1759197469773937,
+        0.3398512020486263,
+        -0.8204732172814037
+      ],
+      "object_bounds_evidence": [
+        {
+          "object_name": "FrontNose",
+          "bounds_mm": {
+            "min": [
+              -300.0,
+              -160.0,
+              100.0
+            ],
+            "max": [
+              0.0,
+              160.0,
+              240.0
+            ],
+            "size": [
+              300.0,
+              320.0,
+              140.0
+            ]
+          }
+        },
+        {
+          "object_name": "FrontWheel_1",
+          "bounds_mm": {
+            "min": [
+              -165.00000000000003,
+              355.0,
+              80.0
+            ],
+            "max": [
+              -74.99999999999996,
+              725.0,
+              450.0
+            ],
+            "size": [
+              90.00000000000007,
+              370.0,
+              370.0
+            ]
+          }
+        },
+        {
+          "object_name": "RearWheel_1",
+          "bounds_mm": {
+            "min": [
+              1555.0,
+              345.0,
+              55.0
+            ],
+            "max": [
+              1645.0,
+              715.0,
+              425.0
+            ],
+            "size": [
+              90.0,
+              370.0,
+              370.0
+            ]
+          }
+        },
+        {
+          "object_name": "Seat",
+          "bounds_mm": {
+            "min": [
+              390.0,
+              -190.0,
+              240.0
+            ],
+            "max": [
+              730.0,
+              190.0,
+              400.0
+            ],
+            "size": [
+              340.0,
+              380.0,
+              160.0
+            ]
+          }
+        },
+        {
+          "object_name": "EngineBlock",
+          "bounds_mm": {
+            "min": [
+              1320.0,
+              270.0,
+              250.0
+            ],
+            "max": [
+              1580.0,
+              490.0,
+              480.0
+            ],
+            "size": [
+              260.0,
+              220.0,
+              230.0
+            ]
+          }
+        },
+        {
+          "object_name": "SteeringWheel",
+          "bounds_mm": {
+            "min": [
+              215.78336716374315,
+              -14.000000000000027,
+              425.78336716374315
+            ],
+            "max": [
+              484.21663283625685,
+              14.000000000000027,
+              694.2166328362568
+            ],
+            "size": [
+              268.4332656725137,
+              28.000000000000053,
+              268.4332656725137
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "model": "deepseek",
+      "source_validation": "experiments/dual-free-20261018/deepseek/trial-01/evidence/validation.json",
+      "source_validation_sha256": "1e48253bc03cd6ae5dd49b1edf5dfbc5b0f908dba8e016304cff63dd665eaa85",
+      "front_axis_world_xyz": [
+        1,
+        0,
+        0
+      ],
+      "up_axis_world_xyz": [
+        0,
+        0,
+        1
+      ],
+      "supplemental_world_z_camera_yaw_degrees": -90,
+      "supplemental_eye_direction_world_xyz": [
+        1,
+        1,
+        1
+      ],
+      "supplemental_quaternion_xyzw": [
+        0.1759197469773937,
+        0.42470825611637947,
+        0.8204732172814037,
+        0.3398512020486263
+      ],
+      "object_bounds_evidence": [
+        {
+          "object_name": "Tire_FL",
+          "bounds_mm": {
+            "min": [
+              380.0,
+              555.0,
+              0.0
+            ],
+            "max": [
+              660.0,
+              665.0,
+              280.0
+            ],
+            "size": [
+              280.0,
+              110.0,
+              280.0
+            ]
+          }
+        },
+        {
+          "object_name": "Tire_RL",
+          "bounds_mm": {
+            "min": [
+              -705.0,
+              545.0,
+              0.0
+            ],
+            "max": [
+              -375.0,
+              695.0,
+              330.0
+            ],
+            "size": [
+              330.0,
+              150.0,
+              330.0
+            ]
+          }
+        },
+        {
+          "object_name": "NoseCone",
+          "bounds_mm": {
+            "min": [
+              490.0,
+              -280.0,
+              69.99999999999999
+            ],
+            "max": [
+              810.0,
+              280.0,
+              370.0
+            ],
+            "size": [
+              320.0,
+              560.0,
+              300.0
+            ]
+          }
+        },
+        {
+          "object_name": "Seat",
+          "bounds_mm": {
+            "min": [
+              -331.9756081437326,
+              -150.00000000000003,
+              90.0
+            ],
+            "max": [
+              70.0,
+              150.00000000000003,
+              467.75441512427363
+            ],
+            "size": [
+              401.9756081437326,
+              300.00000000000006,
+              377.75441512427363
+            ]
+          }
+        },
+        {
+          "object_name": "Engine",
+          "bounds_mm": {
+            "min": [
+              -215.0,
+              90.0,
+              110.0
+            ],
+            "max": [
+              0.0,
+              325.0,
+              490.0
+            ],
+            "size": [
+              215.0,
+              235.0,
+              380.0
+            ]
+          }
+        },
+        {
+          "object_name": "FrontAxle",
+          "bounds_mm": {
+            "min": [
+              508.0,
+              -615.0,
+              55.0
+            ],
+            "max": [
+              532.0,
+              615.0,
+              205.0
+            ],
+            "size": [
+              24.0,
+              1230.0,
+              150.0
+            ]
+          }
+        },
+        {
+          "object_name": "RearAxle",
+          "bounds_mm": {
+            "min": [
+              -660.0,
+              -700.0,
+              45.0
+            ],
+            "max": [
+              -420.0,
+              700.0,
+              285.0
+            ],
+            "size": [
+              240.0,
+              1400.0,
+              240.0
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "preservation_policy": [
+    "No saved CAD geometry was changed.",
+    "No canonical render, render-spec, score or review was changed by this analysis.",
+    "Supplemental camera transforms are separate presentation artifacts. No scoring or model generation was performed."
+  ]
+}

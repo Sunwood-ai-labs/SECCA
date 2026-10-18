@@ -1,0 +1,28 @@
+{
+  "schema": "secca-supplemental-camera-v1",
+  "scope": "Estimated near-reference presentation. Exact reference camera unknown. Historical scores unchanged.",
+  "reference_sha256": "d3fcfa0a7a1b1fc0504fe7dfadfaa2a1beb0a8712bd088a0b6c8ccb0dd120cd3",
+  "base_quaternion_xyzw": [
+    -0.1759200418934682,
+    0.4247081339581416,
+    0.8204732652846073,
+    -0.339851086158641
+  ],
+  "azimuth_degrees_from_front_towards_left": 45,
+  "elevation_degrees": 35.26439041468141,
+  "projection": "Orthographic",
+  "background": "White",
+  "fit": "fitAll",
+  "preserve_visibility": true,
+  "preserve_colors": true,
+  "images": {
+    "reference-view": [
+      1600,
+      900
+    ],
+    "preview": [
+      960,
+      540
+    ]
+  }
+}

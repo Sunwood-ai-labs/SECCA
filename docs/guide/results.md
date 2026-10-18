@@ -11,11 +11,17 @@ Compare each saved output by its image, score, and CAD checks.
 | [Nemotron 3.5 Super VL Free](https://github.com/Sunwood-ai-labs/SECCA/blob/main/experiments/dual-free-20261018/nemotron/trial-01/score.json) | **28.75/100** | Independent Podman A, image attached |
 | [DeepSeek V4.1 Flash Free](https://github.com/Sunwood-ai-labs/SECCA/blob/main/experiments/dual-free-20261018/deepseek/trial-01/score.json) | **50/100** | Independent Podman A, image attached |
 
+Input reference image.
+
+![Input racing-kart reference image](/reference-input.jpg)
+
 | GLM 5.3 Flash Free · 43/100 | Beam Free · 25/100 |
 | --- | --- |
-| ![GLM 5.3 Flash Free](/glm-20261017-preview.png) | ![Beam Free](/beam-preview.png) |
+| ![GLM 5.3 Flash Free](/glm-reference-view.png) | ![Beam Free](/beam-reference-view.png) |
 | **Nemotron 3.5 Super VL Free · 28.75/100** | **DeepSeek V4.1 Flash Free · 50/100** |
-| ![Nemotron 3.5 Super VL Free](/nemotron-20261018-preview.png) | ![DeepSeek V4.1 Flash Free](/deepseek-20261018-preview.png) |
+| ![Nemotron 3.5 Super VL Free](/nemotron-reference-view.png) | ![DeepSeek V4.1 Flash Free](/deepseek-reference-view.png) |
+
+The four previews adjust only the camera to a front three-quarter view close to the reference. The reference camera parameters are unknown, so the match is approximate. The displayed scores remain the existing evaluations of the original scoring images; these additional views were not rescored.
 
 | Model | FCStd | STEP | Generation |
 | --- | --- | --- | ---: |
@@ -35,7 +41,11 @@ Compare each saved output by its image, score, and CAD checks.
 
 This is a reference comparison of one saved output per model. Podman A used the same pinned FreeCAD 1.0.0 image for two candidates; B used a different image. Beam did not use native image input. GLM used FreeCAD 1.1.3, with its rubric authored after generation and before numeric scoring. The later Podman trials fixed the rubric before generation. GLM, Nemotron, and DeepSeek each made one generation. Beam had two attempts with one scored output.
 
-These are archived white-background views, not rerenders of all four outputs with an identical camera. Visual likeness and CAD validity are separate checks. Single records with differing conditions do not establish general model rankings or speed advantages.
+The earlier comparison fixed the camera in world coordinates without correcting each model's vehicle front direction. GLM faces +Y, Beam and DeepSeek face +X, and Nemotron faces −X. The same world-space camera therefore shows different sides of their vehicles. The additional views align to each vehicle's front, at front-left 45° and approximately 35.264° elevation. CAD geometry and placement remain unchanged.
+
+All four additional images use the same FreeCAD 1.0.0 image, `sha256:b9e296032f921c96de5843b19e1a182ce5067d6cdca25a5d3ab7e7da23fe89cb`. This is a presentation step, not a change to past generation environments, the standard render contract, or the protocol. Original CAD, scoring images, and scores are preserved. Visual likeness and CAD validity remain separate checks. Single records with differing conditions do not establish general model rankings or speed advantages.
+
+[Additional views and camera settings](https://github.com/Sunwood-ai-labs/SECCA/blob/main/experiments/reference-view-20261018/README.md) · Original scored oblique images: [GLM](https://github.com/Sunwood-ai-labs/SECCA/blob/main/assets/baseline/evidence/kart-front-isometric-white.png) · [Beam](https://github.com/Sunwood-ai-labs/SECCA/blob/main/experiments/beam-free-20261017/trial-02/renders/isometric.png) · [Nemotron](https://github.com/Sunwood-ai-labs/SECCA/blob/main/experiments/dual-free-20261018/nemotron/trial-01/renders/isometric.png) · [DeepSeek](https://github.com/Sunwood-ai-labs/SECCA/blob/main/experiments/dual-free-20261018/deepseek/trial-01/renders/isometric.png)
 
 ## Nemotron and DeepSeek · 2026-10-18
 

@@ -1,0 +1,359 @@
+{
+  "schema": "secca-supplemental-public-v1",
+  "success": true,
+  "request": {
+    "schema": "secca-supplemental-render-v1",
+    "request_id": "55a9d05d95384184989735469bc62737",
+    "model": "deepseek",
+    "source_sha256": "ee3bd4ff45073b06daab850246e5d8a93c6dc5683e9441d597bcafbb858ec392",
+    "quaternion_xyzw": [
+      0.1759197469773937,
+      0.42470825611637947,
+      0.8204732172814037,
+      0.3398512020486263
+    ],
+    "runtime_files_sha256": {
+      "worker.py": "db1c1545bd1af02c1a953c80d1c548f96b6f1a573f7cd4ceb0e73ba0443daea0",
+      "freecad_worker.py": "be80e5bc6254d0b152726b8f22054e4a63a0e6e448a499f54e83f60e9ac0d6d5",
+      "gui_lease.py": "6fc4690b10690a6c39d837ece0aeb6a56e8eaf63faef944814fa847a94fed2d6"
+    },
+    "images": {
+      "reference-view": [
+        1600,
+        900
+      ],
+      "preview": [
+        960,
+        540
+      ]
+    }
+  },
+  "worker": {
+    "request_id": "55a9d05d95384184989735469bc62737",
+    "model": "deepseek",
+    "source_before": {
+      "path": "source.FCStd",
+      "exists": true,
+      "bytes": 475767,
+      "sha256": "ee3bd4ff45073b06daab850246e5d8a93c6dc5683e9441d597bcafbb858ec392"
+    },
+    "freecad_version": [
+      "1",
+      "0",
+      "0",
+      "",
+      "https://code.launchpad.net/~vcs-imports/freecad/trunk",
+      "2026/08/25 11:49:11"
+    ],
+    "requested_quaternion_xyzw": [
+      0.1759197469773937,
+      0.42470825611637947,
+      0.8204732172814037,
+      0.3398512020486263
+    ],
+    "images": {
+      "reference-view": {
+        "path": "reference-view.png",
+        "exists": true,
+        "bytes": 104743,
+        "sha256": "3777a203b570b771213e90d1711d0d70f8859747739a2355efe36d12d8b45189",
+        "width": 1600,
+        "height": 900
+      },
+      "preview": {
+        "path": "preview.png",
+        "exists": true,
+        "bytes": 48835,
+        "sha256": "80e278671de83196101faa629e3b691d9af2d184e3215c4212608b585625c621",
+        "width": 960,
+        "height": 540
+      }
+    },
+    "runtime_files_sha256": {
+      "worker.py": "db1c1545bd1af02c1a953c80d1c548f96b6f1a573f7cd4ceb0e73ba0443daea0",
+      "freecad_worker.py": "be80e5bc6254d0b152726b8f22054e4a63a0e6e448a499f54e83f60e9ac0d6d5",
+      "gui_lease.py": "6fc4690b10690a6c39d837ece0aeb6a56e8eaf63faef944814fa847a94fed2d6"
+    },
+    "render_selection": {
+      "names": [
+        "Tire_FL",
+        "Rim_FL",
+        "Tire_FR",
+        "Rim_FR",
+        "Tire_RL",
+        "Rim_RL",
+        "Tire_RR",
+        "Rim_RR",
+        "Chassis",
+        "FrontAxle",
+        "RearAxle",
+        "Steering",
+        "Seat",
+        "FloorTray",
+        "NoseCone",
+        "FrontFairing_L",
+        "FrontFairing_R",
+        "SidePod_L",
+        "SidePod_R",
+        "Engine",
+        "Exhaust"
+      ],
+      "object_count": 21,
+      "solid_count": 26,
+      "bounds_mm": {
+        "min": [
+          -960.9187138166457,
+          -700.0,
+          0.0
+        ],
+        "max": [
+          810.0,
+          700.0,
+          506.6208309137903
+        ],
+        "size": [
+          1770.9187138166458,
+          1400.0,
+          506.6208309137903
+        ]
+      },
+      "excluded": [
+        {
+          "name": "RacingKart",
+          "reason": "aggregate_container"
+        },
+        {
+          "name": "Origin",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "X_Axis",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "Y_Axis",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "Z_Axis",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "XY_Plane",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "XZ_Plane",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "YZ_Plane",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "ChassisAssembly",
+          "reason": "aggregate_container"
+        },
+        {
+          "name": "Origin001",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "X_Axis001",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "Y_Axis001",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "Z_Axis001",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "XY_Plane001",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "XZ_Plane001",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "YZ_Plane001",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "Bodywork",
+          "reason": "aggregate_container"
+        },
+        {
+          "name": "Origin002",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "X_Axis002",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "Y_Axis002",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "Z_Axis002",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "XY_Plane002",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "XZ_Plane002",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "YZ_Plane002",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "Powertrain",
+          "reason": "aggregate_container"
+        },
+        {
+          "name": "Origin003",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "X_Axis003",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "Y_Axis003",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "Z_Axis003",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "XY_Plane003",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "XZ_Plane003",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "YZ_Plane003",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "Wheels",
+          "reason": "aggregate_container"
+        },
+        {
+          "name": "Origin004",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "X_Axis004",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "Y_Axis004",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "Z_Axis004",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "XY_Plane004",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "XZ_Plane004",
+          "reason": "origin_or_datum"
+        },
+        {
+          "name": "YZ_Plane004",
+          "reason": "origin_or_datum"
+        }
+      ]
+    },
+    "actual_quaternion_xyzw": [
+      0.17591974566280144,
+      0.424708257495063,
+      0.8204732140402998,
+      0.3398512088308984
+    ],
+    "quaternion_max_delta": 6.78227213279925e-09,
+    "camera_type": "Orthographic",
+    "camera": "#Inventor V2.1 ascii\n\n\nOrthographicCamera {\n  viewportMapping ADJUST_CAMERA\n  position 592.09961 667.55933 918.29321\n  orientation 0.18705329 0.45158705 0.87239909  2.4480753\n  nearDistance 96.023514\n  farDistance 2218.5896\n  aspectRatio 1\n  focalDistance 1156.2465\n  height 2312.4929\n\n}\n",
+    "success": true,
+    "source_after": {
+      "path": "source.FCStd",
+      "exists": true,
+      "bytes": 475767,
+      "sha256": "ee3bd4ff45073b06daab850246e5d8a93c6dc5683e9441d597bcafbb858ec392"
+    },
+    "source_unchanged": true
+  },
+  "image_checks": {
+    "reference-view": {
+      "width": 1600,
+      "height": 900,
+      "nonwhite_bounds_px": [
+        414,
+        233,
+        1166,
+        736
+      ],
+      "white_corners": true,
+      "nonblank": true,
+      "edge_margin_at_least_4px": true,
+      "sha256": "3777a203b570b771213e90d1711d0d70f8859747739a2355efe36d12d8b45189",
+      "bytes": 104743
+    },
+    "preview": {
+      "width": 960,
+      "height": 540,
+      "nonwhite_bounds_px": [
+        248,
+        140,
+        700,
+        442
+      ],
+      "white_corners": true,
+      "nonblank": true,
+      "edge_margin_at_least_4px": true,
+      "sha256": "80e278671de83196101faa629e3b691d9af2d184e3215c4212608b585625c621",
+      "bytes": 48835
+    }
+  },
+  "source_host_unchanged": true,
+  "cleanup": {
+    "success": true,
+    "independent_query": {
+      "container_id": "9dbcb349d39271baa03bdcd3978c7fdecb327b588cd73eb574dca677fd5d3731",
+      "returncode": 0,
+      "remaining_ids": [],
+      "capture_stopped_reason": null
+    }
+  },
+  "runtime": {
+    "image_id": "sha256:b9e296032f921c96de5843b19e1a182ce5067d6cdca25a5d3ab7e7da23fe89cb",
+    "container_id": "9dbcb349d39271baa03bdcd3978c7fdecb327b588cd73eb574dca677fd5d3731",
+    "network": "none",
+    "user": "10000:10000",
+    "root_readonly": true,
+    "bind_mounts": [],
+    "process_isolation": {
+      "CapEff": 0,
+      "CapPrm": 0,
+      "CapBnd": 0,
+      "NoNewPrivs": 1
+    }
+  },
+  "original_evidence_sha256": "6f80052453ceb0181f2ea01fde026de95d16de465e5704708a762f5e4ab87663",
+  "transformation": "Allowlist export. Omit host command logs, named connection and host paths. Normalize worker CAD path."
+}

@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "reviewed_at_utc": "2026-10-18T03:19:55.295334+00:00",
+  "reviewer_task": "/root/reference_camera_analysis",
+  "scope": "Direct visual QA of the reference and all four final full-resolution supplemental renders plus their four final preview images. These final images were opened with view_image directly. No model call, scoring, geometry repair, or canonical image replacement.",
+  "reference": {
+    "path": "assets/reference.jpg",
+    "sha256": "d3fcfa0a7a1b1fc0504fe7dfadfaa2a1beb0a8712bd088a0b6c8ccb0dd120cd3",
+    "visually_inspected_with_view_image": true
+  },
+  "camera_analysis": {
+    "path": "camera-analysis.json",
+    "sha256": "7863d585d319c2fb70d318b3175b0b41264e9ccb5a8d9a55a3d858ffacc258c3"
+  },
+  "overall_verdict": "pass",
+  "blocking_camera_findings": [],
+  "models": [
+    {
+      "model": "glm",
+      "verdict": "pass",
+      "front_lower_left_rear_upper_right": true,
+      "elevated_three_quarter_view": true,
+      "white_background": true,
+      "no_frame_clipping": true,
+      "geometry_visual_comparison": "Existing shape and component defects remain. No visual repair was detected. Image inspection alone cannot prove CAD byte preservation.",
+      "observations": "The nose and small front plate are at lower left, with the steering wheel before the seat. The seat back, engine and rear wheels extend to upper right. One far rear wheel is partly occluded by the seat, not clipped by the image border.",
+      "images": [
+        {
+          "path": "artifacts/glm/reference-view.png",
+          "sha256": "1a4f366ead7c2327ac40eebe7b62b4007d256bf9d1995ba62bf1d58582556fe6",
+          "size_pixels": [
+            1600,
+            900
+          ],
+          "nonwhite_bounds_pixels": [
+            458,
+            226,
+            1210,
+            737
+          ],
+          "frame_edges_all_white": true,
+          "visually_inspected_with_view_image": true,
+          "same_rgb_pixels_as_prototype": true
+        },
+        {
+          "path": "artifacts/glm/preview.png",
+          "sha256": "2adc31444a2535c938a914d0802e0def6af5f2a08e5cf705738829878e219df7",
+          "size_pixels": [
+            960,
+            540
+          ],
+          "nonwhite_bounds_pixels": [
+            275,
+            135,
+            726,
+            443
+          ],
+          "frame_edges_all_white": true,
+          "visually_inspected_with_view_image": true,
+          "same_rgb_pixels_as_prototype": true
+        }
+      ]
+    },
+    {
+      "model": "beam",
+      "verdict": "pass",
+      "front_lower_left_rear_upper_right": true,
+      "elevated_three_quarter_view": true,
+      "white_background": true,
+      "no_frame_clipping": true,
+      "geometry_visual_comparison": "Existing shape and component defects remain. No visual repair was detected. Image inspection alone cannot prove CAD byte preservation.",
+      "observations": "The red nose fairing and front bumper are at lower left. The steering wheel precedes the blue seat; the engine, rear wheels and rear bumper extend to upper right. All detached red support rods remain inside the frame.",
+      "images": [
+        {
+          "path": "artifacts/beam/reference-view.png",
+          "sha256": "a394453c0da51b95b0143da687262e62d5d39d78779f01bffc1c91d0534c5ba6",
+          "size_pixels": [
+            1600,
+            900
+          ],
+          "nonwhite_bounds_pixels": [
+            405,
+            218,
+            1215,
+            708
+          ],
+          "frame_edges_all_white": true,
+          "visually_inspected_with_view_image": true,
+          "same_rgb_pixels_as_prototype": true
+        },
+        {
+          "path": "artifacts/beam/preview.png",
+          "sha256": "5947ba22c896b12a77ec7c197ab883d4303dd9d0b2b0f5f56b9722e1a0b70de8",
+          "size_pixels": [
+            960,
+            540
+          ],
+          "nonwhite_bounds_pixels": [
+            243,
+            130,
+            729,
+            425
+          ],
+          "frame_edges_all_white": true,
+          "visually_inspected_with_view_image": true,
+          "same_rgb_pixels_as_prototype": true
+        }
+      ]
+    },
+    {
+      "model": "nemotron",
+      "verdict": "pass",
+      "front_lower_left_rear_upper_right": true,
+      "elevated_three_quarter_view": true,
+      "white_background": true,
+      "no_frame_clipping": true,
+      "geometry_visual_comparison": "Existing shape and component defects remain. No visual repair was detected. Image inspection alone cannot prove CAD byte preservation.",
+      "observations": "The front nose box and front wheel pair are at lower left. The steering wheel precedes the central seat box, while the engine box, rear wheels and spoiler extend to upper right. Detached blue rods and floating objects remain visible; these are existing model defects, not camera defects.",
+      "images": [
+        {
+          "path": "artifacts/nemotron/reference-view.png",
+          "sha256": "ec2a19c9080000afa6a8bfb9dd29e8fa1a628a199578ac49412cfbe4378c86f5",
+          "size_pixels": [
+            1600,
+            900
+          ],
+          "nonwhite_bounds_pixels": [
+            459,
+            246,
+            1168,
+            665
+          ],
+          "frame_edges_all_white": true,
+          "visually_inspected_with_view_image": true,
+          "same_rgb_pixels_as_prototype": true
+        },
+        {
+          "path": "artifacts/nemotron/preview.png",
+          "sha256": "47e756937eb3a4bbb8b7047e894adf55794550c9689e27eec29496ae5f9db334",
+          "size_pixels": [
+            960,
+            540
+          ],
+          "nonwhite_bounds_pixels": [
+            275,
+            147,
+            701,
+            399
+          ],
+          "frame_edges_all_white": true,
+          "visually_inspected_with_view_image": true,
+          "same_rgb_pixels_as_prototype": true
+        }
+      ]
+    },
+    {
+      "model": "deepseek",
+      "verdict": "pass",
+      "front_lower_left_rear_upper_right": true,
+      "elevated_three_quarter_view": true,
+      "white_background": true,
+      "no_frame_clipping": true,
+      "geometry_visual_comparison": "Existing shape and component defects remain. No visual repair was detected. Image inspection alone cannot prove CAD byte preservation.",
+      "observations": "The large front fairing and small front plate are at lower left. The steering wheel precedes the seat; the engine, rear axle, exhaust and rear bumper extend to upper right. All four wheels are visible.",
+      "images": [
+        {
+          "path": "artifacts/deepseek/reference-view.png",
+          "sha256": "3777a203b570b771213e90d1711d0d70f8859747739a2355efe36d12d8b45189",
+          "size_pixels": [
+            1600,
+            900
+          ],
+          "nonwhite_bounds_pixels": [
+            414,
+            233,
+            1166,
+            736
+          ],
+          "frame_edges_all_white": true,
+          "visually_inspected_with_view_image": true,
+          "same_rgb_pixels_as_prototype": true
+        },
+        {
+          "path": "artifacts/deepseek/preview.png",
+          "sha256": "80e278671de83196101faa629e3b691d9af2d184e3215c4212608b585625c621",
+          "size_pixels": [
+            960,
+            540
+          ],
+          "nonwhite_bounds_pixels": [
+            248,
+            140,
+            700,
+            442
+          ],
+          "frame_edges_all_white": true,
+          "visually_inspected_with_view_image": true,
+          "same_rgb_pixels_as_prototype": true
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "The shared view is a reproducible reference-oriented approximation. The original camera cannot be recovered exactly from the JPEG.",
+    "All model extents fit inside their frames. Natural component occlusion remains and is not cropping.",
+    "CAD hash preservation requires the renderer or independent byte-level audit. This visual QA does not claim to prove unchanged geometry from pixels alone.",
+    "The visual scores and original judging renders remain outside this QA scope."
+  ],
+  "presentation_attempt": "66503c95e8fd439e8d9de790d6d59e02",
+  "prototype_qa": {
+    "path": "visual-qa-prototype.json",
+    "sha256": "897c605d071dbb24029ab34906166f92f498f31a6c7123c0644de678403b1284"
+  },
+  "original_evidence_sha256": "2e424bb3c8a1b695de8225eb1d4b33e6a6adf44a395828adfe0e4fe5097821e2",
+  "transformation": "Image paths changed to public experiment-relative artifacts; observations and image hashes preserved."
+}

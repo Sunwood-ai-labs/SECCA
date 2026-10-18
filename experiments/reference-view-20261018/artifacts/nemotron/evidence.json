@@ -1,0 +1,207 @@
+{
+  "schema": "secca-supplemental-public-v1",
+  "success": true,
+  "request": {
+    "schema": "secca-supplemental-render-v1",
+    "request_id": "a061305e5c614105a630dc9e74af94f7",
+    "model": "nemotron",
+    "source_sha256": "4d3a994d12f1e0ddd985cd7f2e68cd54c43ff45651ae5c007cbb45f22d41b227",
+    "quaternion_xyzw": [
+      -0.42470825611637947,
+      0.1759197469773937,
+      0.3398512020486263,
+      -0.8204732172814037
+    ],
+    "runtime_files_sha256": {
+      "worker.py": "db1c1545bd1af02c1a953c80d1c548f96b6f1a573f7cd4ceb0e73ba0443daea0",
+      "freecad_worker.py": "be80e5bc6254d0b152726b8f22054e4a63a0e6e448a499f54e83f60e9ac0d6d5",
+      "gui_lease.py": "6fc4690b10690a6c39d837ece0aeb6a56e8eaf63faef944814fa847a94fed2d6"
+    },
+    "images": {
+      "reference-view": [
+        1600,
+        900
+      ],
+      "preview": [
+        960,
+        540
+      ]
+    }
+  },
+  "worker": {
+    "request_id": "a061305e5c614105a630dc9e74af94f7",
+    "model": "nemotron",
+    "source_before": {
+      "path": "source.FCStd",
+      "exists": true,
+      "bytes": 52634,
+      "sha256": "4d3a994d12f1e0ddd985cd7f2e68cd54c43ff45651ae5c007cbb45f22d41b227"
+    },
+    "freecad_version": [
+      "1",
+      "0",
+      "0",
+      "",
+      "https://code.launchpad.net/~vcs-imports/freecad/trunk",
+      "2026/08/25 11:49:11"
+    ],
+    "requested_quaternion_xyzw": [
+      -0.42470825611637947,
+      0.1759197469773937,
+      0.3398512020486263,
+      -0.8204732172814037
+    ],
+    "images": {
+      "reference-view": {
+        "path": "reference-view.png",
+        "exists": true,
+        "bytes": 47053,
+        "sha256": "ec2a19c9080000afa6a8bfb9dd29e8fa1a628a199578ac49412cfbe4378c86f5",
+        "width": 1600,
+        "height": 900
+      },
+      "preview": {
+        "path": "preview.png",
+        "exists": true,
+        "bytes": 21330,
+        "sha256": "47e756937eb3a4bbb8b7047e894adf55794550c9689e27eec29496ae5f9db334",
+        "width": 960,
+        "height": 540
+      }
+    },
+    "runtime_files_sha256": {
+      "worker.py": "db1c1545bd1af02c1a953c80d1c548f96b6f1a573f7cd4ceb0e73ba0443daea0",
+      "freecad_worker.py": "be80e5bc6254d0b152726b8f22054e4a63a0e6e448a499f54e83f60e9ac0d6d5",
+      "gui_lease.py": "6fc4690b10690a6c39d837ece0aeb6a56e8eaf63faef944814fa847a94fed2d6"
+    },
+    "render_selection": {
+      "names": [
+        "Frame_00",
+        "Frame_01",
+        "Frame_02",
+        "Frame_03",
+        "Frame_04",
+        "Frame_05",
+        "Frame_06",
+        "Frame_07",
+        "Frame_08",
+        "Frame_09",
+        "Frame_10",
+        "Frame_11",
+        "Frame_12",
+        "Frame_13",
+        "Frame_14",
+        "Frame_15",
+        "Frame_16",
+        "FrontWheel_1",
+        "FrontWheel_2",
+        "RearWheel_1",
+        "RearWheel_2",
+        "Seat",
+        "FrontNose",
+        "SidePanel_1",
+        "SidePanel_2",
+        "RearSpoiler",
+        "EngineBlock",
+        "Muffler",
+        "SteeringWheel",
+        "SteeringShaft"
+      ],
+      "object_count": 30,
+      "solid_count": 30,
+      "bounds_mm": {
+        "min": [
+          -300.0,
+          -725.0,
+          -462.01792826883826
+        ],
+        "max": [
+          2195.0875889075674,
+          960.0,
+          694.2166328362568
+        ],
+        "size": [
+          2495.0875889075674,
+          1685.0,
+          1156.234561105095
+        ]
+      },
+      "excluded": []
+    },
+    "actual_quaternion_xyzw": [
+      -0.424708257495063,
+      0.17591974566280144,
+      0.3398512088308984,
+      -0.8204732140402998
+    ],
+    "quaternion_max_delta": 6.78227213279925e-09,
+    "camera_type": "Orthographic",
+    "camera": "#Inventor V2.1 ascii\n\n\nOrthographicCamera {\n  viewportMapping ADJUST_CAMERA\n  position 17.637573 -812.27112 1040.8066\n  orientation -0.74290603 0.30772144 0.59447283  5.0660691\n  nearDistance 73.188705\n  farDistance 3151.1768\n  aspectRatio 1\n  focalDistance 1610.6454\n  height 3221.2908\n\n}\n",
+    "success": true,
+    "source_after": {
+      "path": "source.FCStd",
+      "exists": true,
+      "bytes": 52634,
+      "sha256": "4d3a994d12f1e0ddd985cd7f2e68cd54c43ff45651ae5c007cbb45f22d41b227"
+    },
+    "source_unchanged": true
+  },
+  "image_checks": {
+    "reference-view": {
+      "width": 1600,
+      "height": 900,
+      "nonwhite_bounds_px": [
+        459,
+        246,
+        1168,
+        665
+      ],
+      "white_corners": true,
+      "nonblank": true,
+      "edge_margin_at_least_4px": true,
+      "sha256": "ec2a19c9080000afa6a8bfb9dd29e8fa1a628a199578ac49412cfbe4378c86f5",
+      "bytes": 47053
+    },
+    "preview": {
+      "width": 960,
+      "height": 540,
+      "nonwhite_bounds_px": [
+        275,
+        147,
+        701,
+        399
+      ],
+      "white_corners": true,
+      "nonblank": true,
+      "edge_margin_at_least_4px": true,
+      "sha256": "47e756937eb3a4bbb8b7047e894adf55794550c9689e27eec29496ae5f9db334",
+      "bytes": 21330
+    }
+  },
+  "source_host_unchanged": true,
+  "cleanup": {
+    "success": true,
+    "independent_query": {
+      "container_id": "638299609e10de58322e49a0ce311fb21ad5ad51134c5175a519b0f313f794cf",
+      "returncode": 0,
+      "remaining_ids": [],
+      "capture_stopped_reason": null
+    }
+  },
+  "runtime": {
+    "image_id": "sha256:b9e296032f921c96de5843b19e1a182ce5067d6cdca25a5d3ab7e7da23fe89cb",
+    "container_id": "638299609e10de58322e49a0ce311fb21ad5ad51134c5175a519b0f313f794cf",
+    "network": "none",
+    "user": "10000:10000",
+    "root_readonly": true,
+    "bind_mounts": [],
+    "process_isolation": {
+      "CapEff": 0,
+      "CapPrm": 0,
+      "CapBnd": 0,
+      "NoNewPrivs": 1
+    }
+  },
+  "original_evidence_sha256": "463849d39190a2d740b2826fc5b3d6c49b24ff8eaf953c23c072b5ba77ed3402",
+  "transformation": "Allowlist export. Omit host command logs, named connection and host paths. Normalize worker CAD path."
+}

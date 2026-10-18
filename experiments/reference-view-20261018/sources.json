@@ -1,0 +1,229 @@
+{
+  "schema": "secca-supplemental-sources-v1",
+  "models": [
+    {
+      "id": "glm",
+      "cad": "assets/baseline/workspace/racing-kart.FCStd",
+      "cad_sha256": "8394c8fbd8a856d9b2814ead4d6b513c2190a6e6796f98ab4f4ed62c86b61f6b",
+      "historical_score": 43,
+      "front_axis": [
+        0,
+        1,
+        0
+      ],
+      "up_axis": [
+        0,
+        0,
+        1
+      ],
+      "yaw_degrees": 0,
+      "axis_evidence": "experiments/reference-view-20261018/camera-analysis.json",
+      "original_generation_runtime": {
+        "backend": "Windows host historical sample",
+        "image_id": null
+      }
+    },
+    {
+      "id": "beam",
+      "cad": "experiments/beam-free-20261017/trial-02/workspace/racing-kart.FCStd",
+      "cad_sha256": "ac86c7cf249986730b702d130f71be969fab037ae2d1f77b2a4bb1263b1a0392",
+      "historical_score": 25,
+      "front_axis": [
+        1,
+        0,
+        0
+      ],
+      "up_axis": [
+        0,
+        0,
+        1
+      ],
+      "yaw_degrees": -90,
+      "axis_evidence": "experiments/reference-view-20261018/camera-analysis.json",
+      "original_generation_runtime": {
+        "backend": "podman-network-none-uds",
+        "image_id": "sha256:eaa68cdc9d07728f61aef2bdd5a223573eca5c9db647248bb2a440bf31bc9178"
+      }
+    },
+    {
+      "id": "nemotron",
+      "cad": "experiments/dual-free-20261018/nemotron/trial-01/workspace/racing-kart.FCStd",
+      "cad_sha256": "4d3a994d12f1e0ddd985cd7f2e68cd54c43ff45651ae5c007cbb45f22d41b227",
+      "historical_score": 28.75,
+      "front_axis": [
+        -1,
+        0,
+        0
+      ],
+      "up_axis": [
+        0,
+        0,
+        1
+      ],
+      "yaw_degrees": 90,
+      "axis_evidence": "experiments/reference-view-20261018/camera-analysis.json",
+      "original_generation_runtime": {
+        "backend": "podman-network-none-uds",
+        "image_id": "sha256:b9e296032f921c96de5843b19e1a182ce5067d6cdca25a5d3ab7e7da23fe89cb"
+      }
+    },
+    {
+      "id": "deepseek",
+      "cad": "experiments/dual-free-20261018/deepseek/trial-01/workspace/racing-kart.FCStd",
+      "cad_sha256": "ee3bd4ff45073b06daab850246e5d8a93c6dc5683e9441d597bcafbb858ec392",
+      "historical_score": 50,
+      "front_axis": [
+        1,
+        0,
+        0
+      ],
+      "up_axis": [
+        0,
+        0,
+        1
+      ],
+      "yaw_degrees": -90,
+      "axis_evidence": "experiments/reference-view-20261018/camera-analysis.json",
+      "original_generation_runtime": {
+        "backend": "podman-network-none-uds",
+        "image_id": "sha256:b9e296032f921c96de5843b19e1a182ce5067d6cdca25a5d3ab7e7da23fe89cb"
+      }
+    }
+  ],
+  "protected_files": [
+    {
+      "path": "assets/baseline/evidence/kart-front-isometric-white.png",
+      "sha256": "22a9094686a734f0f87440f3420147dca9b44cf9959792800c7419b0db2740f8"
+    },
+    {
+      "path": "assets/baseline/evidence/kart-front-preview-white.png",
+      "sha256": "6a13108fd43707dc63470318dedfb5e022bb4188d020ff7fd86488d1bf27e38f"
+    },
+    {
+      "path": "assets/baseline/evidence/score-right-white.png",
+      "sha256": "f4a908d949d49f5d2512d3ef4ac1a340d5c6f1e5b0f51951ac5b3f562e0b172e"
+    },
+    {
+      "path": "assets/baseline/evidence/score-top-white.png",
+      "sha256": "d8291fc2684cd4ea467f90fc1a45fcdc4f6eaf5accabeb3017eda10e6de1cec0"
+    },
+    {
+      "path": "assets/baseline/likeness-score.json",
+      "sha256": "95c46cf29f714fa443e34c9c0f87cebb24632207305c988d17f625dff06c699d"
+    },
+    {
+      "path": "assets/baseline/workspace/racing-kart.FCStd",
+      "sha256": "8394c8fbd8a856d9b2814ead4d6b513c2190a6e6796f98ab4f4ed62c86b61f6b"
+    },
+    {
+      "path": "assets/protocol.json",
+      "sha256": "246a4eb27632eb172b704cfe36162a2953a72ce6d25f654fd3db0cbc5395cd89"
+    },
+    {
+      "path": "assets/reference.jpg",
+      "sha256": "d3fcfa0a7a1b1fc0504fe7dfadfaa2a1beb0a8712bd088a0b6c8ccb0dd120cd3"
+    },
+    {
+      "path": "assets/render-spec.json",
+      "sha256": "29b4663d2a72b343c2f0a833795ae3eedd12c1334419d6f321089d9fa2c43fa7"
+    },
+    {
+      "path": "experiments/beam-free-20261017/trial-02/renders/isometric.png",
+      "sha256": "aad5b3ec97ba175d638c8f8a78c1bb683a05e2a6457d61f4d3d74eb59c619c15"
+    },
+    {
+      "path": "experiments/beam-free-20261017/trial-02/renders/preview.png",
+      "sha256": "c0bc85040239f2a060f3819d13387e9b9992be9007770075fc3bb39711239835"
+    },
+    {
+      "path": "experiments/beam-free-20261017/trial-02/renders/right.png",
+      "sha256": "f63b6a39d8008b1d004ea2187ccf01a9b890b2d47e85198ad5b5a24e387a1950"
+    },
+    {
+      "path": "experiments/beam-free-20261017/trial-02/renders/top.png",
+      "sha256": "c4eefb976f5e56d979bc5abe6ce68086a5d9d7a89f95ebd9245a6d07197a47ae"
+    },
+    {
+      "path": "experiments/beam-free-20261017/trial-02/score.json",
+      "sha256": "73359c7f9e91ebb09145caabfb83e965797064c933450296012d07698621971c"
+    },
+    {
+      "path": "experiments/beam-free-20261017/trial-02/trial.json",
+      "sha256": "33d137b98e219a7cf04b3b26ac3d9b68da3f6e12a1aba71119e1ab611b23d990"
+    },
+    {
+      "path": "experiments/beam-free-20261017/trial-02/workspace/racing-kart.FCStd",
+      "sha256": "ac86c7cf249986730b702d130f71be969fab037ae2d1f77b2a4bb1263b1a0392"
+    },
+    {
+      "path": "experiments/dual-free-20261018/deepseek/trial-01/renders/isometric.png",
+      "sha256": "b045a8cf1d6eb44faed73c89cda543eba1cc6a2cd02ed56150bbceaeed3aa0a8"
+    },
+    {
+      "path": "experiments/dual-free-20261018/deepseek/trial-01/renders/preview.png",
+      "sha256": "3c7798172e966d4cf5ac3622e6dd038c5945dec414fac370c9e54f70de099818"
+    },
+    {
+      "path": "experiments/dual-free-20261018/deepseek/trial-01/renders/right.png",
+      "sha256": "3ad7880a4306ab311767812690635c27b0817354c78417776651023521452f1a"
+    },
+    {
+      "path": "experiments/dual-free-20261018/deepseek/trial-01/renders/top.png",
+      "sha256": "0f88408877ca641be94d3c7927f555d9c897b7856f374da7949ece44653904f6"
+    },
+    {
+      "path": "experiments/dual-free-20261018/deepseek/trial-01/score.json",
+      "sha256": "659a540b02bbcb8e0c89c279f88e330c38449feb17225898c0a56521b0b2d10a"
+    },
+    {
+      "path": "experiments/dual-free-20261018/deepseek/trial-01/trial.json",
+      "sha256": "36d3e3daaf7089b7485d3c4a50796f06f68848ee1ebdd4aa566f80a90dc66b4d"
+    },
+    {
+      "path": "experiments/dual-free-20261018/deepseek/trial-01/workspace/racing-kart.FCStd",
+      "sha256": "ee3bd4ff45073b06daab850246e5d8a93c6dc5683e9441d597bcafbb858ec392"
+    },
+    {
+      "path": "experiments/dual-free-20261018/nemotron/trial-01/renders/isometric.png",
+      "sha256": "785a6c8fd14e27791de881705e11174e688dea6af4ac3dc17e737c352f388f48"
+    },
+    {
+      "path": "experiments/dual-free-20261018/nemotron/trial-01/renders/preview.png",
+      "sha256": "ad6e1c0003aa53cd8c2028b173a94a09310137bec905eabc2f388fca0b509ab0"
+    },
+    {
+      "path": "experiments/dual-free-20261018/nemotron/trial-01/renders/right.png",
+      "sha256": "7ac543540828f88dbe027eb021fb9dd3f1f1801d31605979053274e06359e908"
+    },
+    {
+      "path": "experiments/dual-free-20261018/nemotron/trial-01/renders/top.png",
+      "sha256": "6a52c7e27841ac4abb48226dd1eb55e4d37e8b8db28ef373f29c1fbd3b6f859b"
+    },
+    {
+      "path": "experiments/dual-free-20261018/nemotron/trial-01/score.json",
+      "sha256": "8806eaaf5e018f90b2054883167c8132c771ea48ec8c359acf661764c4302746"
+    },
+    {
+      "path": "experiments/dual-free-20261018/nemotron/trial-01/trial.json",
+      "sha256": "2ce9c34a044280d1e066055e08e514a99e706c8072b5d6d22e7335e0b239406c"
+    },
+    {
+      "path": "experiments/dual-free-20261018/nemotron/trial-01/workspace/racing-kart.FCStd",
+      "sha256": "4d3a994d12f1e0ddd985cd7f2e68cd54c43ff45651ae5c007cbb45f22d41b227"
+    },
+    {
+      "path": "scripts/freecad_worker.py",
+      "sha256": "be80e5bc6254d0b152726b8f22054e4a63a0e6e448a499f54e83f60e9ac0d6d5"
+    },
+    {
+      "path": "scripts/gui_lease.py",
+      "sha256": "6fc4690b10690a6c39d837ece0aeb6a56e8eaf63faef944814fa847a94fed2d6"
+    },
+    {
+      "path": "scripts/sandbox_postprocess.py",
+      "sha256": "2c9140df5d02fc7cf04c397ddd93c36eec4e92a98e0c595fc0fedefc09e8b29c"
+    }
+  ],
+  "helper_source_git_revision": "364eea57e3f61bd7b886d361375ce33e45e019e6",
+  "axis_evidence_sha256": "7863d585d319c2fb70d318b3175b0b41264e9ccb5a8d9a55a3d858ffacc258c3"
+}

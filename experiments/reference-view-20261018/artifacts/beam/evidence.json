@@ -1,0 +1,210 @@
+{
+  "schema": "secca-supplemental-public-v1",
+  "success": true,
+  "request": {
+    "schema": "secca-supplemental-render-v1",
+    "request_id": "6cfc02dee3e144e1a35edd0976b3cdf7",
+    "model": "beam",
+    "source_sha256": "ac86c7cf249986730b702d130f71be969fab037ae2d1f77b2a4bb1263b1a0392",
+    "quaternion_xyzw": [
+      0.1759197469773937,
+      0.42470825611637947,
+      0.8204732172814037,
+      0.3398512020486263
+    ],
+    "runtime_files_sha256": {
+      "worker.py": "db1c1545bd1af02c1a953c80d1c548f96b6f1a573f7cd4ceb0e73ba0443daea0",
+      "freecad_worker.py": "be80e5bc6254d0b152726b8f22054e4a63a0e6e448a499f54e83f60e9ac0d6d5",
+      "gui_lease.py": "6fc4690b10690a6c39d837ece0aeb6a56e8eaf63faef944814fa847a94fed2d6"
+    },
+    "images": {
+      "reference-view": [
+        1600,
+        900
+      ],
+      "preview": [
+        960,
+        540
+      ]
+    }
+  },
+  "worker": {
+    "request_id": "6cfc02dee3e144e1a35edd0976b3cdf7",
+    "model": "beam",
+    "source_before": {
+      "path": "source.FCStd",
+      "exists": true,
+      "bytes": 41740,
+      "sha256": "ac86c7cf249986730b702d130f71be969fab037ae2d1f77b2a4bb1263b1a0392"
+    },
+    "freecad_version": [
+      "1",
+      "0",
+      "0",
+      "",
+      "https://code.launchpad.net/~vcs-imports/freecad/trunk",
+      "2026/08/25 11:49:11"
+    ],
+    "requested_quaternion_xyzw": [
+      0.1759197469773937,
+      0.42470825611637947,
+      0.8204732172814037,
+      0.3398512020486263
+    ],
+    "images": {
+      "reference-view": {
+        "path": "reference-view.png",
+        "exists": true,
+        "bytes": 65069,
+        "sha256": "a394453c0da51b95b0143da687262e62d5d39d78779f01bffc1c91d0534c5ba6",
+        "width": 1600,
+        "height": 900
+      },
+      "preview": {
+        "path": "preview.png",
+        "exists": true,
+        "bytes": 29124,
+        "sha256": "5947ba22c896b12a77ec7c197ab883d4303dd9d0b2b0f5f56b9722e1a0b70de8",
+        "width": 960,
+        "height": 540
+      }
+    },
+    "runtime_files_sha256": {
+      "worker.py": "db1c1545bd1af02c1a953c80d1c548f96b6f1a573f7cd4ceb0e73ba0443daea0",
+      "freecad_worker.py": "be80e5bc6254d0b152726b8f22054e4a63a0e6e448a499f54e83f60e9ac0d6d5",
+      "gui_lease.py": "6fc4690b10690a6c39d837ece0aeb6a56e8eaf63faef944814fa847a94fed2d6"
+    },
+    "render_selection": {
+      "names": [
+        "ChassisRailLeft",
+        "ChassisRailRight",
+        "CrossMember__500",
+        "CrossMember__100",
+        "CrossMember_250",
+        "CrossMember_500",
+        "ChassisFloor",
+        "FrontAxle",
+        "RearAxle",
+        "FrontWheelLeft",
+        "FrontWheelLeft_Hub",
+        "FrontWheelRight",
+        "FrontWheelRight_Hub",
+        "RearWheelLeft",
+        "RearWheelLeft_Hub",
+        "RearWheelRight",
+        "RearWheelRight_Hub",
+        "SteeringColumn",
+        "SteeringWheel",
+        "SeatBase",
+        "SeatBack",
+        "Engine",
+        "Exhaust",
+        "FrontBumper",
+        "RearBumper",
+        "FrontSupport__300",
+        "RearSupport__300",
+        "FrontSupport_300",
+        "RearSupport_300",
+        "NoseFairing",
+        "NerfBar_L",
+        "NerfBar_R",
+        "NumberPlate"
+      ],
+      "object_count": 33,
+      "solid_count": 33,
+      "bounds_mm": {
+        "min": [
+          -865.0,
+          -587.5,
+          0.0
+        ],
+        "max": [
+          950.0,
+          587.5,
+          420.0
+        ],
+        "size": [
+          1815.0,
+          1175.0,
+          420.0
+        ]
+      },
+      "excluded": []
+    },
+    "actual_quaternion_xyzw": [
+      0.17591974566280144,
+      0.424708257495063,
+      0.8204732140402998,
+      0.3398512088308984
+    ],
+    "quaternion_max_delta": 6.78227213279925e-09,
+    "camera_type": "Orthographic",
+    "camera": "#Inventor V2.1 ascii\n\n\nOrthographicCamera {\n  viewportMapping ADJUST_CAMERA\n  position 678.35138 635.797 845.79688\n  orientation 0.18705329 0.45158705 0.87239909  2.4480753\n  nearDistance 116.76495\n  farDistance 2087.6687\n  aspectRatio 1\n  focalDistance 1101.2325\n  height 2202.4651\n\n}\n",
+    "success": true,
+    "source_after": {
+      "path": "source.FCStd",
+      "exists": true,
+      "bytes": 41740,
+      "sha256": "ac86c7cf249986730b702d130f71be969fab037ae2d1f77b2a4bb1263b1a0392"
+    },
+    "source_unchanged": true
+  },
+  "image_checks": {
+    "reference-view": {
+      "width": 1600,
+      "height": 900,
+      "nonwhite_bounds_px": [
+        405,
+        218,
+        1215,
+        708
+      ],
+      "white_corners": true,
+      "nonblank": true,
+      "edge_margin_at_least_4px": true,
+      "sha256": "a394453c0da51b95b0143da687262e62d5d39d78779f01bffc1c91d0534c5ba6",
+      "bytes": 65069
+    },
+    "preview": {
+      "width": 960,
+      "height": 540,
+      "nonwhite_bounds_px": [
+        243,
+        130,
+        729,
+        425
+      ],
+      "white_corners": true,
+      "nonblank": true,
+      "edge_margin_at_least_4px": true,
+      "sha256": "5947ba22c896b12a77ec7c197ab883d4303dd9d0b2b0f5f56b9722e1a0b70de8",
+      "bytes": 29124
+    }
+  },
+  "source_host_unchanged": true,
+  "cleanup": {
+    "success": true,
+    "independent_query": {
+      "container_id": "e90b934d47535f55683790b3dac0b86621bee8df0488b0bc403e877f84a4f682",
+      "returncode": 0,
+      "remaining_ids": [],
+      "capture_stopped_reason": null
+    }
+  },
+  "runtime": {
+    "image_id": "sha256:b9e296032f921c96de5843b19e1a182ce5067d6cdca25a5d3ab7e7da23fe89cb",
+    "container_id": "e90b934d47535f55683790b3dac0b86621bee8df0488b0bc403e877f84a4f682",
+    "network": "none",
+    "user": "10000:10000",
+    "root_readonly": true,
+    "bind_mounts": [],
+    "process_isolation": {
+      "CapEff": 0,
+      "CapPrm": 0,
+      "CapBnd": 0,
+      "NoNewPrivs": 1
+    }
+  },
+  "original_evidence_sha256": "16946b1a3e7ea11015162e6d0236dbd0e21e92f6d0e8f16103efaa8d79127774",
+  "transformation": "Allowlist export. Omit host command logs, named connection and host paths. Normalize worker CAD path."
+}

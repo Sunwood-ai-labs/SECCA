@@ -35,11 +35,17 @@ SECCAは、固定のレーシングカート画像と依頼文から、CAD構築
 | [Nemotron 3.5 Super VL Free](experiments/dual-free-20261018/nemotron/trial-01/score.json) | **28.75/100点** | 独立したPodman A・画像添付 |
 | [DeepSeek V4.1 Flash Free](experiments/dual-free-20261018/deepseek/trial-01/score.json) | **50/100点** | 独立したPodman A・画像添付 |
 
+入力した参照画像。
+
+![入力したレーシングカートの参照画像](assets/reference.jpg)
+
 | GLM 5.3 Flash Free · 43/100点 | Beam Free · 25/100点 |
 | --- | --- |
-| ![GLM 5.3 Flash Free](assets/baseline/evidence/kart-front-isometric-white.png) | ![Beam Free](experiments/beam-free-20261017/trial-02/renders/preview.png) |
+| ![GLM 5.3 Flash Free](experiments/reference-view-20261018/renders/glm-preview.png) | ![Beam Free](experiments/reference-view-20261018/renders/beam-preview.png) |
 | **Nemotron 3.5 Super VL Free · 28.75/100点** | **DeepSeek V4.1 Flash Free · 50/100点** |
-| ![Nemotron 3.5 Super VL Free](experiments/dual-free-20261018/nemotron/trial-01/renders/preview.png) | ![DeepSeek V4.1 Flash Free](experiments/dual-free-20261018/deepseek/trial-01/renders/preview.png) |
+| ![Nemotron 3.5 Super VL Free](experiments/reference-view-20261018/renders/nemotron-preview.png) | ![DeepSeek V4.1 Flash Free](experiments/reference-view-20261018/renders/deepseek-preview.png) |
+
+上の4画像は、参照に近い前方3/4の視点へカメラだけを調整した追加描画です。参照画像のカメラ数値は不明で、厳密な一致ではありません。表示した点数は元の採点画像による既存評価のままで、追加画像では再採点していません。
 
 | モデル | FCStd | STEP | 生成時間 |
 | --- | --- | --- | ---: |
@@ -59,7 +65,11 @@ SECCAは、固定のレーシングカート画像と依頼文から、CAD構築
 
 各モデルの保存された1生成物を並べた参考比較です。Podman Aの2候補はFreeCAD 1.0.0を含む同じ固定イメージ、Bは別のイメージを使いました。Beamはネイティブな画像入力を使っていません。GLMはFreeCAD 1.1.3で、配点を生成後、数値採点前に作成しています。後のPodman試行では生成前から配点を固定しました。GLM・Nemotron・DeepSeekは各1生成です。Beamは2試行のうち1件を採点しました。
 
-画像は保存記録の白背景画像で、4生成物を同一カメラで描画し直したものではありません。見た目の点数とCADの成立は別の評価です。条件の異なる各1回の記録から、モデル全体の順位や速度の優劣は示していません。
+以前の比較画像は世界座標に対してカメラを固定し、モデルごとに異なる車体の前方向を補正していませんでした。GLMは+Y、BeamとDeepSeekは+X、Nemotronは−Xが前方なので、同じ世界座標のカメラでも車体を見る向きが変わります。追加描画では車体の前方向に合わせ、前方左45°・仰角約35.264°から見ています。CADの形状や配置は変えていません。
+
+追加の4画像はすべてFreeCAD 1.0.0を含む同じ`sha256:b9e296032f921c96de5843b19e1a182ce5067d6cdca25a5d3ab7e7da23fe89cb`イメージで描画しました。これは表示用の追加処理であり、過去の生成環境を変更したり、標準の描画条件やプロトコルを置き換えたりしたものではありません。元CAD、元の採点画像、点数は維持しています。見た目の点数とCADの成立は別の評価です。条件の異なる各1回の記録から、モデル全体の順位や速度の優劣は示していません。
+
+[追加描画・カメラ設定の記録](experiments/reference-view-20261018/README.md) · 元の採点斜視画像: [GLM](assets/baseline/evidence/kart-front-isometric-white.png) · [Beam](experiments/beam-free-20261017/trial-02/renders/isometric.png) · [Nemotron](experiments/dual-free-20261018/nemotron/trial-01/renders/isometric.png) · [DeepSeek](experiments/dual-free-20261018/deepseek/trial-01/renders/isometric.png)
 
 ### Nemotron・DeepSeek · 2026-10-18
 
