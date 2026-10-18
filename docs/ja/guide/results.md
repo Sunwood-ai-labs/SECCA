@@ -1,15 +1,43 @@
 # 実験結果
 
-公開記録にはNemotron・DeepSeek・Beam Freeの採点済み生成物が各1件あります。実験報告であり、モデルの順位表や母集団の性能推定ではありません。
+## 保存された4生成物の参考比較
+
+保存された各1生成物を、画像・得点・CAD検査で見比べられます。
+
+| モデル・採点根拠 | 点数 | 実行条件 |
+| --- | ---: | --- |
+| [GLM 5.3 Flash Free](https://github.com/Sunwood-ai-labs/SECCA/blob/main/assets/baseline/likeness-score.json) | **43/100点** | Windows・非隔離 |
+| [Beam Free](https://github.com/Sunwood-ai-labs/SECCA/blob/main/experiments/beam-free-20261017/trial-02/score.json) | **25/100点** | Podman B・Python画素解析 |
+| [Nemotron 3.5 Super VL Free](https://github.com/Sunwood-ai-labs/SECCA/blob/main/experiments/dual-free-20261018/nemotron/trial-01/score.json) | **28.75/100点** | 独立したPodman A・画像添付 |
+| [DeepSeek V4.1 Flash Free](https://github.com/Sunwood-ai-labs/SECCA/blob/main/experiments/dual-free-20261018/deepseek/trial-01/score.json) | **50/100点** | 独立したPodman A・画像添付 |
+
+| GLM 5.3 Flash Free · 43/100点 | Beam Free · 25/100点 |
+| --- | --- |
+| ![GLM 5.3 Flash Free](/glm-20261017-preview.png) | ![Beam Free](/beam-preview.png) |
+| **Nemotron 3.5 Super VL Free · 28.75/100点** | **DeepSeek V4.1 Flash Free · 50/100点** |
+| ![Nemotron 3.5 Super VL Free](/nemotron-20261018-preview.png) | ![DeepSeek V4.1 Flash Free](/deepseek-20261018-preview.png) |
+
+| モデル | FCStd | STEP | 生成時間 |
+| --- | --- | --- | ---: |
+| GLM | 77有効ソリッド | 77有効ソリッド | 509.969秒 |
+| Beam | 33有効ソリッド | 33有効ソリッド | 152.219秒 |
+| Nemotron | 30有効ソリッド | 形状なし | 71.464秒 |
+| DeepSeek | 26有効ソリッド | 26有効ソリッド | 442.688秒 |
+
+| 項目・配点 | GLM | Beam | Nemotron | DeepSeek |
+| --- | ---: | ---: | ---: | ---: |
+| 輪郭・比率 /25 | 13 | 9 | 6.25 | 12.5 |
+| 部品の配置 /20 | 13 | 9 | 5 | 15 |
+| 特徴的な形状 /30 | 8 | 4 | 7.5 | 7.5 |
+| 機械的な細部 /20 | 4 | 2 | 5 | 10 |
+| 配色 /5 | 5 | 1 | 5 | 5 |
+| 項目別中央値の合計 /100 | **43** | **25** | **28.75** | **50** |
+
+各モデルの保存された1生成物を並べた参考比較です。Podman Aの2候補はFreeCAD 1.0.0を含む同じ固定イメージ、Bは別のイメージを使いました。Beamはネイティブな画像入力を使っていません。GLMはFreeCAD 1.1.3で、配点を生成後、数値採点前に作成しています。後のPodman試行では生成前から配点を固定しました。GLM・Nemotron・DeepSeekは各1生成です。Beamは2試行のうち1件を採点しました。
+
+画像は保存記録の白背景画像で、4生成物を同一カメラで描画し直したものではありません。見た目の点数とCADの成立は別の評価です。条件の異なる各1回の記録から、モデル全体の順位や速度の優劣は示していません。
 
 ## Nemotron・DeepSeek · 2026-10-18
-
-| Nemotron 3.5 Super VL Free | DeepSeek V4.1 Flash Free |
-| --- | --- |
-| ![白背景で描画したNemotronの生成物](/nemotron-20261018-preview.png) | ![白背景で描画したDeepSeekの生成物](/deepseek-20261018-preview.png) |
-| 見た目の再現度 **28.75/100点** | 見た目の再現度 **50/100点** |
-| FCStdは30有効ソリッド。STEPは0オブジェクト・0ソリッド。 | FCStd・STEPとも26有効ソリッド。 |
-| 生成時間は71.464秒。 | 生成時間は442.688秒。 |
 
 固定の画像と日本語依頼文で、各モデルを1回ずつ実行しました。別々のコンテナ、FreeCAD文書、作業領域、ホーム、通信用ボリュームを用意し、実行状態を共有していません。他の生成物や採点資料は候補へ渡していません。両方ともFreeCAD 1.0.0とOpenCode 1.19.3を含む、同じイメージを使用しました。
 
@@ -20,15 +48,6 @@ sha256:b9e296032f921c96de5843b19e1a182ce5067d6cdca25a5d3ab7e7da23fe89cb
 モデルIDは `opencode/nemotron-3.5-super-vl-free` と `opencode/deepseek-v4.1-flash-free`、ソースのリビジョンは `dc7b1273fcdd1534b903185e2d7921cb7e7784f5` です。管理側による形状の修復や、再生成の指示は行っていません。
 
 ### 2生成物の採点根拠
-
-| 項目 | Nemotronの中央値 | DeepSeekの中央値 |
-| --- | ---: | ---: |
-| 輪郭・比率 | 6.25/25 | 12.5/25 |
-| 部品の配置 | 5/20 | 15/20 |
-| 特徴的な形状 | 7.5/30 | 7.5/30 |
-| 機械的な細部 | 5/20 | 10/20 |
-| 配色 | 5/5 | 5/5 |
-| 合計 | **28.75/100点** | **50/100点** |
 
 Nemotronは直線のフレーム材、平たい車輪、箱状の座席や外装を作りましたが、部品が離れており、参照のつながった輪郭とは異なります。DeepSeekは四輪、フレーム、シート、ハンドル、外装、エンジンを車体としてまとめています。ただし前部の大きな箱、角張った座席、単純なリム、エンジンや駆動部には参照との差が残ります。
 
@@ -45,8 +64,6 @@ CAD本試行の推論リクエスト本文は保存していません。固定�
 [実験ファイルと来歴](https://github.com/Sunwood-ai-labs/SECCA/blob/main/experiments/dual-free-20261018/README.md) · [構造化した結果](https://github.com/Sunwood-ai-labs/SECCA/blob/main/experiments/dual-free-20261018/RESULT.json) · [Nemotronの採点](https://github.com/Sunwood-ai-labs/SECCA/blob/main/experiments/dual-free-20261018/nemotron/trial-01/score.json) · [DeepSeekの採点](https://github.com/Sunwood-ai-labs/SECCA/blob/main/experiments/dual-free-20261018/deepseek/trial-01/score.json)
 
 ## Beam Free · 2026-10-17
-
-![標準の白背景で描画したBeam Freeの生成結果](/beam-preview.png)
 
 | 項目 | 記録値 |
 | --- | --- |
@@ -92,3 +109,13 @@ Beam Freeの公開モデル情報は、ネイティブな画像入力を非対�
 ## 公開ファイルを確認する
 
 [実験レポート](https://github.com/Sunwood-ai-labs/SECCA/blob/main/experiments/beam-free-20261017/REPORT.md) · [構造化した結果](https://github.com/Sunwood-ai-labs/SECCA/blob/main/experiments/beam-free-20261017/RESULT.json) · [採点と評価](https://github.com/Sunwood-ai-labs/SECCA/blob/main/experiments/beam-free-20261017/trial-02/score.json) · [CAD検査](https://github.com/Sunwood-ai-labs/SECCA/blob/main/experiments/beam-free-20261017/trial-02/evidence/validation.json) · [公開ファイルのハッシュ](https://github.com/Sunwood-ai-labs/SECCA/blob/main/experiments/beam-free-20261017/export-manifest.json)
+
+## GLM 5.3 Flash Free · 2026-10-17、旧基準例
+
+`opencode/glm-5.3-flash-free` の1生成物は**43/100点**でした。WindowsホストでOpenCode 1.19.3とFreeCAD 1.1.3を使い、生成時間は509.969秒です。保存したFCStdとSTEPは別プロセスで読み直し、双方77有効ソリッド、外形一致を確認しました。作動や干渉は検査していません。
+
+平板のシート、簡略化されたノーズと前バンパー、ハンドルの向き、タイヤとリム、操舵部やエンジンの細部に差がありました。先行評価45点と、新しいコンテキストでモデル名を伏せた独立評価42・42点の、項目別中央値を合計した結果が43点です。42〜45点は統計的な信頼区間ではありません。評価者は同じアシスタントモデル系統で、人の専門家による評価ではありません。
+
+この試行はOS隔離のないホスト実行で、配点は生成後、数値採点前に作成しました。採点した白背景の斜視と、向きを数値確認した上面・右面画像は保存されていますが、カメラ設定は後の固定クォータニオンによる標準描画と異なります。当時の条件差を残して参照し、後のPodman試行との条件をそろえた比較には使いません。初期の形状集計を直した前後の検査も残しており、CAD自体は修正していません。
+
+[基準例の記録](https://github.com/Sunwood-ai-labs/SECCA/blob/main/references/baseline.md) · [採点と根拠](https://github.com/Sunwood-ai-labs/SECCA/blob/main/assets/baseline/likeness-score.json) · [CAD検査](https://github.com/Sunwood-ai-labs/SECCA/blob/main/assets/baseline/evidence/geometry-validation.json) · [FCStd](https://github.com/Sunwood-ai-labs/SECCA/blob/main/assets/baseline/workspace/racing-kart.FCStd) · [STEP](https://github.com/Sunwood-ai-labs/SECCA/blob/main/assets/baseline/workspace/racing-kart.step) · [採点した斜視画像](https://github.com/Sunwood-ai-labs/SECCA/blob/main/assets/baseline/evidence/kart-front-isometric-white.png) · [上面画像](https://github.com/Sunwood-ai-labs/SECCA/blob/main/assets/baseline/evidence/score-top-white.png) · [右面画像](https://github.com/Sunwood-ai-labs/SECCA/blob/main/assets/baseline/evidence/score-right-white.png)

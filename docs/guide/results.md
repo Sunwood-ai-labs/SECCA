@@ -1,15 +1,43 @@
 # Results
 
-The published record contains one scored output each from Nemotron, DeepSeek, and Beam Free. These are experiment reports, not a model leaderboard or a population estimate.
+## Reference comparison of four saved outputs
+
+Compare each saved output by its image, score, and CAD checks.
+
+| Model and score evidence | Score | Conditions |
+| --- | ---: | --- |
+| [GLM 5.3 Flash Free](https://github.com/Sunwood-ai-labs/SECCA/blob/main/assets/baseline/likeness-score.json) | **43/100** | Windows, no isolation |
+| [Beam Free](https://github.com/Sunwood-ai-labs/SECCA/blob/main/experiments/beam-free-20261017/trial-02/score.json) | **25/100** | Podman B, Python pixel inspection |
+| [Nemotron 3.5 Super VL Free](https://github.com/Sunwood-ai-labs/SECCA/blob/main/experiments/dual-free-20261018/nemotron/trial-01/score.json) | **28.75/100** | Independent Podman A, image attached |
+| [DeepSeek V4.1 Flash Free](https://github.com/Sunwood-ai-labs/SECCA/blob/main/experiments/dual-free-20261018/deepseek/trial-01/score.json) | **50/100** | Independent Podman A, image attached |
+
+| GLM 5.3 Flash Free · 43/100 | Beam Free · 25/100 |
+| --- | --- |
+| ![GLM 5.3 Flash Free](/glm-20261017-preview.png) | ![Beam Free](/beam-preview.png) |
+| **Nemotron 3.5 Super VL Free · 28.75/100** | **DeepSeek V4.1 Flash Free · 50/100** |
+| ![Nemotron 3.5 Super VL Free](/nemotron-20261018-preview.png) | ![DeepSeek V4.1 Flash Free](/deepseek-20261018-preview.png) |
+
+| Model | FCStd | STEP | Generation |
+| --- | --- | --- | ---: |
+| GLM | 77 valid solids | 77 valid solids | 509.969 s |
+| Beam | 33 valid solids | 33 valid solids | 152.219 s |
+| Nemotron | 30 valid solids | No geometry | 71.464 s |
+| DeepSeek | 26 valid solids | 26 valid solids | 442.688 s |
+
+| Criterion and maximum | GLM | Beam | Nemotron | DeepSeek |
+| --- | ---: | ---: | ---: | ---: |
+| Silhouette and proportions /25 | 13 | 9 | 6.25 | 12.5 |
+| Component layout /20 | 13 | 9 | 5 | 15 |
+| Characteristic geometry /30 | 8 | 4 | 7.5 | 7.5 |
+| Mechanical detail /20 | 4 | 2 | 5 | 10 |
+| Color and material regions /5 | 5 | 1 | 5 | 5 |
+| Sum of criterion medians /100 | **43** | **25** | **28.75** | **50** |
+
+This is a reference comparison of one saved output per model. Podman A used the same pinned FreeCAD 1.0.0 image for two candidates; B used a different image. Beam did not use native image input. GLM used FreeCAD 1.1.3, with its rubric authored after generation and before numeric scoring. The later Podman trials fixed the rubric before generation. GLM, Nemotron, and DeepSeek each made one generation. Beam had two attempts with one scored output.
+
+These are archived white-background views, not rerenders of all four outputs with an identical camera. Visual likeness and CAD validity are separate checks. Single records with differing conditions do not establish general model rankings or speed advantages.
 
 ## Nemotron and DeepSeek · 2026-10-18
-
-| Nemotron 3.5 Super VL Free | DeepSeek V4.1 Flash Free |
-| --- | --- |
-| ![Nemotron output on a white background](/nemotron-20261018-preview.png) | ![DeepSeek output on a white background](/deepseek-20261018-preview.png) |
-| **28.75/100** likeness | **50/100** likeness |
-| FCStd: 30 valid solids. STEP: 0 objects and 0 solids. | FCStd and STEP: 26 valid solids each. |
-| Generation: 71.464 seconds. | Generation: 442.688 seconds. |
 
 Each model made one generation attempt with the fixed image and Japanese prompt. Separate containers, FreeCAD documents, workspaces, homes, and communication volumes kept their execution state independent. Neither candidate received other outputs or judging material. Both used FreeCAD 1.0.0 and OpenCode 1.19.3 in the same image:
 
@@ -20,15 +48,6 @@ sha256:b9e296032f921c96de5843b19e1a182ce5067d6cdca25a5d3ab7e7da23fe89cb
 The model IDs were `opencode/nemotron-3.5-super-vl-free` and `opencode/deepseek-v4.1-flash-free`. The source revision was `dc7b1273fcdd1534b903185e2d7921cb7e7784f5`. No maintainer repaired the geometry or requested a new generation.
 
 ### Score evidence for the two outputs
-
-| Criterion | Nemotron median | DeepSeek median |
-| --- | ---: | ---: |
-| Silhouette and proportions | 6.25/25 | 12.5/25 |
-| Component layout | 5/20 | 15/20 |
-| Characteristic geometry | 7.5/30 | 7.5/30 |
-| Mechanical detail | 5/20 | 10/20 |
-| Color and material regions | 5/5 | 5/5 |
-| Total | **28.75/100** | **50/100** |
 
 Nemotron produced separate straight frame rods, flat wheel shapes, and box-shaped seating and bodywork. The parts did not form the reference's connected silhouette. DeepSeek assembled a more coherent kart with four wheels, frame, seat, steering wheel, bodywork, and engine. Its large front box, angular seat, and simple rims, engine, and drivetrain still differed from the reference.
 
@@ -45,8 +64,6 @@ The CAD runs did not retain inference request bodies. Fixed input hashes, attach
 [Experiment files and provenance](https://github.com/Sunwood-ai-labs/SECCA/blob/main/experiments/dual-free-20261018/README.md) · [Structured result](https://github.com/Sunwood-ai-labs/SECCA/blob/main/experiments/dual-free-20261018/RESULT.json) · [Nemotron score](https://github.com/Sunwood-ai-labs/SECCA/blob/main/experiments/dual-free-20261018/nemotron/trial-01/score.json) · [DeepSeek score](https://github.com/Sunwood-ai-labs/SECCA/blob/main/experiments/dual-free-20261018/deepseek/trial-01/score.json)
 
 ## Beam Free · 2026-10-17
-
-![Beam Free output, canonical white-background preview](/beam-preview.png)
 
 | Field | Recorded value |
 | --- | --- |
@@ -92,3 +109,13 @@ The historical GLM fixture scored 43 under a Windows-host runtime. It is retaine
 ## Inspect the published files
 
 [Experiment report](https://github.com/Sunwood-ai-labs/SECCA/blob/main/experiments/beam-free-20261017/REPORT.md) · [Structured result](https://github.com/Sunwood-ai-labs/SECCA/blob/main/experiments/beam-free-20261017/RESULT.json) · [Score and reviews](https://github.com/Sunwood-ai-labs/SECCA/blob/main/experiments/beam-free-20261017/trial-02/score.json) · [CAD validation](https://github.com/Sunwood-ai-labs/SECCA/blob/main/experiments/beam-free-20261017/trial-02/evidence/validation.json) · [Published file hashes](https://github.com/Sunwood-ai-labs/SECCA/blob/main/experiments/beam-free-20261017/export-manifest.json)
+
+## GLM 5.3 Flash Free · 2026-10-17, historical baseline
+
+The single `opencode/glm-5.3-flash-free` output scored **43/100**. It used OpenCode 1.19.3 and FreeCAD 1.1.3 on a Windows host and took 509.969 seconds to generate. Separate processes reopened FCStd and STEP, finding 77 valid solids in each and matching bounds. Mechanical operation and interference were not checked.
+
+A flat seat, simplified nose and front bumper, steering-wheel orientation, tires and rims, and limited steering and engine detail reduced likeness. The initial total was 45, followed by fresh-context, model-blinded totals of 42 and 42. The sum of criterion medians was 43. The 42–45 range is not a statistical confidence interval. The reviewers shared an assistant model family and were not human experts.
+
+This host run had no OS isolation. Its rubric was authored after generation and before numeric scoring. The scored white oblique view and numerically checked top and right views are preserved, but their camera settings differ from the later fixed-quaternion render procedure. These historical conditions remain visible in the reference comparison. The record is not a controlled comparison with later Podman runs. Both the initial geometry-counting error and corrected inspection are preserved; the CAD itself was not repaired.
+
+[Baseline notes](https://github.com/Sunwood-ai-labs/SECCA/blob/main/references/baseline.md) · [Score and reasons](https://github.com/Sunwood-ai-labs/SECCA/blob/main/assets/baseline/likeness-score.json) · [CAD validation](https://github.com/Sunwood-ai-labs/SECCA/blob/main/assets/baseline/evidence/geometry-validation.json) · [FCStd](https://github.com/Sunwood-ai-labs/SECCA/blob/main/assets/baseline/workspace/racing-kart.FCStd) · [STEP](https://github.com/Sunwood-ai-labs/SECCA/blob/main/assets/baseline/workspace/racing-kart.step) · [Scored oblique view](https://github.com/Sunwood-ai-labs/SECCA/blob/main/assets/baseline/evidence/kart-front-isometric-white.png) · [Top view](https://github.com/Sunwood-ai-labs/SECCA/blob/main/assets/baseline/evidence/score-top-white.png) · [Right view](https://github.com/Sunwood-ai-labs/SECCA/blob/main/assets/baseline/evidence/score-right-white.png)

@@ -24,14 +24,44 @@ SECCAは、固定のレーシングカート画像と依頼文から、CAD構築
 
 ## 🧪 公開実験
 
-### Nemotron・DeepSeek · 2026-10-18
+### 保存された4生成物を比較する
 
-| Nemotron 3.5 Super VL Free | DeepSeek V4.1 Flash Free |
+保存された各1生成物を、画像・得点・CAD検査で見比べられます。
+
+| モデル・採点根拠 | 点数 | 実行条件 |
+| --- | ---: | --- |
+| [GLM 5.3 Flash Free](assets/baseline/likeness-score.json) | **43/100点** | Windows・非隔離 |
+| [Beam Free](experiments/beam-free-20261017/trial-02/score.json) | **25/100点** | Podman B・Python画素解析 |
+| [Nemotron 3.5 Super VL Free](experiments/dual-free-20261018/nemotron/trial-01/score.json) | **28.75/100点** | 独立したPodman A・画像添付 |
+| [DeepSeek V4.1 Flash Free](experiments/dual-free-20261018/deepseek/trial-01/score.json) | **50/100点** | 独立したPodman A・画像添付 |
+
+| GLM 5.3 Flash Free · 43/100点 | Beam Free · 25/100点 |
 | --- | --- |
-| ![白背景で描画したNemotronの生成物](experiments/dual-free-20261018/nemotron/trial-01/renders/preview.png) | ![白背景で描画したDeepSeekの生成物](experiments/dual-free-20261018/deepseek/trial-01/renders/preview.png) |
-| 見た目の再現度 **28.75/100点** | 見た目の再現度 **50/100点** |
-| FCStdは30有効ソリッド。STEPは形状なし。 | FCStd・STEPとも26有効ソリッド。 |
-| 生成時間は71.464秒。 | 生成時間は442.688秒。 |
+| ![GLM 5.3 Flash Free](assets/baseline/evidence/kart-front-isometric-white.png) | ![Beam Free](experiments/beam-free-20261017/trial-02/renders/preview.png) |
+| **Nemotron 3.5 Super VL Free · 28.75/100点** | **DeepSeek V4.1 Flash Free · 50/100点** |
+| ![Nemotron 3.5 Super VL Free](experiments/dual-free-20261018/nemotron/trial-01/renders/preview.png) | ![DeepSeek V4.1 Flash Free](experiments/dual-free-20261018/deepseek/trial-01/renders/preview.png) |
+
+| モデル | FCStd | STEP | 生成時間 |
+| --- | --- | --- | ---: |
+| GLM | 77有効ソリッド | 77有効ソリッド | 509.969秒 |
+| Beam | 33有効ソリッド | 33有効ソリッド | 152.219秒 |
+| Nemotron | 30有効ソリッド | 形状なし | 71.464秒 |
+| DeepSeek | 26有効ソリッド | 26有効ソリッド | 442.688秒 |
+
+| 項目・配点 | GLM | Beam | Nemotron | DeepSeek |
+| --- | ---: | ---: | ---: | ---: |
+| 輪郭・比率 /25 | 13 | 9 | 6.25 | 12.5 |
+| 部品の配置 /20 | 13 | 9 | 5 | 15 |
+| 特徴的な形状 /30 | 8 | 4 | 7.5 | 7.5 |
+| 機械的な細部 /20 | 4 | 2 | 5 | 10 |
+| 配色 /5 | 5 | 1 | 5 | 5 |
+| 項目別中央値の合計 /100 | **43** | **25** | **28.75** | **50** |
+
+各モデルの保存された1生成物を並べた参考比較です。Podman Aの2候補はFreeCAD 1.0.0を含む同じ固定イメージ、Bは別のイメージを使いました。Beamはネイティブな画像入力を使っていません。GLMはFreeCAD 1.1.3で、配点を生成後、数値採点前に作成しています。後のPodman試行では生成前から配点を固定しました。GLM・Nemotron・DeepSeekは各1生成です。Beamは2試行のうち1件を採点しました。
+
+画像は保存記録の白背景画像で、4生成物を同一カメラで描画し直したものではありません。見た目の点数とCADの成立は別の評価です。条件の異なる各1回の記録から、モデル全体の順位や速度の優劣は示していません。
+
+### Nemotron・DeepSeek · 2026-10-18
 
 同じ固定入力とランタイムイメージを使い、モデルごとに独立したPodman環境で1生成物ずつ作りました。各生成物をコーディネータ1件と、新しいコンテキストでモデル名を伏せた独立評価2件で採点し、項目別中央値を合計しています。CADの成立は再現度とは別に判定し、Nemotronは空のSTEPにより出力一式の検査に不合格でした。
 
@@ -40,8 +70,6 @@ SECCAは、固定のレーシングカート画像と依頼文から、CAD構築
 [実験ファイルと根拠](experiments/dual-free-20261018/README.md) · [結果と採点理由](docs/ja/guide/results.md)
 
 ### Beam Free · 2026-10-17
-
-![白背景で描画したBeam Freeのレーシングカート](experiments/beam-free-20261017/trial-02/renders/preview.png)
 
 | 実験 | 結果 | 対象 |
 | --- | --- | --- |
@@ -52,6 +80,14 @@ SECCAは、固定のレーシングカート画像と依頼文から、CAD構築
 Beam Freeのカタログは入力をテキストのみとしています。エージェント自身がPythonで参照画像の画素を調べました。今回は**ネイティブな画像入力機能の実測ではありません**。旧GLMの43点はWindowsホスト版であり、今回の隔離実行との厳密な比較には使えません。
 
 [実験レポート](experiments/beam-free-20261017/REPORT.md) · [採点](experiments/beam-free-20261017/trial-02/score.json) · [CAD検査](experiments/beam-free-20261017/trial-02/evidence/validation.json)
+
+### GLM 5.3 Flash Free · 2026-10-17、旧基準例
+
+`opencode/glm-5.3-flash-free` は、WindowsホストのOpenCode 1.19.3とFreeCAD 1.1.3で1生成物を作りました。再現度は**43/100点**で、保存した両形式は各77有効ソリッド、外形も一致しています。生成時間は509.969秒でした。平板のシート、簡略化されたノーズとバンパー、ハンドルの向き、機械細部の不足が減点につながっています。
+
+配点は生成後、数値採点前に作成しました。先行評価45点と、新しいコンテキストでモデル名を伏せた独立評価42・42点から、項目別中央値を合計した結果が43点です。評価者は同じアシスタントモデル系統でした。OS隔離のないホスト実行の過去の記録です。採点画像のカメラ設定も後の固定描画方式とは異なるため、条件差を含む参考比較として扱います。
+
+[基準例の記録](references/baseline.md) · [採点](assets/baseline/likeness-score.json) · [CAD検査](assets/baseline/evidence/geometry-validation.json) · [FCStd](assets/baseline/workspace/racing-kart.FCStd) · [STEP](assets/baseline/workspace/racing-kart.step) · [採点した斜視画像](assets/baseline/evidence/kart-front-isometric-white.png)
 
 ## 🚀 はじめに
 
